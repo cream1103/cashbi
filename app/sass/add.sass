@@ -1,0 +1,711 @@
+@keyframes left-motion-twice
+	0%
+		transform: translateX(0)
+	25%
+		transform: translateX(40px)
+	100%
+		transform: translateX(0)
+
+@keyframes wait
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+// ***********************************************
+// moved from file vetall.css, source file removed
+input[type=checkbox].heart_inp
+	display: none
+
+.input_red
+	border: 2px solid #ff0000 !important
+	outline: none
+
+.mail_icon_activ:after
+	width: 19px
+	height: 14px
+	content: ""
+	position: absolute
+	right: 17px
+	top: 16px
+	background: url(../img/mailActiv.png) no-repeat center center
+
+.block_input_pass,
+.block_reg_pass
+	height: 0
+	overflow: hidden
+	transition: all .3s
+
+.block_input_pass .style_input,
+.block_reg_pass .style_input
+	margin-top: 10px
+
+.style_input_pas
+	background: url(../img/icon/lock.svg) no-repeat
+	background-position: right 17px top 12px
+
+.href_forgot
+	font-family: "OpenSansRegular"
+	font-size: 14px
+	line-height: 40px
+	color: #fff
+	&:hover
+		text-decoration: underline
+		color: #fff
+
+@media(min-width: 980px)
+	.href_forgot
+		color: #ff4f2f
+		&:hover
+			color: #ff4f2f
+			
+// ***********************************************
+
+
+/* === Slide menu section start === */
+
+input, select, textarea, button
+	outline: none
+
+
+$white: #ffffff
+$black: #000000
+$purple: #e8242e
+$orange: #ff4f2e
+$red: #e8242e
+$lgrey: #e8e8e8
+$sky: #89c9ec
+$wmenu: 50%
+$wmin_menu: 250px
+$wmax_menu: 320px
+
+$colorFB: #385895
+$colorVK: #4a7095
+$colorOK: #e47c1b
+$colorTW: #00c0fd
+$colorGO: #ea4935
+$colorIG: #9d5199
+
+#slide-menu-container ,#slide-menu-container_2
+	display: block
+	width: 100%
+	position: fixed
+	transform-origin: left
+	transform: translateX(100vw)
+	top: 0
+	background: rgba(0,0,0,.75)
+	transition: .2s linear
+	z-index: 999
+	height: 100vh
+	user-select: none
+	&::before
+		content: "+"
+
+		font-family: fontawesome
+		color: $white
+		text-align: center
+		line-height: 30px
+		font-size: 32px
+		transform: rotate(45deg)
+		text-shadow: 1px 1px 0 #000
+		display: block
+		position: absolute
+		width: 32px
+		height: 32px
+		background: #ff4f2f
+		opacity: 1
+		border-radius: 16px
+		left: 16px
+		top: 16px
+	#slide-menu-search
+		width: $wmenu
+		min-width: $wmin_menu
+		max-width: $wmax_menu
+		margin-left: auto
+		background: $white
+		height: 90px
+		padding: 12px
+		line-height: 2
+		font-size: 16px
+		a
+			color: #000
+			margin-bottom: 6px
+			display: block
+			margin-left: -12px
+			margin-right: -12px
+			padding: 0 12px
+			&:hover
+				text-decoration: none
+				background-color: #f0f0f0
+		p
+			position: relative
+			height: 32px
+			input[type=search]
+				border: 1px solid #aaa
+				width: 100%
+				height: 100%
+				padding: 0 32px 0 8px
+			button[type=submit]
+				position: absolute
+				top: 1px
+				right: 1px
+				width: 40px
+				height: 30px
+				border: none
+				background: transparent
+				color: #f0783c
+			button[type=submit]::before
+				font-family: "fontawesome"
+				line-height: 30px
+				content: "\f002"
+				display: block
+				position: absolute
+				top: 0
+				right: 0
+				width: inherit
+				height: inherit
+		#search-items
+			border: 3px solid #137da0
+			font-weight: bold
+			color: black
+			padding: 1px 1px
+			cursor: pointer
+	#slide-menu-content ,#slide-menu-content_2
+		width: $wmenu
+		min-width: $wmin_menu
+		max-width: $wmax_menu
+		margin-left: auto
+		background: $white
+		height: calc(100vh - 90px)
+		overflow: auto
+		>a
+			display: block
+			width: 100%
+			padding: 0 48px 0 12px
+			font-size: 16px
+			line-height: 2
+			color: $black
+			border-top: 1px solid $lgrey
+			&:hover
+				text-decoration: none
+				background-color: #f0f0f0
+			//&:last-child
+				//border-bottom: 1px solid $lgrey
+		a:active
+			background: $lgrey
+		a::after
+			text-decoration: none
+			content: attr(data-qty)
+			padding-left: 12px
+			color: $sky
+
+#slide-menu-container.show ,#slide-menu-container_2.show
+	transform: translateX(0)
+
+.navbar-nav
+	display: none
+
+@media(min-width: 980px)
+	.ddn-container
+		display: none
+	.navbar-nav
+		display: block
+		
+/* === Slide menu section end === */
+
+
+
+/* === Animation and :hover effects start === */
+
+// --- main page start ---
+.img_s_block_shop
+	span, img
+		transform: scale(1)
+		transition: .1s linear .05s
+@media(min-width: 600px)
+	.img_s_block_shop:hover
+		span
+			transform: scale(1.25)
+		img
+			transform: scale(1.1)
+
+.icon_soc_join a
+	transition: .25s ease .05s
+.icon_soc_join a:hover
+	filter: brightness(1.25)
+	transform: scale(1.1)
+	
+.footer
+	.icon_soc_join li
+		display: inline-block
+		a
+			display: block
+			background: #fff
+			width: 32px
+			height: 32px
+			border-radius: 16px
+			margin-right: 6px
+			color: #444
+			transition: .1s ease .05s
+			font: 20px/32px fontawesome
+			text-align: center
+		a:hover
+			text-decoration: none
+			transform: none
+			filter: none
+		a.soc_icon-fb:hover
+			color: $colorFB
+		a.soc_icon-vk:hover
+			color: $colorVK
+		a.soc_icon-ok:hover
+			color: $colorOK
+		a.soc_icon-tw:hover
+			color: $colorTW
+		a.soc_icon-go:hover
+			color: $colorGO
+		a.soc_icon-ig:hover
+			color: $colorIG
+// ---
+.slider-info
+	margin-bottom: 40px
+	#_left-col
+		width: 50%
+		float: left
+		position: relative
+		p
+			font-size: 24px
+			font-weight: 700
+			line-height: 1.2
+	#_right-col
+		width: 50%
+		float: right
+		text-align: right
+		position: relative
+		p
+			font-size: 24px
+			font-weight: 700
+			line-height: 1.2
+			text-align: right
+
+
+/* --- shops list --- */
+.show_me_all_shops .list_of_shop .bxslider_shops li
+	.top_abs_hide
+		transition: .4s ease .1s
+		right: 0 !important
+		top: 20px
+	.heart_inp + .heart
+		background-image: url(../img/icon/heart_empty.svg)
+		background-repeat: no-repeat
+		background-position: center
+		opacity: 0
+	.heart_inp:checked + .heart
+		opacity: 1
+		background-image: url(../img/icon/heart_fill.svg)
+	.inside_s
+		padding-top: 0
+		.present_class
+			width: 100% !important
+			.inside_price
+				background-color: #ddd
+				// &._sky
+					// color: $sky
+				// &._orange
+					// color: $orange
+				// &._red
+					// color: $red
+				transition: .4s ease .1s
+				width: 80%
+				max-width: 130px
+				.cashback
+					color: #444
+					text-shadow: none
+				span.tc
+					font-size: 22px
+					&._sky
+						color: $sky
+					&._orange
+						color: $orange
+					&._red
+						color: $red
+				span.tc i
+					font-size: 70%
+					font-weight: 100
+					color: #888
+					text-decoration: line-through
+					text-shadow: none
+					padding-right: 8px
+				&::before
+					content: ""
+					height: 20px
+					width: 100%
+					left: 0
+					display: block
+					position: absolute
+					background: #ddd url(../img/bow.png) no-repeat center bottom
+					top: -20px
+
+@media(min-width: 600px)
+	.show_me_all_shops .list_of_shop .bxslider_shops li
+		.top_abs_hide
+			right: 10px !important
+		.inside_s
+			.present_class
+				.inside_price
+					color: #888
+					span.tc
+						font-size: 28px
+
+
+.show_me_all_shops .list_of_shop .bxslider_shops li:hover
+	box-shadow: 0 0 6px rgba(0,0,0,.2)
+	.top_abs_hide
+		transform: translateX(0)
+	.heart_inp + .heart
+		opacity: 1
+	.inside_s
+		padding-top: 10px
+		.present_class
+			.inside_price
+				span.tc
+					color: #fff
+				.cashback
+					color: #fff
+				span i
+					color: #444
+				&::before
+					background-color: inherit
+				&._sky
+					background-color: $sky
+				&._orange
+					background-color: $orange
+				&._red
+					background-color: $red
+
+@media(min-width: 600px)
+	.slider-info p
+		font-size: 28px !important
+	.show_me_all_shops .list_of_shop .bxslider_shops li:hover
+		.top_abs_hide
+			transform: translateX(10px)
+
+@media(max-width: 479px)
+	.show_me_all_shops .list_of_shop .bxslider_shops li
+		height: 220px
+		.heart
+			top: 10px
+		.top_abs_hide
+			top: 10px
+			font-size: 12px
+		.inside_s
+			.images_shop
+				height: 100px
+			.present_class
+				height: 80px
+				.inside_price
+					height: 64px
+// --- main page end ---
+/* === Animation and :hover effects end === */
+
+
+
+/* === Style for input[type=range] start === */
+$track-height: 12px
+$color0: transparent
+$color1: #000080
+$color2: #89c9ec
+$color3: #e8242e
+$sc-padding: 0
+$thumb: 14px
+
+@mixin thumb()
+	box-sizing: border-box
+	border-radius: 0
+	border: solid $thumb $color3
+	border-left: solid $thumb/2 transparent
+	border-right: solid $thumb/2 transparent
+	border-top: solid $thumb/2 transparent
+	color: transparent
+	background: transparent
+	width: 0
+	height: 0
+
+@mixin track()
+	border-radius: $track-height / 2
+	height: $track-height
+	background: linear-gradient(90deg, $color1 0, transparent 40%), linear-gradient(90deg, $color2 60%, $color3 100%)
+	background-size: 100%
+	background-repeat: no-repeat
+	background-position: 0 50%
+
+.wrapp_slider_bottom
+	position: relative
+	border: none !important
+	padding: 0 $sc-padding
+	height: $track-height !important
+	margin-top: 10px !important
+	div.inp
+		width: 100%
+		height: $track-height
+		position: relative
+		background: #fff
+		border-radius: $track-height / 2
+		#progress-bar
+			background-color: #ccc
+		input[type=range]
+			&, &::-webkit-slider-runnable-track, &::-webkit-slider-thumb
+				-webkit-appearance: none
+			background: transparent
+			position: absolute
+			left: 0
+			bottom: 0
+			border: none
+			height: $track-height
+			width: 100%
+			&::-webkit-slider-thumb
+				@include thumb()
+				height: $thumb + $track-height
+			&::-webkit-slider-thumb:hover
+				cursor: grabbing
+			&::-moz-range-thumb
+				@include thumb()
+				height: $thumb * 2 + $track-height
+			&::-moz-range-thumb:hover
+				cursor: grabbing
+			&::-ms-thumb
+				@include thumb()
+			
+			&::-webkit-slider-runnable-track
+				@include track()
+			// &.step0::-webkit-slider-runnable-track
+				// background: $color0
+			// &.step1::-webkit-slider-runnable-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color0 33.33%, $color0 100%)
+			// &.step2::-webkit-slider-runnable-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color2 50%, $color0 66.67%)
+			
+			&::-moz-range-track
+				@include track()
+			// &.step0::-moz-range-track
+				// background: $color0
+			// &.step1::-moz-range-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color0 33.33%, $color0 100%)
+			// &.step2::-moz-range-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color2 50%, $color0 66.67%)
+				
+			&::-ms-track
+				@include track()
+			// &.step0::-ms-track
+				// background: $color0
+			// &.step1::-ms-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color0 33.33%, $color0 100%)
+			// &.step2::-ms-track
+				// background: linear-gradient(90deg, $color1 0, transparent 33.33%), linear-gradient(90deg, $color2 50%, $color0 66.67%)
+
+		span
+			display: block
+			position: absolute
+			width: 100%
+			height: $track-height
+			right: 0
+			bottom: 0
+			background-color: #fff
+
+/* === Style for input[type=range] end === */
+
+
+.review_from_user
+	.slider_wrapper
+		padding: 32px 5% 0 5% !important
+.header
+	box-shadow: 0 0 6px rgba(0,0,0,.5)
+
+@media(min-width: 980px)
+	.header
+		position: absolute
+
+			
+.wrapp_all_prasents_and_slider
+	.animate_hover_wrapp
+		padding-top: 20px !important
+		background-color: transparent
+		.present
+			width: 126px
+			margin: 0 2px
+			height: 180px
+			border-radius: 4px
+			position: relative
+			order: 0
+			flex: 0 1 auto
+			align-self: auto
+			box-shadow: inset 0 0 2px rgba(0,0,0,.25)
+			background-color: #ccc
+			background-repeat: no-repeat
+			transition: .2s linear
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 20px
+				top: -20px
+				left: 0
+				background-color: transparent
+				background-image: url(../img/bow_gray.svg)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: contain
+				transition: .1s linear .1s
+
+			&.animate_on
+				transition: .5s linear !important
+			&.animate_on::before
+				transition: .1s linear .4s !important
+			
+			&.fill
+				background-position: center 0 !important
+				
+			&.blue
+				height: 60px
+				background-image: url(../img/blue_bg.png)
+				background-position: center 60px
+			&.blue.fill::before
+				background-image: url(../img/bow_blue.svg)
+					
+			&.sky
+				height: 105px
+				background-image: url(../img/sky_bg.png)
+				background-position: center 105px
+			&.sky.fill::before
+				background-image: url(../img/bow_sky.svg)
+
+			&.red
+				height: 150px
+				background-image: url(../img/red_bg.png)
+				background-position: center 150px
+			&.red.fill::before
+				background-image: url(../img/bow_red.svg)
+
+			span
+				display: block
+				width: 100%
+				text-align: center
+				position: absolute
+				bottom: 0
+				left: 0
+				font-size: 24px
+				line-height: 2
+				color: #fff
+				text-shadow: 1px 1px 0 rgba(0,0,0,.2)
+
+// ����������� ��������� �� �������� �����
+form
+	position: relative
+	.form-popup-msg,
+	.form-popup-processing	
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		opacity: 0
+		transition: opacity .4s linear .1s
+		&.show
+			opacity: 1
+	.form-popup-msg
+		padding: 10px 15px
+		box-shadow: 2px 2px 6px rgba(0,0,0,.2)
+		&.success
+			background-color: #c8f0fa
+		&.error
+			background-color: #ff96c8
+	.form-popup-processing	
+		background-color: rgba(0,0,0,.4)
+		text-align: center
+		&::before
+			content: "\f110"
+			display: block
+			position: absolute
+			height: 48px
+			width: 48px
+			background-color: transparent
+			font: 48px/1 fontawesome
+			top: calc(50% - 24px)
+			left: calc(50% - 24px)
+			animation: wait .8s steps(8) 0s infinite both
+			color: #fff
+
+#chart
+	width: 100%
+	height: 103px
+	margin-top: 24px
+	//overflow: hidden
+	position: relative
+	div
+		background: linear-gradient(90deg, $color1 0, transparent 40%), linear-gradient(90deg, $color2 60%, $color3 100%)
+		width: 100%
+		height: 100%
+		transform-origin: left bottom
+		transform: matrix(1, -.19, 0, 1, 0, 100)
+		span
+			position: absolute
+			top: 0
+			right: 0
+			display: block
+			width: 100%
+			height: 100%
+			background-color: #ccc
+
+@media(max-width: 559px)
+  #chart
+      div
+          transform: matrix(1, -.20, 0, 1, 0, 100)
+@media(max-width: 479px)
+	#chart
+		div
+			transform: matrix(1, -.24, 0, 1, 0, 100)
+	@media(max-width: 429px)
+		#chart
+			div
+				transform: matrix(1, -.28, 0, 1, 0, 100)
+
+#scale
+	display: -webkit-inline-box
+	width: 100%
+	padding: 0
+	margin: 0
+	position: relative
+	margin-bottom: 30px
+	overflow: hidden
+	li
+		padding: 0
+		margin: 0
+		font-size: 12px
+		line-height: 1
+		width: 10%
+		position: relative
+		&:before
+			width: 1px
+			height: 6px
+			background: #ABABAC
+			position: absolute
+			left: -1px
+			top: 0
+			content: ''
+			display: inline-block
+
+		span
+			font-size: 12px
+			color: #a1a1a1
+			font-family: 'OpenSansRegular'
+			margin-top: 11px
+			margin-left: 0px
+			display: block
+	.s_clips
+		&:before
+			left: 2px
+	.s_clips2
+		span
+			margin-left: -11px
+	.s_clips3
+		span
+			margin-left: -20px

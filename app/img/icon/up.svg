@@ -1,0 +1,16 @@
+<svg id="up.svg" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #88caec;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="28" cy="28" r="28"/>
+  <path class="cls-2" d="M1454.56,4464.41l-7.17,7.56a1.452,1.452,0,0,0,0,1.98,1.277,1.277,0,0,0,1.88,0l4.9-5.17v16.82a1.332,1.332,0,1,0,2.66,0v-16.82l4.9,5.17a1.277,1.277,0,0,0,1.88,0,1.452,1.452,0,0,0,0-1.98l-7.17-7.56A1.277,1.277,0,0,0,1454.56,4464.41Z" transform="translate(-1427 -4447)"/>
+</svg>

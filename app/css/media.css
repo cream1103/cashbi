@@ -1,0 +1,785 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1620px) {
+    .bg_block_top {
+        /*background-position: 25% 22%;*/
+        background-size: auto;
+    }
+}
+@media only screen and (max-width : 1599px) {
+    .show_me_all_shops .list_of_shop .bxslider_shops li{
+        width: 20%;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first .one-slide .cont{
+        padding-left: 13%;
+    }
+    .show_me_all_shops .list_of_shop {
+        max-height: 640px;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1399px){
+    .wrappers .search {
+        min-width: 460px;
+    }
+    .browser_block .logo__and_text_wrapper .text_wrappers a{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .browser_block .logo__and_text_wrapper{
+        margin-left: 20px;
+    }
+    .header .logo img{
+        margin-top: 19px;
+        width: 146px;
+    }
+    .wrapp_menus .flex_blocks .ava_blocks{
+        margin-top: 10px;
+    }
+    .wrapp_menus #aut_position{
+        top: 75px;
+        width: 261px;
+    }
+    .wrapp_menus .flex_blocks .named_user{
+        max-width: 155px;
+    }
+    .wrapp_menus .flex_blocks{
+        padding-left: 12px;
+        padding-right: 12px;
+        height: 75px;
+    }
+    .wrapp_menus .flex_blocks .wr_all{
+        margin-top: 15px;
+    }
+    .wrapp_menus .flex_blocks .named_user.wr_all{
+        margin-top: 18px
+    }
+    .ava_images a img{
+        width: 90px;
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    .ava_images a span{
+        font-size: 16px;
+    }
+    .text_area_fore_review{
+        min-height: 100px;
+        max-height: 100px;
+    }
+    .subm_btns{
+        margin-top: 20px;
+    }
+    .main-wrapps_span{
+        font-size: 30px;
+    }
+    .show_me_all_shops .list_of_shop .bxslider_shops li{
+        width: 25%;
+    }
+
+    .show_me_all_shops .center_blocks_search .h2_shops{
+        font-size: 30px;
+    }
+    .pay_block .right_img_blocks{
+        min-height: 568px;
+    }
+    .pay_block .left_pat_sistems_block{
+        min-height: 443px;
+    }
+    .pay_block .left_pat_sistems_block .what_say_about_us {
+        font-size: 30px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp {
+        width: 470px;
+        padding: 0 20px;
+    }
+    .more_cashback .wrapp_slider_bottom {
+        width: 470px;
+        padding: 0 20px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp{
+        width: 470px;
+        padding: 0 20px;
+    }
+    .review_from_user .slider_wrapper .bxslider li .user_review{
+        max-height: 110px;
+    }
+    .review_from_user .img_wrapper {
+        min-height: 460px;
+    }
+    .review_from_user .slider_wrapper {
+        min-height: 460px;
+    }
+    .review_from_user .slider_wrapper .what_say_about_us{
+        font-size: 30px;
+    }
+    .review_from_user .slider_wrapper {
+        padding: 25px 95px 0 95px;
+    }
+    .review_from_user .slider_wrapper .bxslider li img{
+        width: 90px;
+        margin: 23px auto 23px auto;
+    }
+    .review_from_user .slider_wrapper .bxslider li .user_review{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .review_from_user .slider_wrapper {
+        padding: 25px 40px 0 40px;
+    }
+    .review_from_user .slider_wrapper .bxslider li .user_name{
+        font-size: 16px;
+        margin-top: 23px;
+        margin-bottom: 15px;
+    }
+    .more_cashback .wrapp_div_fore_start_economy {
+        width: 100%;
+        float: none;
+    }
+    .bg_block_top .left_part_main_block .left_part_main_block_h1 {
+        font-size: 46px;
+    }
+    .bg_block_top .white_form_start_economy .icon_soc_join ul li {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .more_cashback .wrapp_div_fore_start_economy .icon_soc_join ul li {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .shops_block_start .text_fore_images {
+        left: -33px;
+    }
+    .shops_block_start .img_s_block_shop .animate_blue_bg_number{
+        right: -25px;
+    }
+    .footer .mar_top_wrapp .nav_menu ul {
+        width: 33.3%;
+    }
+    .footer {
+        min-height: 315px;
+    }
+    .more_cashback .h2_ore_cashback{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+}
+@media only screen and (max-width : 1100px) {
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block{
+        height: 165px;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay img{
+        margin: 20px auto 17px;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay{
+        height: 115px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 979px) {
+    .browser_block .logo__and_text_wrapper .text_wrappers {
+        max-width: 80%;
+    }
+    .browser_block .logo__and_text_wrapper .text_wrappers a{
+        font-size: 18px;
+    }
+
+
+    .wrapp_menus .named_block .named_right{
+        position: relative;
+        margin-top: 0;
+    }
+    .wrapp_menus .named_block .named_right span{
+        right: -44px;
+    }
+    .header .logo img{
+        margin-top: 16px;
+    }
+    .wrapp_menus .profile_hover_block.active_shadow{
+        box-shadow: none;
+    }
+    .wrapp_menus .flex_blocks:hover{
+        box-shadow: none !important;
+    }
+    #aut_position{
+        display: none !important;
+    }
+    .wrapp_menus .none_border_left{
+        border-left: none;
+        padding-right: 0;
+        box-shadow: none;
+    }
+    .wrapp_menus .none_border_left:hover{
+        box-shadow: none;
+    }
+    .wrapp_menus .none_border_left .navbar-toggle{
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+    .bott_links{
+        display: none;
+    }
+    .wrapp_menus{
+        margin-bottom: 0;
+    }
+    .wrapp_menus .flex_blocks{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 47px;
+    }
+    .wrapp_menus .wr_all .main_p_numb{
+        margin-top: 0;
+    }
+    .wrapp_menus .money_show p{
+        font-size: 20px;
+        line-height: 17px;
+    }
+    .wrapp_menus .flex_blocks .ava_blocks img{
+        width: 48px;
+        height: 48px;
+    }
+    .wrapp_menus .flex_blocks .ava_blocks{
+        margin-top: 0;
+    }
+    .autorised_user .header .navbar-header{
+        display: block;
+    }
+
+    .text_area_fore_review{
+        max-width: 70%;
+        min-width: 70%;
+        margin: 25px auto 0 auto;
+        display: block;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .bx-wrapper .bx-prev{
+        display: none;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .bx-wrapper .bx-next{
+        display: none;
+    }
+    .slider_wrapper_first_screen .bxslider_first .one-slide .cont{
+        padding-left: 0 !important;
+        text-align: center;
+    }
+    .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
+        font-size: 36px !important;
+    }
+    /*
+    .bg_block_top_autor .slider_wrapper_first_screen .cont{
+        padding-left: 0;
+        text-align: center;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
+        font-size: 36px;
+    }
+    */
+    .show_me_all_shops .center_blocks_search .center_two_btns .link_f_shops{
+        min-width: 260px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .images_shop img{
+        width: 80%;
+    }
+    .main-wrapps_span{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .show_me_all_shops .list_of_shop .bxslider_shops li{
+        width: 33.3%;
+    }
+    .show_me_all_shops .list_of_shop {
+        padding: 0 25px 0 25px;
+    }
+
+    .pay_block .left_pat_sistems_block{
+        width: 100%;
+        float: none;
+    }
+    .pay_block .right_img_blocks{
+        width: 100%;
+        float: none;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .more_cashback .wrapp_slider_bottom{
+        margin: 30px auto 30px auto;
+        width: 483px;
+        padding: 0 5px;
+    }
+
+    .more_cashback .wrapp_all_prasents_and_slider {
+        margin: 20px auto;
+        width: 483px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp {
+        width: 483px;
+        padding: 5px;
+    }
+
+    .more_cashback .wrapp_div_fore_start_economy {
+        width: 473px;
+        float: none;
+        margin:  0 auto;
+    }
+    .more_cashback .h2_ore_cashback{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .more_cashback .text_buying{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .more_cashback .wrapper_center_line_color .small_line_wrapper{
+        margin: 20px auto 33px auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .bg_block_top .white_form_start_economy .inside_form_wrapp .form_class .wrapp_input {
+        position: relative;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .an_padding{
+        padding-right: 18px !important;
+        padding-left: 18px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bg_block_top {
+        background-position: 25% 17%;
+    }
+    .navbar .login_btns{
+        top: -66px;
+        right: 81px;
+    }
+    .header .navbar-header .logo img{
+        margin-top: 16px;
+    }
+    .bg_block_top .left_part_main_block .left_part_main_block_h1{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .bg_block_top .left_part_main_block{
+        height: auto;
+    }
+    .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg {
+        background: none;
+        width: 340px;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .bg_block_top .white_form_start_economy .or_enter_soc_p {
+        color: #ffffff;
+        margin-top: 21px;
+        font-size: 16px;
+    }
+    .wrapp_text{
+        width: 420px;
+        text-align: center;
+        margin: 132px auto 0 auto;
+    }
+    .bg_block_top .white_form_start_economy{
+        height: auto;
+    }
+    .img_s_block_shop img{
+        width: 60px;
+    }
+    .img_s_block_shop{
+        position: relative;
+        text-align: center;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .img_s_block_shop img.cl_1_img{
+        width: 75px;
+    }
+    .shops_block_start .text_fore_images{
+        width: 170px;
+        font-family: 'officinaserifbookcbook' ,sans-serif;
+        font-size: 16px;
+        bottom: -45px;
+    }
+    .shops_block_start{
+        margin-top: 45px;
+        margin-bottom: 90px;
+    }
+    .shops_block_start .img_s_block_shop .animate_blue_bg_number {
+        right: -10px;
+        top: -15px;
+    }
+    .footer{
+        min-height: 315px;
+    }
+    .foot_wrapp_btns .type_subm_form_btn{
+        font-size: 15px;
+    }
+    .review_from_user .img_wrapper{
+        width: 100%;
+        float: none;
+        min-height: 460px;
+    }
+    .review_from_user .slider_wrapper {
+        float: none;
+        width: 100%;
+        padding: 45px 40px 35px 40px;
+        min-height: 460px;
+    }
+    .pay_block .left_pat_sistems_block{
+        min-height: inherit;
+    }
+    .pay_block .right_img_blocks{
+        background: url("../img/600.jpg") center center;
+        min-height: 270px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 599px) {
+    .browser_block .logo__and_text_wrapper .logo_wrapper{
+        margin-right: 10px;
+    }
+    .h1_cart_style{
+        font-size: 24px;
+    }
+    .browser_block{
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 15px;
+    }
+    .browser_block .logo__and_text_wrapper .text_wrappers{
+        width: 61%;
+    }
+    .browser_block .logo__and_text_wrapper{
+        margin-top: 0;
+    }
+    .browser_block .logo__and_text_wrapper img{
+        margin-top: 10px;
+    }
+    .browser_block .logo__and_text_wrapper .text_wrappers a{
+        font-size: 16px;
+        margin-top: 18px;
+        line-height: 17px;
+    }
+    .prog_profit {
+        font-size: 18px;
+        text-align: center;
+    }
+    .text_area_fore_review{
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    .wrapp_menus .none_border_left{
+        padding-left: 5px;
+    }
+    .wrapp_menus .profile_hover_block{
+        border-left: none;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .cont .subm_btns{
+        max-width: 200px;
+    }
+    .subm_btns{
+        max-width: 100%;
+    }
+    /*.bg_block_top_autor .slider_wrapper_first_screen .cont img{*/
+    /*width: 65% !important;*/
+    /*margin:  0 auto;*/
+    /*}*/
+    .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
+        font-size: 24px !important;
+    }
+    /*
+    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
+        font-size: 24px;
+        margin-top: 18px;
+    }
+    */
+    .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first .one-slide > img{
+        height: 370px;
+        width: auto;
+    }
+    .show_me_all_shops .center_blocks_search .center_two_btns .link_f_shops{
+        min-width: 100%;
+        display: inline-block;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .show_me_all_shops .center_blocks_search .auth{
+        margin-bottom: 0 !important;
+    }
+
+    .main-wrapps_span{
+        font-size: 22px;
+    }
+    .show_me_all_shops .list_of_shop{
+        margin-bottom: 0;
+    }
+
+    .show_me_all_shops .list_of_shop .bxslider_shops li{
+        width: 50%;
+    }
+    .show_me_all_shops .list_of_shop .bxslider_shops li{
+        padding: 0;
+    }
+    .show_me_all_shops .list_of_shop {
+        width: 100%;
+        padding: 20px;
+    }
+    .show_me_all_shops .center_blocks_search .search_form_fore_shops .header_wrapper .header_search_btn{
+        height: 42px;
+        width: 42px;
+        margin-bottom: 25px;
+    }
+    .show_me_all_shops .center_blocks_search .search_form_fore_shops{
+        padding: 15px;
+        height: 72px;
+    }
+    .show_me_all_shops .center_blocks_search .search_form_fore_shops .header_wrapper .header_search{
+        height: 42px;
+    }
+    .show_me_all_shops .center_blocks_search .search_form_fore_shops{
+        margin-top: 20px;
+    }
+    .show_me_all_shops .center_blocks_search .h2_shops{
+        font-size: 22px;
+    }
+    .more_cashback .text_buying{
+        font-size: 16px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp .prasents .center_percents{
+        font-size: 18px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp .prasents .center_percents{
+        left: 22%;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay{
+        height: 85px;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper{
+        display: inline-block;
+        height: auto;
+    }
+    .pay_block .left_pat_sistems_block{
+        min-height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .pay_block .left_pat_sistems_block .what_say_about_us{
+        font-size: 22px;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay img{
+        width: 47px;
+        margin: 20px auto 5px;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .text_seo_placed{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block{
+        height: 130px;
+    }
+    .more_cashback .wrapp_slider_bottom{
+        width: 100%;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider {
+        margin: 10px auto 20px auto;
+        width: 100%;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp {
+        width: 100%;
+        padding: 5px;
+    }
+    .footer .mar_top_wrapp .nav_menu ul {
+        width: 100%;
+        float: none;
+    }
+    .foot_wrapp_btns .type_subm_form_btn{
+        margin-top: 0;
+    }
+    .bg_block_top .white_form_start_economy .or_enter_soc_p{
+        color: #ffffff;
+    }
+    .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg {
+        background: none;
+        width: 340px;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .more_cashback .btn_wrapp_show_xs{
+        width: 340px;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .bg_block_top .white_form_start_economy{
+        height: auto;
+    }
+    .bg_block_top {
+        height: 552px;
+        min-height: 552px;
+        margin-top: 67px;
+        background-position: 25% 17%;
+        background-size: cover;
+    }
+    .wrapp_text{
+        width: 420px;
+        margin: 143px auto 0 auto;
+        text-align: center;
+    }
+    .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg .start_economy{
+        color: #fff;
+        margin-top: 32px;
+    }
+    .bg_block_top {
+        height: 414px;
+        min-height: 380px;
+    }
+    .foot_wrapp_btns .type_subm_form_btn{
+        font-size: 18px;
+    }
+    .review_from_user .slider_wrapper{
+        padding: 20px 40px 25px 40px;
+    }
+    .review_from_user .slider_wrapper .bxslider li .user_review{
+        max-height: none;
+    }
+    .review_from_user .slider_wrapper{
+        height: auto;
+    }
+    .review_from_user .img_wrapper{
+        min-height: 150px;
+    }
+    .review_from_user .slider_wrapper .what_say_about_us{
+        font-size: 22px;
+    }
+    .more_cashback .h2_ore_cashback {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .more_cashback .wrapper_center_line_color .small_line_wrapper{
+        width: 125px;
+        height: 3px;
+    }
+    .more_cashback .wrapper_center_line_color .color_line{
+        height: 3px;
+    }
+    .more_cashback {
+        background: url(../img/bg/01.jpg) top left;
+        padding: 23px 0 25px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+    /*.bg_block_top {*/
+    /*margin-top: 67px;*/
+    /*background-size: auto !important;*/
+    /*background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(38,28,0,0.8) 100%) ,url("../img/first_screen_bg_mob.png");*/
+    /*background-attachment: fixed;*/
+    /*background-position: 25% 9%;*/
+    /*background-repeat: no-repeat;*/
+    /*}*/
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px) {
+    .navbar-default .navbar-nav li:first-child {
+        margin-right: 30px !important;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .shops_block_start .text_fore_images {
+        left: -48px;
+    }
+}
+@media only screen and (max-width : 570px) {
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp .prasents{
+        /* height: 175px; */
+    }
+    .login_btns {
+        font-size: 0;
+        width: 40px;
+        height: 39px;
+    }
+    .login_btns i{
+        left: 14px;
+        top: 14px;
+    }
+    .navbar .login_btns {
+        top: -66px;
+        right: 74px;
+    }
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp .prasents img{
+        width: 85%;
+    }
+}
+@media only screen and (max-width : 420px) {
+
+    .more_cashback .wrapp_all_prasents_and_slider .animate_hover_wrapp .prasents{
+        height: 150px;
+    }
+    .wrapp_text{
+        width: 100%;
+        /*margin: 70px auto 0 auto;*/
+        text-align: center;
+    }
+    .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg{
+        width: 100%;
+    }
+    .more_cashback .btn_wrapp_show_xs{
+        width: 100%;
+    }
+    .bg_block_top .white_form_start_economy .icon_soc_join ul li {
+        /*display: inline-block;*/
+        /*width: 45px;*/
+        /*height: 45px;*/
+        margin-right: 1px;
+    }
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

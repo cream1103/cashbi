@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,gDAAqC;AACrC,kDAAuC",
+"sources": ["../sass/libs.sass"],
+"names": [],
+"file": "libs.css"
+}

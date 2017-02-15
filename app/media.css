@@ -1,0 +1,380 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+    .cl-mt-40{
+        margin-top: 20px;
+    }
+    .ac_bott{
+        padding-top: 0px;
+    }
+    .orange_submit_btn{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .class_padd_form{
+        padding-top: 13px;
+    }
+}
+@media only screen and (max-width : 1200px) {
+    .orange_btns{
+        padding: 14px 33px;
+    }
+
+}
+@media only screen and (max-width : 1199px) {
+    .v_sc{
+        text-align: center;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .ac_bott{
+        padding-top: 0;
+    }
+	.cz_text{
+		text-align:center;
+	}
+    .logo{
+        text-align: center;
+        height: 90px;
+        padding-top: 35px;
+    }
+    .login_btn{
+        text-align: center;
+        float: none;
+        overflow: hidden;
+    }
+    .tac_sm{
+        text-align: center;
+    }
+    .text_big_r{
+        padding-top: 0;
+        font-size: 19px;
+    }
+    .orange_btns{
+        display: block;
+    }
+    .orange_btns{
+        padding: 14px 33px;
+    }
+    .sva{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .prize{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .ul_lis{
+        padding-bottom: 30px;
+        margin: 0 auto;
+        width: 62%;
+    }
+    .benefits_p{
+        margin: 0 auto;
+        width: 62%;
+        padding-top: 37px;
+    }
+    .cl_check{
+        margin-bottom: 15px;
+    }
+    .img_offset{
+        text-align: center;
+        /*margin-bottom: 30px;*/
+        margin-top: 20px;
+    }
+    .img_offset img{
+      margin: 0 auto;
+    }
+    .testimonials{
+        margin-top: 25px;
+        font-size: 36px;
+    }
+    .slide_wr{
+        padding-bottom: 90px;
+    }
+    .padd_all_popup{
+        padding: 20px;
+    }
+    .inside_contents{
+        width: auto;
+    }
+    .cl_mb_20_md{
+        margin-bottom: 20px !important;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .wi_popup{
+        width: auto;
+    }
+    .wi_popup2{
+        width: auto;
+    }
+    .ul-wss li a{
+        text-align: center;
+    }
+    .login_btn{
+        padding-top: 0;
+        padding-bottom: 30px;
+        display: block;
+    }
+    .brn_link{
+        display: block;
+        padding: 16px 37px;
+        font-size: 18px;
+    }
+    .text_big_r{
+        margin-top: 20px;
+    }
+    .gj2{
+        margin-bottom: 50px;
+    }
+    .ul_lis li{
+        font-size: 16px;
+    }
+    .img_offset img{
+        padding-left: 0;
+    }
+    .padd_all_popup{
+        padding: 10px 10px 10px 10px !important;
+
+    }
+    .padd_all_popup2{
+        padding: 20px 20px 20px 20px !important;
+    }
+    .soc_btn_s ul{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .soc_btn_s{
+        text-align: center;
+    }
+    .soc_btn_s ul{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .soc_btn_s{
+        padding-bottom: 20px;
+        position: relative;
+        border-top: 1px solid #cccccc;
+        border-left: none;
+        margin-top: 40px;
+    }
+    .or_spans{
+        padding: 5px 15px;
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        margin-left: -20px;
+        margin-top: -10px;
+        background: #fafafa;
+        color: #010101;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: 'open_sanslight',sans-serif;
+    }
+    .max-wleft_bl{
+        padding-right: 15px !important;
+    }
+    .Sign_up_as_a_Referee{
+        margin-top: 15px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .assign_link{
+        text-align: center;
+        display: block;
+    }
+    .cent_r_assign_page{
+        width: auto;
+    }
+    .name_rel_assignor{
+        margin-bottom: 5px;
+    }
+    .form_assignor{
+        width: auto;
+    }
+    .gib_two_btn{
+        margin-top: 0;
+    }
+    .w_date_picker{
+        width: 100%;
+    }
+    .Add_Subaccounts2{
+        right: 5%;
+    }
+    .Add_Subaccounts{
+        right: 5%;
+    }
+    .wi_popup500{
+        width: auto;
+    }
+    .pr_0_imp{
+        padding-right: 15px !important;
+    }
+    .pl_0_imp{
+        padding-left: 15px !important;
+    }
+
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .testimonials{
+        font-size: 25px;
+    }
+    .v_sc{
+        text-align: center;
+    }
+    .soc_popup{
+        margin-top: 20px;
+    }
+    .fancybox-close{
+        top: 20px;
+        right: 20px;
+    }
+    .remember{
+        font-size: 11px;
+    }
+    .fz_blue_text{
+        font-size: 11px;
+    }
+    .big_orange_btns{
+        margin-top: 10px;
+    }
+    .Sign_up_as_a_Referee{
+        font-size: 22px;
+    }
+    .ac_bott{
+        padding-top: 0;
+    }
+    .class_padd_form{
+        margin-bottom: 25px;
+    }
+    .cyp{
+        font-size: 29px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .cent_r_assign_page {
+        margin: 20px auto 0 auto;
+    }
+    .orange_btn_s{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .gr_btn_s{
+        width: 100%;
+    }
+    .Add_Subaccounts2{
+        right: 0;
+    }
+    .Add_Subaccounts{
+        right: 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .soc_popup{
+        float: right;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .tar_lg{
+        text-align: right;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .tar_lg{
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width : 590px){
+    .pl_gemor_text{
+        margin-top: 20px;
+    }
+    .Profile{
+        width: 100px;
+        font-size: 16px;
+    }
+    .Add_Team{
+        font-size: 16px;
+    }
+    .Add_Subaccounts{
+        font-size: 16px;
+        width: 100px;
+    }
+    .Add_Subaccounts2{
+        font-size: 16px;
+        width: 100px;
+    }
+    .green_bl_fore_progress{
+        height: 115px;
+    }
+    .mb20{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 370px){
+    .pl_gemor_text{
+        margin-top: 20px;
+    }
+    .Profile{
+        width: 70px;
+        font-size: 13px;
+    }
+    .Add_Team{
+        font-size: 13px;
+    }
+    .Add_Subaccounts{
+        font-size: 13px;
+        width: 70px;
+        top: 3px;
+    }
+    .Add_Subaccounts2{
+        font-size: 13px;
+        width: 70px;
+        top: 3px;
+    }
+}
+
+
+
+
+

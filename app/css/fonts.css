@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'officinasansbook';
+    src: url('../fonts/itcofficinasans-book-webfont.woff2') format('woff2'),
+    url('../fonts/itcofficinasans-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'officinaserifboldcbold';
+    src: url('../fonts/officinaserifboldc-webfont.woff2') format('woff2'),
+    url('../fonts/officinaserifboldc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'officinaserifbookcbook';
+    src: url('../fonts/officinaserifbookc-webfont.woff2') format('woff2'),
+    url('../fonts/officinaserifbookc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fontawesome';
+    src: url("../fonts/fontawesome-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
