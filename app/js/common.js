@@ -188,19 +188,13 @@ $(document).ready(function(){
             }else viewportAnimation1 = true;
 
             var animate_slider = $('#animated_slider').offset().top;
-            var animate_slider_h = $('#animated_slider').height() / 3;
+            var animate_slider_h = $('#animated_slider').height();
             if(curScroll < animate_slider && curScroll + frameHeight > animate_slider + animate_slider_h){
                 if(viewportAnimation2){
                     setTimeout(function(){
                         // $('.animate_hover_wrapp').addClass('fill');
-
-                        if($("#a-slider2").length>0) {
-                            progressChart();
-                        }
-                        if($("#a-slider").length>0) {
-                            progressBar();
-                        }
-
+                        if($('#a-slider2').length>0) progressChart();
+                        if($('#a-slider').length>0) progressBar();
                     }, 500);
                 }
                 viewportAnimation2 = false;
@@ -316,11 +310,19 @@ $(document).ready(function(){
     //инициализация каресели отзывов на лэндинге
 
     //инициализация слайдера на главной
+	var bx_text = $('.bxslider_first_text .one-slide');
+	console.log(bx_text);
     $('.bxslider_first').bxSlider({
         auto: true,//true
-        pause: 6000,
+        pause: 5000,
         autoHover: true,
-        speed: 1200
+        speed: 1000,
+		onSlideBefore: function($el, $old, $new){
+			bx_text[$old].classList.remove('show');
+		},
+		onSlideAfter: function($el, $old, $new){
+			bx_text[$new].classList.add('show');
+		}
     });
     //инициализация слайдера на главной
 
