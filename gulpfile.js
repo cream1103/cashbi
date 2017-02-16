@@ -71,14 +71,17 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
-	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/css/main.css',
-		'app/css/libs.min.css'
-		])
-	.pipe(gulp.dest('dist/css'));
+//	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
+//		'app/css/main.css',
+//		'app/css/libs.min.css'
+//		])
+//	.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'));
+
+    var buildStyle= gulp.src('app/css/**/*') // Переносим стили в продакшен
+        .pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'));

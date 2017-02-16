@@ -19,6 +19,12 @@
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .akc_wrapper .h2_z{
+        font-size: 30px;
+    }
+    .padding_fore_all_cont_block{
+        padding: 40px 30px;
+    }
     .mt108_fore_fixed_header{
         margin-top: 107px;
     }
@@ -184,6 +190,22 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .rew_text{
+        margin-top: 20px;
+    }
+    .akc_wrapper .h2_z{
+        font-size: 30px;
+    }
+    .padding_fore_all_cont_block{
+        padding: 30px 20px;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .pos_abs_r{
+        position: relative;
+    }
+    .p_abs{
+        position: relative;
+        margin-top: 0;
+    }
     .mt108_fore_fixed_header{
         margin-top: 68px;
     }
@@ -453,6 +475,31 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .akc_wrapper .h2_z{
+        font-size: 24px;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .img_blocks_icon{
+        margin-right: 15px;
+    }
+    .m_w_215{
+        min-width: 100%;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .pos_abs_r {
+        margin-left: 64px;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .right_rev_blocks .name_us span{
+        margin-left: 0;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks{
+        display: block;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .img_blocks_icon{
+        float: left;
+    }
+    .rewiev_wrapp_block .one_rewiew_blocks .img_blocks_icon img{
+        width: 50px;
+        height: 50px;
+    }
     .browser_block .logo__and_text_wrapper .logo_wrapper{
         margin-right: 10px;
     }

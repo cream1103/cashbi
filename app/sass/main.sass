@@ -1873,3 +1873,215 @@ $color3: #e8242e
         height: 10px
         width: 30px
         margin-left: 5px
+.heart_inp + .heart
+  background-image: url(../img/icon/heart_empty.svg)
+  background-repeat: no-repeat
+  background-position: center
+  opacity: 0
+.heart
+  position: absolute
+  cursor: pointer
+  top: 20px
+  left: 20px
+  width: 21px
+  height: 19px
+  z-index: 1
+
+
+
+
+
+
+
+.padding_fore_all_cont_block
+  padding: 36px 35px 35px 40px
+
+
+.activate_cashb
+  background-color: #4384f7
+  background-image: linear-gradient(to top, #376ed0 0%, #4384f6 100%)
+  border-radius: 4px
+  display: inline-block
+  font-size: 26px
+  color: #fff
+  padding: 21px 55px
+  margin-bottom: 30px
+  font-family: 'officinaserifboldcbold',sans-serif
+  &:hover
+    background-image: linear-gradient(to top, #4384f6 0%, #376ed0 100%)
+    color: #ffffff
+    text-decoration: none
+.info_cash
+  color: #666666
+  font-family: 'OpenSansRegular'
+  font-size: 14px
+
+.table_category
+  width: 100%
+  margin-top: 40px
+  thead
+    background: #ECECEC
+    tr
+      .w_big
+        width: 80%
+        text-align: center
+      .w_small
+        width: 20%
+        text-align: center
+        color: #3d424b
+        font-size: 18px
+        font-family: 'officinaserifbookcbook' ,sans-serif
+        border-left: 2px solid #fff
+        padding: 13px 10px
+  tbody
+    tr
+      border-bottom: 1px solid #EAEAEA
+      td
+        &.ri
+          color: #3d424b
+          font-size: 18px
+          font-family: 'officinaserifbookcbook' ,sans-serif
+          text-align: center
+          padding: 13px 10px
+        &.left
+          color: #3d424b
+          font-size: 14px
+          font-family: 'OpenSansRegular'
+          text-align: left
+          padding: 13px 10px
+.in_block
+  display: inline-block
+  text-align: center
+  &:hover
+    color: #ffffff
+    text-decoration: none
+
+.m_w_215
+  max-width: 215px !important
+.p_abs
+  position: absolute
+  right: 0
+  top: 0
+  margin-top: 0
+.akc_wrapper
+  width: 100%
+  position: relative
+  .bx-prev
+    display: none !important
+  .bx-next
+    display: none !important
+  .h2_z
+    font-size: 36px
+    font-family: 'officinaserifboldcbold',sans-serif
+    span
+      color: #89c9ec
+  .seo_text
+    color: #666
+    font-family: 'officinasansbook',sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+    margin-bottom: 20px
+  .small_line_wrapper
+    width: 190px
+    height: 6px
+    margin: 20px 0 30px 0
+    .color_line
+      height: 6px
+      overflow: hidden
+      position: static
+      margin:  0 auto
+      .sky_blue_line
+        width: 42.30%
+        height: 15px
+        background: $sky
+        float: left
+      .dark_blue_line
+        width: 40.5%
+        height: 15px
+        background: $dark_blue
+        float: left
+      .red_line
+        width: 17.20%
+        height: 15px
+        background: $purple
+        float: left
+.rewiev_wrapp_block
+  .one_rewiew_blocks
+    padding-bottom: 40px
+    margin-top: 40px
+    margin-bottom: 40px
+    border-bottom: 1px solid #EAEAEA
+    position: relative
+    display: flex
+
+    .pos_abs_r
+      position: absolute
+      right: 0
+      top: 0
+    .img_blocks_icon
+      margin-right: 25px
+
+      img
+        width: 80px
+        height: 80px
+        border-radius: 10em
+    .right_rev_blocks
+      .name_us
+        color: #3d424b
+        font-size: 20px
+        font-family: 'officinaserifbookcbook',sans-serif
+        margin-bottom: 15px
+        span
+          color: #999999
+          display: inline-block
+          margin-left: 10px
+          font-size: 13px
+          font-family: 'OpenSansRegular'
+
+      .rew_text
+        color: #666666
+        font-size: 14px
+        font-family: 'OpenSansRegular' ,sans-serif
+        line-height: 24px
+
+.pagination
+  display: flex
+  justify-content: center
+  ul
+    li
+      float: left
+      margin-right: 4px
+      &.active
+        a
+          background: #3D424B
+          color: #ffffff
+      a
+        color: #3d424b
+        font-family: 'officinaserifbookcbook'
+        width: 36px
+        height: 36px
+        display: inline-block
+        line-height: 36px
+        text-decoration: none
+        text-align: center
+        border-radius: 10em
+        &:hover
+          background: #3D424B
+          color: #ffffff
+    span
+      display: inline-block
+      width: 36px
+      height: 36px
+      line-height: 36px
+      text-align: center
+    .left_arr
+      a
+        background: url("../img/icon/arr_acon_sprite.png") -72px 0
+        &:hover
+          background: url("../img/icon/arr_acon_sprite.png") 0 0
+    .right_arr
+      a
+        background: url("../img/icon/arr_acon_sprite.png") -108px 0
+        &:hover
+          background: url("../img/icon/arr_acon_sprite.png") -36px 0
