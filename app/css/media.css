@@ -19,6 +19,9 @@
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .mt108_fore_fixed_header{
+        margin-top: 107px;
+    }
     .wrappers .search {
         min-width: 460px;
     }
@@ -181,6 +184,9 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .mt108_fore_fixed_header{
+        margin-top: 68px;
+    }
     .browser_block .logo__and_text_wrapper .text_wrappers {
         max-width: 80%;
     }

@@ -1260,18 +1260,18 @@ $color3: #e8242e
 			background: $purple
 			float: left
 
-@media(max-width:979px)
+@media(max-width: 979px)
 	.bg_block_top_autor .slider_wrapper_first_screen .bxslider_first_text .container .one-slide
 		text-align: center
 		.cont p
 			font-size: 32px
 
-@media(max-width:599px)
+@media(max-width: 599px)
 	.bg_block_top_autor .slider_wrapper_first_screen .bxslider_first_text .container .one-slide .cont
 		padding-top: 32px
 		font-size: 28px
 	
-@media(max-width:479px)
+@media(max-width: 479px)
 	.bg_block_top_autor .slider_wrapper_first_screen .bxslider_first_text .container .one-slide .cont p
 		font-size: 24px
 
@@ -1784,14 +1784,92 @@ $color3: #e8242e
 		-webkit-border-radius: 3px
 		border-radius: 3px
 .search_btn
-	background: url(../img/icon/search.svg) no-repeat center center
-	background-size: 15px 15px
-	border: 0
-	text-indent: -9999px
-	width: 47px
-	height: 47px
-	cursor: pointer
-	position: absolute
-	right: 0px
-	top: 0
-	outline: none
+  background: url(../img/icon/search.svg) no-repeat center center
+  background-size: 15px 15px
+  border: 0
+  text-indent: -9999px
+  width: 47px
+  height: 47px
+  cursor: pointer
+  position: absolute
+  right: 0px
+  top: 0
+  outline: none
+.wrapper_main_contant
+  margin-top: 10px
+.border_blocks
+  background: #fff
+  border: 1px solid #DCDCDC
+  width: 100%
+  margin-bottom: 20px
+.img_and_links
+  text-align: center
+  padding-bottom: 30px
+  position: relative
+  .top_abs_hide
+    position: absolute
+    top: 15px
+    right: 0
+    padding: 5px 15px
+    /* display: none; */
+    z-index: 1
+    color: #ffffff
+    font-size: 16.4px
+    text-align: center
+    text-transform: uppercase
+    font-family: 'officinaserifboldcbold'
+  .oranges
+    background: #ff4f2f
+
+  img
+    margin-top: 60px
+    margin-bottom: 33px
+  .link_to_website
+    background: #ECECEC
+    display: inline-block
+    padding: 10px 22px 10px 37px
+    color: #3d424b
+    font-size: 16px
+    border-radius: 20px
+    font-family: 'officinaserifbookcbook' ,sans-serif
+    position: relative
+    &:before
+      position: absolute
+      display: inline-block
+      width: 12px
+      height: 12px
+      left: 17px
+      top: 13px
+      content: ''
+      background: url("../img/icon/web_icon_link.png") no-repeat center center
+.bb_1
+  border-bottom: 1px solid #EAEAEA
+.products
+  padding: 13px 10px 14px 20px
+  .name_prod
+    font-size: 14px
+    color: #a4a5ab
+    font-family: 'officinasansbook' ,sans-serif
+    margin-bottom: 9px
+  .goods_from-
+    color: #3d424b
+    font-size: 22px
+    font-family: 'officinaserifbookcbook' ,sans-serif
+.rate
+  ul
+    li
+      width: 17px
+      height: 17px
+      margin-right: 3px
+      float: left
+      background: url("../img/icon/star_rating_sprite.png") no-repeat -18px -1px
+      &.active
+        background: url("../img/icon/star_rating_sprite.png") no-repeat 0px -1px
+      &.empty_number_li
+        background: none
+        font-size: 14px
+        color: #a4a5ab
+        font-family: 'officinasansbook' ,sans-serif
+        height: 10px
+        width: 30px
+        margin-left: 5px
