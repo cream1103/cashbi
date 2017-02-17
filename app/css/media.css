@@ -19,6 +19,9 @@
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .activate_cashb{
+        padding: 17px 32px;
+    }
     .akc_wrapper .h2_z{
         font-size: 30px;
     }
@@ -190,6 +193,36 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .activate_cashb{
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper_main_contant .sticky{
+        top: 0 !important;
+    }
+    .pb_0{
+        display: block !important;
+        text-align: center;
+    }
+    .pb_0 .img_blocks_icon{
+        margin-bottom: 15px;
+    }
+    .t_a_c980{
+        text-align: center;
+    }
+    .pb_0 .name_us{
+        margin-bottom: 10px !important;
+    }
+    .m_w_270{
+        min-width: 270px !important;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+    .rating{
+        position: relative;
+        margin-bottom: 20px;
+    }
     .rew_text{
         margin-top: 20px;
     }
@@ -282,6 +315,10 @@
         min-width: 70%;
         margin: 25px auto 0 auto;
         display: block;
+    }
+    .mt5{
+        max-width: 100%;
+        min-width: 100%;
     }
     .bg_block_top_autor .slider_wrapper_first_screen .bx-wrapper .bx-prev{
         display: none;
@@ -475,6 +512,50 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .pb_0_600{
+        padding-bottom: 0 !important;
+    }
+    .mb_50{
+        margin-bottom: 50px;
+    }
+    .pb_0_600_1{
+        padding-bottom: 1px !important;
+    }
+    .inside_slot{
+        height: auto;
+        text-align: center;
+    }
+    .link_imgs img{
+        display: inline-block !important;
+    }
+
+    .akc_name .p_sls{
+        font-size: 20px;
+        height: 71px;
+    }
+    .r_text_infos{
+        text-align: center;
+    }
+    .prise {
+        float: none;
+        margin: 20px auto 7px auto;
+    }
+    .m_w_270 {
+        min-width: 100% !important;
+    }
+    .activate_cashb{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 17px 10px;
+    }
+    .rewiev_wrapp_block .pb_0 .img_blocks_icon img{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .rewiev_wrapp_block .pb_0 .img_blocks_icon{
+       float: none !important;
+    }
     .akc_wrapper .h2_z{
         font-size: 24px;
     }
@@ -808,6 +889,28 @@
     }
 }
 
+
+
+@media all and (max-width: 1399px) and (min-width: 981px) {
+    .hidds_wrapper{
+        height: 97px;
+        overflow: hidden;
+        position: relative;
+    }
+    .hidds_wrapper:after{
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: block;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0+0,1+49,1+100 */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+}
 
 
 /*==========  Mobile First Method  ==========*/
