@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 a
 	outline: none !important
-.container-fluid
+.max_w_1600
   max-width: 1600px
 
 $static: #27282f
@@ -189,7 +189,7 @@ $color3: #e8242e
 	height: 620px
 	min-height: 620px
 	margin-top: 67px
-	background-size: 100%
+	//background-size: 100%
 	position: relative
 
 	.left_part_main_block
@@ -1008,10 +1008,18 @@ $color3: #e8242e
 	margin-top: 20px
 	margin-bottom: 20px
 	p
-		color: #dee1e7
-		font-size: 15px
-		font-family: 'officinasansbook',sans-serif
-		margin-bottom: 10px
+      color: #dee1e7
+      font-size: 15px
+      font-family: 'officinasansbook',sans-serif
+      margin-bottom: 10px
+      &.copy
+        position: relative
+        padding-left: 16px
+      span
+        position: absolute
+        font-size: 28px
+        left: 0
+        top: -5px
 
 .foot_wrapp_btns
 	.type_subm_form_btn

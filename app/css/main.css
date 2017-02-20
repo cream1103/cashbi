@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 a {
   outline: none !important; }
 
-.container-fluid {
+.max_w_1600 {
   max-width: 1600px; }
 
 .pos_relative_block {
@@ -180,7 +180,6 @@ a {
   height: 620px;
   min-height: 620px;
   margin-top: 67px;
-  background-size: 100%;
   position: relative; }
   .bg_block_top .left_part_main_block {
     height: 620px;
@@ -1025,6 +1024,14 @@ a {
     font-size: 15px;
     font-family: 'officinasansbook',sans-serif;
     margin-bottom: 10px; }
+    .copyright p.copy {
+      position: relative;
+      padding-left: 16px; }
+    .copyright p span {
+      position: absolute;
+      font-size: 28px;
+      left: 0;
+      top: -5px; }
 
 .foot_wrapp_btns .type_subm_form_btn {
   margin-top: 20px;
