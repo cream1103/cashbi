@@ -1,11 +1,15 @@
 /*==========  Desktop First Method  ==========*/
-
+/*=================================================================  1620px  ==========*/
 @media only screen and (max-width : 1620px) {
     .bg_block_top {
         /*background-position: 25% 22%;*/
         background-size: auto;
     }
 }
+/*=================================================================  1620px  ==========*/
+
+
+/*=================================================================  1599px  ==========*/
 @media only screen and (max-width : 1599px) {
     .show_me_all_shops .list_of_shop .bxslider_shops li{
         width: 20%;
@@ -17,6 +21,10 @@
         max-height: 640px;
     }
 }
+/*=================================================================  1599px  ==========*/
+
+
+/*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
     .activate_cashb{
@@ -180,6 +188,10 @@
     }
 
 }
+/*=================================================================  1399px  ==========*/
+
+
+/*=================================================================  1100px  ==========*/
 @media only screen and (max-width : 1100px) {
     .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block{
         height: 165px;
@@ -191,6 +203,10 @@
         height: 115px;
     }
 }
+/*=================================================================  1100px  ==========*/
+
+
+/*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
 
@@ -531,7 +547,10 @@
     }
 
 }
+/*=================================================================  979px  ==========*/
 
+
+/*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
     .pb_0_600{
@@ -838,7 +857,7 @@
         padding: 23px 0 25px 0;
     }
 }
-
+/*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
     /*.bg_block_top {*/
@@ -850,7 +869,6 @@
     /*background-repeat: no-repeat;*/
     /*}*/
 }
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
@@ -955,10 +973,7 @@
 .tada {
     animation: tada_2944  4s 4s linear infinite;
     transform-origin: 50% 50%;
-
 }
-
-
 @keyframes tada_2944 {
     0% { transform: scale(1) }
     3.57143% { transform:scale(.9) rotate(-2deg) }

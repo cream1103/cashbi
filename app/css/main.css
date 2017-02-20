@@ -1719,7 +1719,7 @@ a {
 .mt108_fore_fixed_header {
   margin-top: 117px;
   padding-top: 20px;
-  background: url("../img/bg/01.jpg"); }
+  background: url("../img/bg/01.jpg") fixed; }
 
 .sticky {
   position: relative;
@@ -2300,9 +2300,6 @@ input[type="checkbox"] {
   text-decoration: none; }
   .akc_name .p_sls:hover {
     text-decoration: none; }
-
-.akc_name .fz_low_on_2pt {
-  font-size: 22px; }
 
 .link_to_website {
   background: none;
