@@ -80,6 +80,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 a {
   outline: none !important; }
 
+.container-fluid {
+  max-width: 1600px; }
+
 .pos_relative_block {
   position: relative; }
 
@@ -2048,7 +2051,9 @@ a {
       width: 80px;
       height: 80px;
       -webkit-border-radius: 10em;
-              border-radius: 10em; }
+              border-radius: 10em;
+      max-width: 80px;
+      display: inline-block; }
   .rewiev_wrapp_block .one_rewiew_blocks .right_rev_blocks .name_us {
     color: #3d424b;
     font-size: 20px;
@@ -2178,12 +2183,12 @@ a {
   color: #ff4f2f !important;
   font-size: 18px;
   font-family: 'officinaserifbookcbook' ,sans-serif;
-  display: inline-block;
   margin-top: 10px;
   border-bottom: 1px dotted #ff4f2f;
   position: relative;
   text-decoration: none;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  display: none; }
   .link_to_slide_top_block:hover {
     text-decoration: none;
     color: #ff4f2f;
@@ -2220,7 +2225,9 @@ a {
   font-family: 'officinasansbook',sans-serif;
   font-size: 15px;
   color: #3d424b;
-  line-height: 24px; }
+  cursor: pointer;
+  line-height: 24px;
+  margin-top: 6px; }
   .input-helper:before {
     content: '';
     display: block;
@@ -2259,10 +2266,18 @@ input[type="checkbox"] {
     content: ''; }
 
 .color_yellow {
-  background: #F6EDD0; }
+  background: #F6EDD0;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .color_yellow:hover {
+    background: #f4e2ae; }
 
 .color_blue {
-  background: #E6F6FF; }
+  background: #E6F6FF;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .color_blue:hover {
+    background: #c8e6f6; }
 
 .bb_1ps_solid {
   border-bottom: 1px solid #EAEAEA; }
@@ -2285,6 +2300,9 @@ input[type="checkbox"] {
   text-decoration: none; }
   .akc_name .p_sls:hover {
     text-decoration: none; }
+
+.akc_name .fz_low_on_2pt {
+  font-size: 22px; }
 
 .link_to_website {
   background: none;
@@ -2379,3 +2397,16 @@ input[type="checkbox"] {
 
 .timer span:first-child {
   margin-left: 0; }
+
+.bg_s {
+  background: #ECECEC;
+  display: inline-block;
+  padding: 10px 22px 10px 37px;
+  color: #3d424b;
+  font-size: 16px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  font-family: 'officinaserifbookcbook' ,sans-serif;
+  position: relative; }
+  .bg_s:before {
+    left: 17px; }

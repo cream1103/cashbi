@@ -14,6 +14,22 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //якорь отзывов
+    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top -155
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+    //якорь отзывов
+
+
     //таймер акций
     var timer;
 
@@ -76,16 +92,16 @@ $(document).ready(function(){
 // on scroll move the sidebar
         $(window).scroll(function () {
                 if (stickySidebar.length > 0) {
-                    var scrollTop = $(window).scrollTop() + 130;
+                    var scrollTop = $(window).scrollTop() + 147;
 
                     if (sidebarTop < scrollTop) {
                         stickySidebar.css('top', scrollTop - sidebarTop);
 
                         // stop the sticky sidebar at the footer to avoid overlapping
                         var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-                            stickyStop = $('.main-content').offset().top + $('.main-content').height();
+                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
                         if (stickyStop < sidebarBottom) {
-                            var stopPosition = $('.main-content').height() - stickyHeight;
+                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
                             stickySidebar.css('top', stopPosition);
                         }
                     }
@@ -448,7 +464,7 @@ $(document).ready(function(){
                     moveSlides: 1
                 });
             }
-        }else if($(window).width() > 616 && bxSliderShops1){
+        }else if($(window).width() > 601 && bxSliderShops1){
             bxSliderShops1.destroySlider();
             bxSliderShops1 = null;
         }
@@ -466,7 +482,7 @@ $(document).ready(function(){
                     moveSlides: 1
                 });
             }
-        }else if($(window).width() > 616 && bxSliderShops2){
+        }else if($(window).width() > 601 && bxSliderShops2){
             bxSliderShops2.destroySlider();
             bxSliderShops2 = null;
         }
