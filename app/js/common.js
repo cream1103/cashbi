@@ -14,19 +14,126 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-    //якорь отзывов
-    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
-        e.preventDefault();
+    $(function () {
+        var el = $('#nav_list_first li a');
+        $('#nav_list_first li:has("ul")').append('<span></span>');
+        el.click(function() {
+            var checkedElement = $(this).next(),
+                visibleElement = $('#nav_list_first ul:visible');
 
-        var target = this.hash,
-            $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top -155
-        }, 500, 'swing', function () {
-            window.location.hash = target;
+            visibleElement.stop().animate({'height':'toggle'}, 500).parent().removeClass('active');
+            if((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
+                checkedElement.stop().animate({'height':'toggle'}, 500).parent().addClass('active');
+                return false;
+            }
+            if((checkedElement.is('ul')) && (checkedElement.is(':visible'))) {
+                return false;
+            }
         });
     });
+
+
+    //липкий сайдбар
+    var stickySidebar = $('.sticky');
+
+    if (stickySidebar.length > 0) {
+        var stickyHeight = stickySidebar.height(),
+            sidebarTop = stickySidebar.offset().top;
+    }
+// on scroll move the sidebar
+    $(window).scroll(function () {
+        if (stickySidebar.length > 0) {
+            var scrollTop = $(window).scrollTop() + 147;
+
+            if (sidebarTop < scrollTop) {
+                stickySidebar.css('top', scrollTop - sidebarTop);
+
+                // stop the sticky sidebar at the footer to avoid overlapping
+                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+                if (stickyStop < sidebarBottom) {
+                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+                    stickySidebar.css('top', stopPosition);
+                }
+            }
+            else {
+                stickySidebar.css('top', '0');
+            }
+        }
+    });
+    $(window).resize(function () {
+        if (stickySidebar.length > 0) {
+            stickyHeight = stickySidebar.height();
+        }
+    });
+    //липкий сайдбар
+
+
+
+//    function windowHeight(){
+//        var bohi = $(window).height();
+//        if(bohi > 770) {
+//            //липкий сайдбар
+//            var stickySidebar = $('.sticky');
+//
+//            if (stickySidebar.length > 0) {
+//                var stickyHeight = stickySidebar.height(),
+//                    sidebarTop = stickySidebar.offset().top;
+//            }
+//// on scroll move the sidebar
+//            $(window).scroll(function () {
+//                if (stickySidebar.length > 0) {
+//                    var scrollTop = $(window).scrollTop() + 147;
+//
+//                    if (sidebarTop < scrollTop) {
+//                        stickySidebar.css('top', scrollTop - sidebarTop);
+//
+//                        // stop the sticky sidebar at the footer to avoid overlapping
+//                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+//                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+//                        if (stickyStop < sidebarBottom) {
+//                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+//                            stickySidebar.css('top', stopPosition);
+//                        }
+//                    }
+//                    else {
+//                        stickySidebar.css('top', '0');
+//                    }
+//                }
+//            });
+//            $(window).resize(function () {
+//                if (stickySidebar.length > 0) {
+//                    stickyHeight = stickySidebar.height();
+//                }
+//            });
+//            //липкий сайдбар
+//
+//        } else {
+//            console.log(bohi + '< 770');
+//            $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+//                delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
+//                if (delta >= 0) {
+//                    console.log('up')
+//                } else {
+//                    console.log('down')
+//                }
+//            });
+//        }
+//    }
+
+    //якорь отзывов
+//    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+//        e.preventDefault();
+//
+//        var target = this.hash,
+//            $target = $(target);
+//
+//        $('html, body').stop().animate({
+//            'scrollTop': $target.offset().top -155
+//        }, 500, 'swing', function () {
+//            window.location.hash = target;
+//        });
+//    });
     //якорь отзывов
 
 
@@ -82,40 +189,7 @@ $(document).ready(function(){
     });
         //звёзды рейтинга
 
-         //липкий сайдбар
-        var stickySidebar = $('.sticky');
 
-        if (stickySidebar.length > 0) {
-            var stickyHeight = stickySidebar.height(),
-                sidebarTop = stickySidebar.offset().top;
-        }
-// on scroll move the sidebar
-        $(window).scroll(function () {
-                if (stickySidebar.length > 0) {
-                    var scrollTop = $(window).scrollTop() + 147;
-
-                    if (sidebarTop < scrollTop) {
-                        stickySidebar.css('top', scrollTop - sidebarTop);
-
-                        // stop the sticky sidebar at the footer to avoid overlapping
-                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-                        if (stickyStop < sidebarBottom) {
-                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-                            stickySidebar.css('top', stopPosition);
-                        }
-                    }
-                    else {
-                        stickySidebar.css('top', '0');
-                    }
-                }
-        });
-        $(window).resize(function () {
-            if (stickySidebar.length > 0) {
-                stickyHeight = stickySidebar.height();
-            }
-        });
-            //липкий сайдбар
 
 
 
@@ -495,11 +569,12 @@ $(document).ready(function(){
         sliderFunction();
         sliderFunctions();
         sliderFunctions2();
+        //windowHeight();
     });
     $(window).on('resize', function(){
         sliderFunctions();
         sliderFunctions2();
-//
+       // windowHeight();
     });
     //вызов слайдера товаров
     var resizeTimeout = null;

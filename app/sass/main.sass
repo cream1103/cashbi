@@ -89,8 +89,11 @@ $orange_op: #EF674E
 $color1: #000080
 $color2: #89c9ec
 $color3: #e8242e
+$black: #000000
 
-
+$wmenu: 50%
+$wmin_menu: 250px
+$wmax_menu: 320px
 
 
 .pos_relative_block
@@ -113,7 +116,7 @@ $color3: #e8242e
 	.logo img
 		width: 168px
 		height: auto
-		margin-top: 21px
+		margin-top: 11px
 
 .navbar-default
 	.navbar-nav
@@ -1371,7 +1374,7 @@ $color3: #e8242e
 			text-decoration: none
 			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.33)
 			.bott_links
-				color: #ff4f2f
+				color: $orange_static
 
 		.bott_links
 			font-family: 'officinasansbook'
@@ -1393,7 +1396,7 @@ $color3: #e8242e
 				position: absolute
 				right: 0
 				top: 0
-				background: #FF4F2F
+				background: $orange_static
 				display: inline-block
 				width: 20px
 				height: 20px
@@ -1609,7 +1612,7 @@ $color3: #e8242e
 				position: absolute
 				right: 0
 				top: 0
-				background: #FF4F2F
+				background: $orange_static
 				display: inline-block
 				width: 20px
 				height: 20px
@@ -1680,7 +1683,7 @@ $color3: #e8242e
 				color: #27282f
 				font-size: 16px
 				&:hover
-					color: #ff4f2f
+					color: $orange_static
 					text-decoration: none
 
 	.red_label_span
@@ -1691,7 +1694,7 @@ $color3: #e8242e
 		display: inline-block
 		font-size: 14px
 		color: #ffffff
-		background: #FF4F2F
+		background: $orange_static
 		line-height: 20px
 		margin-left: 3px
 		font-family: 'OpenSansRegular'
@@ -1830,7 +1833,7 @@ $color3: #e8242e
     text-transform: uppercase
     font-family: 'officinaserifboldcbold'
   .oranges
-    background: #ff4f2f
+    background: $orange_static
 
   img
     margin-top: 60px
@@ -2155,26 +2158,26 @@ $color3: #e8242e
   .mt_40
     margin-top: 40px
 .link_to_slide_top_block
-  color: #ff4f2f !important
+  color: $orange_static !important
   font-size: 18px
   font-family: 'officinaserifbookcbook' ,sans-serif
 
   margin-top: 10px
-  border-bottom: 1px dotted #ff4f2f
+  border-bottom: 1px dotted $orange_static
   position: relative
   text-decoration: none
   text-decoration: none !important
   display: none
   &:hover
     text-decoration: none
-    color: #ff4f2f
+    color: $orange_static
     border-bottom: 1px solid #ffffff
   &:active
     text-decoration: none
-    color: #ff4f2f
+    color: $orange_static
   &:visited
     text-decoration: none
-    color: #ff4f2f
+    color: $orange_static
   &:after
     position: absolute
     right: -14px
@@ -2320,7 +2323,7 @@ input[type="checkbox"]
     font-family: 'officinaserifboldcbold',sans-serif
 
 .orange_prise
-  background: #FF4F2F
+  background: $orange_static
   &:after
     position: absolute
     display: block
@@ -2353,18 +2356,18 @@ input[type="checkbox"]
     font-size: 14px
     font-family: 'officinaserifbookcbook',sans-serif
   .times
-    color: #ff4f2f
+    color: $orange_static
     font-size: 24px
     font-family: 'officinaserifboldcbold',sans-serif
 
 .timer
-  color: #ff4f2f
+  color: $orange_static
   font-size: 24px
   font-family: 'officinaserifboldcbold',sans-serif
   letter-spacing: -1px
 
 .timer span
-  color: #ff4f2f
+  color: $orange_static
   font-size: 24px
   font-family: 'officinaserifboldcbold',sans-serif
   margin-right: 3px
@@ -2384,3 +2387,74 @@ input[type="checkbox"]
   position: relative
   &:before
     left: 17px
+
+//страница каталог магазинов
+
+
+/*Главное меню*/
+ul.nav_list
+  display: block
+  width: 100%
+  background: rgba(0,0,0,.75)
+  li
+    list-style: none
+    width: 100%
+    background: #ffffff
+    >a
+      display: block
+      text-decoration: none
+      width: 100%
+      padding: 2px 48px 2px 12px
+      font-size: 16px
+      line-height: 2
+      color: #27282f
+      border-bottom: 1px solid #e8e8e8
+    &::after
+      text-decoration: none
+      content: attr(data-qty)
+      padding-left: 4px
+      color: #89c9ec
+      position: absolute
+    &:hover
+      text-decoration: none
+      background-color: #f0f0f0
+  li
+    &.active
+      >a
+        color: $orange_static !important
+        background: #F7F7F7
+      a
+        color: #27282f
+        background-color: #f0f0f0
+      &:hover
+        color: $orange_static
+    a:active
+      background: #e8e8e8
+      color: $orange_static
+    a::after
+      text-decoration: none
+      content: attr(data-qty)
+      padding-left: 4px
+      color: #89c9ec
+    ul
+      display: none
+      li
+        a
+          display: block
+          text-decoration: none
+          width: 100%
+          padding: 2px 48px 2px 20px
+          font-size: 14px
+          line-height: 2
+          color: #27282f
+          border-bottom: 1px solid #e8e8e8
+          &:hover
+            text-decoration: none
+            color: $orange_static
+.sub
+  display: none
+.active_slide
+  background-color: #f0f0f0
+
+
+//страница каталог магазинов
