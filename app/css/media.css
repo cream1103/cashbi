@@ -737,9 +737,28 @@
     .show_me_all_shops .list_of_shop .ul_wrapps li{
         padding: 0;
     }
+    .catalog_block .list_of_shop .ul_wrapps li{
+        margin-bottom: 20px;
+        width: 47.4%;
+    }
     .show_me_all_shops .list_of_shop {
         width: 100%;
         padding: 20px;
+    }
+    .catalog_block .list_of_shop {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    .catalog_block .list_of_shop .ul_wrapps > :nth-child(odd){
+        margin-right: 5%;
+    }
+    .pagination ul li {
+        float: left;
+        margin-right: 2px;
+    }
+    .pagination{
+        margin-bottom: 60px;
     }
     .show_me_all_shops .center_blocks_search .search_form_fore_shops .header_wrapper .header_search_btn{
         height: 42px;
@@ -883,6 +902,14 @@
     .more_cashback {
         background: url(../img/bg/01.jpg) top left;
         padding: 23px 0 25px 0;
+    }
+    .filter_links ul li {
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+    .padding_fore_filter {
+        padding: 10px 10px 3px 20px;
     }
 }
 /*=================================================================  599px  ==========*/

@@ -2620,7 +2620,6 @@ ul.nav_list {
     .ul_wrapps li:hover {
       padding: 0; }
 
-/* --- shops list --- */
 .show_me_all_shops .list_of_shop .ul_wrapps li .top_abs_hide {
   -webkit-transition: .4s ease .1s;
   transition: .4s ease .1s;
@@ -2730,3 +2729,48 @@ ul.nav_list {
       height: 80px; }
       .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price {
         height: 64px; } }
+
+.padding_fore_filter {
+  padding: 15px 40px 15px 25px; }
+
+.filter_links {
+  overflow: hidden; }
+  .filter_links ul {
+    float: left; }
+    .filter_links ul li {
+      float: left;
+      margin-right: 40px; }
+      .filter_links ul li a {
+        font-size: 16px;
+        position: relative;
+        font-family: 'officinaserifbookcbook',sans-serif;
+        color: #a4a5ab; }
+        .filter_links ul li a:after {
+          width: 5px;
+          height: 3px;
+          position: absolute;
+          right: -12px;
+          top: 8px;
+          content: '';
+          display: inline-block;
+          background: url("../img/icon/arr_bottoms_g.png") no-repeat center center; }
+        .filter_links ul li a.active {
+          color: #3d424b; }
+          .filter_links ul li a.active:after {
+            background: url("../img/icon/arr_bottoms.png") no-repeat center center; }
+  .filter_links .span_result_search {
+    float: right;
+    color: #3d424b;
+    font-size: 12px;
+    font-family: 'OpenSansRegular';
+    line-height: 22px; }
+
+.down_arrows a:after {
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg); }
+
+.up_arrows a:after {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }

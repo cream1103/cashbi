@@ -2582,7 +2582,7 @@ ul.nav_list
     &:hover
       padding: 0
 
-/* --- shops list --- */
+
 .show_me_all_shops .list_of_shop .ul_wrapps li
   .top_abs_hide
     transition: .4s ease .1s
@@ -2603,12 +2603,6 @@ ul.nav_list
       .inside_price
         color: #888
         background-color: #ddd
-        // &._sky
-            // color: $sky
-        // &._orange
-            // color: $orange
-        // &._red
-            // color: $red
         transition: .4s ease .1s
         width: 80%
         max-width: 130px
@@ -2698,5 +2692,50 @@ ul.nav_list
         height: 80px
         .inside_price
           height: 64px
-// --- main page end ---
+.padding_fore_filter
+  padding: 15px 40px 15px 25px
+.filter_links
+  overflow: hidden
+  ul
+    float: left
+    li
+      float: left
+      margin-right: 40px
+      a
+        font-size: 16px
+        position: relative
+        font-family: 'officinaserifbookcbook',sans-serif
+        color: #a4a5ab
+
+        &:after
+          width: 5px
+          height: 3px
+          position: absolute
+          right: -12px
+          top: 8px
+          content: ''
+          display: inline-block
+          background: url("../img/icon/arr_bottoms_g.png") no-repeat center center
+        &.active
+          color: #3d424b
+          &:after
+            background: url("../img/icon/arr_bottoms.png") no-repeat center center
+
+  .span_result_search
+    float: right
+    color: #3d424b
+    font-size: 12px
+    font-family: 'OpenSansRegular'
+    line-height: 22px
+
+.down_arrows
+  a:after
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+.up_arrows
+  a:after
+    -moz-transform: rotate(180deg)
+    -o-transform: rotate(180deg)
+    -webkit-transform: rotate(180deg)
 //страница каталог магазинов
