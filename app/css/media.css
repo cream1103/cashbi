@@ -14,11 +14,17 @@
     .show_me_all_shops .list_of_shop .bxslider_shops li{
         width: 20%;
     }
+    .show_me_all_shops .list_of_shop .ul_wrapps li{
+        width: 25%;
+    }
     .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first .one-slide .cont{
         padding-left: 13%;
     }
     .show_me_all_shops .list_of_shop {
         max-height: 640px;
+    }
+    .catalog_block .list_of_shop {
+        max-height: none;
     }
 }
 /*=================================================================  1599px  ==========*/
@@ -94,6 +100,9 @@
     }
     .show_me_all_shops .list_of_shop .bxslider_shops li{
         width: 25%;
+    }
+    .show_me_all_shops .list_of_shop .ul_wrapps li{
+        width: 33.33333333%;
     }
 
     .show_me_all_shops .center_blocks_search .h2_shops{
@@ -185,6 +194,11 @@
     .more_cashback .h2_ore_cashback{
         font-size: 36px;
         margin-bottom: 30px;
+    }
+    .catalog_block .list_of_shop {
+        padding: 0;
+        width: 102%;
+        margin-left: -1%;
     }
 
 }
@@ -389,6 +403,9 @@
     .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .images_shop img{
         width: 80%;
     }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .images_shop img{
+        width: 80%;
+    }
     .main-wrapps_span{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -397,10 +414,15 @@
     .show_me_all_shops .list_of_shop .bxslider_shops li{
         width: 33.3%;
     }
+    .show_me_all_shops .list_of_shop  .ul_wrapps li{
+        width: 33.33333%;
+    }
     .show_me_all_shops .list_of_shop {
         padding: 0 25px 0 25px;
     }
-
+    .catalog_block .list_of_shop {
+        padding: 0;
+    }
     .pay_block .left_pat_sistems_block{
         width: 100%;
         float: none;
@@ -707,6 +729,12 @@
         width: 50%;
     }
     .show_me_all_shops .list_of_shop .bxslider_shops li{
+        padding: 0;
+    }
+    .show_me_all_shops .list_of_shop .ul_wrapps li{
+        width: 50%;
+    }
+    .show_me_all_shops .list_of_shop .ul_wrapps li{
         padding: 0;
     }
     .show_me_all_shops .list_of_shop {

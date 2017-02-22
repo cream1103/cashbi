@@ -83,6 +83,8 @@ $orange_static: #ff4f2f
 $btn_hover: #CD3317
 $white: #ffffff
 $sky: #89C9EC
+$orange: #ff4f2e
+$red: #e8242e
 $dark_blue: #202E5C
 $purple: #E8242E
 $orange_op: #EF674E
@@ -1578,23 +1580,24 @@ $wmax_menu: 320px
 				text-decoration: none
 				vertical-align: baseline
 			.named_user
-				max-width: 190px
-				position: relative
-				overflow: hidden
-				span
-					width: 64px
-					height: 25px
-					display: inline-block
-					position: absolute
-					right: 0
-					top: 0
-					// background: url("../img/bg_user_name.png") no-repeat center center
-					background: linear-gradient(90deg, transparent 0, rgba(255,255,255,1) 90%)
-				a
-					white-space: nowrap
-					color: #3d424b
-					&:hover
-						text-decoration: none
+              max-width: 190px
+              position: relative
+              overflow: hidden
+              min-width: 110px
+              span
+                  width: 64px
+                  height: 25px
+                  display: inline-block
+                  position: absolute
+                  right: 0
+                  top: 0
+                  // background: url("../img/bg_user_name.png") no-repeat center center
+                  background: linear-gradient(90deg, transparent 0, rgba(255,255,255,1) 90%)
+              a
+                  white-space: nowrap
+                  color: #3d424b
+                  &:hover
+                      text-decoration: none
 		.named_right
 			width: 25%
 			float: left
@@ -2455,6 +2458,245 @@ ul.nav_list
   display: none
 .active_slide
   background-color: #f0f0f0
+.catalog_block
+  padding-top: 0
+  .list_of_shop
+    padding: 0
+    width: 101.5%
+    margin-left: -0.8%
 
 
+.ul_wrapps
+  width: 100%
+  li
+    width: 20%
+    float: left
+    height: 320px
+    padding: 10px
+    transition: all .4s ease .1s
+    position: relative
+    a
+      text-decoration: none
+      position: relative
+      &:hover
+        text-decoration: none
+    .heart
+      position: absolute
+      cursor: pointer
+      top: 20px
+      left: 20px
+      width: 21px
+      height: 19px
+      z-index: 1
+    .top_abs_hide
+      position: absolute
+      top: 15px
+      right: 0
+      padding: 5px 15px
+      /*display: none*/
+      z-index: 1
+      color: #ffffff
+      font-size: 16.4px
+      text-align: center
+      text-transform: uppercase
+      font-family: 'officinaserifboldcbold'
+    // transform: translateX(0)
+    // transform-origin: left center
+    // transition: right .3s ease .1s
+    .oranges
+      background: $orange_static
+    .blue
+      background: #202E5C
+    .inside_s
+      width: 100%
+      height: 100%
+      background: #ffffff
+      border: 1px solid #DCDCDC
+      display: block
+      transition: all 0.3s ease
+      .images_shop
+        display: flex
+        height: 150px
+        justify-content: center
+        align-items: center
+      .present_class
+        display: flex
+        justify-content: center
+        height: 105px
+        align-items: center
+        .inside_price
+          min-width: 110px
+          font-size: 30px
+          font-family: 'officinaserifboldcbold'
+
+          padding-left: 10px
+          padding-right: 10px
+          padding-top: 10px
+          line-height: normal
+          height: 75px
+          align-items: center
+          position: relative
+          .tc
+            width: 100%
+            display: block
+            text-align: center
+          .cashback
+            font-size: 14px
+            font-family: 'officinaserifbookcbook'
+            text-align: center
+            margin-top: 5px
+            display: block
+        .gray_bg
+          background: #ECECEC
+          color: #3d424b
+          &:before
+            position: absolute
+            width: 34px
+            height: 18px
+            top: -17px
+            left: 46px
+            content: ''
+            background: url("../img/gr_bg.png") center center no-repeat
+        .blue_bg
+          background: #89C9EC
+          color: #ffffff
+          &:before
+            position: absolute
+            width: 34px
+            height: 18px
+            top: -17px
+            left: 46px
+            content: ''
+            background: url("../img/bl_bg.png") center center no-repeat
+
+      .clacification
+        font-size: 14px
+        font-family: 'officinasansbook'
+        color: #a4a5ab
+        text-align: center
+        margin-top: 10px
+        display: block
+
+      &:hover
+        border: 1px solid transparent
+    &:hover
+      padding: 0
+
+/* --- shops list --- */
+.show_me_all_shops .list_of_shop .ul_wrapps li
+  .top_abs_hide
+    transition: .4s ease .1s
+    right: 0 !important
+    top: 20px
+  .heart_inp + .heart
+    background-image: url(../img/icon/heart_empty.svg)
+    background-repeat: no-repeat
+    background-position: center
+    opacity: 0
+  .heart_inp:checked + .heart
+    opacity: 1
+    background-image: url(../img/icon/heart_fill.svg)
+  .inside_s
+    padding-top: 0
+    .present_class
+      width: 100% !important
+      .inside_price
+        color: #888
+        background-color: #ddd
+        // &._sky
+            // color: $sky
+        // &._orange
+            // color: $orange
+        // &._red
+            // color: $red
+        transition: .4s ease .1s
+        width: 80%
+        max-width: 130px
+        .cashback
+          color: #444
+          text-shadow: none
+        span.tc
+          font-size: 22px
+          &._sky
+            color: $sky
+          &._orange
+            color: $orange
+          &._red
+            color: $red
+        span.tc i
+          font-size: 70%
+          font-weight: 100
+          color: #888
+          text-decoration: line-through
+          text-shadow: none
+          padding-right: 8px
+        &::before
+          content: ""
+          height: 20px
+          width: 100%
+          left: 0
+          display: block
+          position: absolute
+          background: #ddd url(../img/bow.png) no-repeat center bottom
+          top: -20px
+
+@media(min-width: 600px)
+  .show_me_all_shops .list_of_shop .ul_wrapps li
+    .top_abs_hide
+      right: 10px !important
+    .inside_s
+      .present_class
+        .inside_price
+          span.tc
+            font-size: 28px
+
+
+.show_me_all_shops .list_of_shop .ul_wrapps li:hover
+  box-shadow: 0 0 6px rgba(0,0,0,.2)
+  .top_abs_hide
+    transform: translateX(0)
+  .heart_inp + .heart
+    opacity: 1
+  .inside_s
+    padding-top: 10px
+    .present_class
+      .inside_price
+        span.tc
+          color: #fff
+        .cashback
+          color: #fff
+        span i
+          color: #444
+        &::before
+          background-color: inherit
+        &._sky
+          background-color: $sky
+        &._orange
+          background-color: $orange
+        &._red
+          background-color: $red
+
+@media(min-width: 600px)
+  .slider-info p
+    font-size: 28px !important
+  .show_me_all_shops .list_of_shop .ul_wrapps li:hover
+    .top_abs_hide
+      transform: translateX(10px)
+
+@media(max-width: 479px)
+  .show_me_all_shops .list_of_shop .ul_wrapps li
+    height: 220px
+    .heart
+      top: 10px
+    .top_abs_hide
+      top: 10px
+      font-size: 12px
+    .inside_s
+      .images_shop
+        height: 100px
+      .present_class
+        height: 80px
+        .inside_price
+          height: 64px
+// --- main page end ---
 //страница каталог магазинов

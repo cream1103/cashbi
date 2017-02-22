@@ -1590,7 +1590,8 @@ a {
       .wrapp_menus .named_block .named_left .named_user {
         max-width: 190px;
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        min-width: 110px; }
         .wrapp_menus .named_block .named_left .named_user span {
           width: 64px;
           height: 25px;
@@ -2478,3 +2479,254 @@ ul.nav_list {
 
 .active_slide {
   background-color: #f0f0f0; }
+
+.catalog_block {
+  padding-top: 0; }
+  .catalog_block .list_of_shop {
+    padding: 0;
+    width: 101.5%;
+    margin-left: -0.8%; }
+
+.ul_wrapps {
+  width: 100%; }
+  .ul_wrapps li {
+    width: 20%;
+    float: left;
+    height: 320px;
+    padding: 10px;
+    -webkit-transition: all .4s ease .1s;
+    transition: all .4s ease .1s;
+    position: relative; }
+    .ul_wrapps li a {
+      text-decoration: none;
+      position: relative; }
+      .ul_wrapps li a:hover {
+        text-decoration: none; }
+    .ul_wrapps li .heart {
+      position: absolute;
+      cursor: pointer;
+      top: 20px;
+      left: 20px;
+      width: 21px;
+      height: 19px;
+      z-index: 1; }
+    .ul_wrapps li .top_abs_hide {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      padding: 5px 15px;
+      /*display: none*/
+      z-index: 1;
+      color: #ffffff;
+      font-size: 16.4px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'officinaserifboldcbold'; }
+    .ul_wrapps li .oranges {
+      background: #ff4f2f; }
+    .ul_wrapps li .blue {
+      background: #202E5C; }
+    .ul_wrapps li .inside_s {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      border: 1px solid #DCDCDC;
+      display: block;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .ul_wrapps li .inside_s .images_shop {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 150px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .ul_wrapps li .inside_s .present_class {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 105px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .ul_wrapps li .inside_s .present_class .inside_price {
+          min-width: 110px;
+          font-size: 30px;
+          font-family: 'officinaserifboldcbold';
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          line-height: normal;
+          height: 75px;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative; }
+          .ul_wrapps li .inside_s .present_class .inside_price .tc {
+            width: 100%;
+            display: block;
+            text-align: center; }
+          .ul_wrapps li .inside_s .present_class .inside_price .cashback {
+            font-size: 14px;
+            font-family: 'officinaserifbookcbook';
+            text-align: center;
+            margin-top: 5px;
+            display: block; }
+        .ul_wrapps li .inside_s .present_class .gray_bg {
+          background: #ECECEC;
+          color: #3d424b; }
+          .ul_wrapps li .inside_s .present_class .gray_bg:before {
+            position: absolute;
+            width: 34px;
+            height: 18px;
+            top: -17px;
+            left: 46px;
+            content: '';
+            background: url("../img/gr_bg.png") center center no-repeat; }
+        .ul_wrapps li .inside_s .present_class .blue_bg {
+          background: #89C9EC;
+          color: #ffffff; }
+          .ul_wrapps li .inside_s .present_class .blue_bg:before {
+            position: absolute;
+            width: 34px;
+            height: 18px;
+            top: -17px;
+            left: 46px;
+            content: '';
+            background: url("../img/bl_bg.png") center center no-repeat; }
+      .ul_wrapps li .inside_s .clacification {
+        font-size: 14px;
+        font-family: 'officinasansbook';
+        color: #a4a5ab;
+        text-align: center;
+        margin-top: 10px;
+        display: block; }
+      .ul_wrapps li .inside_s:hover {
+        border: 1px solid transparent; }
+    .ul_wrapps li:hover {
+      padding: 0; }
+
+/* --- shops list --- */
+.show_me_all_shops .list_of_shop .ul_wrapps li .top_abs_hide {
+  -webkit-transition: .4s ease .1s;
+  transition: .4s ease .1s;
+  right: 0 !important;
+  top: 20px; }
+
+.show_me_all_shops .list_of_shop .ul_wrapps li .heart_inp + .heart {
+  background-image: url(../img/icon/heart_empty.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0; }
+
+.show_me_all_shops .list_of_shop .ul_wrapps li .heart_inp:checked + .heart {
+  opacity: 1;
+  background-image: url(../img/icon/heart_fill.svg); }
+
+.show_me_all_shops .list_of_shop .ul_wrapps li .inside_s {
+  padding-top: 0; }
+  .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class {
+    width: 100% !important; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price {
+      color: #888;
+      background-color: #ddd;
+      -webkit-transition: .4s ease .1s;
+      transition: .4s ease .1s;
+      width: 80%;
+      max-width: 130px; }
+      .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price .cashback {
+        color: #444;
+        text-shadow: none; }
+      .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc {
+        font-size: 22px; }
+        .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc._sky {
+          color: #89C9EC; }
+        .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc._orange {
+          color: #ff4f2e; }
+        .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc._red {
+          color: #e8242e; }
+      .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc i {
+        font-size: 70%;
+        font-weight: 100;
+        color: #888;
+        text-decoration: line-through;
+        text-shadow: none;
+        padding-right: 8px; }
+      .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price::before {
+        content: "";
+        height: 20px;
+        width: 100%;
+        left: 0;
+        display: block;
+        position: absolute;
+        background: #ddd url(../img/bow.png) no-repeat center bottom;
+        top: -20px; }
+
+@media (min-width: 600px) {
+  .show_me_all_shops .list_of_shop .ul_wrapps li .top_abs_hide {
+    right: 10px !important; }
+  .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price span.tc {
+    font-size: 28px; } }
+
+.show_me_all_shops .list_of_shop .ul_wrapps li:hover {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .heart_inp + .heart {
+    opacity: 1; }
+  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s {
+    padding-top: 10px; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price span.tc {
+      color: #fff; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price .cashback {
+      color: #fff; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price span i {
+      color: #444; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price::before {
+      background-color: inherit; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price._sky {
+      background-color: #89C9EC; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price._orange {
+      background-color: #ff4f2e; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .inside_s .present_class .inside_price._red {
+      background-color: #e8242e; }
+
+@media (min-width: 600px) {
+  .slider-info p {
+    font-size: 28px !important; }
+  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide {
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px); } }
+
+@media (max-width: 479px) {
+  .show_me_all_shops .list_of_shop .ul_wrapps li {
+    height: 220px; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .heart {
+      top: 10px; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .top_abs_hide {
+      top: 10px;
+      font-size: 12px; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .images_shop {
+      height: 100px; }
+    .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class {
+      height: 80px; }
+      .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price {
+        height: 64px; } }

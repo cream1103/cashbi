@@ -14,16 +14,37 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //якорь отзывов
+    $('.subm_btns[href^="#"]').bind('click.smoothscroll',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        var ofsTop = $target.offset().top -155;
+        $('html, body').stop().animate({
+            'scrollTop': ofsTop
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+    //якорь отзывов
+
+
+
+
+    //аккордеон меню
     $(function () {
         var el = $('#nav_list_first li a');
         $('#nav_list_first li:has("ul")').append('<span></span>');
         el.click(function() {
+            //setTimeout(windowHeight(), 500);
             var checkedElement = $(this).next(),
                 visibleElement = $('#nav_list_first ul:visible');
 
-            visibleElement.stop().animate({'height':'toggle'}, 500).parent().removeClass('active');
+            visibleElement.stop().animate({'height':'toggle'}, 300).parent().removeClass('active');
             if((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
-                checkedElement.stop().animate({'height':'toggle'}, 500).parent().addClass('active');
+                checkedElement.stop().animate({'height':'toggle'}, 300).parent().addClass('active');
                 return false;
             }
             if((checkedElement.is('ul')) && (checkedElement.is(':visible'))) {
@@ -31,7 +52,7 @@ $(document).ready(function(){
             }
         });
     });
-
+    //аккордеон меню
 
     //липкий сайдбар
     var stickySidebar = $('.sticky');
@@ -71,8 +92,11 @@ $(document).ready(function(){
 
 
 //    function windowHeight(){
-//        var bohi = $(window).height();
-//        if(bohi > 770) {
+//
+//        var bohi = $(window).height() - 107;
+//        var columnHeight = $('.sticky').height();
+//        if(bohi > columnHeight) {
+//            console.log(bohi + ">" + columnHeight);
 //            //липкий сайдбар
 //            var stickySidebar = $('.sticky');
 //
@@ -109,7 +133,8 @@ $(document).ready(function(){
 //            //липкий сайдбар
 //
 //        } else {
-//            console.log(bohi + '< 770');
+//            console.log(bohi + "<" + columnHeight);
+//
 //            $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
 //                delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
 //                if (delta >= 0) {
@@ -121,20 +146,7 @@ $(document).ready(function(){
 //        }
 //    }
 
-    //якорь отзывов
-//    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
-//        e.preventDefault();
-//
-//        var target = this.hash,
-//            $target = $(target);
-//
-//        $('html, body').stop().animate({
-//            'scrollTop': $target.offset().top -155
-//        }, 500, 'swing', function () {
-//            window.location.hash = target;
-//        });
-//    });
-    //якорь отзывов
+
 
 
     //таймер акций
@@ -574,7 +586,7 @@ $(document).ready(function(){
     $(window).on('resize', function(){
         sliderFunctions();
         sliderFunctions2();
-       // windowHeight();
+        //windowHeight();
     });
     //вызов слайдера товаров
     var resizeTimeout = null;
