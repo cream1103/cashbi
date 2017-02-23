@@ -32,7 +32,8 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		'app/libs/bootstrap/js/bootstrap.js',
-		'app/libs/bx_slider/jquery.bxslider.js'
+		'app/libs/bx_slider/jquery.bxslider.js',
+		'app/libs/formStyler/jquery.formstyler.min.js'
             //JS БИБЛИОТЕКИ СЮДА
 
 		])
