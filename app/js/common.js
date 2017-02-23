@@ -14,6 +14,28 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    $(function (){
+        if($('#chose_file').length)
+        {
+            $('#chose_file').click(function(){
+                $('#chose_file_input').click();
+                return(false);
+            });
+
+            $('#chose_file_input').change(function(){
+                $('#chose_file_text').html($(this).val());
+            }).change(); // .change() в конце для того чтобы событие сработало при обновлении страницы
+        }
+    });
+
+    (function($) {
+        $(function() {
+            $('.form_styler').styler();
+        });
+    })(jQuery);
+
+
+
     //якорь отзывов
     $('.subm_btns[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();

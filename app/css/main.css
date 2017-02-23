@@ -83,6 +83,30 @@ a {
 .max_w_1600 {
   max-width: 1600px; }
 
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
 .pos_relative_block {
   position: relative; }
 
@@ -92,7 +116,7 @@ a {
 /* Header START-----------------------------------------------*/
 .header {
   background: #ffffff;
-  z-index: 2;
+  z-index: 101;
   position: fixed;
   left: 0;
   top: 0;
@@ -1657,7 +1681,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5; }
+  z-index: 101; }
   .autorised_user .header .navbar-header {
     display: none; }
 
@@ -2805,3 +2829,138 @@ ul.nav_list {
     top: 13px;
     background-image: url(../img/icon/heart_fill.svg);
     background-size: cover; }
+
+.type_text {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #DCDCDC;
+  padding: 0 12px;
+  position: relative; }
+
+.main_user_icons {
+  padding-left: 25px; }
+  .main_user_icons img {
+    width: 117px;
+    height: auto;
+    -webkit-border-radius: 10em;
+            border-radius: 10em; }
+
+#chose_file {
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'OpenSansRegular',sans-serif;
+  color: #ff4f2f;
+  border-bottom: 1px dotted #ff4f2f;
+  white-space: nowrap; }
+  #chose_file img {
+    margin-bottom: 10px; }
+  #chose_file:hover {
+    text-decoration: none;
+    border-bottom: none; }
+
+#chose_file_text {
+  display: none; }
+
+#chose_file_input {
+  display: none; }
+
+.label_class {
+  color: #3d424b;
+  font-size: 16px;
+  font-family: 'officinasansbook' ,sans-serif;
+  margin-bottom: 5px; }
+
+.validate {
+  position: relative;
+  display: block; }
+  .validate:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    z-index: 5;
+    background: url("../img/icon/checked_text.png") no-repeat center center; }
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 7px;
+  height: 4px;
+  display: inline-block;
+  background: url("../img/icon/arr_select.png") no-repeat; }
+
+.confirm_email {
+  color: #ff4f2f;
+  font-size: 14px;
+  font-family: 'OpenSansRegular' ,sans-serif; }
+
+.div_border_bottom {
+  border-bottom: 1px solid #DCDCDC; }
+
+.soc_registr .icon_soc_join li {
+  display: inline-block; }
+  .soc_registr .icon_soc_join li a {
+    display: block;
+    background: #CDCDCD;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 10em;
+            border-radius: 10em;
+    margin-right: 20px;
+    color: #fff;
+    -webkit-transition: .1s ease .05s;
+    transition: .1s ease .05s;
+    font: 20px/50px fontawesome;
+    text-align: center; }
+  .soc_registr .icon_soc_join li a:hover {
+    text-decoration: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-filter: none;
+            filter: none; }
+  .soc_registr .icon_soc_join li a.soc_icon-fb.active {
+    background: #385895; }
+  .soc_registr .icon_soc_join li a.soc_icon-vk.active {
+    background: #4a7095; }
+  .soc_registr .icon_soc_join li a.soc_icon-ok.active {
+    background: #e47c1b; }
+  .soc_registr .icon_soc_join li a.soc_icon-tw.active {
+    background: #00c0fd; }
+  .soc_registr .icon_soc_join li a.soc_icon-go.active {
+    background: #ea4935; }
+  .soc_registr .icon_soc_join li a.soc_icon-ig.active {
+    background: #9d5199; }
+  .soc_registr .icon_soc_join li a.active {
+    position: relative; }
+    .soc_registr .icon_soc_join li a.active:after {
+      border: 3px solid #fff;
+      background: url(../img/icon/checked_text.png) no-repeat center center;
+      width: 23px;
+      height: 23px;
+      -webkit-border-radius: 10em;
+              border-radius: 10em;
+      position: absolute;
+      right: -4px;
+      bottom: -4px;
+      display: inline-block;
+      content: ''; }
+
+.lk_p_main {
+  margin-bottom: 29px;
+  margin-top: 35px;
+  font-size: 20px;
+  font-family: 'officinaserifbookcbook',sans-serif;
+  color: #3d424b; }
+
+.label_span {
+  font-family: 'officinasansbook' ,sans-serif;
+  font-size: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal; }

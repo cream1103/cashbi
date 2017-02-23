@@ -33,6 +33,11 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .wrapp_max_w_block{
+        width:  400px;
+        padding-left: 50px
+    }
+
     .activate_cashb{
         padding: 17px 32px;
     }
@@ -200,6 +205,9 @@
         width: 102%;
         margin-left: -1%;
     }
+    .label_s{
+        white-space: nowrap;
+    }
 
 }
 /*=================================================================  1399px  ==========*/
@@ -216,6 +224,10 @@
     .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay{
         height: 115px;
     }
+    .wrapp_max_w_block {
+        width: 420px;
+        padding-left: 70px;
+    }
 }
 /*=================================================================  1100px  ==========*/
 
@@ -223,7 +235,14 @@
 /*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
-
+    .wrapp_max_w_block {
+        width: 350px;
+        padding-left: 0;
+    }
+    .main_user_icons {
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
     .link_to_slide_top_block{
         display: inline-block;
     }
@@ -575,8 +594,36 @@
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .lk_p_main{
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .label_span{
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+    .soc_registr .icon_soc_join li a{
+        width: 43px;
+        height: 43px;
+        margin-right: 7px;
+    }
+    .soc_registr .icon_soc_join li a.active:after{
+        width: 20px;
+        height: 20px;
+    }
     .pb_0_600{
         padding-bottom: 0 !important;
+    }
+    .mt15_600{
+        margin-top: 15px
+    }
+
+    .main_user_icons{
+        text-align: center;
+    }
+    .wrapp_max_w_block{
+        width: 100%;
     }
     .mb_50{
         margin-bottom: 50px;
@@ -910,6 +957,12 @@
     }
     .padding_fore_filter {
         padding: 10px 10px 3px 20px;
+    }
+    .wrapp_menus .flex_blocks{
+        border-left: none;
+    }
+    .wrapp_menus .named_block{
+        border-right: none;
     }
 }
 /*=================================================================  599px  ==========*/

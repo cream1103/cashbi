@@ -222,23 +222,18 @@
             <li>
                 <a href="#">Персональные данные</a>
             </li>
-
             <li>
                 <a href="#">Уведомления <span class="span_withs">3</span></a>
             </li>
-
             <li>
                 <a href="#">Накопительная cистема</a>
             </li>
-
             <li>
                 <a href="#">Пригласить друга</a>
             </li>
-
             <li>
                 <a href="#">Вывести средства</a>
             </li>
-
             <li class="favorite_style">
                 <a href="#">Избранные магазины</a>
                 <ul>
@@ -255,7 +250,189 @@
 <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 main-content">
 
     <div class="border_blocks padding_fore_all_cont_block">
+        <form action="/">
+            <div class="div_border_bottom">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="main_user_icons">
+                            <a id="chose_file" href="#">
+                                <img src="img/user_face.png" alt=""/> <br/>
+                                Прикрепить фото</a>
+                            <span id="chose_file_text"></span>
+                            <input id="chose_file_input" name="imagefile" type="file" />
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="wrapp_max_w_block">
+                                    <label class="label_class" for="name_id">Имя</label>
+                                    <input id="name_id" class="form_styler mb20 type_text" required="" type="text"/>
+
+                                    <label class="label_class" for="sname_id">Фамилия</label>
+                                    <input id="sname_id" class="form_styler mb20 type_text" required="" type="text"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="wrapp_max_w_block mb30">
+                                    <label class="label_class" for="dates">Дата рождения</label>
+                                    <div class="row mb20" id="dates">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <select class="form_styler">
+                                                <option>День</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt15_600">
+                                            <select class="form_styler">
+                                                <option>Месяц</option>
+                                                <option>Январь</option>
+                                                <option>Февраль</option>
+                                                <option>Март</option>
+                                                <option>Апрель</option>
+                                                <option>Май</option>
+                                                <option>Июнь</option>
+                                                <option>Июль</option>
+                                                <option>Август</option>
+                                                <option>Сентябрь</option>
+                                                <option>Октябрь</option>
+                                                <option>Ноябрь</option>
+                                                <option>Декабрь</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt15_600">
+                                            <select class="form_styler">
+                                                <option>Год</option>
+                                                <option>1980</option>
+                                                <option>1981</option>
+                                                <option>1982</option>
+                                                <option>1983</option>
+                                                <option>1984</option>
+                                                <option>1985</option>
+                                                <option>1986</option>
+                                                <option>1987</option>
+                                                <option>1988</option>
+                                                <option>1989</option>
+                                                <option>1990</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <label class="label_class" for="email_id">Email адрес</label>
+                                <span class="validate">
+                                    <input id="email_id" class="form_styler mb10 type_text" required="" type="text"/>
+                                    <a href="#" class="confirm_email">Подтвердить почту</a>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_wrapps">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lk_p_main">Подключенные аккаунты</p>
+                        <div class="soc_registr">
+                            <div class="icon_soc_join">
+                                <ul>
+                                    <li><a href="#" class="soc_icon-fb active">&#xf09a;</a></li>
+                                    <li><a href="#" class="soc_icon-vk ">&#xf189;</a></li>
+                                    <li><a href="#" class="soc_icon-ok active">&#xf263;</a></li>
+                                    <li><a href="#" class="soc_icon-tw ">&#xf099;</a></li>
+                                    <li><a href="#" class="soc_icon-go active">&#xf0d5;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lk_p_main">Смена пароля</p>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span label_s mt10">Старый пароль</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <input id="old_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span label_s mt10">Новый пароль</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <input id="new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span">Новый пароль еще раз</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <span class="validate">
+                                        <input id="more_new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+
+        <!--<form action="/">-->
+            <!--<input class="form_styler type_text" required="" type="text"/>-->
+            <!--<input class="form_styler" type="checkbox"/>-->
+            <!--<input class="form_styler" type="radio"/>-->
+            <!--<input class="form_styler" type="checkbox"/>-->
+
+
+            <!--<input type="submit"/>-->
+        <!--</form>-->
     </div>
 
 </div>
