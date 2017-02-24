@@ -14,6 +14,10 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+
+
+
+    //input file в ЛК профиль
     $(function (){
         if($('#chose_file').length)
         {
@@ -27,13 +31,15 @@ $(document).ready(function(){
             }).change(); // .change() в конце для того чтобы событие сработало при обновлении страницы
         }
     });
+    //input file в ЛК профиль
 
+    //инициализация formstyler
     (function($) {
         $(function() {
             $('.form_styler').styler();
         });
     })(jQuery);
-
+    //инициализация formstyler
 
 
     //якорь отзывов
@@ -57,12 +63,12 @@ $(document).ready(function(){
 
     //аккордеон меню
     $(function () {
-        var el = $('#nav_list_first li a');
-        $('#nav_list_first li:has("ul")').append('<span></span>');
+        var el = $('.nav_list_first li a');
+        $('.nav_list_first li:has("ul")').append('<span></span>');
         el.click(function() {
             //setTimeout(windowHeight(), 500);
             var checkedElement = $(this).next(),
-                visibleElement = $('#nav_list_first ul:visible');
+                visibleElement = $('.nav_list_first ul:visible');
 
             visibleElement.stop().animate({'height':'toggle'}, 300).parent().removeClass('active');
             if((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
@@ -160,8 +166,12 @@ $(document).ready(function(){
 //            $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
 //                delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
 //                if (delta >= 0) {
+////                    $('.sticky').css('top', '0');
+////                    stickySidebar.css('top', '0');
 //                    console.log('up')
 //                } else {
+////                    $('.sticky').css('top', '100');
+////                    stickySidebar.css('top', '200');
 //                    console.log('down')
 //                }
 //            });
@@ -231,13 +241,24 @@ $(document).ready(function(){
 
     // Управление скользящим боковым меню start ***
     // --- закрытие
+
+    $('.ara_inside_menu').click(function(){
+        $('#it_1').toggleClass('toggle_hidden_class');
+        $('#it_2').toggleClass('toggle_hidden_class');
+    });
     $('#slide-menu-container_2').on('click', function(e){
+//        alert(123123213)
+
         var target = e.target || e.srcElement;
         if(target.id === this.id){
             $('body').css('overflow','auto');
             $('#slide-menu-container_2').removeClass('show');
+            $('#it_1').removeClass('toggle_hidden_class');
+            $('#it_2').addClass('toggle_hidden_class');
         }
     });
+
+
 
     // --- открытие
     $('#enter_aut a').on('click', function(){
@@ -450,10 +471,12 @@ $(document).ready(function(){
     // Управление скользящим боковым меню start ***
     // --- закрытие
     $('#slide-menu-container').on('click', function(e){
+
         var target = e.target || e.srcElement;
         if(target.id === this.id){
             $('body').css('overflow','auto');
             $('#slide-menu-container').removeClass('show');
+
         }
     });
 

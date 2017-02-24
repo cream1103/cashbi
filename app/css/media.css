@@ -33,6 +33,9 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .pos_relative_92{
+        top: 0;
+    }
     .wrapp_max_w_block{
         width:  400px;
         padding-left: 50px
@@ -599,6 +602,14 @@
         margin-bottom: 20px;
         margin-top: 25px;
     }
+    .checkbox_label{
+        font-size: 14px;
+    }
+    .reset_btn_black{
+        margin: 15px auto 0 auto;
+        display: block;
+
+    }
     .label_span{
         margin-bottom: 7px;
         font-size: 14px;
@@ -607,6 +618,12 @@
         width: 43px;
         height: 43px;
         margin-right: 7px;
+        font: 20px/43px fontawesome;
+    }
+    .soc_registr .icon_soc_join li a.soc_icon-go{
+        width: 43px;
+        height: 43px;
+        margin-right: 0;
     }
     .soc_registr .icon_soc_join li a.active:after{
         width: 20px;
@@ -737,20 +754,14 @@
     }
     .subm_btns{
         max-width: 100%;
+        font-size: 18px;
     }
-    /*.bg_block_top_autor .slider_wrapper_first_screen .cont img{*/
-    /*width: 65% !important;*/
-    /*margin:  0 auto;*/
-    /*}*/
+    .reset_btn_black{
+        font-size: 18px;
+    }
     .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
         font-size: 24px !important;
     }
-    /*
-    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
-        font-size: 24px;
-        margin-top: 18px;
-    }
-    */
     .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first .one-slide > img{
         height: 370px;
         width: auto;
@@ -964,6 +975,12 @@
     .wrapp_menus .named_block{
         border-right: none;
     }
+    .jq-checkbox{
+        float: right;
+    }
+    .checkbox_label{
+        width: auto;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1034,6 +1051,12 @@
         /*width: 45px;*/
         /*height: 45px;*/
         margin-right: 1px;
+    }
+    .soc_registr .icon_soc_join li a{
+        width: 41px;
+        height: 41px;
+        margin-right: 0;
+        font: 20px/41px fontawesome;
     }
 }
 
