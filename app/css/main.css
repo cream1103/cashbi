@@ -1716,7 +1716,8 @@ a {
       font-family: 'officinaserifbookcbook'; }
   #slide-menu-content_2 .wrapp_top_menu_part .rub_how {
     padding: 10px 20px;
-    background: #DBE9D8; }
+    background: #DBE9D8;
+    display: block; }
     #slide-menu-content_2 .wrapp_top_menu_part .rub_how .money {
       font-family: 'officinaserifbookcbook';
       font-size: 36px;
@@ -2964,3 +2965,72 @@ ul.nav_list {
   vertical-align: middle;
   display: inline-block;
   line-height: normal; }
+
+.checkbox_label {
+  width: 320px;
+  font-size: 16px;
+  color: #333333;
+  font-family: 'officinasansbook' ,sans-serif;
+  cursor: pointer; }
+
+.lbl_wrapp_check {
+  margin-bottom: 10px; }
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 13px;
+  height: 9px;
+  margin: 4px 0 0 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: url("../img/icon/cheched_checkbox.png") no-repeat center center; }
+
+.pos_relative_92 {
+  position: relative;
+  top: -92px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.min_w_275 {
+  max-width: 275px; }
+
+.reset_btn_black {
+  max-width: 200px;
+  margin-top: 30px;
+  width: 100%;
+  height: 47px;
+  background: #3D424B;
+  color: #ffffff;
+  line-height: 47px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px; }
+  .reset_btn_black:hover {
+    background: #262B34; }
+
+.rub_how:hover > .ent_fin {
+  color: #ff4f2f !important; }
+
+.toggle_hidden_class {
+  display: none; }
+
+.name_block_users2 {
+  margin-top: 23px; }
+  .name_block_users2 a {
+    color: #27282f;
+    position: relative;
+    display: inline-block; }
+    .name_block_users2 a:active {
+      background: none !important; }
+    .name_block_users2 a span {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url("../img/icon/exit.svg") no-repeat center center;
+      content: '';
+      position: absolute;
+      right: -15px;
+      top: 2px;
+      background-size: cover; }
