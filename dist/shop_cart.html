@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop CART</title>
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/add.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?139"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="autorised_user">
+
+<!-- arrows UP -->
+<p id="back-top" class="hidden-sm hidden-xs"><a href="#top"><span></span></a></p>
+<!-- arrows UP -->
+
+
+<div class="wrapper wrapp_bgs">
+
+<header class="header">
+    <div class="top_blue_header hidden-sm hidden-xs">
+        <div class="container an_padding">
+            <ul>
+                <li><a href="#">Каталог магазинов</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container an_padding">
+        <nav class="navbar navbar-default">
+            <div class="row  pos_relative_block">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <a href="index.html" id="logos" class="logo"><img src="img/icon/logo.svg" alt=""/></a>
+                </div>
+
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-6">
+                    <div class="wrapp_menus">
+                        <a href="#" class="add_friends flex_blocks hidden-xs">
+                            <div class="wr_all">
+                                <p class="main_p_numb"><span class="friends"></span>2</p>
+                            </div>
+                            <span class="bott_links">Пригласить друга</span>
+                        </a>
+
+                        <a href="#" class="copy_system flex_blocks hidden-sm hidden-xs">
+                            <div class="wrapp_perc_block wr_all">
+                                <ul>
+                                    <li>0%</li>
+                                    <li class="active">+10%</li>
+                                    <li>+20%</li>
+                                    <li>+30%</li>
+                                </ul>
+                                <div class="progress_line">
+                                    <div class="inside_line_gradients" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <span class="bott_links">Накопительная система</span>
+                        </a>
+
+                        <a href="#" class="money_show flex_blocks hidden-xs">
+                            <div class="wr_all"><p>157руб.</p></div>
+                            <span class="bott_links">Вывести средства</span>
+                        </a>
+
+                        <a href="#" class="favirites flex_blocks hidden-xs">
+                            <div class="wr_all">
+                                <p class="main_p_numb"><span class="favirites_sp"></span>12</p>
+                            </div>
+                            <span class="bott_links">Избранное</span>
+                        </a>
+
+                        <div id="aut_position">
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">сегодня</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.16</span></a>
+                                </div>
+                            </div>
+
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">2 декабря</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.16</span></a>
+                                </div>
+                            </div>
+
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">17 мая</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.15</span></a>
+                                </div>
+                            </div>
+                            <p class="link_to_all_alerts"><a href="#">Все уведомления</a></p>
+                        </div>
+
+                        <div class="named_block flex_blocks">
+                            <div class="named_left hidden-xs hidden-sm">
+                                <div class="named_user wr_all">
+                                    <span></span>
+                                    <a href="#" class="user_name" title="Константин Константин">Константин
+                                        Константин</a>
+                                </div>
+                                <a href="#" class="bott_links">Личный кабинет</a>
+                            </div>
+                            <div class="named_right" id="enter_aut">
+                                <a href="javascript:"><img src="img/ava_users.png" alt=""/></a>
+                                <span class="red_rounds">3</span>
+                            </div>
+                        </div>
+                        <!--div class="name_block flex_blocks hidden-sm hidden-xs">
+                            <div class="named_user wr_all">
+                                <span></span>
+                                <a href="#" class="user_name" title="Константин Константин">Константин Константин</a>
+                            </div>
+                            <a href="#" class="bott_links">Личный кабинет</a>
+                        </div>
+
+                        <div id="enter_aut" class="profile_hover_block flex_blocks">
+                            <div class="ava_blocks">
+                                <a href="javascript:"><img src="img/ava_users.png" alt=""/></a>
+                                <span class="red_rounds">3</span>
+                            </div>
+                        </div-->
+
+                        <div class="navbar-header flex_blocks none_border_left">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- .header-->
+
+
+<div class="middle mt108_fore_fixed_header">
+<div class="container-fluid max_w_1600">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="browser_block">
+            <div class="left_big_logo_br hidden-md hidden-sm hidden-xs">
+                <img src="img/browser_chrome_big.jpg" alt=""/>
+            </div>
+            <div class="logo__and_text_wrapper">
+                <div class="logo_wrapper">
+                    <img src="img/browser_chrome_small.png" alt=""/>
+                </div>
+
+                <div class="text_wrappers">
+                    <a href="#">
+                        Установи расширение для Google Chrome чтобы
+                        автоматически получать кэшбэк во всех магазинах
+                    </a>
+                </div>
+            </div>
+            <div class="btn_wrappers hidden-sm hidden-xs">
+                <a class="subm_btns in_block" href="#">Быстрая установка</a>
+            </div>
+        </div>
+
+        <div class="bread_crump">
+            <div class="bread_wrapp">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li class="r_arr_bg"></li>
+                    <li><a href="#">Каталог магазинов</a></li>
+                    <li class="r_arr_bg"></li>
+                    <li>AliExpress</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="h1_cart_style">AliExpress</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                <form action="/">
+                    <label class="wrappers">
+                        <input required="" id="search" type="text"
+                               placeholder="Найти свой магазин, например SAPATO"
+                               name="search" class="search">
+                    </label>
+                    <input name="search" class="search_btn" type="submit" value="Поиск">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper_main_contant">
+<div class="row">
+<div class="col-lg-2 col-md-3 col-sm-12 sticky col-xs-12" id="stycky_id">
+    <div class="border_blocks">
+        <div class="img_and_links bb_1">
+            <span class="top_abs_hide oranges">top</span>
+
+            <a href="#"><img src="img/icon_shop.png" alt=""></a>
+
+            <p class="text-center hidden-sm">
+                <a href="#" class="link_to_website">aliexpress.com</a>
+            </p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_r_0">
+                <div class="products bb_1 hidden-lg hidden-md hidden-xs">
+                    <p class="h_static">
+                        <a href="#" class="link_to_website bg_s">aliexpress.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_l_0 bord_left_1">
+                <div class="products bb_1">
+                    <p class="name_prod">Продукция:</p>
+
+                    <p class="goods_from-">Товары из Китая</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_r_0">
+                <div class="products bb_1">
+                    <p class="name_prod">Кэшбэк:</p>
+
+                    <p class="goods_from-">от 4 до 15%</p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_l_0 bord_left_1">
+                <div class="products bb_1">
+                    <p class="name_prod">Среднее время ожидания кэшбэка:</p>
+
+                    <p class="goods_from-">~ 44 дня</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_r_0">
+                <div class="products bb_1 bb_none">
+                    <p class="name_prod">Рейтинг:</p>
+
+                    <div class="rate">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li class="empty_number_li">(56)</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 padding_l_0 bord_left_1">
+                <div class="products">
+
+                    <form action="/">
+                        <div class="input-row">
+                            <input id="checkbox-input-2" type="checkbox" value="myValue 2">
+                            <label for="checkbox-input-2" class="input-helper input-helper--checkbox">Добавить в
+                                избранное</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 main-content">
+<!-- активировать кэшбек -->
+<div class="border_blocks padding_fore_all_cont_block">
+    <a href="#" class="activate_cashb tada">Активировать кэшбек <br class="hidden-lg hidden-md hidden-sm"/> и <br
+            class="hidden-lg hidden-xs"/> перейти в магазин<br class="hidden-lg hidden-md hidden-sm"/> AliExpress</a>
+
+    <div class="hidds_wrapper">
+        <p class="info_cash">
+            Кэшбэк-сервис – лучший способ совершать покупки через интернет. Cash back означает «возврат
+            наличных». То есть, вы покупаете в любом интернет магазине России и мира и получаете часть
+            потраченных денег назад. Сегодня такой способ онлайн шопинга можно назвать самым выгодным и
+            экономным. При этом в плюсе оказываетесь не только вы, но и магазин, ведь он получает
+            гораздо более выгодную и эффективную рекламу за ту же стоимость. Деньги от рекламы поступают
+            на наш сервис, а мы делимся ими с вами – своими клиентами. Кэшбэк-сервис – лучший способ
+            совершать покупки через интернет. Cash back означает «возврат наличных». То есть, вы
+            покупаете в любом интернет магазине России и мира и получаете часть потраченных денег назад.
+            Сегодня такой способ онлайн шопинга можно назвать самым выгодным и экономным.
+        </p>
+
+        <table class="table_category hidden-xs">
+            <thead>
+            <tr>
+                <td class="w_big">Категория</td>
+                <td class="w_small">Кэшбэк</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="left">Аксессуары, Игры и цифровой контент</td>
+                <td class="ri">4%</td>
+            </tr>
+            <tr>
+                <td class="left">Аудио-Видеотехника, Компьютеры</td>
+                <td class="ri">4-8%</td>
+            </tr>
+            <tr>
+                <td class="left">КБТ, Игровая техника, Телеком</td>
+                <td class="ri">до 15%</td>
+            </tr>
+            <tr>
+                <td class="left">Все товары из категории Молл</td>
+                <td class="ri">нет</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="javascript:void(0)" class="link_to_slide_top_block hidden-lg hidden-md">Показать весь текст</a>
+</div>
+<!-- активировать кэшбек -->
+
+<!-- действующие акции -->
+<div class="border_blocks padding_fore_all_cont_block pb_0_600">
+<div class="akc_wrapper">
+<h2 class="h2_z">Действующие акции <span>13</span></h2>
+
+<div class="small_line_wrapper">
+    <div class="color_line">
+        <div class="sky_blue_line"></div>
+        <div class="dark_blue_line"></div>
+        <div class="red_line"></div>
+    </div>
+</div>
+
+<div class="wrapp_all_actions">
+<div class="row slider_class">
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_yellow">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_blue">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_yellow">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_blue">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_yellow">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="inside_slot color_blue">
+        <a href="#">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="akc_name">
+                        <p class="p_sls">
+                            Дополнительная скидка 5% к Вашей
+                            Дисконтной Карте!
+                        </p>
+
+                        <object>
+                            <a href="###" class="link_to_website hidden-xs">aliexpress.com</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="prise orange_prise">
+                        <p class="plus_cash">+ кэшбэк</p>
+
+                        <p class="percents">5-9%</p>
+                    </div>
+                    <object>
+                        <a href="###" class="link_to_website hidden-lg hidden-md hidden-sm">aliexpress.com</a>
+                    </object>
+                </div>
+            </div>
+            <hr class="hr_s"/>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="link_imgs">
+                        <img src="img/ali_small_size.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="r_text_infos">
+                        <p class="fin_to">Истекает через</p>
+
+                        <div class="timer">
+                            <span class="days"></span>дней
+                            <span class="hours"></span>ч.
+                            <span class="minutes"></span>мин
+                            <!--<span id="seconds"></span>seconds-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="pagination hidden-xs">
+    <ul>
+        <li class="left_arr"><a href="#"></a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><span>...</span></li>
+        <li><a href="#">15</a></li>
+        <li class="right_arr"><a href="#"></a></li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+</div>
+</div>
+<!-- действующие акции -->
+
+<!-- отзывы -->
+<div class="border_blocks non_margin padding_fore_all_cont_block pb_0_600_1">
+    <div class="akc_wrapper">
+        <h2 class="h2_z">Отзывы о Aliexpress <span>56</span></h2>
+
+        <div class="small_line_wrapper">
+            <div class="color_line">
+                <div class="sky_blue_line"></div>
+                <div class="dark_blue_line"></div>
+                <div class="red_line"></div>
+            </div>
+        </div>
+        <a class="subm_btns in_block p_abs m_w_215" href="#services">Оставить отзыв</a>
+
+        <div class="rewiev_wrapp_block bxslider_rev">
+            <div class="one_rewiew_blocks">
+                <div class="img_blocks_icon">
+                    <img src="img/user_face.png" alt=""/>
+                </div>
+                <div class="right_rev_blocks">
+                    <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                        <span>22 марта 2016</span></p>
+
+                    <div class="rate pos_abs_r">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="rew_text">
+                        Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                        сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                        Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                        таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                        ниже про все это)))
+                    </p>
+                </div>
+            </div>
+            <div class="one_rewiew_blocks">
+                <div class="img_blocks_icon">
+                    <img src="img/icon/none_photos.png" alt=""/>
+                </div>
+                <div class="right_rev_blocks">
+                    <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                        <span>22 марта 2016</span></p>
+
+                    <div class="rate pos_abs_r">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="rew_text">
+                        Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                        сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                        Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                        таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                        ниже про все это)))
+                    </p>
+                </div>
+            </div>
+            <div class="one_rewiew_blocks">
+                <div class="img_blocks_icon">
+                    <img src="img/user_face.png" alt=""/>
+                </div>
+                <div class="right_rev_blocks">
+                    <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                        <span>22 марта 2016</span></p>
+
+                    <div class="rate pos_abs_r">
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="rew_text">
+                        Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                        сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                        Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                        таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                        ниже про все это)))
+                    </p>
+                </div>
+            </div>
+            <div class="one_rewiew_blocks">
+                <div class="img_blocks_icon">
+                    <img src="img/user_face.png" alt=""/>
+                </div>
+                <div class="right_rev_blocks">
+                    <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                        <span>22 марта 2016</span></p>
+
+                    <div class="rate pos_abs_r">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="rew_text">
+                        Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                        сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                        Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                        таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                        ниже про все это)))
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination hidden-xs">
+            <ul>
+                <li class="left_arr"><a href="#"></a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><span>...</span></li>
+                <li><a href="#">15</a></li>
+                <li class="right_arr"><a href="#"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- отзывы -->
+
+<!-- написать отзыв -->
+<div class="border_blocks padding_fore_all_cont_block pb_0_600 mb_50">
+    <div class="akc_wrapper">
+        <h2 class="h2_z t_a_c980" id="services">Оставить отзыв о Aliexpress</h2>
+
+        <div class="rewiev_wrapp_block">
+            <div class="one_rewiew_blocks pb_0">
+                <div class="img_blocks_icon">
+                    <img src="img/user_face.png" alt=""/>
+                </div>
+
+
+                <div class="right_rev_blocks w100">
+                    <p class="name_us">Константин Константиновский</p>
+
+                    <form class="form_none_position" action="">
+
+
+                        <div class="rating">
+                            <input id="radio1" type="radio" name="star" value="5" class="star"/>
+                            <label for="radio1">&#9733;</label>
+                            <input id="radio2" type="radio" name="star" value="4" class="star"/>
+                            <label for="radio2">&#9733;</label>
+                            <input id="radio3" type="radio" name="star" value="3" class="star"/>
+                            <label for="radio3">&#9733;</label>
+                            <input id="radio4" type="radio" name="star" value="2" class="star"/>
+                            <label for="radio4">&#9733;</label>
+                            <input id="radio5" type="radio" name="star" value="1" class="star"/>
+                            <label for="radio5">&#9733;</label>
+                        </div>
+
+                        <textarea placeholder="Написать отзыв" rows="5" cols="20" name="text"
+                                  class="text_area_fore_review mt5" id="review" required=""></textarea>
+
+
+                        <input class="subm_btns in_block m_w_270" value="Отправить отзыв" type="submit"/>
+
+                    </form>
+
+                    <div class="clearfix"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- написать отзыв -->
+
+<!-- Seo text -->
+<div class="cash_back_wrapp none_bgs hidden-xs">
+
+    <h2 class="h2_z mt_40">Тут заголовок для SEO-текста</h2>
+
+    <div class="small_line_wrapper">
+        <div class="color_line">
+            <div class="sky_blue_line"></div>
+            <div class="dark_blue_line"></div>
+            <div class="red_line"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="seo_text">
+                Кэшбэк-сервис – лучший способ совершать покупки через интернет. Cash back означает «возврат наличных».
+                То есть, вы покупаете в любом интернет магазине России и мира и получаете часть потраченных денег назад.
+                Сегодня такой способ онлайн шопинга можно назвать самым выгодным и экономным. При этом в плюсе
+                оказываетесь не только вы, но и магазин, ведь он получает гораздо более выгодную и эффективную рекламу
+                за ту же стоимость. Деньги от рекламы поступают на наш сервис, а мы делимся ими с вами – своими
+                клиентами. Кэшбэк-сервис – лучший способ совершать покупки через интернет. Cash back означает «возврат
+                наличных». То есть, вы покупаете в любом интернет магазине России и мира и получаете часть потраченных
+                денег назад. Сегодня такой способ онлайн шопинга можно назвать самым выгодным и экономным. При этом в
+                плюсе оказываетесь не только вы, но и магазин, ведь он получает гораздо более выгодную и эффективную
+                рекламу за ту же стоимость. Деньги от рекламы поступают на наш сервис, а мы делимся ими с вами – своими
+                клиентами.
+            </p>
+
+            <p class="seo_text">
+                Кэшбэк-сервис – лучший способ совершать покупки через интернет. Cash back означает «возврат наличных».
+                То есть, вы покупаете в любом интернет магазине России и мира и получаете часть потраченных денег назад.
+                Сегодня такой способ онлайн шопинга можно назвать самым выгодным и экономным. При этом в плюсе
+                оказываетесь не только вы, но и магазин, ведь он получает гораздо более выгодную и эффективную рекламу
+                за ту же стоимость. Деньги от рекламы поступают на наш сервис, а мы делимся ими с вами – своими
+                клиентами. Кэшбэк-сервис – лучший способ совершать покупки через интернет. Cash back означает «возврат
+                наличных». То есть, вы покупаете в любом интернет магазине России и мира и получаете часть потраченных
+                денег назад. Сегодня такой способ онлайн шопинга можно назвать самым выгодным и экономным. При этом в
+                плюсе оказываетесь не только вы, но и магазин, ведь он получает гораздо более выгодную и эффективную
+                рекламу за ту же стоимость. Деньги от рекламы поступают на наш сервис, а мы делимся ими с вами – своими
+                клиентами.
+            </p>
+        </div>
+    </div>
+
+</div>
+<!-- Seo text -->
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- .middle-->
+</div>
+<!-- .wrapper -->
+
+<!-- menu start -->
+<div id="slide-menu-container">
+    <form id="slide-menu-search" action="/">
+        <a href="">Помощь</a>
+
+        <p>
+            <input type="search" list="search-items" placeholder="Найти свой магазин" name="q"/>
+            <button type="submit" name="s" value="Поиск"></button>
+        </p>
+        <datalist id="search-items">
+            <option value="Лучшие магазины">
+            <option value="Товары из Китая">
+            <option value="Услуги">
+            <option value="Гипермаркеты">
+            <option value="Для творчества">
+            <option value="Аксессуары">
+            <option value="Книги">
+            <option value="Товары для детей">
+            <option value="Купонные сервисы">
+            <option value="Красота & Здоровье">
+            <option value="Товары для дома">
+            <option value="Мебель">
+            <option value="Бытовая техника">
+            <option value="Электроника">
+            <option value="Одежда & Обувь">
+            <option value="Доставка еды">
+            <option value="Развлечения">
+            <option value="Путешествие">
+            <option value="Для взрослых">
+            <option value="Зоомагазины">
+            <option value="Подарки & Цветы">
+        </datalist>
+    </form>
+    <div id="slide-menu-content">
+        <a href="#" data-qty="15">Лучшие магазины</a>
+        <a href="#" data-qty="24">Товары из Китая</a>
+        <a href="#" data-qty="33">Услуги</a>
+        <a href="#" data-qty="42">Гипермаркеты</a>
+        <a href="#" data-qty="51">Для творчества</a>
+        <a href="#" data-qty="15">Аксессуары</a>
+        <a href="#" data-qty="24">Книги</a>
+        <a href="#" data-qty="33">Товары для детей</a>
+        <a href="#" data-qty="42">Купонные сервисы</a>
+        <a href="#" data-qty="51">Красота & Здоровье</a>
+        <a href="#" data-qty="15">Товары для дома</a>
+        <a href="#" data-qty="24">Мебель</a>
+        <a href="#" data-qty="33">Бытовая техника</a>
+        <a href="#" data-qty="42">Электроника</a>
+        <a href="#" data-qty="51">Одежда & Обувь</a>
+        <a href="#" data-qty="15">Доставка еды</a>
+        <a href="#" data-qty="24">Развлечения</a>
+        <a href="#" data-qty="33">Путешествие</a>
+        <a href="#" data-qty="42">Для взрослых</a>
+        <a href="#" data-qty="51">Зоомагазины</a>
+        <a href="#" data-qty="15">Подарки & Цветы</a>
+    </div>
+</div>
+<!-- menu end -->
+
+
+<!-- menu start -->
+<div id="slide-menu-container_2">
+    <div id="slide-menu-content_2">
+        <div class="wrapp_top_menu_part">
+            <div class="ava_blocks_wrapp">
+                <div class="ara_inside_menu">
+                    <a href="#">
+                        <img src="img/ava_users.png" alt=""/>
+                    </a>
+                </div>
+                <div class="name_block_users">
+                    <p>Константин</p>
+
+                    <p>Константиновский</p>
+                </div>
+            </div>
+
+            <div class="rub_how">
+                <p class="money">1 345 руб</p>
+                <a href="#" class="ent_fin">Вывести средства</a>
+            </div>
+        </div>
+        <a href="#">Уведомления <span class="red_label_span">3</span></a>
+        <a href="#" data-qty="14">Избранное</a>
+        <a href="#">Пригласить друга</a>
+        <a href="#">Настройки</a>
+        <a href="#">Выход</a>
+
+    </div>
+</div>
+<!-- menu end -->
+
+
+<footer class="footer">
+    <div class="container an_padding">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="mar_top_wrapp">
+                    <div class="row nav_menu">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Наш блог</a></li>
+                                <li><a href="#">Помощь</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Партнерская программа</a></li>
+                                <li><a href="#">Каталог магазинов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt30class">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p class="phone info_about_company"><span></span> 8 (499) 999-88-77</p>
+
+                            <p class="mail info_about_company"><span></span><a href="#">info@cashbi.ru</a></p>
+
+                            <p class="placed info_about_company"><span></span>г. Москва, 3-я гражданская 7, корп.2</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="icon_soc_join">
+                                <ul>
+                                    <li><a href="#" class="soc_icon-fb">&#xf09a;</a></li>
+                                    <li><a href="#" class="soc_icon-vk">&#xf189;</a></li>
+                                    <li><a href="#" class="soc_icon-ok">&#xf263;</a></li>
+                                    <li><a href="#" class="soc_icon-tw">&#xf099;</a></li>
+                                    <li><a href="#" class="soc_icon-ig">&#xf16d;</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                <div class="mar_top_wrapp">
+                    <div id="vk_groups"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="gray_line_w_100"></div>
+
+    <div class="container an_padding">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                <div class="copyright">
+                    <p>Cashibi — Надежный кэшбэк сервис</p>
+
+                    <p class="copy"><span class="copy_class">©</span> 2016 Local Intrnet. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 foot_wrapp_btns">
+                <a href="#" class="type_subm_form_btn">Служба технической поддержки</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="color_line">
+        <div class="sky_blue_line"></div>
+        <div class="orange_line"></div>
+        <div class="red_line"></div>
+    </div>
+</footer>
+<!-- .footer -->
+
+<!-- scripts -->
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">VK.Widgets.Group('vk_groups', {mode: 3, no_cover: 1, width: 'auto'}, 135092297);</script>
+<!-- scripts -->
+
+</body>
+</html>
