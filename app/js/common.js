@@ -14,9 +14,6 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-
-
-
     //input file в ЛК профиль
     $(function (){
         if($('#chose_file').length)
