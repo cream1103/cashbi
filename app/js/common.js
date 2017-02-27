@@ -32,8 +32,8 @@ $(document).ready(function(){
 
     //инициализация formstyler
     (function($) {
-        $(function() {
-            $('.form_styler').styler();
+        $('.form_styler').styler({
+            selectVisibleOptions: 12
         });
     })(jQuery);
     //инициализация formstyler

@@ -33,6 +33,9 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .icon_soc_join{
+        left: 0;
+    }
     .pos_relative_92{
         top: 0;
     }
@@ -980,6 +983,28 @@
     }
     .checkbox_label{
         width: auto;
+    }
+    .p_car{
+        margin-top: 10px;
+        height: auto;
+    }
+    .left_img_card{
+        display: block;
+        margin-bottom: 10px;
+
+    }
+    .yellow_wrapper_info_block{
+        padding: 30px 10px;
+    }
+    .some_infos ul li{
+        font-size: 16px;
+    }
+    .some_infos ul li:before{
+        width: 6px;
+        height: 6px;
+    }
+    .h45px{
+        margin-top: 20px !important;
     }
 }
 /*=================================================================  599px  ==========*/
