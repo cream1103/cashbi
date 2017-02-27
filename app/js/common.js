@@ -14,6 +14,13 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //удаление сохраненного реквизита в ЛК вывод стредств
+    $('.pos_abs_span_cross').click(function(){
+        $(this).parents('tr').remove();
+    });
+    //удаление сохраненного реквизита в ЛК вывод стредств
+
+
     //input file в ЛК профиль
     $(function (){
         if($('#chose_file').length)

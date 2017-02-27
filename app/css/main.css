@@ -3157,3 +3157,76 @@ ul.nav_list {
 .h45px {
   height: 45px !important;
   line-height: 45px !important; }
+
+.p_save_and_status {
+  color: #3d424b;
+  font-size: 18px;
+  font-family: 'officinaserifbookcbook',sans-serif; }
+
+.save_rekv_tables tr:nth-child(even) {
+  background: #F6F6F6; }
+
+.save_rekv_tables {
+  width: 100%; }
+  .save_rekv_tables tr {
+    border-bottom: 1px solid #DCDCDC; }
+    .save_rekv_tables tr td {
+      width: 33%;
+      padding: 9px;
+      text-align: left;
+      position: relative;
+      font-size: 16px; }
+      .save_rekv_tables tr td .p_car {
+        font-size: 16px; }
+      .save_rekv_tables tr td .left_img_card {
+        position: relative;
+        top: 5px; }
+
+.subm_btns_small {
+  max-width: 162px;
+  width: 100%;
+  height: 32px;
+  background: #ff4f2f;
+  color: #ffffff;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  display: inline-block; }
+  .subm_btns_small:hover {
+    background: #CD3317; }
+
+.pos_abs_span_cross {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../img/icon/six_pix_close.png") no-repeat center center;
+  background-size: 100%;
+  background-size: initial;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  cursor: pointer; }
+
+.bor_top {
+  border-top: 1px solid #DCDCDC; }
+
+.status_table tr:nth-child(even) {
+  background: #F6F6F6; }
+
+.status_table {
+  width: 100%; }
+  .status_table tr {
+    border-bottom: 1px solid #DCDCDC; }
+    .status_table tr td {
+      font-family: 'OpenSansRegular',sans-serif;
+      font-size: 14px;
+      padding: 10px 15px; }
+
+.w100p {
+  width: 100px !important; }
+
+.w80p {
+  width: 80px !important; }

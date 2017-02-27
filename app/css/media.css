@@ -596,7 +596,32 @@
 }
 /*=================================================================  979px  ==========*/
 
+@media only screen and (max-width : 768px) {
+    .save_rekv_tables{
+        border-top: 1px solid #DCDCDC;
+    }
+    .last_td{
+        margin-bottom: 10px;
+    }
+    .pos_abs_span_cross{
+        right: 0;
+        top: -60px;
+    }
+    .save_rekv_tables tr{
+        padding-bottom: 5px;
+    }
+    .save_rekv_tables tr td{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .save_rekv_tables .left_img_card{
+        display: inline-block;
+        margin-bottom: 0;
 
+    }
+}
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
@@ -993,6 +1018,7 @@
         margin-bottom: 10px;
 
     }
+
     .yellow_wrapper_info_block{
         padding: 30px 10px;
     }
@@ -1005,6 +1031,19 @@
     }
     .h45px{
         margin-top: 20px !important;
+    }
+    .status_table tr{
+        padding: 7px 0;
+        display: block;
+    }
+    .status_table tr td{
+        display: inline-block;
+        width: 100% !important;
+        padding: 3px 15px;
+    }
+    .pos_abs_span_cross {
+        right: 0;
+        top: -73px;
     }
 }
 /*=================================================================  599px  ==========*/
@@ -1029,6 +1068,7 @@
         margin-right: 30px !important;
     }
 }
+
 @media only screen and (max-width : 700px) {
     .shops_block_start .text_fore_images {
         left: -48px;
