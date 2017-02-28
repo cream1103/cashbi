@@ -630,6 +630,9 @@
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .mr15{
+        min-width: auto;
+    }
     .padding_fore_all_cont_block{
         padding: 25px 15px;
     }

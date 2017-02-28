@@ -3238,3 +3238,8 @@ ul.nav_list {
   display: none;
   border-top: 2px solid transparent;
   padding-top: 0; }
+
+.mr15 {
+  margin-right: 15px;
+  display: inline-block;
+  min-width: 150px; }
