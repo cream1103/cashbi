@@ -287,11 +287,13 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <select class="form_styler">
-                                <option>На счет банковской карты</option>
-                                <option>На счет</option>
-                                <option>На счет банковской</option>
-                                <option>На счет банковской</option>
-                                <option>На счет банковской карты</option>
+                                <option class="value_chose">Способ вывода денег</option>
+                                <option class="value_chose">На номер телефона</option>
+                                <option class="value_chose">На счет банковской карты</option>
+                                <option class="value_chose">Кошелек QIWI</option>
+                                <option class="value_chose">Webmoney WMR</option>
+                                <option class="value_chose">Яндекс Деньги </option>
+                                <option class="value_chose">PayPal</option>
                             </select>
 
                             <p class="lbl_wrapp_f">
@@ -303,35 +305,223 @@
                 </div>
 
                 <div class="bottom_wrapper_on_check">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <p class="monet_on_cart p_car">
-                                <span class="left_img_card"><img src="img/icon/v_card.svg" alt=""/></span>
-                                На счет банковской карты
-                            </p>
+                    <!--<div class="likt_tab_block  b_none_imp t0">-->
 
-                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер карты"/>
-                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите ФИО владельца карты"/>
+                    <!--</div>-->
 
-                        </div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <p class="p_car ">
-                                Вывести
-                            </p>
-                            <div class="row">
-                                <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
-                                    <div class="ex_block_wrapper">
-                                        <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+                    <div class="likt_tab_block t1">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/v_mob.svg" alt=""/></span>
+                                    На номер телефона
+                                </p>
 
-                                        <span class="span_abs_pos_rub">руб.</span>
+                                <select class="form_styler select_refresh">
+                                    <option>Выберите вашего оператора</option>
+                                    <option>Оператор 1</option>
+                                    <option>Оператор 2</option>
+                                    <option>Оператор 3</option>
+                                    <option>Оператор 4</option>
+                                    <option>Оператор 5</option>
+                                </select>
+
+                                <span class="validate mt10">
+                                    <input id="phone" class="form_styler mb10 type_text" required="" type="text">
+                                </span>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="likt_tab_block t2">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/v_card.svg" alt=""/></span>
+                                    На счет банковской карты
+                                </p>
 
-                            <div class="row">
-                                <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
-                                    <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер карты"/>
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите ФИО владельца карты"/>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likt_tab_block t3">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/v_qiwi.svg" alt=""/></span>
+                                    На Кошелек Qiwi
+                                </p>
+
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер кошелька"/>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likt_tab_block t4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/v_webm.svg" alt=""/></span>
+                                    На Кошелек Webmoney WMR
+                                </p>
+
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер кошелька"/>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likt_tab_block t5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/drawing_70x80.svg" alt=""/></span>
+                                    На Яндекс.Деньги
+                                </p>
+
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер кошелька"/>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likt_tab_block t6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="monet_on_cart p_car">
+                                    <span class="left_img_card"><img src="img/icon/paypal-icon_70x80.svg" alt=""/></span>
+                                    На PayPal
+                                </p>
+
+                                <input class="form_styler mb10 type_text" required="" type="text" placeholder="Введите номер кошелька"/>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="p_car ">
+                                    Вывести
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-sm-9 col-xs-9">
+                                        <div class="ex_block_wrapper">
+                                            <input class="form_styler mb10 type_text" required="" type="text" placeholder="400"/>
+
+                                            <span class="span_abs_pos_rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                                        <input class="subm_btns in_block min_w_275 h45px mt0" value="Вывести средства" type="button">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -435,42 +625,74 @@
                 <tr>
                     <td class="w100p">05.08.16</td>
                     <td class="w80p">420 р.</td>
-                    <td>Заявка обрабатывается</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/v_mob.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">На номер телефона</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">+7 (915) 246 6790</td>
+                    <td class="tr_small_font">Заявка обрабатывается</td>
                 </tr>
                 <tr>
                     <td class="w100p">18.05.16</td>
                     <td class="w80p">560 р.</td>
-                    <td>Заявка успешно выполнена</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/v_webm.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">На Webmoney</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">4208 3460 6650 9921</td>
+                    <td class="tr_small_font">Заявка успешно выполнена</td>
                 </tr>
                 <tr>
                     <td class="w100p">05.08.16</td>
                     <td class="w80p">420 р.</td>
-                    <td>Заявка обрабатывается</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/paypal-icon_70x80.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">На PayPal</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">4202 3460 6650 9921</td>
+                    <td class="tr_small_font">Заявка обрабатывается</td>
                 </tr>
                 <tr>
                     <td class="w100p">18.05.16</td>
                     <td class="w80p">560 р.</td>
-                    <td>Заявка успешно выполнена</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/drawing_70x80.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">На Яндекс.Деньги</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">4208 3260 6250 2921</td>
+                    <td class="tr_small_font">Заявка успешно выполнена</td>
                 </tr>
                 <tr>
                     <td class="w100p">05.08.16</td>
                     <td class="w80p">420 р.</td>
-                    <td>Заявка обрабатывается</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/v_qiwi.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">На Кошелек Qiwi</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">4202 3460 6650 9921</td>
+                    <td class="tr_small_font">Заявка обрабатывается</td>
                 </tr>
                 <tr>
                     <td class="w100p">18.05.16</td>
                     <td class="w80p">560 р.</td>
-                    <td>Заявка успешно выполнена</td>
-                </tr>
-                <tr>
-                    <td class="w100p">05.08.16</td>
-                    <td class="w80p">420 р.</td>
-                    <td>Заявка обрабатывается</td>
-                </tr>
-                <tr>
-                    <td class="w100p">18.05.16</td>
-                    <td class="w80p">560 р.</td>
-                    <td>Заявка успешно выполнена</td>
+                    <td>
+                        <p class="monet_on_cart p_car">
+                            <span class="left_img_card"><img src="img/icon/v_card.svg" alt=""/></span>
+                            <span class="hidden-sm  hidden-md">Банковская карта</span>
+                        </p>
+                    </td>
+                    <td class="tr_small_font">4208 3460 6650 9921</td>
+                    <td class="tr_small_font">Заявка успешно выполнена</td>
                 </tr>
             </table>
 

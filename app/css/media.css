@@ -331,9 +331,9 @@
         position: relative;
         margin-top: 0;
     }
-    .wrapp_menus .named_block .named_right span{
-        right: -44px;
-    }
+    /*.wrapp_menus .named_block .named_right span{*/
+        /*right: -44px;*/
+    /*}*/
     .header .logo img{
         margin-top: 16px;
     }
@@ -592,6 +592,9 @@
         background: url("../img/600.jpg") center center;
         min-height: 270px;
     }
+    .status_table tr td{
+        padding: 10px 7px;
+    }
 
 }
 /*=================================================================  979px  ==========*/
@@ -619,12 +622,20 @@
     .save_rekv_tables .left_img_card{
         display: inline-block;
         margin-bottom: 0;
-
+    }
+    .tr_small_font{
+        font-size: 12px !important;
     }
 }
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .padding_fore_all_cont_block{
+        padding: 25px 15px;
+    }
+    .tr_small_font{
+        font-size: 14px !important;
+    }
     .lk_p_main{
         font-size: 16px;
         margin-bottom: 20px;
@@ -1045,6 +1056,21 @@
         right: 0;
         top: -73px;
     }
+    .status_table .p_car{
+        margin-top: 0;
+    }
+    .status_table .left_img_card{
+        float: left;
+        margin-bottom: 7px;
+    }
+    .status_table .left_img_card + span{
+        display: inline-block;
+        margin-top: 6px;
+    }
+    .status_table .left_img_card{
+        float: left;
+    }
+
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

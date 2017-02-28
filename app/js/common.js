@@ -14,6 +14,13 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //смена блоков в выборе платежной системы ( страница Вывести средства )
+
+    //смена блоков в выборе платежной системы ( страница Вывести средства )
+
+
+
+
     //удаление сохраненного реквизита в ЛК вывод стредств
     $('.pos_abs_span_cross').click(function(){
         $(this).parents('tr').remove();
@@ -38,11 +45,44 @@ $(document).ready(function(){
     //input file в ЛК профиль
 
     //инициализация formstyler
+    function valueFunct(){
+        setTimeout(function() {
+            $('.jq-selectbox__dropdown .value_chose').on('click', function(){
+
+                setTimeout(function() {
+                    $('.select_refresh').trigger('refresh');
+                }, 1)
+
+                var leng = $(this).index();
+                var slot = $('.t' + leng);
+
+                $('.likt_tab_block').fadeOut(0).css({
+                    'paddingTop':'0px',
+                    'borderTop':'2px solid transparent'
+                });
+                $(slot).css({
+                    'paddingTop':'20px',
+                    'borderTop':'2px solid #DDDBD4'
+                });
+                $(slot).fadeIn(0);
+
+
+
+            });
+        }, 100)
+    }
+
+
     (function($) {
         $('.form_styler').styler({
-            selectVisibleOptions: 12
+            selectVisibleOptions: 12,
+            onSelectOpened: function() {
+                valueFunct()
+            }
         });
     })(jQuery);
+
+
     //инициализация formstyler
 
 
