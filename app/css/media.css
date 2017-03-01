@@ -1097,7 +1097,36 @@
     .status_table .left_img_card{
         float: left;
     }
+    .text_center .tr_small_font{
+        text-align: left;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px{
+        border-right: none;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px .col_fr:after{
+        display: none;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px:after{
+        width: 80px;
+        height: 1px;
+        background: #D3D3D3;
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -40px;
+    }
+    .save_recvis .w40p{
+        position: absolute;
+        left: 10px;
+        width: auto !important;
 
+    }
+    .text_center tr td{
+        padding-left: 30px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

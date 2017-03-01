@@ -3200,6 +3200,12 @@ ul.nav_list {
 .w80p {
   width: 80px !important; }
 
+.w230p {
+  width: 230px !important; }
+
+.w40p {
+  width: 40px !important; }
+
 .likt_tab_block {
   display: none;
   border-top: 2px solid transparent;
@@ -3372,7 +3378,7 @@ ul.nav_list {
 
 .yell_wrapper_inv_fr {
   background: #FFF6D9;
-  padding: 30px 20px;
+  padding: 30px 20px 25px 20px;
   margin-top: 36px; }
   .yell_wrapper_inv_fr .stat_user {
     color: #3d424b;
@@ -3381,7 +3387,7 @@ ul.nav_list {
     text-align: center;
     margin-bottom: 30px; }
   .yell_wrapper_inv_fr .wrapp_row_stat {
-    max-width: 530px;
+    max-width: 600px;
     margin: 0 auto; }
     .yell_wrapper_inv_fr .wrapp_row_stat .pb_a {
       padding-bottom: 30px; }
@@ -3391,14 +3397,22 @@ ul.nav_list {
     font-family: 'officinaserifbookcbook';
     color: #3d424b;
     font-size: 16px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 12px; }
   .yell_wrapper_inv_fr .col_fr {
     font-family: 'officinaserifbookcbook';
     color: #3d424b;
     font-size: 36px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .yell_wrapper_inv_fr .col_fr span {
       display: inline-block;
       width: 32px;
       height: 32px;
-      background: url("../img/icon/login.svg") no-repeat center center; }
+      margin-right: 13px;
+      position: relative;
+      top: 5px;
+      background: url("../img/icon/Shape.png") no-repeat center center; }
+
+.text_center .tr_small_font {
+  text-align: center; }
