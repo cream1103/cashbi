@@ -1127,6 +1127,9 @@
     .text_center tr td{
         padding-left: 30px;
     }
+    .ul_wrapps li .heart{
+        left: 10px !important;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
