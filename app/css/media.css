@@ -630,6 +630,30 @@
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .wrapper_invite_friend .wrapp_div_fore_start_economy{
+        width: 100%;
+    }
+    .wrapper_invite_friend .wrapper_center_line_color .small_line_wrapper {
+        width: 160px;
+        height: 4px;
+        overflow: hidden;
+        margin: 20px auto 20px auto;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .icon_soc_join ul li{
+        margin-right: -1px;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_white_bg1{
+        padding: 0;
+    }
+    .you_pick_p{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .or_enter_soc_p {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
     .mr15{
         min-width: auto;
     }

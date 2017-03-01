@@ -1322,40 +1322,6 @@ a {
 .more_cashback .wrapp_div_fore_start_economy .form_white_bg .st_econo_auth_user {
   font-family: 'officinaserifboldcbold'; }
 
-.more_cashback .wrapp_div_fore_start_economy .form_white_bg .referal_link {
-  width: 100%;
-  height: 46px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  border: 1px solid #DCDCDC;
-  text-align: left;
-  line-height: 46px;
-  padding-left: 15px;
-  position: relative; }
-  .more_cashback .wrapp_div_fore_start_economy .form_white_bg .referal_link p {
-    color: #333333;
-    font-size: 14px;
-    font-family: 'OpenSansRegular'; }
-  .more_cashback .wrapp_div_fore_start_economy .form_white_bg .referal_link a {
-    position: absolute;
-    right: 0;
-    top: -1px;
-    height: 46px;
-    width: 48px;
-    background: #ff4f2f;
-    -webkit-border-radius: 0 3px 3px 0;
-            border-radius: 0 3px 3px 0; }
-    .more_cashback .wrapp_div_fore_start_economy .form_white_bg .referal_link a:hover {
-      background: #CD3317; }
-    .more_cashback .wrapp_div_fore_start_economy .form_white_bg .referal_link a .file_inp {
-      background: url("../img/icon/file_inp.png") no-repeat center center;
-      position: absolute;
-      width: 48px;
-      height: 48px;
-      display: inline-block;
-      left: 0;
-      top: 0; }
-
 .top_blue_header {
   height: 31px;
   width: 100%;
@@ -3243,3 +3209,196 @@ ul.nav_list {
   margin-right: 15px;
   display: inline-block;
   min-width: 150px; }
+
+.wrapper_invite_friend .wrapper_center_line_color .small_line_wrapper {
+  width: 255px;
+  height: 6px;
+  margin: 20px auto 40px auto; }
+
+.wrapper_invite_friend .wrapper_center_line_color .color_line {
+  height: 6px;
+  overflow: hidden;
+  position: static;
+  margin: 0 auto; }
+  .wrapper_invite_friend .wrapper_center_line_color .color_line .sky_blue_line {
+    width: 42.30%;
+    height: 15px;
+    background: #89C9EC;
+    float: left; }
+  .wrapper_invite_friend .wrapper_center_line_color .color_line .dark_blue_line {
+    width: 40.5%;
+    height: 15px;
+    background: #202E5C;
+    float: left; }
+  .wrapper_invite_friend .wrapper_center_line_color .color_line .red_line {
+    width: 17.20%;
+    height: 15px;
+    background: #E8242E;
+    float: left; }
+
+.wrapper_invite_friend .text_buying {
+  font-size: 24px;
+  font-family: 'officinaserifbookcbook',sans-serif;
+  text-align: center; }
+
+.wrapper_invite_friend .wrapp_div_fore_start_economy {
+  width: 473px;
+  margin: 0 auto; }
+  .wrapper_invite_friend .wrapp_div_fore_start_economy .form_white_bg1 {
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    padding: 0 40px;
+    text-align: center; }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_white_bg1 .start_economy {
+      font-size: 30px;
+      font-family: 'officinaserifbookcbook',sans-serif;
+      margin-bottom: 30px; }
+  .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class {
+    width: 100%; }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class .wrapp_input {
+      position: relative;
+      width: 100%;
+      margin-bottom: 22px; }
+      .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class .wrapp_input .style_input {
+        width: 100%;
+        height: 46px;
+        border: 1px solid #DCDCDC;
+        padding-left: 15px;
+        padding-right: 40px;
+        position: relative;
+        -webkit-border-radius: 3px;
+                border-radius: 3px; }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class .mail_icon:after {
+      width: 19px;
+      height: 14px;
+      content: '';
+      position: absolute;
+      right: 17px;
+      top: 16px;
+      background: url("../img/icon/mail.svg") no-repeat center center; }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class .type_subm_form_btn {
+      width: 100%;
+      height: 47px;
+      background: #ff4f2f;
+      color: #ffffff;
+      line-height: 47px;
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      -webkit-border-radius: 50px;
+              border-radius: 50px; }
+      .wrapper_invite_friend .wrapp_div_fore_start_economy .form_class .type_subm_form_btn:hover {
+        background: #CD3317; }
+  .wrapper_invite_friend .wrapp_div_fore_start_economy .or_enter_soc_p {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 18px; }
+  .wrapper_invite_friend .wrapp_div_fore_start_economy .icon_soc_join {
+    margin-bottom: 4px;
+    left: 0; }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .icon_soc_join ul li {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      margin-right: 10px; }
+      .wrapper_invite_friend .wrapp_div_fore_start_economy .icon_soc_join ul li a {
+        -webkit-border-radius: 50px;
+                border-radius: 50px;
+        display: inline-block; }
+
+.wrapper_invite_friend .btn_wrapp_show_xs {
+  width: 100%;
+  text-align: center; }
+  .wrapper_invite_friend .btn_wrapp_show_xs .type_subm_form_btn {
+    width: 100%;
+    height: 47px;
+    background: #ff4f2f;
+    color: #ffffff;
+    line-height: 47px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    display: inline-block; }
+    .wrapper_invite_friend .btn_wrapp_show_xs .type_subm_form_btn:hover {
+      background: #CD3317;
+      text-decoration: none; }
+
+.referal_link {
+  width: 100%;
+  height: 46px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #DCDCDC;
+  text-align: left;
+  line-height: 46px;
+  padding-left: 15px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden; }
+  .referal_link p {
+    color: #333333;
+    font-size: 14px;
+    font-family: 'OpenSansRegular'; }
+  .referal_link a {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    height: 46px;
+    width: 48px;
+    background: #ff4f2f;
+    -webkit-border-radius: 0 3px 3px 0;
+            border-radius: 0 3px 3px 0; }
+    .referal_link a:hover {
+      background: #CD3317; }
+    .referal_link a .file_inp {
+      background: url("../img/icon/file_inp.png") no-repeat center center;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      left: 0;
+      top: 0; }
+
+.you_pick_p {
+  font-size: 20px;
+  color: #3d424b;
+  font-family: 'officinaserifbookcbook';
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px; }
+
+.yell_wrapper_inv_fr {
+  background: #FFF6D9;
+  padding: 30px 20px;
+  margin-top: 36px; }
+  .yell_wrapper_inv_fr .stat_user {
+    color: #3d424b;
+    font-size: 20px;
+    font-family: 'officinaserifbookcbook';
+    text-align: center;
+    margin-bottom: 30px; }
+  .yell_wrapper_inv_fr .wrapp_row_stat {
+    max-width: 530px;
+    margin: 0 auto; }
+    .yell_wrapper_inv_fr .wrapp_row_stat .pb_a {
+      padding-bottom: 30px; }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px {
+      border-right: 1px solid #D3D3D3; }
+  .yell_wrapper_inv_fr .clasific {
+    font-family: 'officinaserifbookcbook';
+    color: #3d424b;
+    font-size: 16px;
+    text-align: center; }
+  .yell_wrapper_inv_fr .col_fr {
+    font-family: 'officinaserifbookcbook';
+    color: #3d424b;
+    font-size: 36px;
+    text-align: center; }
+    .yell_wrapper_inv_fr .col_fr span {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url("../img/icon/login.svg") no-repeat center center; }
