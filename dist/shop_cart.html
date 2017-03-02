@@ -19,7 +19,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="autorised_user">
+<body class="autorised_user"> <!--на всех страницах добавляем и убираем класс autorised_user в зависимости от регистрации -->
 
 <!-- arrows UP -->
 <p id="back-top" class="hidden-sm hidden-xs"><a href="#top"><span></span></a></p>
@@ -143,20 +143,6 @@
                                 <span class="red_rounds">3</span>
                             </div>
                         </div>
-                        <!--div class="name_block flex_blocks hidden-sm hidden-xs">
-                            <div class="named_user wr_all">
-                                <span></span>
-                                <a href="#" class="user_name" title="Константин Константин">Константин Константин</a>
-                            </div>
-                            <a href="#" class="bott_links">Личный кабинет</a>
-                        </div>
-
-                        <div id="enter_aut" class="profile_hover_block flex_blocks">
-                            <div class="ava_blocks">
-                                <a href="javascript:"><img src="img/ava_users.png" alt=""/></a>
-                                <span class="red_rounds">3</span>
-                            </div>
-                        </div-->
 
                         <div class="navbar-header flex_blocks none_border_left">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -180,7 +166,8 @@
 <!-- .header-->
 
 
-<div class="middle mt108_fore_fixed_header">
+<div class="middle">
+
 <div class="container-fluid max_w_1600">
 <div class="row">
     <div class="col-lg-12">
@@ -1032,24 +1019,51 @@
                         <img src="img/ava_users.png" alt=""/>
                     </a>
                 </div>
-                <div class="name_block_users">
+                <div id="it_1" class="name_block_users">
                     <p>Константин</p>
-
                     <p>Константиновский</p>
+                </div>
+                <div id="it_2" class="name_block_users2 toggle_hidden_class">
+                    <a href="#">Выход <span class="icon_spans"></span></a>
                 </div>
             </div>
 
-            <div class="rub_how">
+            <a href="#" class="rub_how">
                 <p class="money">1 345 руб</p>
-                <a href="#" class="ent_fin">Вывести средства</a>
-            </div>
+                <span class="ent_fin">Вывести средства</span>
+            </a>
         </div>
-        <a href="#">Уведомления <span class="red_label_span">3</span></a>
-        <a href="#" data-qty="14">Избранное</a>
-        <a href="#">Пригласить друга</a>
-        <a href="#">Настройки</a>
-        <a href="#">Выход</a>
 
+        <ul class="nav_list nav_list_first">
+            <li>
+                <a href="#">Персональные данные</a>
+            </li>
+            <li>
+                <a href="#">Уведомления <span class="span_withs">3</span></a>
+            </li>
+            <li>
+                <a href="#">Накопительная cистема</a>
+            </li>
+            <li>
+                <a href="#">Пригласить друга</a>
+            </li>
+            <li>
+                <a href="#">Вывести средства</a>
+            </li>
+            <li>
+                <a href="#">Избранные магазины</a>
+            </li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+        </ul>
     </div>
 </div>
 <!-- menu end -->
@@ -1118,7 +1132,7 @@
                 <div class="copyright">
                     <p>Cashibi — Надежный кэшбэк сервис</p>
 
-                    <p class="copy"><span class="copy_class">©</span> 2016 Local Intrnet. All rights reserved.</p>
+                    <p class="copy"><span class="copy_class">©</span> 2016 Local Internet. All rights reserved.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 foot_wrapp_btns">

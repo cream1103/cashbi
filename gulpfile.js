@@ -34,7 +34,7 @@ gulp.task('scripts', function() {
 		'app/libs/bootstrap/js/bootstrap.js',
 		'app/libs/bx_slider/jquery.bxslider.js',
 		'app/libs/formStyler/jquery.formstyler.min.js',
-		'app/libs/maskedinput/jquery.maskedinput.min.js'
+		'app/libs//jquery.maskedinput.min.js'
             //JS БИБЛИОТЕКИ СЮДА
 
 		])

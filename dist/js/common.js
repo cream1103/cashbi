@@ -14,6 +14,84 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //сворачивание addblock
+        $('.close_addBlock').click(function(){
+            $(this).parents('.adblock_block').slideUp(100);
+        });
+    //сворачивание addblock
+
+    //маска инпутов
+     $(function($){
+        $("#phone").mask("+7 (999) 999 9999");
+        $("#bank_card").mask("9999 9999 9999 9999");
+    });
+    //маска инпутов
+
+    //удаление сохраненного реквизита в ЛК вывод стредств
+    $('.pos_abs_span_cross').click(function(){
+        $(this).parents('tr').remove();
+    });
+    //удаление сохраненного реквизита в ЛК вывод стредств
+
+
+    //input file в ЛК профиль
+    $(function (){
+        if($('#chose_file').length)
+        {
+            $('#chose_file').click(function(){
+                $('#chose_file_input').click();
+                return(false);
+            });
+
+            $('#chose_file_input').change(function(){
+                $('#chose_file_text').html($(this).val());
+            }).change(); // .change() в конце для того чтобы событие сработало при обновлении страницы
+        }
+    });
+    //input file в ЛК профиль
+
+    //инициализация formstyler
+    function valueFunct(){
+        setTimeout(function() {
+            $('.jq-selectbox__dropdown .value_chose').on('click', function(){
+
+                setTimeout(function() {
+                    $('.select_refresh').trigger('refresh');
+                }, 1);
+
+                var leng = $(this).index();
+                var slot = $('.t' + leng);
+
+                $('.likt_tab_block').fadeOut(0).css({
+                    'paddingTop':'0px',
+                    'borderTop':'2px solid transparent'
+                });
+                $(slot).css({
+                    'paddingTop':'20px',
+                    'borderTop':'2px solid #DDDBD4'
+                });
+                $(slot).fadeIn(0);
+
+
+
+            });
+        }, 100)
+    }
+
+
+    (function($) {
+        $('.form_styler').styler({
+            selectVisibleOptions: 12,
+            onSelectOpened: function() {
+                valueFunct()
+            }
+        });
+    })(jQuery);
+
+
+    //инициализация formstyler
+
+
     //якорь отзывов
     $('.subm_btns[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();
@@ -35,12 +113,12 @@ $(document).ready(function(){
 
     //аккордеон меню
     $(function () {
-        var el = $('#nav_list_first li a');
-        $('#nav_list_first li:has("ul")').append('<span></span>');
+        var el = $('.nav_list_first li a');
+        $('.nav_list_first li:has("ul")').append('<span></span>');
         el.click(function() {
             //setTimeout(windowHeight(), 500);
             var checkedElement = $(this).next(),
-                visibleElement = $('#nav_list_first ul:visible');
+                visibleElement = $('.nav_list_first ul:visible');
 
             visibleElement.stop().animate({'height':'toggle'}, 300).parent().removeClass('active');
             if((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
@@ -55,96 +133,138 @@ $(document).ready(function(){
     //аккордеон меню
 
     //липкий сайдбар
-    var stickySidebar = $('.sticky');
-
-    if (stickySidebar.length > 0) {
-        var stickyHeight = stickySidebar.height(),
-            sidebarTop = stickySidebar.offset().top;
-    }
-// on scroll move the sidebar
-    $(window).scroll(function () {
-        if (stickySidebar.length > 0) {
-            var scrollTop = $(window).scrollTop() + 147;
-
-            if (sidebarTop < scrollTop) {
-                stickySidebar.css('top', scrollTop - sidebarTop);
-
-                // stop the sticky sidebar at the footer to avoid overlapping
-                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-                if (stickyStop < sidebarBottom) {
-                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-                    stickySidebar.css('top', stopPosition);
-                }
-            }
-            else {
-                stickySidebar.css('top', '0');
-            }
-        }
-    });
-    $(window).resize(function () {
-        if (stickySidebar.length > 0) {
-            stickyHeight = stickySidebar.height();
-        }
-    });
+//    var stickySidebar = $('.sticky');
+//
+//    if (stickySidebar.length > 0) {
+//        var stickyHeight = stickySidebar.height(),
+//            sidebarTop = stickySidebar.offset().top;
+//    }
+//// on scroll move the sidebar
+//    $(window).scroll(function () {
+//        if (stickySidebar.length > 0) {
+//            var scrollTop = $(window).scrollTop() + 147;
+//
+//            if (sidebarTop < scrollTop) {
+//                stickySidebar.css('top', scrollTop - sidebarTop);
+//
+//                // stop the sticky sidebar at the footer to avoid overlapping
+//                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+//                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+//                if (stickyStop < sidebarBottom) {
+//                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+//                    stickySidebar.css('top', stopPosition);
+//                }
+//            }
+//            else {
+//                stickySidebar.css('top', '0');
+//            }
+//        }
+//    });
+//    $(window).resize(function () {
+//        if (stickySidebar.length > 0) {
+//            stickyHeight = stickySidebar.height();
+//        }
+//    });
     //липкий сайдбар
 
 
 
-//    function windowHeight(){
-//
-//        var bohi = $(window).height() - 107;
-//        var columnHeight = $('.sticky').height();
-//        if(bohi > columnHeight) {
-//            console.log(bohi + ">" + columnHeight);
-//            //липкий сайдбар
-//            var stickySidebar = $('.sticky');
-//
-//            if (stickySidebar.length > 0) {
-//                var stickyHeight = stickySidebar.height(),
-//                    sidebarTop = stickySidebar.offset().top;
-//            }
-//// on scroll move the sidebar
-//            $(window).scroll(function () {
-//                if (stickySidebar.length > 0) {
-//                    var scrollTop = $(window).scrollTop() + 147;
-//
-//                    if (sidebarTop < scrollTop) {
-//                        stickySidebar.css('top', scrollTop - sidebarTop);
-//
-//                        // stop the sticky sidebar at the footer to avoid overlapping
-//                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-//                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-//                        if (stickyStop < sidebarBottom) {
-//                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-//                            stickySidebar.css('top', stopPosition);
-//                        }
-//                    }
-//                    else {
-//                        stickySidebar.css('top', '0');
-//                    }
-//                }
-//            });
-//            $(window).resize(function () {
-//                if (stickySidebar.length > 0) {
-//                    stickyHeight = stickySidebar.height();
-//                }
-//            });
-//            //липкий сайдбар
-//
-//        } else {
-//            console.log(bohi + "<" + columnHeight);
-//
+    function windowHeight(){
+
+        var bohi = $(window).height() - 107;
+        var columnHeight = $('.sticky').height();
+        if(bohi > columnHeight) {
+            console.log(bohi + ">" + columnHeight);
+            //липкий сайдбар
+            var stickySidebar = $('.sticky');
+
+            if (stickySidebar.length > 0) {
+                var stickyHeight = stickySidebar.height(),
+                    sidebarTop = stickySidebar.offset().top;
+            }
+// on scroll move the sidebar
+            $(window).scroll(function () {
+                if (stickySidebar.length > 0) {
+                    var scrollTop = $(window).scrollTop() + 147;
+
+                    if (sidebarTop < scrollTop) {
+                        stickySidebar.css('top', scrollTop - sidebarTop);
+
+                        // stop the sticky sidebar at the footer to avoid overlapping
+                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+                        if (stickyStop < sidebarBottom) {
+                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+                            stickySidebar.css('top', stopPosition);
+                        }
+                    }
+                    else {
+                        stickySidebar.css('top', '0');
+                    }
+                }
+            });
+            $(window).resize(function () {
+                if (stickySidebar.length > 0) {
+                    stickyHeight = stickySidebar.height();
+                }
+            });
+            //липкий сайдбар
+
+        } else {
+            console.log(bohi + "<" + columnHeight);
+
+            $('.nav_list_first').css({
+                'max-height':'67vh',
+                'overflow-y':'auto'
+            });
+            //липкий сайдбар
+            var stickySidebar = $('.sticky');
+
+            if (stickySidebar.length > 0) {
+                var stickyHeight = stickySidebar.height(),
+                    sidebarTop = stickySidebar.offset().top;
+            }
+// on scroll move the sidebar
+            $(window).scroll(function () {
+                if (stickySidebar.length > 0) {
+                    var scrollTop = $(window).scrollTop() + 147;
+
+                    if (sidebarTop < scrollTop) {
+                        stickySidebar.css('top', scrollTop - sidebarTop);
+
+                        // stop the sticky sidebar at the footer to avoid overlapping
+                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+                        if (stickyStop < sidebarBottom) {
+                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+                            stickySidebar.css('top', stopPosition);
+                        }
+                    }
+                    else {
+                        stickySidebar.css('top', '0');
+                    }
+                }
+            });
+            $(window).resize(function () {
+                if (stickySidebar.length > 0) {
+                    stickyHeight = stickySidebar.height();
+                }
+            });
+            //липкий сайдбар
 //            $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
 //                delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
 //                if (delta >= 0) {
+////                    $('.sticky').css('top', '0');
+////                    stickySidebar.css('top', '0');
 //                    console.log('up')
 //                } else {
+////                    $('.sticky').css('top', '100');
+////                    stickySidebar.css('top', '200');
 //                    console.log('down')
 //                }
 //            });
-//        }
-//    }
+        }
+    }
 
 
 
@@ -209,13 +329,24 @@ $(document).ready(function(){
 
     // Управление скользящим боковым меню start ***
     // --- закрытие
+
+    $('.ara_inside_menu').click(function(){
+        $('#it_1').toggleClass('toggle_hidden_class');
+        $('#it_2').toggleClass('toggle_hidden_class');
+    });
     $('#slide-menu-container_2').on('click', function(e){
+//        alert(123123213)
+
         var target = e.target || e.srcElement;
         if(target.id === this.id){
             $('body').css('overflow','auto');
             $('#slide-menu-container_2').removeClass('show');
+            $('#it_1').removeClass('toggle_hidden_class');
+            $('#it_2').addClass('toggle_hidden_class');
         }
     });
+
+
 
     // --- открытие
     $('#enter_aut a').on('click', function(){
@@ -428,10 +559,12 @@ $(document).ready(function(){
     // Управление скользящим боковым меню start ***
     // --- закрытие
     $('#slide-menu-container').on('click', function(e){
+
         var target = e.target || e.srcElement;
         if(target.id === this.id){
             $('body').css('overflow','auto');
             $('#slide-menu-container').removeClass('show');
+
         }
     });
 
@@ -581,12 +714,12 @@ $(document).ready(function(){
         sliderFunction();
         sliderFunctions();
         sliderFunctions2();
-        //windowHeight();
+        windowHeight();
     });
     $(window).on('resize', function(){
         sliderFunctions();
         sliderFunctions2();
-        //windowHeight();
+//        windowHeight();
     });
     //вызов слайдера товаров
     var resizeTimeout = null;

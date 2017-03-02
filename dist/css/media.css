@@ -33,6 +33,23 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .icon_soc_join{
+        left: 0;
+    }
+    .gold_wrapp_block{
+        margin-right: 0px;
+    }
+    .cooper_wrapp_block{
+        margin-left: 0px;
+    }
+    .pos_relative_92{
+        top: 0;
+    }
+    .wrapp_max_w_block{
+        width:  400px;
+        padding-left: 50px
+    }
+
     .activate_cashb{
         padding: 17px 32px;
     }
@@ -42,8 +59,8 @@
     .padding_fore_all_cont_block{
         padding: 40px 30px;
     }
-    .mt108_fore_fixed_header{
-        margin-top: 107px;
+    .autorised_user .middle{
+        margin-top: 88px;
     }
     .wrappers .search {
         min-width: 460px;
@@ -56,7 +73,7 @@
         margin-left: 20px;
     }
     .header .logo img{
-        margin-top: 19px;
+        margin-top: 15px;
         width: 146px;
     }
     .wrapp_menus .flex_blocks .ava_blocks{
@@ -200,10 +217,22 @@
         width: 102%;
         margin-left: -1%;
     }
+    .label_s{
+        white-space: nowrap;
+    }
 
 }
 /*=================================================================  1399px  ==========*/
 
+
+@media only screen and (max-width : 1200px) {
+    .gold_wrapp_block {
+        margin-right: -6px;
+    }
+    .cooper_wrapp_block {
+        margin-left: -6px;
+    }
+}
 
 /*=================================================================  1100px  ==========*/
 @media only screen and (max-width : 1100px) {
@@ -216,6 +245,10 @@
     .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block .img_block_pay{
         height: 115px;
     }
+    .wrapp_max_w_block {
+        width: 420px;
+        padding-left: 70px;
+    }
 }
 /*=================================================================  1100px  ==========*/
 
@@ -223,7 +256,17 @@
 /*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
-
+    .wrapp_max_w_block {
+        width: 350px;
+        padding-left: 0;
+    }
+    .one_item{
+        border-right: none;
+    }
+    .main_user_icons {
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
     .link_to_slide_top_block{
         display: inline-block;
     }
@@ -291,9 +334,13 @@
         position: relative;
         margin-top: 0;
     }
-    .mt108_fore_fixed_header{
+    .middle {
         margin-top: 68px;
     }
+    .autorised_user .middle{
+        margin-top: 48px;
+    }
+
     .browser_block .logo__and_text_wrapper .text_wrappers {
         max-width: 80%;
     }
@@ -306,9 +353,9 @@
         position: relative;
         margin-top: 0;
     }
-    .wrapp_menus .named_block .named_right span{
-        right: -44px;
-    }
+    /*.wrapp_menus .named_block .named_right span{*/
+        /*right: -44px;*/
+    /*}*/
     .header .logo img{
         margin-top: 16px;
     }
@@ -567,16 +614,126 @@
         background: url("../img/600.jpg") center center;
         min-height: 270px;
     }
-
+    .status_table tr td{
+        padding: 10px 7px;
+    }
+    .gold_wrapp_block {
+        margin-right: 0px;
+    }
+    .cooper_wrapp_block {
+        margin-left: 0px;
+    }
 }
 /*=================================================================  979px  ==========*/
 
-
+@media only screen and (max-width : 768px) {
+    .save_rekv_tables{
+        border-top: 1px solid #DCDCDC;
+    }
+    .last_td{
+        margin-bottom: 10px;
+    }
+    .pos_abs_span_cross{
+        right: 0;
+        top: -60px;
+    }
+    .save_rekv_tables tr{
+        padding-bottom: 5px;
+    }
+    .save_rekv_tables tr td{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .save_rekv_tables .left_img_card{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .tr_small_font{
+        font-size: 12px !important;
+    }
+}
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .wrapper_invite_friend .wrapp_div_fore_start_economy{
+        width: 100%;
+    }
+    .wrapper_invite_friend .wrapper_center_line_color .small_line_wrapper {
+        width: 160px;
+        height: 4px;
+        overflow: hidden;
+        margin: 20px auto 20px auto;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .icon_soc_join ul li{
+        margin-right: -1px;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .form_white_bg1{
+        padding: 0;
+    }
+    .you_pick_p{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .wrapper_invite_friend .wrapp_div_fore_start_economy .or_enter_soc_p {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .mr15{
+        min-width: auto;
+    }
+    .padding_fore_all_cont_block{
+        padding: 25px 15px;
+    }
+    .tr_small_font{
+        font-size: 14px !important;
+    }
+    .lk_p_main{
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .checkbox_label{
+        font-size: 14px;
+    }
+    .reset_btn_black{
+        margin: 15px auto 0 auto;
+        display: block;
+
+    }
+    .label_span{
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+    .soc_registr .icon_soc_join li a{
+        width: 43px;
+        height: 43px;
+        margin-right: 7px;
+        font: 20px/43px fontawesome;
+    }
+    .soc_registr .icon_soc_join li a.soc_icon-go{
+        width: 43px;
+        height: 43px;
+        margin-right: 0;
+    }
+    .soc_registr .icon_soc_join li a.active:after{
+        width: 20px;
+        height: 20px;
+    }
     .pb_0_600{
         padding-bottom: 0 !important;
+    }
+    .mt15_600{
+        margin-top: 15px
+    }
+
+    .main_user_icons{
+        text-align: center;
+    }
+    .wrapp_max_w_block{
+        width: 100%;
     }
     .mb_50{
         margin-bottom: 50px;
@@ -690,20 +847,14 @@
     }
     .subm_btns{
         max-width: 100%;
+        font-size: 18px;
     }
-    /*.bg_block_top_autor .slider_wrapper_first_screen .cont img{*/
-    /*width: 65% !important;*/
-    /*margin:  0 auto;*/
-    /*}*/
+    .reset_btn_black{
+        font-size: 18px;
+    }
     .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
         font-size: 24px !important;
     }
-    /*
-    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
-        font-size: 24px;
-        margin-top: 18px;
-    }
-    */
     .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first .one-slide > img{
         height: 370px;
         width: auto;
@@ -911,6 +1062,118 @@
     .padding_fore_filter {
         padding: 10px 10px 3px 20px;
     }
+    .wrapp_menus .flex_blocks{
+        border-left: none;
+    }
+    .wrapp_menus .named_block{
+        border-right: none;
+    }
+    .jq-checkbox{
+        float: right;
+    }
+    .checkbox_label{
+        width: auto;
+    }
+    .p_car{
+        margin-top: 10px;
+        height: auto;
+    }
+    .left_img_card{
+        display: block;
+        margin-bottom: 10px;
+
+    }
+
+    .yellow_wrapper_info_block{
+        padding: 30px 10px;
+    }
+    .some_infos ul li{
+        font-size: 16px;
+    }
+    .some_infos ul li:before{
+        width: 6px;
+        height: 6px;
+    }
+    .h45px{
+        margin-top: 20px !important;
+    }
+    .status_table tr{
+        padding: 7px 0;
+        display: block;
+    }
+    .status_table tr td{
+        display: inline-block;
+        width: 100% !important;
+        padding: 3px 15px;
+    }
+    .pos_abs_span_cross {
+        right: 0;
+        top: -73px;
+    }
+    .status_table .p_car{
+        margin-top: 0;
+    }
+    .status_table .left_img_card{
+        float: left;
+        margin-bottom: 7px;
+    }
+    .status_table .left_img_card + span{
+        display: inline-block;
+        margin-top: 6px;
+    }
+    .status_table .left_img_card{
+        float: left;
+    }
+    .text_center .tr_small_font{
+        text-align: left;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px{
+        border-right: none;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px .col_fr:after{
+        display: none;
+    }
+    .yell_wrapper_inv_fr .wrapp_row_stat .br_1px:after{
+        width: 80px;
+        height: 1px;
+        background: #D3D3D3;
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -40px;
+    }
+    .save_recvis .w40p{
+        position: absolute;
+        left: 10px;
+        width: auto !important;
+
+    }
+    .text_center tr td{
+        padding-left: 30px;
+    }
+    .ul_wrapps li .heart{
+        left: 10px !important;
+    }
+    .adblock_block p{
+        font-size: 14px;
+    }
+    .silver_wrapp_block{
+        right: auto;
+        top: auto;
+        position: relative;
+        float: none;
+        margin: 0 auto 25px auto;
+    }
+    .P-styler{
+        position: relative;
+        bottom: 10px;
+    }
+    .y_en_padding{
+        margin-top: 50px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -934,6 +1197,8 @@
         margin-right: 30px !important;
     }
 }
+
+
 @media only screen and (max-width : 700px) {
     .shops_block_start .text_fore_images {
         left: -48px;
@@ -982,9 +1247,16 @@
         /*height: 45px;*/
         margin-right: 1px;
     }
+    .soc_registr .icon_soc_join li a{
+        width: 41px;
+        height: 41px;
+        margin-right: 0;
+        font: 20px/41px fontawesome;
+    }
 }
 
 @media all and (max-width: 979px) and (min-width: 600px) {
+
     .img_and_links img {
         margin-top: 20px;
         margin-bottom: 23px;

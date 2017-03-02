@@ -3443,7 +3443,9 @@ ul.nav_list {
   position: relative;
   left: 0;
   top: 0;
-  font-size: 15px; }
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 15px; }
 
 .adblock_block {
   width: 100%;
