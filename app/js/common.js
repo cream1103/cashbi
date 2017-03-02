@@ -14,6 +14,12 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //сворачивание addblock
+        $('.close_addBlock').click(function(){
+            $(this).parents('.adblock_block').slideUp(100);
+        });
+    //сворачивание addblock
+
     //маска инпутов
      $(function($){
         $("#phone").mask("+7 (999) 999 9999");
@@ -51,7 +57,7 @@ $(document).ready(function(){
 
                 setTimeout(function() {
                     $('.select_refresh').trigger('refresh');
-                }, 1)
+                }, 1);
 
                 var leng = $(this).index();
                 var slot = $('.t' + leng);

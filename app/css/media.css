@@ -36,6 +36,12 @@
     .icon_soc_join{
         left: 0;
     }
+    .gold_wrapp_block{
+        margin-right: 0px;
+    }
+    .cooper_wrapp_block{
+        margin-left: 0px;
+    }
     .pos_relative_92{
         top: 0;
     }
@@ -53,8 +59,8 @@
     .padding_fore_all_cont_block{
         padding: 40px 30px;
     }
-    .mt108_fore_fixed_header{
-        margin-top: 107px;
+    .autorised_user .middle{
+        margin-top: 88px;
     }
     .wrappers .search {
         min-width: 460px;
@@ -67,7 +73,7 @@
         margin-left: 20px;
     }
     .header .logo img{
-        margin-top: 19px;
+        margin-top: 15px;
         width: 146px;
     }
     .wrapp_menus .flex_blocks .ava_blocks{
@@ -219,6 +225,15 @@
 /*=================================================================  1399px  ==========*/
 
 
+@media only screen and (max-width : 1200px) {
+    .gold_wrapp_block {
+        margin-right: -6px;
+    }
+    .cooper_wrapp_block {
+        margin-left: -6px;
+    }
+}
+
 /*=================================================================  1100px  ==========*/
 @media only screen and (max-width : 1100px) {
     .pay_block .left_pat_sistems_block .pay_sistams_wrapper .pay_one_block{
@@ -244,6 +259,9 @@
     .wrapp_max_w_block {
         width: 350px;
         padding-left: 0;
+    }
+    .one_item{
+        border-right: none;
     }
     .main_user_icons {
         padding-left: 10px;
@@ -316,9 +334,13 @@
         position: relative;
         margin-top: 0;
     }
-    .mt108_fore_fixed_header{
+    .middle {
         margin-top: 68px;
     }
+    .autorised_user .middle{
+        margin-top: 48px;
+    }
+
     .browser_block .logo__and_text_wrapper .text_wrappers {
         max-width: 80%;
     }
@@ -595,7 +617,12 @@
     .status_table tr td{
         padding: 10px 7px;
     }
-
+    .gold_wrapp_block {
+        margin-right: 0px;
+    }
+    .cooper_wrapp_block {
+        margin-left: 0px;
+    }
 }
 /*=================================================================  979px  ==========*/
 
@@ -1130,6 +1157,23 @@
     .ul_wrapps li .heart{
         left: 10px !important;
     }
+    .adblock_block p{
+        font-size: 14px;
+    }
+    .silver_wrapp_block{
+        right: auto;
+        top: auto;
+        position: relative;
+        float: none;
+        margin: 0 auto 25px auto;
+    }
+    .P-styler{
+        position: relative;
+        bottom: 10px;
+    }
+    .y_en_padding{
+        margin-top: 50px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1153,6 +1197,7 @@
         margin-right: 30px !important;
     }
 }
+
 
 @media only screen and (max-width : 700px) {
     .shops_block_start .text_fore_images {
@@ -1211,6 +1256,7 @@
 }
 
 @media all and (max-width: 979px) and (min-width: 600px) {
+
     .img_and_links img {
         margin-top: 20px;
         margin-bottom: 23px;

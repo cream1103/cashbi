@@ -531,7 +531,7 @@ input, select, textarea, button {
 
 @media (min-width: 980px) {
   .header {
-    position: absolute; } }
+    position: relative; } }
 
 .wrapp_all_prasents_and_slider .animate_hover_wrapp {
   padding-top: 20px !important;
