@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LK PROFILE</title>
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/add.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?139"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="autorised_user">
+
+<!-- arrows UP -->
+<p id="back-top" class="hidden-sm hidden-xs"><a href="#top"><span></span></a></p>
+<!-- arrows UP -->
+
+
+<div class="wrapper wrapp_bgs">
+
+<header class="header">
+    <div class="top_blue_header hidden-sm hidden-xs">
+        <div class="container an_padding">
+            <ul>
+                <li><a href="#">Каталог магазинов</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container an_padding">
+        <nav class="navbar navbar-default">
+            <div class="row  pos_relative_block">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <a href="index.html" id="logos" class="logo"><img src="img/icon/logo.svg" alt=""/></a>
+                </div>
+
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-6">
+                    <div class="wrapp_menus">
+                        <a href="#" class="add_friends flex_blocks hidden-xs">
+                            <div class="wr_all">
+                                <p class="main_p_numb"><span class="friends"></span>2</p>
+                            </div>
+                            <span class="bott_links">Пригласить друга</span>
+                        </a>
+
+                        <a href="#" class="copy_system flex_blocks hidden-sm hidden-xs">
+                            <div class="wrapp_perc_block wr_all">
+                                <ul>
+                                    <li>0%</li>
+                                    <li class="active">+10%</li>
+                                    <li>+20%</li>
+                                    <li>+30%</li>
+                                </ul>
+                                <div class="progress_line">
+                                    <div class="inside_line_gradients" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <span class="bott_links">Накопительная система</span>
+                        </a>
+
+                        <a href="#" class="money_show flex_blocks hidden-xs">
+                            <div class="wr_all"><p>157руб.</p></div>
+                            <span class="bott_links">Вывести средства</span>
+                        </a>
+
+                        <a href="#" class="favirites flex_blocks hidden-xs">
+                            <div class="wr_all">
+                                <p class="main_p_numb"><span class="favirites_sp"></span>12</p>
+                            </div>
+                            <span class="bott_links">Избранное</span>
+                        </a>
+
+                        <div id="aut_position">
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">сегодня</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.16</span></a>
+                                </div>
+                            </div>
+
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">2 декабря</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.16</span></a>
+                                </div>
+                            </div>
+
+                            <div class="one_alerts">
+                                <span class="close_span"></span>
+
+                                <div class="presents_left_block">
+                                    <div class="whites_bg_wrapper">
+                                        <span class="prasents_bgs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="date_and_texts">
+                                    <p class="dates">17 мая</p>
+                                    <a href="#" class="text_alerts">Начислен кэшбэк за покупку Adidas Pro Sport <span>от 14.03.15</span></a>
+                                </div>
+                            </div>
+                            <p class="link_to_all_alerts"><a href="#">Все уведомления</a></p>
+                        </div>
+
+                        <div class="named_block flex_blocks">
+                            <div class="named_left hidden-xs hidden-sm">
+                                <div class="named_user wr_all">
+                                    <span></span>
+                                    <a href="#" class="user_name" title="Константин Константин">Константин
+                                        Константин</a>
+                                </div>
+                                <a href="#" class="bott_links">Личный кабинет</a>
+                            </div>
+                            <div class="named_right" id="enter_aut">
+                                <a href="javascript:"><img src="img/ava_users.png" alt=""/></a>
+                                <span class="red_rounds">3</span>
+                            </div>
+                        </div>
+
+                        <div class="navbar-header flex_blocks none_border_left">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- .header-->
+
+
+<div class="middle mt108_fore_fixed_header">
+<div class="container-fluid max_w_1600">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="browser_block">
+            <div class="left_big_logo_br hidden-md hidden-sm hidden-xs">
+                <img src="img/browser_chrome_big.jpg" alt=""/>
+            </div>
+            <div class="logo__and_text_wrapper">
+                <div class="logo_wrapper">
+                    <img src="img/browser_chrome_small.png" alt=""/>
+                </div>
+
+                <div class="text_wrappers">
+                    <a href="#">
+                        Установи расширение для Google Chrome чтобы
+                        автоматически получать кэшбэк во всех магазинах
+                    </a>
+                </div>
+            </div>
+            <div class="btn_wrappers hidden-sm hidden-xs">
+                <a class="subm_btns in_block" href="#">Быстрая установка</a>
+            </div>
+        </div>
+
+        <div class="bread_crump">
+            <div class="bread_wrapp">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li class="r_arr_bg"></li>
+                    <li>Персональные данные</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="h1_cart_style">Персональные данные</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                <form action="/">
+                    <label class="wrappers">
+                        <input required="" id="search" type="text"
+                               placeholder="Найти свой магазин, например SAPATO"
+                               name="search" class="search">
+                    </label>
+                    <input name="search" class="search_btn" type="submit" value="Поиск">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper_main_contant">
+<div class="row">
+<div class="col-lg-2 col-md-3 hidden-sm hidden-xs sticky" id="stycky_id">
+    <div class="border_blocks mb0">
+        <ul class="nav_list nav_list_first">
+            <li>
+                <a href="#">Персональные данные</a>
+            </li>
+            <li>
+                <a href="#">Уведомления <span class="span_withs">3</span></a>
+            </li>
+            <li>
+                <a href="#">Накопительная cистема</a>
+            </li>
+            <li>
+                <a href="#">Пригласить друга</a>
+            </li>
+            <li>
+                <a href="#">Вывести средства</a>
+            </li>
+            <li>
+                <a href="#">Избранные магазины</a>
+            </li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 main-content mb20">
+    <div class="border_blocks padding_fore_all_cont_block">
+        <form action="/">
+            <div class="div_border_bottom">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="main_user_icons">
+                            <a id="chose_file" href="#">
+                                <img src="img/user_face.png" alt=""/> <br/>
+                                Прикрепить фото</a>
+                            <span id="chose_file_text"></span>
+                            <input id="chose_file_input" name="imagefile" type="file" />
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="wrapp_max_w_block">
+                                    <label class="label_class" for="name_id">Имя</label>
+                                    <input id="name_id" class="form_styler mb20 type_text" required="" type="text"/>
+
+                                    <label class="label_class" for="sname_id">Фамилия</label>
+                                    <input id="sname_id" class="form_styler mb20 type_text" required="" type="text"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="wrapp_max_w_block mb30">
+                                    <label class="label_class" for="dates">Дата рождения</label>
+                                    <div class="row mb20" id="dates">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <select class="form_styler">
+                                                <option>День</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt15_600">
+                                            <select class="form_styler">
+                                                <option>Месяц</option>
+                                                <option>Январь</option>
+                                                <option>Февраль</option>
+                                                <option>Март</option>
+                                                <option>Апрель</option>
+                                                <option>Май</option>
+                                                <option>Июнь</option>
+                                                <option>Июль</option>
+                                                <option>Август</option>
+                                                <option>Сентябрь</option>
+                                                <option>Октябрь</option>
+                                                <option>Ноябрь</option>
+                                                <option>Декабрь</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt15_600">
+                                            <select class="form_styler">
+                                                <option>Год</option>
+                                                <option>1980</option>
+                                                <option>1981</option>
+                                                <option>1982</option>
+                                                <option>1983</option>
+                                                <option>1984</option>
+                                                <option>1985</option>
+                                                <option>1986</option>
+                                                <option>1987</option>
+                                                <option>1988</option>
+                                                <option>1989</option>
+                                                <option>1990</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <label class="label_class" for="email_id">Email адрес</label>
+                                <span class="validate">
+                                    <input id="email_id" class="form_styler mb10 type_text" required="" type="text"/>
+                                    <a href="#" class="confirm_email">Подтвердить почту</a>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_wrapps">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lk_p_main">Подключенные аккаунты</p>
+                        <div class="soc_registr">
+                            <div class="icon_soc_join">
+                                <ul>
+                                    <li><a href="#" class="soc_icon-fb active">&#xf09a;</a></li>
+                                    <li><a href="#" class="soc_icon-vk ">&#xf189;</a></li>
+                                    <li><a href="#" class="soc_icon-ok active">&#xf263;</a></li>
+                                    <li><a href="#" class="soc_icon-tw ">&#xf099;</a></li>
+                                    <li><a href="#" class="soc_icon-go active">&#xf0d5;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lk_p_main">Смена пароля</p>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span label_s mt10">Старый пароль</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <input id="old_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span label_s mt10">Новый пароль</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <input id="new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                                <span class="label_span">Новый пароль еще раз</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div class="wrapp_max_w_block">
+                                    <span class="validate">
+                                        <input id="more_new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lk_p_main">Уведомления на указанный Email</p>
+
+                        <p class="lbl_wrapp_check">
+                            <label class="checkbox_label" for="z_k">Зачисление кэшбэка</label>
+                            <input id="z_k" class="form_styler" type="checkbox"/>
+                        </p>
+
+                        <p class="lbl_wrapp_check">
+                            <label class="checkbox_label" for="d_r">Действия рефералов</label>
+                            <input id="d_r" class="form_styler" type="checkbox"/>
+                        </p>
+
+                        <p class="lbl_wrapp_check">
+                            <label class="checkbox_label" for="n_a">Новые акции</label>
+                            <input id="n_a" class="form_styler" type="checkbox"/>
+                        </p>
+
+                        <p class="lbl_wrapp_check">
+                            <label class="checkbox_label" for="n_b">Новости блога</label>
+                            <input id="n_b" class="form_styler" type="checkbox"/>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn_s_wrapp mt20">
+                    <input class="subm_btns in_block min_w_275" value="Сохранить изменения" type="button"/>
+                    <input class="reset_btn_black in_block ml10" value="Сбросить" type="button"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- .middle-->
+</div>
+<!-- .wrapper -->
+
+<!-- menu start -->
+<div id="slide-menu-container">
+    <form id="slide-menu-search" action="/">
+        <a href="">Помощь</a>
+        <p>
+            <input type="search" list="search-items" placeholder="Найти свой магазин" name="q"/>
+            <button type="submit" name="s" value="Поиск"></button>
+        </p>
+        <datalist id="search-items">
+            <option value="Лучшие магазины">
+            <option value="Товары из Китая">
+            <option value="Услуги">
+            <option value="Гипермаркеты">
+            <option value="Для творчества">
+            <option value="Аксессуары">
+            <option value="Книги">
+            <option value="Товары для детей">
+            <option value="Купонные сервисы">
+            <option value="Красота & Здоровье">
+            <option value="Товары для дома">
+            <option value="Мебель">
+            <option value="Бытовая техника">
+            <option value="Электроника">
+            <option value="Одежда & Обувь">
+            <option value="Доставка еды">
+            <option value="Развлечения">
+            <option value="Путешествие">
+            <option value="Для взрослых">
+            <option value="Зоомагазины">
+            <option value="Подарки & Цветы">
+        </datalist>
+    </form>
+    <div id="slide-menu-content">
+        <a href="#" data-qty="15">Лучшие магазины</a>
+        <a href="#" data-qty="24">Товары из Китая</a>
+        <a href="#" data-qty="33">Услуги</a>
+        <a href="#" data-qty="42">Гипермаркеты</a>
+        <a href="#" data-qty="51">Для творчества</a>
+        <a href="#" data-qty="15">Аксессуары</a>
+        <a href="#" data-qty="24">Книги</a>
+        <a href="#" data-qty="33">Товары для детей</a>
+        <a href="#" data-qty="42">Купонные сервисы</a>
+        <a href="#" data-qty="51">Красота & Здоровье</a>
+        <a href="#" data-qty="15">Товары для дома</a>
+        <a href="#" data-qty="24">Мебель</a>
+        <a href="#" data-qty="33">Бытовая техника</a>
+        <a href="#" data-qty="42">Электроника</a>
+        <a href="#" data-qty="51">Одежда & Обувь</a>
+        <a href="#" data-qty="15">Доставка еды</a>
+        <a href="#" data-qty="24">Развлечения</a>
+        <a href="#" data-qty="33">Путешествие</a>
+        <a href="#" data-qty="42">Для взрослых</a>
+        <a href="#" data-qty="51">Зоомагазины</a>
+        <a href="#" data-qty="15">Подарки & Цветы</a>
+    </div>
+</div>
+<!-- menu end -->
+
+
+<!-- menu start -->
+<div id="slide-menu-container_2">
+    <div id="slide-menu-content_2">
+        <div class="wrapp_top_menu_part">
+            <div class="ava_blocks_wrapp">
+                <div class="ara_inside_menu">
+                    <a href="#">
+                        <img src="img/ava_users.png" alt=""/>
+                    </a>
+                </div>
+                <div id="it_1" class="name_block_users">
+                    <p>Константин</p>
+                    <p>Константиновский</p>
+                </div>
+                <div id="it_2" class="name_block_users2 toggle_hidden_class">
+                    <a href="#">Выход <span class="icon_spans"></span></a>
+                </div>
+            </div>
+
+            <a href="#" class="rub_how">
+                <p class="money">1 345 руб</p>
+                <span class="ent_fin">Вывести средства</span>
+            </a>
+        </div>
+
+        <ul class="nav_list nav_list_first">
+            <li>
+                <a href="#">Персональные данные</a>
+            </li>
+            <li>
+                <a href="#">Уведомления <span class="span_withs">3</span></a>
+            </li>
+            <li>
+                <a href="#">Накопительная cистема</a>
+            </li>
+            <li>
+                <a href="#">Пригласить друга</a>
+            </li>
+            <li>
+                <a href="#">Вывести средства</a>
+            </li>
+            <li>
+                <a href="#">Избранные магазины</a>
+            </li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Ali Express</a></li>
+            <li class="favorite_style"><a href="#">М-Видео</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+            <li class="favorite_style"><a href="#">Walberes</a></li>
+            <li class="favorite_style"><a href="#">Lamoda</a></li>
+        </ul>
+    </div>
+</div>
+<!-- menu end -->
+
+
+<footer class="footer">
+    <div class="container an_padding">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="mar_top_wrapp">
+                    <div class="row nav_menu">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Наш блог</a></li>
+                                <li><a href="#">Помощь</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Партнерская программа</a></li>
+                                <li><a href="#">Каталог магазинов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt30class">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p class="phone info_about_company"><span></span> 8 (499) 999-88-77</p>
+
+                            <p class="mail info_about_company"><span></span><a href="#">info@cashbi.ru</a></p>
+
+                            <p class="placed info_about_company"><span></span>г. Москва, 3-я гражданская 7, корп.2</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="icon_soc_join">
+                                <ul>
+                                    <li><a href="#" class="soc_icon-fb">&#xf09a;</a></li>
+                                    <li><a href="#" class="soc_icon-vk">&#xf189;</a></li>
+                                    <li><a href="#" class="soc_icon-ok">&#xf263;</a></li>
+                                    <li><a href="#" class="soc_icon-tw">&#xf099;</a></li>
+                                    <li><a href="#" class="soc_icon-ig">&#xf16d;</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                <div class="mar_top_wrapp">
+                    <div id="vk_groups"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="gray_line_w_100"></div>
+
+    <div class="container an_padding">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                <div class="copyright">
+                    <p>Cashibi — Надежный кэшбэк сервис</p>
+
+                    <p class="copy"><span class="copy_class">©</span> 2016 Local Intrnet. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 foot_wrapp_btns">
+                <a href="#" class="type_subm_form_btn">Служба технической поддержки</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="color_line">
+        <div class="sky_blue_line"></div>
+        <div class="orange_line"></div>
+        <div class="red_line"></div>
+    </div>
+</footer>
+<!-- .footer -->
+
+<!-- scripts -->
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">VK.Widgets.Group('vk_groups', {mode: 3, no_cover: 1, width: 'auto'}, 135092297);</script>
+<!-- scripts -->
+
+</body>
+</html>
