@@ -3714,3 +3714,20 @@ ul.nav_list {
 .fancybox-close {
   top: 5px !important;
   right: 5px !important; }
+
+.text_with_epty_item {
+  color: #22315e;
+  font-size: 26px;
+  font-family: 'officinaserifboldcbold';
+  font-weight: bold;
+  margin-top: 62px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  text-align: center; }
+
+.empty_shops {
+  background: url("../img/icon/empty_catalog.svg") no-repeat;
+  background-position: center 40px; }
+  .empty_shops img {
+    display: none; }

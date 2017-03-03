@@ -1220,6 +1220,13 @@
     .fancybox-overlay{
         background: none !important;
     }
+    .empty_shops{
+        background-position:  center 35px;
+         background-size: 40%;
+    }
+    .text_with_epty_item{
+        font-size: 19px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
