@@ -54,7 +54,7 @@
                         </ul>
                     </div>
 
-                    <button class="login_btns"><i class="log_icons"></i>Вход/Регистрация</button>
+                    <button class="login_btns" id="inline" href="#data"><i class="log_icons"></i>Вход/Регистрация</button>
                 </div>
             </div>
         </nav>
@@ -901,7 +901,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="copyright">
-                    <p>Cashibi — Надежный кэшбэк сервис</p>
+                    <p>Cashibi &nbsp; « <a href="#" class="pol-c">Политика конфиденциальности</a></p>
 
                     <p class="copy"><span class="copy_class">©</span> 2016 Local Internet. All rights reserved.</p>
                 </div>
@@ -919,6 +919,64 @@
     </div>
 </footer>
 <!-- .footer -->
+
+
+<!-- ПОПАП РЕГИСТРАЦИИ -->
+<div style="display:none">
+    <div id="data">
+        <div class="wrapps_registereg_catalog wenother">
+            <div class="white_form_start_economy">
+                <div class="flex_item inside_form_wrapp">
+                    <div class="form_white_bg">
+
+                        <form class="form_class pl_pr15" action="test.php">
+
+                            <div class="wrapp_input mail_icon">
+                                <!-- <input required class="style_input" type="email" placeholder="Войти" onkeyup="validMail(event)" onblur="emptyMail(event)" /> -->
+                                <input required class="style_input" type="email" placeholder="Введите свой email"/>
+
+                                <div class="block_input_pass">
+                                    <input required class="style_input style_input_pas" type="password"
+                                           placeholder="Введите пароль"/>
+                                    <a class="href_forgot" href="javascript:void(0)">Забыли пароль ?</a>
+                                </div>
+                            </div>
+
+                            <div class="wrapp_input">
+                                <input class="type_subm_form_btn" type="submit" value="Войти">
+                            </div>
+
+                            <p class="web_sites_ruler">
+                                Совершая вход или регистрацию, я <br/>
+                                соглашаюсь с правилами сайта
+                            </p>
+
+                            <p class="or_enter_soc_p">Или войти через соц. сети:</p>
+
+                            <div class="icon_soc_join">
+                                <ul>
+                                    <li><a class="fb_soc" href="#"><img src="img/icon/r_fb.svg" alt=""/></a>
+                                    </li>
+                                    <li><a class="vk_soc" href="#"><img src="img/icon/r_vk.svg" alt=""/></a>
+                                    </li>
+                                    <li><a class="ok_soc" href="#"><img src="img/icon/r_ok.svg" alt=""/></a>
+                                    </li>
+                                    <li><a class="tw_soc" href="#"><img src="img/icon/r_tw.svg" alt=""/></a>
+                                    </li>
+                                    <li><a class="go_soc" href="#"><img src="img/icon/google2.svg" alt=""/></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ПОПАП РЕГИСТРАЦИИ -->
 
 <!-- scripts -->
 <script src="js/libs.min.js"></script>

@@ -3438,12 +3438,17 @@ ul.nav_list {
     background-image: -webkit-linear-gradient(bottom, #f88e7b 0%, #ff4f2e 100%);
     background-image: linear-gradient(to top, #f88e7b 0%, #ff4f2e 100%); }
 
-.copyright p span.pol-c {
+.copyright p a.pol-c {
   text-decoration: underline;
   position: relative;
   left: 0;
   top: 0;
-  font-size: 15px; }
+  color: #FFFFFF;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 9px; }
+  .copyright p a.pol-c:hover {
+    text-decoration: none; }
 
 .adblock_block {
   width: 100%;
@@ -3583,3 +3588,129 @@ ul.nav_list {
   color: #999999;
   font-size: 14px;
   font-family: 'officinaserifbookcbook'; }
+
+.need_register {
+  font-family: 'officinaserifbookcbook';
+  color: #3d424b;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px; }
+  .need_register a {
+    color: #ff4f2f;
+    text-decoration: none; }
+    .need_register a:hover {
+      text-decoration: underline; }
+
+.wrapps_registereg_catalog {
+  width: 400px;
+  margin: 0 auto; }
+  .wrapps_registereg_catalog .white_form_start_economy {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp {
+      width: 100%; }
+      .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_white_bg {
+        position: relative;
+        background: #ffffff;
+        width: 100%;
+        text-align: center; }
+        .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_white_bg .start_economy {
+          font-size: 30px;
+          font-family: 'officinaserifbookcbook',sans-serif;
+          margin-bottom: 30px; }
+      .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class {
+        width: 100%;
+        margin-top: 30px; }
+        .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class .wrapp_input {
+          position: relative;
+          width: 100%;
+          margin-bottom: 22px; }
+          .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class .wrapp_input .style_input {
+            width: 100%;
+            height: 46px;
+            border: 1px solid #DCDCDC;
+            padding-left: 15px;
+            padding-right: 40px;
+            position: relative;
+            -webkit-border-radius: 3px;
+                    border-radius: 3px; }
+        .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class .mail_icon:after {
+          width: 19px;
+          height: 14px;
+          content: '';
+          position: absolute;
+          right: 17px;
+          top: 16px;
+          background: url("../img/icon/mail.svg") no-repeat center center; }
+        .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class .type_subm_form_btn {
+          width: 100%;
+          height: 47px;
+          background: #ff4f2f;
+          color: #ffffff;
+          line-height: 47px;
+          font-size: 20px;
+          text-align: center;
+          border: none;
+          -webkit-border-radius: 50px;
+                  border-radius: 50px; }
+          .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class .type_subm_form_btn:hover {
+            background: #CD3317; }
+    .wrapps_registereg_catalog .white_form_start_economy .or_enter_soc_p {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 18px; }
+    .wrapps_registereg_catalog .white_form_start_economy .icon_soc_join {
+      margin-bottom: 4px;
+      left: 0; }
+      .wrapps_registereg_catalog .white_form_start_economy .icon_soc_join ul li {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px; }
+        .wrapps_registereg_catalog .white_form_start_economy .icon_soc_join ul li a {
+          -webkit-border-radius: 50px;
+                  border-radius: 50px;
+          display: inline-block; }
+
+.web_sites_ruler {
+  font-family: 'OpenSansRegular';
+  color: #a3a3a3;
+  font-size: 13px; }
+
+.pl_pr15 {
+  padding: 0 15px; }
+
+.wenother {
+  width: 365px; }
+
+.fancybox-close {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon/close.png) !important;
+  background-size: cover; }
+
+.fancybox-close {
+  top: 5px !important;
+  right: 5px !important; }

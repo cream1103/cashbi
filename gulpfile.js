@@ -31,10 +31,13 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
+        'app/libs/fancybox/jquery.fancybox.js',
+        'app/libs/fancybox/jquery.fancybox.pack.js',
 		'app/libs/bootstrap/js/bootstrap.js',
 		'app/libs/bx_slider/jquery.bxslider.js',
 		'app/libs/formStyler/jquery.formstyler.min.js',
-		'app/libs//jquery.maskedinput.min.js'
+		'app/libs/maskedinput/jquery.maskedinput.min.js'
+
             //JS БИБЛИОТЕКИ СЮДА
 
 		])

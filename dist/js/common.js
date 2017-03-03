@@ -14,6 +14,14 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    //инициализация fancybox
+    $("#inline").fancybox({
+        'maxHeight':600,
+        'autoSize': true
+
+    });
+    //инициализация fancybox
+
     //сворачивание addblock
         $('.close_addBlock').click(function(){
             $(this).parents('.adblock_block').slideUp(100);
@@ -54,11 +62,9 @@ $(document).ready(function(){
     function valueFunct(){
         setTimeout(function() {
             $('.jq-selectbox__dropdown .value_chose').on('click', function(){
-
                 setTimeout(function() {
                     $('.select_refresh').trigger('refresh');
                 }, 1);
-
                 var leng = $(this).index();
                 var slot = $('.t' + leng);
 
@@ -71,9 +77,6 @@ $(document).ready(function(){
                     'borderTop':'2px solid #DDDBD4'
                 });
                 $(slot).fadeIn(0);
-
-
-
             });
         }, 100)
     }
