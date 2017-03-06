@@ -14,6 +14,23 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
+    $('.style_input_pas').focus(function() {
+        var ent = "Войти";
+        $('.type_subm_form_btn').attr('value', ent);
+    });
+
+    //таб уведомлений
+    $('.tabs span').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('.tabs span').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+    //таб уведомлений
+
     //инициализация fancybox
     $("#inline").fancybox({
         'maxHeight':600,
@@ -736,9 +753,16 @@ $(document).ready(function(){
         }
     });
 
-    $('input[type=email]').on('keyup blur', function(){ validMail(event); });
-    $('input[type=password].retry').on('keyup blur', function(){ comparePassword(event); });
-    $('form').on('submit', function(){ submitFormCheck(event); });
+    $('input[type=email]').on('keyup blur', function(){
+        validMail(event);
+    });
+    $('input[type=password].retry').on('keyup blur', function(){
+        comparePassword(event);
+    });
+    $('form').on('submit', function(){
+        submitFormCheck(event);
+    });
+
 });
 
 

@@ -1209,13 +1209,18 @@
     }
     .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class{
         width: 100% !important;
-        padding: 30px !important;
+        padding: 0;
     }
     .fancybox-close{
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/icon/111.svg) !important;
+        background-size: cover;
         top: 10px !important;
-        right: 27px !important;
-        width: 30px !important;
-        height: 30px !important;
+        right: 10px !important;
+    }
+    .fancybox-outer .form_class{
+        padding: 30px !important;
     }
     .fancybox-overlay{
         background: none !important;
@@ -1227,6 +1232,56 @@
     .text_with_epty_item{
         font-size: 19px;
     }
+    .mess_table tr td{
+        display: block;
+    }
+    .images_mess{
+        float: left;
+    }
+    .date_mess{
+        float: left;
+    }
+    .tabs span{
+        font-size: 16px !important;
+        margin-right: 0 !important;
+    }
+    .fr_l{
+        float: right;
+    }
+    .info_mess{
+        padding-bottom: 20px !important;
+    }
+    .mess_table tr td{
+        padding: 0  10px!important;
+    }
+    .mess_table tr{
+        padding: 15px 0;
+        display: inline-block;
+    }
+    .img_table_mess{
+      display: block;
+    }
+    .date_mess{
+        margin-top: 14px;
+    }
+    .info_mess{
+        margin-top: 15px;
+    }
+    .info_mess .date_mess{
+        margin-top: 0;
+    }
+    .name_shop{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .history tr{
+        width: 100%;
+    }
+    .history tr td{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

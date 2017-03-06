@@ -3706,14 +3706,14 @@ ul.nav_list {
   width: 365px; }
 
 .fancybox-close {
-  width: 30px;
-  height: 30px;
-  background-image: url(../img/icon/close.png) !important;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icon/222.svg) !important;
   background-size: cover; }
 
 .fancybox-close {
-  top: 5px !important;
-  right: 5px !important; }
+  top: -23px !important;
+  right: -28px !important; }
 
 .text_with_epty_item {
   color: #22315e;
@@ -3731,3 +3731,131 @@ ul.nav_list {
   background-position: center 40px; }
   .empty_shops img {
     display: none; }
+
+/*страница уведомления*/
+.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 30px; }
+
+.tabs span {
+  background: none;
+  margin-right: 25px;
+  color: #3d424b;
+  font-size: 20px;
+  border-bottom: 1px dotted #3d424b;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'officinaserifbookcbook'; }
+
+.tabs .current {
+  color: #ff4f2f;
+  font-size: 20px;
+  border-bottom: none; }
+
+.tab-content {
+  display: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.tab-content.current {
+  display: inherit; }
+
+.padding_15_left_right {
+  padding: 36px 15px 35px 15px; }
+
+.mess_table {
+  width: 100%;
+  border-top: 1px solid #DCDCDC;
+  margin-bottom: 35px; }
+  .mess_table tr {
+    border-bottom: 1px solid #DCDCDC; }
+    .mess_table tr td {
+      padding: 10px 10px 5px 10px;
+      font-family: 'OpenSansRegular';
+      vertical-align: middle; }
+
+.w65 {
+  width: 65px; }
+
+.w120 {
+  width: 120px; }
+
+.date_mess {
+  color: #999999;
+  font-size: 12px; }
+
+.info_mess {
+  color: #333333;
+  font-size: 14px; }
+  .info_mess .date_mess {
+    color: #999999;
+    font-size: 14px; }
+
+.name_shop {
+  color: #ff4f2f;
+  font-size: 14px;
+  display: inline-block; }
+
+.img_table_mess {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 10em;
+          border-radius: 10em; }
+  .img_table_mess img {
+    width: 100%;
+    height: auto; }
+
+.gray_bg {
+  background: #EEF2F7; }
+
+.bold_span {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold; }
+
+.history {
+  font-family: 'OpenSansRegular';
+  color: #333333;
+  font-size: 13px; }
+
+.waiting {
+  color: #ff4f2f; }
+
+.accept {
+  color: #3bc82e;
+  position: relative;
+  display: inline-block;
+  padding-left: 18px; }
+  .accept:before {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 2px;
+    content: '';
+    display: inline-block;
+    background: url("../img/icon/checked_text.png") no-repeat;
+    background-size: cover; }
+
+.unch_text {
+  color: #ff0000;
+  position: relative;
+  display: inline-block;
+  padding-left: 18px; }
+  .unch_text:before {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 2px;
+    content: '';
+    display: inline-block;
+    background: url("../img/icon/unch_text.png") no-repeat;
+    background-size: cover; }
+
+.history tr td {
+  padding: 15px 10px 14px 10px; }
+
+/*страница уведомления*/
