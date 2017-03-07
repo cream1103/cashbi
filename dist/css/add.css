@@ -64,23 +64,15 @@ input[type=checkbox].heart_inp {
   margin-top: 10px; }
 
 .style_input_pas {
-  background: url(../img/icon/lock.svg) no-repeat;
+  background: url(../img/icon/lock.svg) no-repeat, #FFFFFF;
   background-position: right 17px top 12px; }
 
 .href_forgot {
   font-family: "OpenSansRegular";
   font-size: 14px;
-  line-height: 40px;
-  color: #fff; }
+  line-height: 40px; }
   .href_forgot:hover {
-    text-decoration: underline;
-    color: #fff; }
-
-@media (min-width: 980px) {
-  .href_forgot {
-    color: #ff4f2f; }
-    .href_forgot:hover {
-      color: #ff4f2f; } }
+    text-decoration: underline; }
 
 /* === Slide menu section start === */
 input, select, textarea, button {

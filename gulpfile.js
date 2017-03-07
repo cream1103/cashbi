@@ -37,9 +37,7 @@ gulp.task('scripts', function() {
 		'app/libs/bx_slider/jquery.bxslider.js',
 		'app/libs/formStyler/jquery.formstyler.min.js',
 		'app/libs/maskedinput/jquery.maskedinput.min.js'
-
             //JS БИБЛИОТЕКИ СЮДА
-
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -84,6 +82,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'));
+
+    var buildLibs = gulp.src('app/libs/**/*') // Переносим библиотеки в продакшен
+        .pipe(gulp.dest('dist/libs'));
 
     var buildStyle= gulp.src('app/css/**/*') // Переносим стили в продакшен
         .pipe(gulp.dest('dist/css'));

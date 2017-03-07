@@ -1,3 +1,8 @@
+@media only screen and (max-width : 1921px) {
+    .conversion_block_style{
+        background-attachment: fixed
+    }
+}
 /*==========  Desktop First Method  ==========*/
 /*=================================================================  1620px  ==========*/
 @media only screen and (max-width : 1620px) {
@@ -36,11 +41,15 @@
     .icon_soc_join{
         left: 0;
     }
+    .conversion_block_style .bg_block_top .color_line{
+        bottom: -1px;
+    }
+
     .gold_wrapp_block{
-        margin-right: 0px;
+        margin-right: 0;
     }
     .cooper_wrapp_block{
-        margin-left: 0px;
+        margin-left: 0;
     }
     .pos_relative_92{
         top: 0;
@@ -220,7 +229,22 @@
     .label_s{
         white-space: nowrap;
     }
-
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1{
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+    .conversion_block_style {
+        height: 635px;
+        min-height: 635px;
+        background-position: 47% 0;
+        background-attachment: fixed;
+    }
+    .conv_logos {
+        margin-bottom: 75px;
+    }
+    .conversion_block_style .white_form_start_economy .inside_form_wrapp .form_white_bg{
+        margin-top: 84px;
+    }
 }
 /*=================================================================  1399px  ==========*/
 
@@ -432,15 +456,6 @@
     .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
         font-size: 36px !important;
     }
-    /*
-    .bg_block_top_autor .slider_wrapper_first_screen .cont{
-        padding-left: 0;
-        text-align: center;
-    }
-    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
-        font-size: 36px;
-    }
-    */
     .show_me_all_shops .center_blocks_search .center_two_btns .link_f_shops{
         min-width: 260px;
         display: inline-block;
@@ -618,10 +633,35 @@
         padding: 10px 7px;
     }
     .gold_wrapp_block {
-        margin-right: 0px;
+        margin-right: 0;
     }
     .cooper_wrapp_block {
-        margin-left: 0px;
+        margin-left: 0;
+    }
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1{
+        font-size: 36px;
+    }
+    .conversion_block_style {
+        background-position: 53% 0;
+    }
+    .conversion_block_style .wrapp_text{
+        margin: 70px auto 0 auto;
+    }
+    .conversion_block_style .color_line{
+        bottom: -1px;
+    }
+    .conv_logos{
+        margin-bottom: 40px;
+    }
+    .href_forgot{
+        color: #FFFFFF
+    }
+    .href_forgot:hover{
+        color: #FFFFFF
+    }
+    .reHeightClass{
+        height: 685px;
+        min-height: 685px;
     }
 }
 /*=================================================================  979px  ==========*/
@@ -654,9 +694,17 @@
         font-size: 12px !important;
     }
 }
+
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .fancybox-overlay .href_forgot{
+        color: #ff4f2f !important;
+    }
+    .reHeightClass{
+        height: 555px !important;
+        min-height: 555px !important;
+    }
     .wrapper_invite_friend .wrapp_div_fore_start_economy{
         width: 100%;
     }
@@ -1081,9 +1129,7 @@
     .left_img_card{
         display: block;
         margin-bottom: 10px;
-
     }
-
     .yellow_wrapper_info_block{
         padding: 30px 10px;
     }
@@ -1149,7 +1195,6 @@
         position: absolute;
         left: 10px;
         width: auto !important;
-
     }
     .text_center tr td{
         padding-left: 30px;
@@ -1190,7 +1235,6 @@
         padding: 0;
     }
 
-
     .fancybox-opened .fancybox-skin{
         width: 100vw !important;
         margin: 0 !important;
@@ -1217,7 +1261,7 @@
         background-image: url(../img/icon/111.svg) !important;
         background-size: cover;
         top: 10px !important;
-        right: 10px !important;
+        right: 20px !important;
     }
     .fancybox-outer .form_class{
         padding: 30px !important;
@@ -1281,7 +1325,28 @@
         width: 100%;
         margin-bottom: 8px;
     }
-
+    .conversion_block_style {
+        background-position: 53% 0;
+        margin-top: 0;
+        height: 465px;
+        min-height: 465px;
+        background-size: inherit;
+    }
+    .conv_logos {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 170px;
+    }
+    .conv_logos img{
+        width: 100%;
+        height: auto;
+    }
+    .conversion_block_style .wrapp_text {
+        margin: 33px auto 0 auto;
+    }
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1 {
+        font-size: 24px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1340,7 +1405,6 @@
     }
     .wrapp_text{
         width: 100%;
-        /*margin: 70px auto 0 auto;*/
         text-align: center;
     }
     .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg{
@@ -1350,9 +1414,6 @@
         width: 100%;
     }
     .bg_block_top .white_form_start_economy .icon_soc_join ul li {
-        /*display: inline-block;*/
-        /*width: 45px;*/
-        /*height: 45px;*/
         margin-right: 1px;
     }
     .soc_registr .icon_soc_join li a{
@@ -1364,7 +1425,6 @@
 }
 
 @media all and (max-width: 979px) and (min-width: 600px) {
-
     .img_and_links img {
         margin-top: 20px;
         margin-bottom: 23px;
@@ -1387,7 +1447,6 @@
     .input-row{
         margin-top: 6px;
     }
-
     .products {
         padding: 13px 0 14px 20px;
     }

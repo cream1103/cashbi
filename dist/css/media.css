@@ -1,3 +1,8 @@
+@media only screen and (max-width : 1921px) {
+    .conversion_block_style{
+        background-attachment: fixed
+    }
+}
 /*==========  Desktop First Method  ==========*/
 /*=================================================================  1620px  ==========*/
 @media only screen and (max-width : 1620px) {
@@ -36,11 +41,15 @@
     .icon_soc_join{
         left: 0;
     }
+    .conversion_block_style .bg_block_top .color_line{
+        bottom: -1px;
+    }
+
     .gold_wrapp_block{
-        margin-right: 0px;
+        margin-right: 0;
     }
     .cooper_wrapp_block{
-        margin-left: 0px;
+        margin-left: 0;
     }
     .pos_relative_92{
         top: 0;
@@ -220,7 +229,22 @@
     .label_s{
         white-space: nowrap;
     }
-
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1{
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+    .conversion_block_style {
+        height: 635px;
+        min-height: 635px;
+        background-position: 47% 0;
+        background-attachment: fixed;
+    }
+    .conv_logos {
+        margin-bottom: 75px;
+    }
+    .conversion_block_style .white_form_start_economy .inside_form_wrapp .form_white_bg{
+        margin-top: 84px;
+    }
 }
 /*=================================================================  1399px  ==========*/
 
@@ -432,15 +456,6 @@
     .slider_wrapper_first_screen .bxslider_first .one-slide .cont p{
         font-size: 36px !important;
     }
-    /*
-    .bg_block_top_autor .slider_wrapper_first_screen .cont{
-        padding-left: 0;
-        text-align: center;
-    }
-    .bg_block_top_autor .slider_wrapper_first_screen .cont p{
-        font-size: 36px;
-    }
-    */
     .show_me_all_shops .center_blocks_search .center_two_btns .link_f_shops{
         min-width: 260px;
         display: inline-block;
@@ -618,10 +633,31 @@
         padding: 10px 7px;
     }
     .gold_wrapp_block {
-        margin-right: 0px;
+        margin-right: 0;
     }
     .cooper_wrapp_block {
-        margin-left: 0px;
+        margin-left: 0;
+    }
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1{
+        font-size: 36px;
+    }
+    .conversion_block_style {
+        background-position: 53% 0;
+    }
+    .conversion_block_style .wrapp_text{
+        margin: 70px auto 0 auto;
+    }
+    .conversion_block_style .color_line{
+        bottom: -1px;
+    }
+    .conv_logos{
+        margin-bottom: 40px;
+    }
+    .href_forgot{
+        color: #FFFFFF
+    }
+    .href_forgot:hover{
+        color: #FFFFFF
     }
 }
 /*=================================================================  979px  ==========*/
@@ -1209,17 +1245,101 @@
     }
     .wrapps_registereg_catalog .white_form_start_economy .inside_form_wrapp .form_class{
         width: 100% !important;
-        padding: 30px !important;
+        padding: 0;
     }
     .fancybox-close{
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/icon/111.svg) !important;
+        background-size: cover;
         top: 10px !important;
-        right: 27px !important;
-        width: 30px !important;
-        height: 30px !important;
+        right: 20px !important;
+    }
+    .fancybox-outer .form_class{
+        padding: 30px !important;
     }
     .fancybox-overlay{
         background: none !important;
     }
+    .empty_shops{
+        background-position:  center 35px;
+         background-size: 40%;
+    }
+    .text_with_epty_item{
+        font-size: 19px;
+    }
+    .mess_table tr td{
+        display: block;
+    }
+    .images_mess{
+        float: left;
+    }
+    .date_mess{
+        float: left;
+    }
+    .tabs span{
+        font-size: 16px !important;
+        margin-right: 0 !important;
+    }
+    .fr_l{
+        float: right;
+    }
+    .info_mess{
+        padding-bottom: 20px !important;
+    }
+    .mess_table tr td{
+        padding: 0  10px!important;
+    }
+    .mess_table tr{
+        padding: 15px 0;
+        display: inline-block;
+    }
+    .img_table_mess{
+      display: block;
+    }
+    .date_mess{
+        margin-top: 14px;
+    }
+    .info_mess{
+        margin-top: 15px;
+    }
+    .info_mess .date_mess{
+        margin-top: 0;
+    }
+    .name_shop{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .history tr{
+        width: 100%;
+    }
+    .history tr td{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .conversion_block_style {
+        background-position: 53% 0;
+        margin-top: 0;
+        height: 465px;
+        min-height: 465px;
+        background-size: inherit;
+    }
+    .conv_logos {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 170px;
+    }
+    .conv_logos img{
+        width: 100%;
+        height: auto;
+    }
+    .conversion_block_style .wrapp_text {
+        margin: 33px auto 0 auto;
+    }
+    .conversion_block_style .left_part_main_block .left_part_main_block_h1 {
+        font-size: 24px;
+    }
+
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

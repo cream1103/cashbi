@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Main page</title>
+    <title>Conversion Landing</title>
 
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -28,51 +28,22 @@
 
 <div class="wrapper __animation__">
 
-<header class="header">
-    <div class="container an_padding">
-        <nav class="navbar navbar-default">
-            <div class="row  pos_relative_block">
-                <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="index.html" id="logos" class="logo"><img src="img/icon/logo.svg" alt=""/></a>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12">
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Каталог магазинов</a></li>
-                            <li><a href="#">Помощь</a></li>
-                        </ul>
-                    </div>
-
-                    <button class="login_btns" id="inline" href="#data"><i class="log_icons"></i>Вход/Регистрация</button>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- .header-->
-
-
-<div class="middle">
-<div class="bg_block_top">
+<div class="middle" id="conversion_landing_without_margin_top"> <!-- добавляем id только для конверсионного лендинга  -->
+<div class="bg_block_top conversion_block_style conversion_bg_image_1">
     <main class="container an_padding">
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-xs">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="left_part_main_block">
                     <div class="wrapp_text flex_item">
-                        <h1 class="left_part_main_block_h1 hidden-xs">Совершайте покупки
-                            онлайн и возвращайте
-                            часть денег обратно !</h1>
+                        <a href="#" class="conv_logos">
+                            <img src="img/icon/time_conv_logo.png">
+                        </a>
+                        <h1 class="left_part_main_block_h1">
+                            ПУТЕШЕСТВУЙТЕ, <br/>
+                            А МЫ ВОЗМЕСТИМ ЧАСТЬ <br class="hidden-md"/>
+                            ВАШИХ РАСХОДОВ
+                        </h1>
 
                         <div class="small_line_wrapper hidden-lg hidden-md hidden-xs">
                             <div class="color_line">
@@ -96,7 +67,7 @@
                 <div class="white_form_start_economy">
                     <div class="flex_item inside_form_wrapp">
                         <div class="form_white_bg">
-                            <p class="start_economy hidden-sm">Начните экономить</p>
+                            <p class="start_economy hidden-sm hidden-xs">Начните экономить</p>
 
                             <form class="form_class" action="test.php">
 
@@ -112,7 +83,7 @@
                                 </div>
 
                                 <div class="wrapp_input">
-                                    <input class="type_subm_form_btn" type="submit" value="Войти">
+                                    <input class="type_subm_form_btn" type="submit" value="Войти / Зарегистрироваться">
                                 </div>
 
                                 <p class="or_enter_soc_p">Или войти через соц. сети:</p>

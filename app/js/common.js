@@ -14,11 +14,6 @@ $(window).load(function(){
 
 $(document).ready(function(){
 
-    $('.style_input_pas').focus(function() {
-        var ent = "Войти";
-        $('.type_subm_form_btn').attr('value', ent);
-    });
-
     //таб уведомлений
     $('.tabs span').click(function(){
         var tab_id = $(this).attr('data-tab');
@@ -28,7 +23,7 @@ $(document).ready(function(){
 
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
-    })
+    });
     //таб уведомлений
 
     //инициализация fancybox
@@ -188,7 +183,6 @@ $(document).ready(function(){
     //липкий сайдбар
 
 
-
     function windowHeight(){
 
         var bohi = $(window).height() - 107;
@@ -270,24 +264,8 @@ $(document).ready(function(){
                     stickyHeight = stickySidebar.height();
                 }
             });
-            //липкий сайдбар
-//            $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-//                delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
-//                if (delta >= 0) {
-////                    $('.sticky').css('top', '0');
-////                    stickySidebar.css('top', '0');
-//                    console.log('up')
-//                } else {
-////                    $('.sticky').css('top', '100');
-////                    stickySidebar.css('top', '200');
-//                    console.log('down')
-//                }
-//            });
         }
     }
-
-
-
 
     //таймер акций
     var timer;
@@ -341,10 +319,6 @@ $(document).ready(function(){
     });
         //звёзды рейтинга
 
-
-
-
-
     __animation__ = $('.wrapper').hasClass('__animation__');
 
     // Управление скользящим боковым меню start ***
@@ -355,8 +329,6 @@ $(document).ready(function(){
         $('#it_2').toggleClass('toggle_hidden_class');
     });
     $('#slide-menu-container_2').on('click', function(e){
-//        alert(123123213)
-
         var target = e.target || e.srcElement;
         if(target.id === this.id){
             $('body').css('overflow','auto');
@@ -365,8 +337,6 @@ $(document).ready(function(){
             $('#it_2').addClass('toggle_hidden_class');
         }
     });
-
-
 
     // --- открытие
     $('#enter_aut a').on('click', function(){
@@ -810,8 +780,8 @@ function comparePassword(e){
     var ret = (prev.value === target.value);
     if(ret) target.classList.remove('input_red');
     else target.classList.add('input_red');
+    $('.conversion_block_style').addClass('reHeightClassPass');
     return ret;
-    // console.log(prev);
 }
 
 
@@ -838,7 +808,14 @@ function validMail(e){
 
             if(target.nextElementSibling.classList.contains('block_input_pass')) target.nextElementSibling.style.height = '84px';
             if(target.nextElementSibling.classList.contains('block_reg_pass')) target.nextElementSibling.style.height = '114px';
+
+            var ent = "Войти";
+            $('.type_subm_form_btn').attr('value', ent);
+            $('.conversion_block_style').addClass('reHeightClass');
+
         }
+
+
     }
 }
 /*

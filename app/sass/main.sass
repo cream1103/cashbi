@@ -142,7 +142,7 @@ $wmax_menu: 320px
 
 /* Header START-----------------------------------------------*/
 .header
-	background: #ffffff
+	background: $white
 	z-index: 101
 	position: fixed
 	left: 0
@@ -315,7 +315,7 @@ $wmax_menu: 320px
 			width: 100%
 			.form_white_bg
 				position: relative
-				background: #ffffff
+				background: $white
 				width: 100%
 				padding: 35px 40px
 				text-align: center
@@ -337,6 +337,7 @@ $wmax_menu: 320px
 						padding-right: 40px
 						position: relative
 						border-radius: 3px
+
 				.mail_icon:after
 					width: 19px
 					height: 14px
@@ -569,7 +570,7 @@ $wmax_menu: 320px
 					padding: 5px 15px
 					/*display: none*/
 					z-index: 1
-					color: #ffffff
+					color: $white
 					font-size: 16.4px
 					text-align: center
 					text-transform: uppercase
@@ -580,11 +581,11 @@ $wmax_menu: 320px
 				.oranges
 					background: $orange_static
 				.blue
-					background: #202E5C
+					background: $dark_blue
 				.inside_s
 					width: 100%
 					height: 100%
-					background: #ffffff
+					background: $white
 					border: 1px solid #DCDCDC
 					display: block
 					transition: all 0.3s ease
@@ -633,7 +634,7 @@ $wmax_menu: 320px
 								background: url("../img/gr_bg.png") center center no-repeat
 						.blue_bg
 							background: #89C9EC
-							color: #ffffff
+							color: $white
 							&:before
 								position: absolute
 								width: 34px
@@ -656,7 +657,7 @@ $wmax_menu: 320px
 				&:hover
 					padding: 0
 	.bx-wrapper .bx-pager.bx-default-pager a
-		background: #202E5C
+		background: $dark_blue
 	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active
 		background: #E8242E
 	.bx-wrapper .bx-viewport
@@ -813,7 +814,7 @@ $wmax_menu: 320px
 		margin-top: 70px
 		.form_white_bg
 			position: relative
-			background: #ffffff
+			background: $white
 			width: 100%
 			padding: 28px 40px
 			text-align: center
@@ -1063,7 +1064,7 @@ $wmax_menu: 320px
 		height: 47px
 		background: $orange_static
 		margin-bottom: 20px
-		color: #ffffff
+		color: $white
 		line-height: 47px
 		font-size: 18px
 		text-align: center
@@ -1327,7 +1328,7 @@ $wmax_menu: 320px
 .top_blue_header
 	height: 31px
 	width: 100%
-	background: #202E5C
+	background: $dark_blue
 	line-height: 31px
 	ul
 		float: right
@@ -1379,7 +1380,7 @@ $wmax_menu: 320px
 		.bott_links
 			font-family: 'officinasansbook'
 			font-size: 14px
-			color: #27282f
+			color: $static
 			vertical-align: baseline
 			&:hover
 				text-decoration: none
@@ -1471,7 +1472,7 @@ $wmax_menu: 320px
 		right: 1px
 		top: 85px
 		z-index: 2
-		background: #ffffff
+		background: $white
 		padding: 10px
 		box-shadow: 0 6px 8px rgba(0,0,0,.4)
 		.one_alerts
@@ -1488,7 +1489,7 @@ $wmax_menu: 320px
 				.whites_bg_wrapper
 					width: 35px
 					height: 35px
-					background: #ffffff
+					background: $white
 					text-align: center
 					border-radius: 10em
 					.prasents_bgs
@@ -1531,7 +1532,7 @@ $wmax_menu: 320px
 		margin-top: 20px
 		.main_p_numb
 			font-family: 'officinaserifbookcbook'
-			color: #27282f
+			color: $static
 			font-size: 16px
 			display: inline-flex
 			margin-top: 5px
@@ -1552,7 +1553,7 @@ $wmax_menu: 320px
 
 	.money_show
 		p
-			color: #27282f
+			color: $static
 			font-size: 24px
 			font-family: 'officinaserifbookcbook'
 	.name_block
@@ -1677,10 +1678,10 @@ $wmax_menu: 320px
           .money
             font-family: 'officinaserifbookcbook'
             font-size: 36px
-            color: #27282f
+            color: $static
           .ent_fin
             font-family: 'officinaserifbookcbook'
-            color: #27282f
+            color: $static
             font-size: 16px
             &:hover
               color: $orange_static
@@ -1693,7 +1694,7 @@ $wmax_menu: 320px
 		text-align: center
 		display: inline-block
 		font-size: 14px
-		color: #ffffff
+		color: $white
 		background: $orange_static
 		line-height: 20px
 		margin-left: 3px
@@ -1757,7 +1758,7 @@ $wmax_menu: 320px
 			margin-top: 26px
 			&:hover
 				text-decoration: none
-				color: #ffffff
+				color: $white
 
 .bread_wrapp
 	//margin-bottom: 10px
@@ -1826,7 +1827,7 @@ $wmax_menu: 320px
     padding: 5px 15px
     /* display: none; */
     z-index: 1
-    color: #ffffff
+    color: $white
     font-size: 16.4px
     text-align: center
     text-transform: uppercase
@@ -1922,7 +1923,7 @@ $wmax_menu: 320px
   font-family: 'officinaserifboldcbold',sans-serif
   &:hover
     background-image: linear-gradient(to top, #4384f6 0%, #376ed0 100%)
-    color: #ffffff
+    color: $white
     text-decoration: none
 .info_cash
   color: #666666
@@ -1966,7 +1967,7 @@ $wmax_menu: 320px
   display: inline-block
   text-align: center
   &:hover
-    color: #ffffff
+    color: $white
     text-decoration: none
 
 .m_w_215
@@ -2070,7 +2071,7 @@ $wmax_menu: 320px
       &.active
         a
           background: #3D424B
-          color: #ffffff
+          color: $white
       a
         color: #3d424b
         font-family: 'officinaserifbookcbook'
@@ -2083,7 +2084,7 @@ $wmax_menu: 320px
         border-radius: 10em
         &:hover
           background: #3D424B
-          color: #ffffff
+          color: $white
     span
       display: inline-block
       width: 36px
@@ -2170,7 +2171,7 @@ $wmax_menu: 320px
   &:hover
     text-decoration: none
     color: $orange_static
-    border-bottom: 1px solid #ffffff
+    border-bottom: 1px solid $white
   &:active
     text-decoration: none
     color: $orange_static
@@ -2309,12 +2310,12 @@ input[type="checkbox"]
   margin-top: 6px
   text-align: center
   height: 72px
-  color: #ffffff
+  color: $white
   position: relative
   float: right
   .plus_cash
     font-size: 16px
-    color: #ffffff
+    color: $white
     padding-top: 10px
     margin-bottom: 3px
   .percents
@@ -2398,7 +2399,7 @@ ul.nav_list
   li
     list-style: none
     width: 100%
-    background: #ffffff
+    background: $white
     >a
       display: block
       text-decoration: none
@@ -2406,7 +2407,7 @@ ul.nav_list
       padding: 2px 10px 2px 12px
       font-size: 16px
       line-height: 2
-      color: #27282f
+      color: $static
       border-bottom: 1px solid #e8e8e8
     &::after
       text-decoration: none
@@ -2423,7 +2424,7 @@ ul.nav_list
         color: $orange_static !important
         background: #F7F7F7
       a
-        color: #27282f
+        color: $static
         background-color: #f0f0f0
       &:hover
         color: $orange_static
@@ -2445,7 +2446,7 @@ ul.nav_list
           padding: 2px 48px 2px 20px
           font-size: 14px
           line-height: 2
-          color: #27282f
+          color: $static
           border-bottom: 1px solid #e8e8e8
           &:hover
             text-decoration: none
@@ -2489,7 +2490,7 @@ ul.nav_list
       padding: 5px 15px
       /*display: none*/
       z-index: 1
-      color: #ffffff
+      color: $white
       font-size: 16.4px
       text-align: center
       text-transform: uppercase
@@ -2497,11 +2498,11 @@ ul.nav_list
     .oranges
       background: $orange_static
     .blue
-      background: #202E5C
+      background: $dark_blue
     .inside_s
       width: 100%
       height: 100%
-      background: #ffffff
+      background: $white
       border: 1px solid #DCDCDC
       display: block
       transition: all 0.3s ease
@@ -2549,7 +2550,7 @@ ul.nav_list
             background: url("../img/gr_bg.png") center center no-repeat
         .blue_bg
           background: #89C9EC
-          color: #ffffff
+          color: $white
           &:before
             position: absolute
             width: 34px
@@ -2731,7 +2732,7 @@ ul.nav_list
   width: 19px
   height: 19px
   background: $orange
-  color: #ffffff
+  color: $white
   font-family: 'OpenSansRegular'
   font-weight: bold
   border-radius: 10em
@@ -2745,7 +2746,7 @@ ul.nav_list
     position: relative
     padding: 2px 10px 2px 50px !important
     font-size: 16px !important
-    border-bottom: 1px solid #ffffff
+    border-bottom: 1px solid $white
     &:after
       width: 11px
       height: 9px
@@ -2775,8 +2776,8 @@ ul.nav_list
   display: inline-block
   font-size: 14px
   font-family: 'OpenSansRegular',sans-serif
-  color: #ff4f2f
-  border-bottom: 1px dotted #ff4f2f
+  color: $orange_static
+  border-bottom: 1px dotted $orange_static
   white-space: nowrap
   img
     margin-bottom: 10px
@@ -2818,7 +2819,7 @@ ul.nav_list
   background: url("../img/icon/arr_select.png") no-repeat
 
 .confirm_email
-  color: #ff4f2f
+  color: $orange_static
   font-size: 14px
   font-family: 'OpenSansRegular' ,sans-serif
 
@@ -3098,8 +3099,8 @@ ul.nav_list
   max-width: 162px
   width: 100%
   height: 32px
-  background: #ff4f2f
-  color: #ffffff
+  background: $orange_static
+  color: $white
   line-height: 32px
   font-size: 14px
   text-align: center
@@ -3198,7 +3199,7 @@ ul.nav_list
     margin:  0 auto
     .form_white_bg1
       position: relative
-      background: #ffffff
+      background: $white
       width: 100%
       padding: 0 40px
       text-align: center
@@ -3368,10 +3369,10 @@ ul.nav_list
 //  margin-top: 20px
 .orange_un_aut
   padding: 21px 128px
-  background-color: #ff4f2e
-  background-image: linear-gradient(to top, #ff4f2e 0%, #f88e7b 100%)
+  background-color: $orange
+  background-image: linear-gradient(to top, $orange 0%, #f88e7b 100%)
   &:hover
-    background-image: linear-gradient(to top, #f88e7b 0%, #ff4f2e 100%)
+    background-image: linear-gradient(to top, #f88e7b 0%, $orange 100%)
 .copyright
   p
     a.pol-c
@@ -3379,7 +3380,7 @@ ul.nav_list
       position: relative
       left: 0
       top: 0
-      color: #FFFFFF
+      color: $white
       font-size: 15px
       display: inline-block
       margin-left: 9px
@@ -3391,7 +3392,7 @@ ul.nav_list
   width: 100%
   text-align: center
   padding: 11px 45px
-  background: #ff4f2e
+  background: $orange
   position: relative
   .close_addBlock
     background: url("../img/icon/icon-close-white.png") no-repeat center center
@@ -3405,9 +3406,9 @@ ul.nav_list
     cursor: pointer
   p
     font-size: 16px
-    color: #ffffff
+    color: $white
     a
-      color: #ffffff
+      color: $white
       text-decoration: underline
       &:hover
         text-decoration: none
@@ -3516,11 +3517,9 @@ ul.nav_list
   font-size: 24px
   text-align: center
   margin-top: 20px
-  a
-    color: #ff4f2f
+  span
+    color: $orange_static
     text-decoration: none
-    &:hover
-      text-decoration: underline
 
 .wrapps_registereg_catalog
   width: 400px
@@ -3537,7 +3536,7 @@ ul.nav_list
       width: 100%
       .form_white_bg
         position: relative
-        background: #ffffff
+        background: $white
         width: 100%
         //padding: 35px 40px
         text-align: center
@@ -3618,8 +3617,8 @@ ul.nav_list
   background-size: cover
 
 .fancybox-close
-  top: -23px !important
-  right: -28px !important
+  top: -36px !important
+  right: -39px !important
 
 .text_with_epty_item
   color: #22315e
@@ -3658,7 +3657,7 @@ ul.nav_list
   font-family: 'officinaserifbookcbook'
 
 .tabs .current
-  color: #ff4f2f
+  color: $orange_static
   font-size: 20px
   border-bottom: none
 
@@ -3696,7 +3695,7 @@ ul.nav_list
     color: #999999
     font-size: 14px
 .name_shop
-  color: #ff4f2f
+  color: $orange_static
   font-size: 14px
   display: inline-block
 .img_table_mess
@@ -3719,7 +3718,7 @@ ul.nav_list
   font-size: 13px
 
 .waiting
-  color: #ff4f2f
+  color: $orange_static
 
 .accept
   color: #3bc82e  
@@ -3757,4 +3756,44 @@ ul.nav_list
   tr
     td
       padding: 15px 10px 14px 10px
+      
+.href_forgot
+  color: $orange_static
+  &:hover
+    color: $orange_static
+
+.conversion_block_style
+  height: 687px
+  min-height: 687px
+  background-repeat: no-repeat
+  background-position: center 0
+  background-attachment: fixed
+  .left_part_main_block
+    .animate_text
+      margin-bottom: 60px
+    .left_part_main_block_h1
+      margin-bottom: 45px
+  .white_form_start_economy
+    .inside_form_wrapp
+      .form_white_bg
+        margin-top: 145px
+        padding: 25px 40px 18px 40px
+        .start_economy
+          margin-bottom: 25px
+.conversion_bg_image_1
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(38,28,0,0.8) 100%) ,url("../img/conversion_main_img.jpg")
+.conversion_bg_image_2
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(38,28,0,0.8) 100%) ,url("../img/conversion_main_img.jpg")
+
+.conv_logos
+  display: inline-block
+  margin-bottom: 117px
+  width: 234px
+  height: auto
+#conversion_landing_without_margin_top
+  margin-top: 0 !important
+
+.style_input
+  background: $white
+
 /*страница уведомления*/
