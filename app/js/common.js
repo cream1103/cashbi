@@ -810,12 +810,18 @@ function validMail(e){
             if(target.nextElementSibling.classList.contains('block_reg_pass')) target.nextElementSibling.style.height = '114px';
 
             var ent = "Войти";
+            var reg = "Зарегистрироваться";
             $('.type_subm_form_btn').attr('value', ent);
-            $('.conversion_block_style').addClass('reHeightClass');
+            $('.password_form .type_subm_form_btn').attr('value', reg);
 
+            var redas = $(window).width() < 980;
+            if(redas){
+                $('.conversion_block_style').addClass('reHeightClass').parents('body').scrollTop(200);
+            }
+            else{
+                $('.conversion_block_style').addClass('reHeightClass');
+            }
         }
-
-
     }
 }
 /*
