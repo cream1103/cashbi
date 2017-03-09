@@ -638,6 +638,9 @@
     .cooper_wrapp_block {
         margin-left: 0;
     }
+    .conversion_block_style{
+        background-size: cover;
+    }
     .conversion_block_style .left_part_main_block .left_part_main_block_h1{
         font-size: 36px;
     }
@@ -660,8 +663,8 @@
         color: #FFFFFF
     }
     .reHeightClass{
-        height: 685px;
-        min-height: 685px;
+        height: 720px;
+        min-height: 720px;
     }
 }
 /*=================================================================  979px  ==========*/
@@ -702,8 +705,8 @@
         color: #ff4f2f !important;
     }
     .reHeightClass{
-        height: 555px !important;
-        min-height: 555px !important;
+        height: 580px !important;
+        min-height: 580px !important;
     }
     .wrapper_invite_friend .wrapp_div_fore_start_economy{
         width: 100%;
@@ -1330,7 +1333,6 @@
         margin-top: 0;
         height: 465px;
         min-height: 465px;
-        background-size: inherit;
     }
     .conv_logos {
         display: inline-block;
@@ -1346,6 +1348,9 @@
     }
     .conversion_block_style .left_part_main_block .left_part_main_block_h1 {
         font-size: 24px;
+    }
+    .inside_slot_akc{
+        height: auto;
     }
 }
 /*=================================================================  599px  ==========*/
