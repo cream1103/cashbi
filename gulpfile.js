@@ -34,9 +34,9 @@ gulp.task('scripts', function() {
         'app/libs/fancybox/jquery.fancybox.js',
         'app/libs/fancybox/jquery.fancybox.pack.js',
 		'app/libs/bootstrap/js/bootstrap.js',
-		'app/libs/bx_slider/jquery.bxslider.js',
-		'app/libs/formStyler/jquery.formstyler.min.js',
-		'app/libs/maskedinput/jquery.maskedinput.min.js'
+		'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
+		'app/libs/jquery.form-styler/jquery.formstyler.min.js',
+		'app/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
             //JS БИБЛИОТЕКИ СЮДА
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

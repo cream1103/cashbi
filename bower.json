@@ -1,0 +1,27 @@
+{
+  "name": "cash",
+  "description": "bower fore cash",
+  "main": "index.js",
+  "authors": [
+    "Cream Master"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cream1103/cashbi",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.1",
+    "bootstrap": "^3.3.7",
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "bxslider-4": "bx-slider.js#^4.2.12",
+    "fancybox": "2.1.5",
+    "jquery.form-styler": "jquery-form-styler#^1.7.8"
+  }
+}

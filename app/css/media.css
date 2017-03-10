@@ -38,6 +38,12 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+
+
+
+
+
+
     .icon_soc_join{
         left: 0;
     }
@@ -1352,6 +1358,33 @@
     .inside_slot_akc{
         height: auto;
     }
+    .inside_slot_akc{
+        height: 330px;
+        padding: 8px 20px;
+    }
+    .inside_slot_akc .timer{
+        font-size: 18px;
+    }
+    .inside_slot_akc .timer span{
+        font-size: 18px;
+    }
+    .inside_slot_akc .akc_name .p_sls{
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+    }
+    .inside_slot_akc .prise{
+        float: none;
+        margin: 25px auto 15px auto;
+    }
+    .inside_slot_akc .show_all_akc , .inside_slot_akc .link_to_website{
+        text-align: center;
+    }
+    .inside_slot_akc .bott_obj{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1428,7 +1461,35 @@
         font: 20px/41px fontawesome;
     }
 }
-
+@media all and (max-width: 1399px) and (min-width: 979px) {
+    .inside_slot_akc{
+        height: 330px;
+        padding: 8px 20px;
+    }
+    .inside_slot_akc .timer{
+        font-size: 18px;
+    }
+    .inside_slot_akc .timer span{
+        font-size: 18px;
+    }
+    .inside_slot_akc .akc_name .p_sls{
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+    }
+    .inside_slot_akc .prise{
+        float: none;
+        margin: 25px auto 15px auto;
+    }
+    .inside_slot_akc .show_all_akc , .inside_slot_akc .link_to_website{
+        text-align: center;
+    }
+    .inside_slot_akc .bott_obj{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
 @media all and (max-width: 979px) and (min-width: 600px) {
     .img_and_links img {
         margin-top: 20px;

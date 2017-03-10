@@ -1,4 +1,4 @@
 @import url(../libs/bootstrap/css/bootstrap.css);
-@import url(../libs/bx_slider/jquery.bxslider.css);
-@import url(../libs/formStyler/jquery.formstyler.css);
+@import url(../libs/bxslider-4/dist/jquery.bxslider.css);
+@import url(../libs/jquery.form-styler/jquery.formstyler.css);
 @import url(../libs/fancybox/jquery.fancybox.css);

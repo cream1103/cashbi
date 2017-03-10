@@ -38,6 +38,12 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+
+
+
+
+
+
     .icon_soc_join{
         left: 0;
     }
@@ -638,6 +644,9 @@
     .cooper_wrapp_block {
         margin-left: 0;
     }
+    .conversion_block_style{
+        background-size: cover;
+    }
     .conversion_block_style .left_part_main_block .left_part_main_block_h1{
         font-size: 36px;
     }
@@ -658,6 +667,10 @@
     }
     .href_forgot:hover{
         color: #FFFFFF
+    }
+    .reHeightClass{
+        height: 720px;
+        min-height: 720px;
     }
 }
 /*=================================================================  979px  ==========*/
@@ -690,9 +703,17 @@
         font-size: 12px !important;
     }
 }
+
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .fancybox-overlay .href_forgot{
+        color: #ff4f2f !important;
+    }
+    .reHeightClass{
+        height: 580px !important;
+        min-height: 580px !important;
+    }
     .wrapper_invite_friend .wrapp_div_fore_start_economy{
         width: 100%;
     }
@@ -1117,9 +1138,7 @@
     .left_img_card{
         display: block;
         margin-bottom: 10px;
-
     }
-
     .yellow_wrapper_info_block{
         padding: 30px 10px;
     }
@@ -1185,7 +1204,6 @@
         position: absolute;
         left: 10px;
         width: auto !important;
-
     }
     .text_center tr td{
         padding-left: 30px;
@@ -1225,7 +1243,6 @@
     .pl_pr15{
         padding: 0;
     }
-
 
     .fancybox-opened .fancybox-skin{
         width: 100vw !important;
@@ -1322,7 +1339,6 @@
         margin-top: 0;
         height: 465px;
         min-height: 465px;
-        background-size: inherit;
     }
     .conv_logos {
         display: inline-block;
@@ -1339,7 +1355,36 @@
     .conversion_block_style .left_part_main_block .left_part_main_block_h1 {
         font-size: 24px;
     }
-
+    .inside_slot_akc{
+        height: auto;
+    }
+    .inside_slot_akc{
+        height: 330px;
+        padding: 8px 20px;
+    }
+    .inside_slot_akc .timer{
+        font-size: 18px;
+    }
+    .inside_slot_akc .timer span{
+        font-size: 18px;
+    }
+    .inside_slot_akc .akc_name .p_sls{
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+    }
+    .inside_slot_akc .prise{
+        float: none;
+        margin: 25px auto 15px auto;
+    }
+    .inside_slot_akc .show_all_akc , .inside_slot_akc .link_to_website{
+        text-align: center;
+    }
+    .inside_slot_akc .bott_obj{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1398,7 +1443,6 @@
     }
     .wrapp_text{
         width: 100%;
-        /*margin: 70px auto 0 auto;*/
         text-align: center;
     }
     .bg_block_top .white_form_start_economy .inside_form_wrapp .form_white_bg{
@@ -1408,9 +1452,6 @@
         width: 100%;
     }
     .bg_block_top .white_form_start_economy .icon_soc_join ul li {
-        /*display: inline-block;*/
-        /*width: 45px;*/
-        /*height: 45px;*/
         margin-right: 1px;
     }
     .soc_registr .icon_soc_join li a{
@@ -1420,9 +1461,36 @@
         font: 20px/41px fontawesome;
     }
 }
-
+@media all and (max-width: 1399px) and (min-width: 979px) {
+    .inside_slot_akc{
+        height: 330px;
+        padding: 8px 20px;
+    }
+    .inside_slot_akc .timer{
+        font-size: 18px;
+    }
+    .inside_slot_akc .timer span{
+        font-size: 18px;
+    }
+    .inside_slot_akc .akc_name .p_sls{
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+    }
+    .inside_slot_akc .prise{
+        float: none;
+        margin: 25px auto 15px auto;
+    }
+    .inside_slot_akc .show_all_akc , .inside_slot_akc .link_to_website{
+        text-align: center;
+    }
+    .inside_slot_akc .bott_obj{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
 @media all and (max-width: 979px) and (min-width: 600px) {
-
     .img_and_links img {
         margin-top: 20px;
         margin-bottom: 23px;
@@ -1445,7 +1513,6 @@
     .input-row{
         margin-top: 6px;
     }
-
     .products {
         padding: 13px 0 14px 20px;
     }
