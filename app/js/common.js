@@ -815,13 +815,10 @@ function validMail(e){
             $('.password_form .type_subm_form_btn').attr('value', reg);
 
             var redas = $(window).width() < 980;
-            if(redas){
-                $('.conversion_block_style').addClass('reHeightClass').parents('body').scrollTop(200);
-            }
-            else{
-                $('.conversion_block_style').addClass('reHeightClass');
-            }
+            $('.conversion_block_style').addClass('reHeightClass');
+
         }
+
     }
 }
 /*

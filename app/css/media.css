@@ -1385,6 +1385,27 @@
         text-align: center;
         display: block;
     }
+    .bg_width_block{
+        padding: 10px 15px 40px 15px;
+    }
+    .bg_width_block .inside_small_wrapper .r_text_infos .timer{
+        font-size: 24px;
+    }
+    .bg_width_block .inside_small_wrapper .r_text_infos .timer span{
+        font-size: 24px;
+    }
+    .bg_width_block .inside_small_wrapper .border_top_wrapper {
+        padding-top: 10px;
+        margin-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bg_width_block .inside_small_wrapper .border_top_wrapper .saler_text_akc{
+        font-size: 24px;
+    }
+    .akc_info_text li{
+        font-size: 13px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

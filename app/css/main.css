@@ -1181,7 +1181,6 @@ a {
 
 .bg_block_top_autor {
   width: 100%;
-  margin-top: 67px;
   background-size: 100%;
   position: relative; }
   .bg_block_top_autor .slider_wrapper_first_screen {
@@ -3928,7 +3927,7 @@ ul.nav_list {
 .inside_slot_akc {
   height: 250px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   padding: 20px;
   position: relative; }
   .inside_slot_akc:after {
@@ -3971,4 +3970,109 @@ ul.nav_list {
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.09);
   border: 1px solid transparent; }
 
+.blue_gradient:after {
+  background: url("../img/icon/bg_blue_act.png");
+  bottom: -9px; }
+
+.white_bg:after {
+  background: url("../img/icon/bg_white_act.png");
+  bottom: -9px; }
+
+.yellow_gradient:after {
+  background: url("../img/icon/bg_yellow_act.png");
+  bottom: -9px; }
+
 /*страница акций*/
+/*страница карты акций*/
+.bg_width_block {
+  background: #E6F6FF;
+  max-width: 735px;
+  padding: 25px 25px 40px 25px;
+  margin: 0 auto; }
+  .bg_width_block .inside_small_wrapper {
+    max-width: 455px;
+    margin: 0 auto;
+    text-align: center; }
+    .bg_width_block .inside_small_wrapper .r_text_infos {
+      text-align: center; }
+      .bg_width_block .inside_small_wrapper .r_text_infos .timer {
+        font-size: 36px;
+        margin-top: 7px; }
+        .bg_width_block .inside_small_wrapper .r_text_infos .timer span {
+          font-size: 36px; }
+    .bg_width_block .inside_small_wrapper .border_top_wrapper {
+      border-top: 1px solid #C6D4DD;
+      width: 100%;
+      padding-top: 15px;
+      margin-top: 15px;
+      padding-left: 35px;
+      padding-right: 35px; }
+      .bg_width_block .inside_small_wrapper .border_top_wrapper .saler_text_akc {
+        font-size: 36px;
+        color: #3d424b;
+        font-family: 'officinaserifboldcbold'; }
+    .bg_width_block .inside_small_wrapper .referal_link {
+      background: #FFFFFF;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+.inside_slot1 {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative; }
+  .inside_slot1:after {
+    width: 100%;
+    height: 9px;
+    background: url("../img/icon/repeat_s_z.png") repeat-x left top;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: ''; }
+
+.color_yellow1 {
+  background: #F6EDD0;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.color_blue1 {
+  background: #E6F6FF;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.oranges_link_activecash {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'officinaserifbookcbook';
+  text-align: center;
+  padding: 15px;
+  background: #FF4F2F;
+  display: block;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+  .oranges_link_activecash:hover {
+    background: #CD3317; }
+
+.akc_info_text {
+  text-align: left;
+  margin-top: 25px; }
+  .akc_info_text li {
+    color: #333333;
+    font-family: 'OpenSansRegular';
+    font-size: 14px;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 5px; }
+    .akc_info_text li:before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #333333;
+      left: 0;
+      top: 9px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+
+/*страница карты акций*/
