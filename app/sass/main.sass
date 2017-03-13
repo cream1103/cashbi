@@ -2256,6 +2256,8 @@ input[type="checkbox"]
   transition-duration: 0.5s
   &:hover
     background: #f4e2ae
+    .p_sls
+      color: #FF4F2F
 .color_blue
   background: #E6F6FF
   -webkit-transition-duration: 0.5s
@@ -2264,6 +2266,8 @@ input[type="checkbox"]
   transition-duration: 0.5s
   &:hover
     background: #c8e6f6
+    .p_sls
+      color: #FF4F2F
 
 .bb_1ps_solid
   border-bottom: 1px solid #EAEAEA
@@ -3840,40 +3844,91 @@ ul.nav_list
   font-family: 'officinasansbook'
   margin-top: 8px
 
-.hov_oreange
-  &:hover
-    color: #FF4F2F
-    text-decoration: underline !important
+//.hov_oreange
+//  &:hover
+//    color: #FF4F2F
+//    text-decoration: underline !important
 
 .yellow_gradient
   background-color: #fff6d8
   background-image: linear-gradient(to top, #fff6d8 0%, #fff6d8 29%, white 51%, white 100%)
   border: 1px solid #ebe4d6
+  &:hover
+    background-color: #f4e2ae
+    background-image: linear-gradient(to top, #f4e2ae 0%, #f4e2ae 29%, white 51%, white 100%)
+    .hov_oreange
+      color: #FF4F2F
+
 
 .blue_gradient
   background-color: #e6f6ff
   background-image: linear-gradient(to top, #e6f6ff 0%, #e6f6ff 29%, white 51%, white 100%)
   border: 1px solid #d6e4eb
+  &:hover
+    background-color: #c8e6f6
+    background-image: linear-gradient(to top, #c8e6f6 0%, #c8e6f6 29%, white 51%, white 100%)
+    .hov_oreange
+      color: #FF4F2F
 
 .white_bg
   background-color: #ffffff
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.09)
   border: 1px solid transparent
+  &:hover
+    .hov_oreange
+      color: #FF4F2F
+
+
 .blue_gradient
   &:after
     background: url("../img/icon/bg_blue_act.png")
     bottom: -9px
-
-.white_bg
-  &:after
-    background: url("../img/icon/bg_white_act.png")
+    z-index: 10
+  &:before
+    background: url("../img/icon/bg_blue_act1.png") repeat-x
     bottom: -9px
+    z-index: -10
+    height: 9px
+    position: absolute
+    left: 0
+    display: block
+    width: 100%
+    content: ''
+  &:hover
+    &:after
+      z-index: -10
+    &:before
+      z-index: 10
+
 
 .yellow_gradient
   &:after
     background: url("../img/icon/bg_yellow_act.png")
     bottom: -9px
+    z-index: 10
+  &:before
+    background: url("../img/icon/bg_yellow_act1.png")
+    bottom: -9px
+    z-index: -10
+    height: 9px
+    position: absolute
+    left: 0
+    display: block
+    width: 100%
+    content: ''
+  &:hover
+    &:after
+      z-index: -10
+    &:before
+      z-index: 10
 
+.white_bg
+  &:after
+    background: url("../img/icon/bg_white_act.png")
+    bottom: -9px
+  &:hover
+    &:after
+      background: url("../img/icon/bg_white_act.png")
 /*страница акций*/
 
 /*страница карты акций*/
@@ -3942,11 +3997,13 @@ ul.nav_list
   font-family: 'officinaserifbookcbook'
   text-align: center
   padding: 15px
-  background: #FF4F2F
+  background-color: #4384f7
+  background-image: linear-gradient(to top, #376ed0 0%, #4384f6 100%)
   display: block
   border-radius: 4px
   &:hover
-    background: #CD3317
+    background-image: linear-gradient(to top, #4384f6 0%, #376ed0 100%)
+
 
 .akc_info_text
   text-align: left
