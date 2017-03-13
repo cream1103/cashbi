@@ -2290,6 +2290,8 @@ input[type="checkbox"] {
   transition-duration: 0.5s; }
   .color_yellow:hover {
     background: #f4e2ae; }
+    .color_yellow:hover .p_sls {
+      color: #FF4F2F; }
 
 .color_blue {
   background: #E6F6FF;
@@ -2297,6 +2299,8 @@ input[type="checkbox"] {
   transition-duration: 0.5s; }
   .color_blue:hover {
     background: #c8e6f6; }
+    .color_blue:hover .p_sls {
+      color: #FF4F2F; }
 
 .bb_1ps_solid {
   border-bottom: 1px solid #EAEAEA; }
@@ -3927,7 +3931,7 @@ ul.nav_list {
 .inside_slot_akc {
   height: 250px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   padding: 20px;
   position: relative; }
   .inside_slot_akc:after {
@@ -3946,16 +3950,19 @@ ul.nav_list {
   font-family: 'officinasansbook';
   margin-top: 8px; }
 
-.hov_oreange:hover {
-  color: #FF4F2F;
-  text-decoration: underline !important; }
-
 .yellow_gradient {
   background-color: #fff6d8;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fff6d8), color-stop(29%, #fff6d8), color-stop(51%, white), to(white));
   background-image: -webkit-linear-gradient(bottom, #fff6d8 0%, #fff6d8 29%, white 51%, white 100%);
   background-image: linear-gradient(to top, #fff6d8 0%, #fff6d8 29%, white 51%, white 100%);
   border: 1px solid #ebe4d6; }
+  .yellow_gradient:hover {
+    background-color: #f4e2ae;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f4e2ae), color-stop(29%, #f4e2ae), color-stop(51%, white), to(white));
+    background-image: -webkit-linear-gradient(bottom, #f4e2ae 0%, #f4e2ae 29%, white 51%, white 100%);
+    background-image: linear-gradient(to top, #f4e2ae 0%, #f4e2ae 29%, white 51%, white 100%); }
+    .yellow_gradient:hover .hov_oreange {
+      color: #FF4F2F; }
 
 .blue_gradient {
   background-color: #e6f6ff;
@@ -3963,23 +3970,172 @@ ul.nav_list {
   background-image: -webkit-linear-gradient(bottom, #e6f6ff 0%, #e6f6ff 29%, white 51%, white 100%);
   background-image: linear-gradient(to top, #e6f6ff 0%, #e6f6ff 29%, white 51%, white 100%);
   border: 1px solid #d6e4eb; }
+  .blue_gradient:hover {
+    background-color: #c8e6f6;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#c8e6f6), color-stop(29%, #c8e6f6), color-stop(51%, white), to(white));
+    background-image: -webkit-linear-gradient(bottom, #c8e6f6 0%, #c8e6f6 29%, white 51%, white 100%);
+    background-image: linear-gradient(to top, #c8e6f6 0%, #c8e6f6 29%, white 51%, white 100%); }
+    .blue_gradient:hover .hov_oreange {
+      color: #FF4F2F; }
 
 .white_bg {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.09);
           box-shadow: 0 0 32px rgba(0, 0, 0, 0.09);
   border: 1px solid transparent; }
+  .white_bg:hover .hov_oreange {
+    color: #FF4F2F; }
 
 .blue_gradient:after {
   background: url("../img/icon/bg_blue_act.png");
-  bottom: -9px; }
+  bottom: -9px;
+  z-index: 10; }
+
+.blue_gradient:before {
+  background: url("../img/icon/bg_blue_act1.png") repeat-x;
+  bottom: -9px;
+  z-index: -10;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: ''; }
+
+.blue_gradient:hover:after {
+  z-index: -10; }
+
+.blue_gradient:hover:before {
+  z-index: 10; }
+
+.yellow_gradient:after {
+  background: url("../img/icon/bg_yellow_act.png");
+  bottom: -9px;
+  z-index: 10; }
+
+.yellow_gradient:before {
+  background: url("../img/icon/bg_yellow_act1.png");
+  bottom: -9px;
+  z-index: -10;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: ''; }
+
+.yellow_gradient:hover:after {
+  z-index: -10; }
+
+.yellow_gradient:hover:before {
+  z-index: 10; }
 
 .white_bg:after {
   background: url("../img/icon/bg_white_act.png");
   bottom: -9px; }
 
-.yellow_gradient:after {
-  background: url("../img/icon/bg_yellow_act.png");
-  bottom: -9px; }
+.white_bg:hover:after {
+  background: url("../img/icon/bg_white_act.png"); }
 
 /*страница акций*/
+/*страница карты акций*/
+.bg_width_block {
+  background: #E6F6FF;
+  max-width: 735px;
+  padding: 25px 25px 40px 25px;
+  margin: 0 auto; }
+  .bg_width_block .inside_small_wrapper {
+    max-width: 455px;
+    margin: 0 auto;
+    text-align: center; }
+    .bg_width_block .inside_small_wrapper .r_text_infos {
+      text-align: center; }
+      .bg_width_block .inside_small_wrapper .r_text_infos .timer {
+        font-size: 36px;
+        margin-top: 7px; }
+        .bg_width_block .inside_small_wrapper .r_text_infos .timer span {
+          font-size: 36px; }
+    .bg_width_block .inside_small_wrapper .border_top_wrapper {
+      border-top: 1px solid #C6D4DD;
+      width: 100%;
+      padding-top: 15px;
+      margin-top: 15px;
+      padding-left: 35px;
+      padding-right: 35px; }
+      .bg_width_block .inside_small_wrapper .border_top_wrapper .saler_text_akc {
+        font-size: 36px;
+        color: #3d424b;
+        font-family: 'officinaserifboldcbold'; }
+    .bg_width_block .inside_small_wrapper .referal_link {
+      background: #FFFFFF;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+.inside_slot1 {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative; }
+  .inside_slot1:after {
+    width: 100%;
+    height: 9px;
+    background: url("../img/icon/repeat_s_z.png") repeat-x left top;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: ''; }
+
+.color_yellow1 {
+  background: #F6EDD0;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.color_blue1 {
+  background: #E6F6FF;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.oranges_link_activecash {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'officinaserifbookcbook';
+  text-align: center;
+  padding: 15px;
+  background-color: #4384f7;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#376ed0), to(#4384f6));
+  background-image: -webkit-linear-gradient(bottom, #376ed0 0%, #4384f6 100%);
+  background-image: linear-gradient(to top, #376ed0 0%, #4384f6 100%);
+  display: block;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+  .oranges_link_activecash:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#4384f6), to(#376ed0));
+    background-image: -webkit-linear-gradient(bottom, #4384f6 0%, #376ed0 100%);
+    background-image: linear-gradient(to top, #4384f6 0%, #376ed0 100%); }
+
+.akc_info_text {
+  text-align: left;
+  margin-top: 25px; }
+  .akc_info_text li {
+    color: #333333;
+    font-family: 'OpenSansRegular';
+    font-size: 14px;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 5px; }
+    .akc_info_text li:before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #333333;
+      left: 0;
+      top: 9px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+
+.fancybox-inner {
+  overflow: hidden !important; }
+
+/*страница карты акций*/

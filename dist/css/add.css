@@ -85,9 +85,9 @@ input, select, textarea, button {
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
-  -webkit-transform: translateX(100vw);
-      -ms-transform: translateX(100vw);
-          transform: translateX(100vw);
+  -webkit-transform: translateX(500vw);
+      -ms-transform: translateX(500vw);
+          transform: translateX(500vw);
   top: 0;
   background: rgba(0, 0, 0, 0.75);
   -webkit-transition: .2s linear;
