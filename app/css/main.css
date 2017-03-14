@@ -4135,4 +4135,9 @@ ul.nav_list {
       -webkit-border-radius: 10px;
               border-radius: 10px; }
 
+.fancybox-inner {
+  overflow: hidden !important; }
+
 /*страница карты акций*/
+#search-items1 {
+  background: red; }

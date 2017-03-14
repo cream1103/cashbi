@@ -210,13 +210,36 @@
                 <h1 class="h1_cart_style">Акции AliExpress</h1>
             </div>
             <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-                <form action="/">
+                <form id="slide-menu-search1" action="/">
                     <label class="wrappers">
-                        <input required="" id="search" type="text"
+                        <input required="" id="search" type="search" list="search-items1" name="q"
                                placeholder="Найти свой магазин, например SAPATO"
                                name="search" class="search">
                     </label>
-                    <input name="search" class="search_btn" type="submit" value="Поиск">
+                    <input name="search" class="search_btn" name="s" type="submit" value="Поиск">
+                    <datalist id="search-items1">
+                        <option value="Лучшие магазины">
+                        <option value="Товары из Китая">
+                        <option value="Услуги">
+                        <option value="Гипермаркеты">
+                        <option value="Для творчества">
+                        <option value="Аксессуары">
+                        <option value="Книги">
+                        <option value="Товары для детей">
+                        <option value="Купонные сервисы">
+                        <option value="Красота & Здоровье">
+                        <option value="Товары для дома">
+                        <option value="Мебель">
+                        <option value="Бытовая техника">
+                        <option value="Электроника">
+                        <option value="Одежда & Обувь">
+                        <option value="Доставка еды">
+                        <option value="Развлечения">
+                        <option value="Путешествие">
+                        <option value="Для взрослых">
+                        <option value="Зоомагазины">
+                        <option value="Подарки & Цветы">
+                    </datalist>
                 </form>
             </div>
         </div>
