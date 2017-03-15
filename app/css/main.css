@@ -3951,30 +3951,28 @@ ul.nav_list {
   margin-top: 8px; }
 
 .yellow_gradient {
-  background-color: #fff6d8;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff6d8), color-stop(29%, #fff6d8), color-stop(51%, white), to(white));
-  background-image: -webkit-linear-gradient(bottom, #fff6d8 0%, #fff6d8 29%, white 51%, white 100%);
-  background-image: linear-gradient(to top, #fff6d8 0%, #fff6d8 29%, white 51%, white 100%);
-  border: 1px solid #ebe4d6; }
+  border: 1px solid #ebe4d6;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #fff;
+  -webkit-box-shadow: inset 0px -125px 75px -25px #fff6d8;
+  box-shadow: inset 0px -125px 75px -25px #fff6d8; }
   .yellow_gradient:hover {
-    background-color: #f4e2ae;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#f4e2ae), color-stop(29%, #f4e2ae), color-stop(51%, white), to(white));
-    background-image: -webkit-linear-gradient(bottom, #f4e2ae 0%, #f4e2ae 29%, white 51%, white 100%);
-    background-image: linear-gradient(to top, #f4e2ae 0%, #f4e2ae 29%, white 51%, white 100%); }
+    -webkit-box-shadow: inset 0px -125px 75px -25px #f4e2ae;
+    box-shadow: inset 0px -125px 75px -25px #f4e2ae; }
     .yellow_gradient:hover .hov_oreange {
       color: #FF4F2F; }
 
 .blue_gradient {
-  background-color: #e6f6ff;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e6f6ff), color-stop(29%, #e6f6ff), color-stop(51%, white), to(white));
-  background-image: -webkit-linear-gradient(bottom, #e6f6ff 0%, #e6f6ff 29%, white 51%, white 100%);
-  background-image: linear-gradient(to top, #e6f6ff 0%, #e6f6ff 29%, white 51%, white 100%);
-  border: 1px solid #d6e4eb; }
+  border: 1px solid #d6e4eb;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #fff;
+  -webkit-box-shadow: inset 0px -125px 75px -25px #e6f6ff;
+  box-shadow: inset 0px -125px 75px -25px #e6f6ff; }
   .blue_gradient:hover {
-    background-color: #c8e6f6;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#c8e6f6), color-stop(29%, #c8e6f6), color-stop(51%, white), to(white));
-    background-image: -webkit-linear-gradient(bottom, #c8e6f6 0%, #c8e6f6 29%, white 51%, white 100%);
-    background-image: linear-gradient(to top, #c8e6f6 0%, #c8e6f6 29%, white 51%, white 100%); }
+    -webkit-box-shadow: inset 0px -125px 75px -25px #c8e6f6;
+    box-shadow: inset 0px -125px 75px -25px #c8e6f6; }
     .blue_gradient:hover .hov_oreange {
       color: #FF4F2F; }
 
@@ -3987,14 +3985,15 @@ ul.nav_list {
     color: #FF4F2F; }
 
 .blue_gradient:after {
-  background: url("../img/icon/bg_blue_act.png");
-  bottom: -9px;
-  z-index: 10; }
+  display: none !important; }
 
 .blue_gradient:before {
-  background: url("../img/icon/bg_blue_act1.png") repeat-x;
+  display: none !important; }
+
+.blue_gradient .span_aft {
+  background: url("../img/icon/bg_blue_act.png") repeat-x !important;
   bottom: -9px;
-  z-index: -10;
+  opacity: 1;
   height: 9px;
   position: absolute;
   left: 0;
@@ -4002,21 +4001,27 @@ ul.nav_list {
   width: 100%;
   content: ''; }
 
-.blue_gradient:hover:after {
-  z-index: -10; }
-
-.blue_gradient:hover:before {
-  z-index: 10; }
+.blue_gradient .span_bef {
+  background: url("../img/icon/bg_blue_act1.png") repeat-x !important;
+  bottom: -9px;
+  opacity: 0;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: ''; }
 
 .yellow_gradient:after {
-  background: url("../img/icon/bg_yellow_act.png");
-  bottom: -9px;
-  z-index: 10; }
+  display: none !important; }
 
 .yellow_gradient:before {
-  background: url("../img/icon/bg_yellow_act1.png");
+  display: none !important; }
+
+.yellow_gradient .span_aft {
+  background: url("../img/icon/bg_yellow_act.png") repeat-x !important;
   bottom: -9px;
-  z-index: -10;
+  opacity: 1;
   height: 9px;
   position: absolute;
   left: 0;
@@ -4024,11 +4029,16 @@ ul.nav_list {
   width: 100%;
   content: ''; }
 
-.yellow_gradient:hover:after {
-  z-index: -10; }
-
-.yellow_gradient:hover:before {
-  z-index: 10; }
+.yellow_gradient .span_bef {
+  background: url("../img/icon/bg_yellow_act1.png") repeat-x !important;
+  bottom: -9px;
+  opacity: 0;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: ''; }
 
 .white_bg:after {
   background: url("../img/icon/bg_white_act.png");
