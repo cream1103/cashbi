@@ -1406,6 +1406,12 @@
     .akc_info_text li{
         font-size: 13px;
     }
+    #conversion_landing_without_margin_top .cash_back_wrapp{
+        background: none;
+    }
+    #conversion_landing_without_margin_top .conversion_footer{
+        margin-top: 50px;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

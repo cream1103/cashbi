@@ -4149,5 +4149,56 @@ ul.nav_list {
   overflow: hidden !important; }
 
 /*страница карты акций*/
-#search-items1 {
-  background: red; }
+.conversion_footer {
+  margin-top: 230px;
+  background: none; }
+  .conversion_footer .wrapper_conv_footer {
+    margin: 0 auto;
+    text-align: center; }
+    .conversion_footer .wrapper_conv_footer .icon_soc_join {
+      display: inline-block; }
+      .conversion_footer .wrapper_conv_footer .icon_soc_join ul li {
+        display: inline-block;
+        margin-right: 5px; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a {
+          display: block;
+          width: 32px;
+          height: 32px;
+          -webkit-border-radius: 16px;
+                  border-radius: 16px;
+          margin-right: 6px;
+          -webkit-transition: .1s ease .05s;
+          transition: .1s ease .05s;
+          font: 20px/32px fontawesome;
+          text-align: center;
+          background: #89C9EC;
+          color: #fff; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a:hover {
+          text-decoration: none;
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none;
+          -webkit-filter: none;
+                  filter: none; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-fb:hover {
+          color: #385895; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-vk:hover {
+          color: #4a7095; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-ok:hover {
+          color: #e47c1b; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-tw:hover {
+          color: #00c0fd; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-go:hover {
+          color: #ea4935; }
+        .conversion_footer .wrapper_conv_footer .icon_soc_join ul li a.soc_icon-ig:hover {
+          color: #9d5199; }
+    .conversion_footer .wrapper_conv_footer .copy {
+      color: #3d424b;
+      font-size: 13px;
+      font-family: 'OpenSansRegular';
+      margin-top: 40px; }
+
+#conversion_landing_without_margin_top {
+  padding: 0; }
+  #conversion_landing_without_margin_top .cash_back_wrapp {
+    padding-bottom: 65px; }

@@ -17,7 +17,6 @@ $(document).ready(function(){
     // для смены градиента
     var yell = $('.yellow_gradient');
     var blue = $('.blue_gradient');
-
     blue.mouseover(function(){
         $(this).find('.span_bef').stop().animate({'opacity':'1'}, 200);
         $(this).find('.span_aft').stop().animate({'opacity':'0'}, 200);
@@ -35,6 +34,7 @@ $(document).ready(function(){
         $(this).find('.span_aft').stop().animate({'opacity':'1'}, 200);
     });
     // для смены градиента
+
 
     //таб уведомлений
     $('.tabs span').click(function(){
