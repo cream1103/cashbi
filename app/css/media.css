@@ -1463,6 +1463,23 @@
     .click_toggle{
         display: inline-block !important;
     }
+
+    .xs-restyle{
+        padding-bottom: 20px !important
+    }
+    .xs-restyle .main_questions_text{
+        color: #3d424b
+    }
+    .xs-restyle .sm_hid_wrapper{
+        display: block
+    }
+    .xs-restyle .wr_z{
+        height: auto
+    }
+    .clicks_class{
+        cursor: pointer;
+    }
+
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */

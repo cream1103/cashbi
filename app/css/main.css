@@ -4347,17 +4347,5 @@ ul.nav_list {
 .autoHeight .hidds_wrappers :after {
   display: none !important; }
 
-.clicks_class {
-  cursor: pointer; }
-
-.xs-restyle {
-  padding-bottom: 20px !important; }
-  .xs-restyle .main_questions_text {
-    color: #3d424b; }
-  .xs-restyle .sm_hid_wrapper {
-    display: block; }
-  .xs-restyle .wr_z {
-    height: auto; }
-
 #slide-menu-content_2 .ara_inside_menu a:active {
   background: url("../img/icon/no_photo.svg") no-repeat center center, #D8DFE7 !important; }

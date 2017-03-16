@@ -12,20 +12,12 @@ $(window).load(function(){
 
 
 });
-function windSize2(){
-    $('.clicks_class').on( "click", function() {
-        $(this).parents('.one_q_user').toggleClass('xs-restyle');
-    });
-    $('.click_toggle').on( "click", function() {
-        $(this).parents('.one_q_user').removeClass('xs-restyle');
-        $(this).text("Закрыть")
-    });
-}
+
 function windSize(){
-    if ($(window).width() <= '599'){
-        $('.main_questions_text').addClass('clicks_class');
+    if ($(window).width() >= '599'){
+
     } else {
-        $('.main_questions_text').removeClass('clicks_class');
+
     }
 }
 
@@ -49,7 +41,6 @@ function faqSlide(){
 $(window).on('load', function(){
     faqSlide();
     windSize();
-    windSize2();
 });
 $(window).on('resize', function(){
     faqSlide();
@@ -60,7 +51,13 @@ $(window).on('resize', function(){
 
 $(document).ready(function(){
 
-
+    $('.clicks_class').click(function(){
+        $(this).parents('.one_q_user').toggleClass('xs-restyle');
+    });
+    $('.click_toggle').click(function(){
+        $(this).parents('.one_q_user').removeClass('xs-restyle');
+        $(this).text("Закрыть")
+    });
 
 
     $('.link_to_slide').bind( "click", function() {
