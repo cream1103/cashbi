@@ -1412,18 +1412,62 @@
     #conversion_landing_without_margin_top .conversion_footer{
         margin-top: 50px;
     }
+    .mtn_wrapper .type_subm_form_btn{
+        font-size: 16px;
+        height: 47px;
+        background: #ff4f2f;
+        color: #ffffff;
+        line-height: 16px;
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 13px;
+        vertical-align: middle;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .padding_fore_faq_cont_block .small_line_wrapper {
+        width: 155px;
+        height: 4px;
+        overflow: hidden;
+        margin: 10px auto 20px auto;
+    }
+    .h2_ore_faq{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .main_questions_text{
+        font-size: 18px;
+    }
+    .padding_fore_faq_cont_block{
+        padding: 15px;
+    }
+    /*.one_q_user .wr_z{*/
+        /*height: 0;*/
+    /*}*/
+    .main_questions_text{
+        color: #ff4f2f;
+    }
+    /*.one_q_user .hidds_wrappers :after{*/
+        /*display: none !important;*/
+    /*}*/
+    .one_q_user{
+        padding-bottom: 3px;
+    }
+
+    .sm_hid_wrapper{
+        display: none;
+    }
+    .click_toggle{
+        display: inline-block !important;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
-    /*.bg_block_top {*/
-    /*margin-top: 67px;*/
-    /*background-size: auto !important;*/
-    /*background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(38,28,0,0.8) 100%) ,url("../img/first_screen_bg_mob.png");*/
-    /*background-attachment: fixed;*/
-    /*background-position: 25% 9%;*/
-    /*background-repeat: no-repeat;*/
-    /*}*/
+
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {

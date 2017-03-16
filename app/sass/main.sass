@@ -972,15 +972,17 @@ $wmax_menu: 320px
 			width: 100%
 			height: auto
 		.nav_menu
-			ul
-				width: 25%
-				float: left
-				li
-					margin-bottom: 10px
-					a
-						color: #dee1e7
-						font-size: 18px
-						font-family: 'officinaserifbookcbook',sans-serif
+          ul
+            width: 25%
+            float: left
+            li
+              margin-bottom: 10px
+              a
+                color: #dee1e7
+                font-size: 18px
+                font-family: 'officinaserifbookcbook',sans-serif
+                &:hover
+                  color: $orange
 		.info_about_company
 			position: relative
 			color: #dee1e7
@@ -1326,19 +1328,22 @@ $wmax_menu: 320px
 				font-family: 'officinaserifboldcbold'
 
 .top_blue_header
-	height: 31px
-	width: 100%
-	background: $dark_blue
-	line-height: 31px
-	ul
-		float: right
-		li
-			display: inline-block
-			margin-left: 25px
-			a
-				font-family: 'officinaserifbookcbook'
-				color: $white
-				font-size: 16px
+  height: 31px
+  width: 100%
+  background: $dark_blue
+  line-height: 31px
+  ul
+    float: right
+    li
+      display: inline-block
+      margin-left: 25px
+      a
+        font-family: 'officinaserifbookcbook'
+        color: $white
+        font-size: 16px
+        &:hover
+          color: $orange
+
 
 
 .chart_wrapper
@@ -1600,10 +1605,17 @@ $wmax_menu: 320px
               &:hover
                 text-decoration: none
       .named_right
-        width: 55px
+        width: 52px
         float: left
         position: relative
         margin-top: 15px
+        background: url("../img/icon/no_photo.svg") no-repeat center center ,#D8DFE7
+        border-radius: 10em
+        height: 52px
+        a
+          display: inline-block
+          width: 52px
+          height: 52px
         a img
           width: 52px
           height: 52px
@@ -1657,11 +1669,18 @@ $wmax_menu: 320px
 			display: flex
 			.ara_inside_menu
 				a
-					padding: 10px 15px 10px 20px !important
-					display: flex !important
-					border-bottom: none !important
-					&:hover
-						background: none !important
+                  //padding: 10px 15px 10px 20px !important
+                  display: flex !important
+                  border-bottom: none !important
+                  background: url("../img/icon/no_photo.svg") no-repeat center center ,#D8DFE7
+                  border-radius: 10em
+                  height: 48px
+                  width: 48px
+                  margin-right: 15px
+                  margin-left: 15px
+                  margin-top: 10px
+                  margin-bottom: 10px
+
 				img
 					width: 48px
 					height: 48px
@@ -1848,6 +1867,7 @@ $wmax_menu: 320px
     border-radius: 20px
     font-family: 'officinaserifbookcbook' ,sans-serif
     position: relative
+
     &:before
       position: absolute
       display: inline-block
@@ -1857,6 +1877,7 @@ $wmax_menu: 320px
       top: 13px
       content: ''
       background: url("../img/icon/web_icon_link.png") no-repeat center center
+
 .bb_1
   border-bottom: 1px solid #EAEAEA
 .products
@@ -2152,7 +2173,7 @@ $wmax_menu: 320px
   margin-bottom: 0 !important
   border-bottom:  none !important
 .mt5
-  max-height: 100px !important
+  max-height: 500px !important
   min-height: 100px !important
 
 .cash_back_wrapp
@@ -2162,7 +2183,6 @@ $wmax_menu: 320px
   color: $orange_static !important
   font-size: 18px
   font-family: 'officinaserifbookcbook' ,sans-serif
-
   margin-top: 10px
   border-bottom: 1px dotted $orange_static
   position: relative
@@ -2310,6 +2330,9 @@ input[type="checkbox"]
     top: 13px
     content: ''
     background: url("../img/icon/web_icon_link.png") no-repeat center center
+.link_to_website
+  &:hover
+    text-decoration: underline
 .prise
   width: 95px
   margin-top: 6px
@@ -4105,7 +4128,150 @@ ul.nav_list
   .cash_back_wrapp
     padding-bottom: 65px
 
+//страница faq
+.nav_list
+  .act_vs
+    color: #ff4f2f
+    background-color: #f0f0f0
+
+.link_wrapp_lineh1
+  color: #3d424b
+  font-size: 14px
+  font-family: 'officinaserifbookcbook'
+  float: right
+  margin-top: 25px
+  li
+    display: inline-block
+    margin-right: 20px
+    a
+      color: #3d424b
+      font-size: 14px
+      font-family: 'officinaserifbookcbook'
+      &:hover
+        color: #ff4f2f
+
+.padding_fore_faq_cont_block
+  padding: 20px
+.one_q_user
+  margin-bottom: 20px
+  padding-bottom: 30px
+  border-bottom: 1px solid #DCDCDC
+.main_questions_text
+  color: #3d424b
+  font-size: 24px
+  margin-bottom: 15px
+  font-family: 'officinaserifbookcbook'
+
+.h2_ore_faq
+  font-size: 36px
+  font-family: 'officinaserifboldcbold',sans-serif
+  text-align: center
+  margin-bottom: 25px
+  margin-top: 30px
+.small_line_wrapper
+  width: 255px
+  height: 6px
+  margin: 20px auto 40px auto
+.color_line
+  height: 6px
+  overflow: hidden
+  position: static
+  margin:  0 auto
+  .sky_blue_line
+    width: 42.30%
+    height: 15px
+    background: $sky
+    float: left
+  .dark_blue_line
+    width: 40.5%
+    height: 15px
+    background: $dark_blue
+    float: left
+  .red_line
+    width: 17.20%
+    height: 15px
+    background: $purple
+    float: left
+.mtn_wrapper
+  max-width: 380px
+  margin: 0 auto 20px auto
+  .type_subm_form_btn
+    width: 100%
+    height: 47px
+    background: $orange_static
+    color: $white
+    line-height: 47px
+    font-size: 20px
+    text-align: center
+    border: none
+    border-radius: 50px
+    display: block
+    margin-bottom: 13px
+    &:hover
+      background: $btn_hover
+.link_to_slide
+  color: #ff4f2f
+  font-size: 16px
+  font-family: 'officinaserifbookcbook'
+  border-bottom: 1px dotted #ff4f2f
+  display: inline-block
+  margin-top: 20px
+  &:hover
+    border-bottom: 1px solid transparent
+.h_var
+  display: block
+.wr_z
+  //border: 1px solid red
+  height: 80px
+  overflow: hidden
+
+//.hidds_wrappers
+//  position: relative
+//  :after
+//    height: 30px
+//    display: none
+//    width: 100%
+//    position: absolute
+//    bottom: -16px
+//    left: 0
+//    content: ''
+//    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+.link_to_slide
+  display: none
+.overClass
+  .hidds_wrappers
+    :after
+      display: block !important
+  .link_to_slide
+    display: inline-block
+.autoHeight
+  height: auto !important
+  overflow: visible
+.autoHeight
+  .wr_z
+    height: auto
+    overflow: visible
+  .hidds_wrappers
+    :after
+      display: none !important
+
+.clicks_class
+  cursor: pointer
+//.click_toggle
+//  display: inline-block !important
+
+.xs-restyle
+  padding-bottom: 20px !important
+  .main_questions_text
+    color: #3d424b
+  .sm_hid_wrapper
+    display: block
+  .wr_z
+    height: auto
+//страница faq
 
 
-
-
+#slide-menu-content_2
+  .ara_inside_menu
+    a:active
+      background: url("../img/icon/no_photo.svg") no-repeat center center ,#D8DFE7 !important

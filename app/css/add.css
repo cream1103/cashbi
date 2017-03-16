@@ -192,8 +192,6 @@ input, select, textarea, button {
       #slide-menu-container #slide-menu-content > a:hover, #slide-menu-container #slide-menu-content_2 > a:hover, #slide-menu-container_2 #slide-menu-content > a:hover, #slide-menu-container_2 #slide-menu-content_2 > a:hover {
         text-decoration: none;
         background-color: #f0f0f0; }
-    #slide-menu-container #slide-menu-content a:active, #slide-menu-container #slide-menu-content_2 a:active, #slide-menu-container_2 #slide-menu-content a:active, #slide-menu-container_2 #slide-menu-content_2 a:active {
-      background: #e8e8e8; }
     #slide-menu-container #slide-menu-content a::after, #slide-menu-container #slide-menu-content_2 a::after, #slide-menu-container_2 #slide-menu-content a::after, #slide-menu-container_2 #slide-menu-content_2 a::after {
       text-decoration: none;
       content: attr(data-qty);
