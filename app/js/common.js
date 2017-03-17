@@ -13,13 +13,6 @@ $(window).load(function(){
 
 });
 
-function windSize(){
-    if ($(window).width() >= '599'){
-
-    } else {
-
-    }
-}
 
 function faqSlide(){
     $('.hidds_wrappers').each(function(){
@@ -40,16 +33,33 @@ function faqSlide(){
 }
 $(window).on('load', function(){
     faqSlide();
-    windSize();
 });
 $(window).on('resize', function(){
     faqSlide();
-    windSize();
 });
 
 
 
 $(document).ready(function(){
+
+    var yoUr = $('.your_balance').text();
+    var neEd = $('.need_balance').text();
+    var chRes = yoUr <= neEd;
+    if(chRes == true){
+        $('#review').attr("disabled", 'disabled').attr("placeholder", 'К сожалению вы пока не можете оставить отзыв, тк выплаченый вам кэшбек не привышает 400 руб.');
+    }
+    else{
+        $('#review').removeAttr( "disabled" ).attr("placeholder", 'Написать отзыв');
+    }
+    console.log(yoUr);
+    console.log(neEd);
+    console.log(chRes);
+
+    $('.mobile-menuZ').click(function() {
+        $(this).parents('.class_blue_menu_vi_xs').find('.slidedown_block').slideToggle(300);
+        $(this).toggleClass('toggle');
+        $(this).parents('.blue_gam').toggleClass('bord_radius');
+    });
 
     $('.clicks_class').click(function(){
         $(this).parents('.one_q_user').toggleClass('xs-restyle');
