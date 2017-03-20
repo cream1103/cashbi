@@ -9,17 +9,14 @@ $(window).load(function(){
     else{
         color_numb_item.addClass('green_colors_numb');
     }
-
-
 });
 
-
+//определение обрезания текста в FAQ
 function faqSlide(){
     $('.hidds_wrappers').each(function(){
         var wHeight = $(this).find('.wr_z').height();
         var pHeight = $(this).find('.h_var').height();
         var sravn = pHeight > wHeight;
-        //console.log(sravn);
         if(sravn == true){
             $(this).parents('.one_q_user').addClass('overClass');
             console.log()
@@ -27,10 +24,10 @@ function faqSlide(){
         else{
             $(this).parents('.one_q_user').removeClass('overClass');
         }
-        //console.log(pHeight);
-        //console.log(wHeight);
     });
 }
+//определение обрезания текста в FAQ
+
 $(window).on('load', function(){
     faqSlide();
 });
@@ -38,10 +35,10 @@ $(window).on('resize', function(){
     faqSlide();
 });
 
-
-
 $(document).ready(function(){
 
+
+    //блокировка textarea в отзывах
     var yoUr = $('.your_balance').text();
     var neEd = $('.need_balance').text();
     var chRes = yoUr <= neEd;
@@ -51,16 +48,19 @@ $(document).ready(function(){
     else{
         $('#review').removeAttr( "disabled" ).attr("placeholder", 'Написать отзыв');
     }
-    console.log(yoUr);
-    console.log(neEd);
-    console.log(chRes);
+    //блокировка textarea в отзывах
 
+
+    //гамбургер в FAQ синий блок
     $('.mobile-menuZ').click(function() {
         $(this).parents('.class_blue_menu_vi_xs').find('.slidedown_block').slideToggle(300);
         $(this).toggleClass('toggle');
         $(this).parents('.blue_gam').toggleClass('bord_radius');
     });
+    //гамбургер в FAQ синий блок
 
+
+    //раскрытие текста FAQ
     $('.clicks_class').click(function(){
         $(this).parents('.one_q_user').toggleClass('xs-restyle');
     });
@@ -68,14 +68,13 @@ $(document).ready(function(){
         $(this).parents('.one_q_user').removeClass('xs-restyle');
         $(this).text("Закрыть")
     });
-
-
     $('.link_to_slide').bind( "click", function() {
         $(this).text(function(i, text){
             return text === "Зaкрыть" ? "Показать полностью " : "Зaкрыть";
         });
         $(this).parents('.overClass').toggleClass('autoHeight');
     });
+    //раскрытие текста FAQ
 
 
     // для смены градиента

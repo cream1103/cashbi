@@ -224,6 +224,10 @@
         font-size: 36px;
         margin-bottom: 30px;
     }
+    .h2_ore_about_us{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
     .catalog_block .list_of_shop {
         padding: 0;
         width: 102%;
@@ -247,6 +251,12 @@
     }
     .conversion_block_style .white_form_start_economy .inside_form_wrapp .form_white_bg{
         margin-top: 84px;
+    }
+    .w_color_about_us .small_line_wrapper{
+        width: 170px;
+        height: 4px;
+        margin: 14px auto 34px auto;
+        overflow: hidden;
     }
 }
 /*=================================================================  1399px  ==========*/
@@ -519,6 +529,10 @@
         margin:  0 auto;
     }
     .more_cashback .h2_ore_cashback{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .h2_ore_about_us{
         font-size: 32px;
         margin-bottom: 15px;
     }
@@ -1119,6 +1133,10 @@
         font-size: 22px;
         margin-bottom: 15px;
     }
+    .h2_ore_about_us {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
     .more_cashback .wrapper_center_line_color .small_line_wrapper{
         width: 125px;
         height: 3px;
@@ -1513,6 +1531,63 @@
     }
     .padding_fore_one_cont {
         padding: 20px;
+    }
+    .some_text{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .text_fore_icon{
+        font-size: 14px;
+    }
+    .img_s_icon{
+        width: 50px;
+        margin: 20px 25px 20px 10px;
+    }
+    .img_s_icon img{
+        width: 50px;
+    }
+    .img_s_icon .s_03svg{
+        width: 40px;
+    }
+    .text_partnership{
+        font-size: 16px;
+    }
+    .phone_infos{
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-bottom: 25px;
+        padding-top: 10px;
+        width: 100%;
+        box-shadow: none;
+        height: auto;
+        border-left: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+    }
+    .icons_phones{
+        border: none;
+        margin-bottom: 0;
+        height: 41px;
+        line-height: 44px;
+    }
+    .posit{
+        border: none;
+        padding-top: 4px;
+    }
+    .posit:before{
+        top: 8px;
+    }
+    .icons_mail span{
+        display: inline-block;
+        margin-left: 10px;
+        bottom: 0;
+    }
+    .icons_mail{
+        margin-bottom: 10px;
+    }
+
+    .icon_wrapp{
+        margin-bottom: 30px;
     }
 
 }
