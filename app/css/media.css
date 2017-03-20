@@ -39,10 +39,9 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
 
-
-
-
-
+    .padding_fore_one_cont{
+        padding: 35px;
+    }
 
     .icon_soc_join{
         left: 0;
@@ -50,7 +49,6 @@
     .conversion_block_style .bg_block_top .color_line{
         bottom: -1px;
     }
-
     .gold_wrapp_block{
         margin-right: 0;
     }
@@ -64,7 +62,6 @@
         width:  400px;
         padding-left: 50px
     }
-
     .activate_cashb{
         padding: 17px 32px;
     }
@@ -1504,7 +1501,7 @@
     .h_0_over_hidden{
         height: 0;
         overflow: hidden;
-        padding: 0;
+        padding: 0 !important;
         border: none;
     }
     .pay_kashb_user > span{
@@ -1513,6 +1510,9 @@
     }
     .mb40_600{
         margin-bottom: 40px !important;
+    }
+    .padding_fore_one_cont {
+        padding: 20px;
     }
 
 }

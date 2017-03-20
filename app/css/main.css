@@ -81,7 +81,7 @@ a {
   outline: none !important; }
 
 .max_w_1600 {
-  max-width: 1600px; }
+  max-width: 1630px; }
 
 .mb0 {
   margin-bottom: 0 !important; }
@@ -1951,6 +1951,9 @@ a {
 
 .padding_fore_all_cont_block {
   padding: 36px 35px 35px 40px; }
+
+.padding_fore_one_cont {
+  padding: 36px 100px 35px 100px; }
 
 .activate_cashb {
   background-color: #4384f7;
