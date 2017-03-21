@@ -1589,6 +1589,57 @@
     .icon_wrapp{
         margin-bottom: 30px;
     }
+    .text_main_cash{
+        font-size: 22px;
+        text-align: center;
+    }
+    .logo_img {
+        width: 165px;
+        margin: 0 auto;
+    }
+    .img_wrappers_about_us , .img_wrappers_partners{
+        height: 270px;
+    }
+    .text_main_cashs{
+        font-size: 22px;
+    }
+    .your_profit_text{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bor_bot .yellow_blocks_partners{
+        margin: 25px auto 0 auto;
+        padding: 20px 10px 30px 10px;
+    }
+    .bor_bot .yellow_blocks_partners .tarif_info{
+        font-size: 20px;
+    }
+    .bor_bot .yellow_blocks_partners table tr td{
+        font-size: 16px;
+        vertical-align: middle;
+    }
+    .bor_bot .yellow_blocks_partners table{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bor_bot{
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .mb_blocks{
+        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .bor_bot .yellow_blocks_partners .sale_red_color_lol{
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
 
 }
 /*=================================================================  599px  ==========*/
@@ -1745,6 +1796,7 @@
     100% { transform:scale(1) rotate(0) }
 }
 /*анимация кнопки кэш*/
+
 
 /*==========  Mobile First Method  ==========*/
 

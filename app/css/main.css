@@ -1840,16 +1840,16 @@ a {
     border-radius: 3px; }
 
 .search_btn {
-  background: url(../img/icon/search.svg) no-repeat center center;
+  background: url(../img/icon/search.svg) no-repeat 30px center, #FFFFFF;
   background-size: 15px 15px;
   border: 0;
   text-indent: -9999px;
-  width: 47px;
-  height: 47px;
+  width: 65px;
+  height: 45px;
   cursor: pointer;
   position: absolute;
-  right: 0px;
-  top: 0;
+  right: 1px;
+  top: 1px;
   outline: none; }
 
 .wrapper_main_contant {
@@ -4680,3 +4680,111 @@ ul.nav_list {
     top: 13px;
     background: url("../img/icon/posit.png") no-repeat center center;
     content: ''; }
+
+#slide-menu-container .help_class {
+  height: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  #slide-menu-container .help_class .p_left_s {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 12px !important; }
+    #slide-menu-container .help_class .p_left_s button:before {
+      right: 11px !important; }
+  #slide-menu-container .help_class #mobile_menu_help li a {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    display: inline-block !important;
+    margin-bottom: 0 !important; }
+  #slide-menu-container .help_class #mobile_menu_help li ul {
+    width: 100% !important; }
+    #slide-menu-container .help_class #mobile_menu_help li ul li a {
+      margin-bottom: 0 !important;
+      background: #fff !important;
+      padding-left: 20px !important;
+      padding-top: 3px !important;
+      padding-bottom: 4px !important; }
+      #slide-menu-container .help_class #mobile_menu_help li ul li a:hover {
+        color: #ff4f2f !important; }
+
+.text_main_cashs {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'officinaserifboldcbold';
+  margin-top: 25px;
+  text-align: center; }
+
+.img_wrappers_partners {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.56))), url("../img/bg/partners.jpeg") no-repeat center center;
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.56) 100%), url("../img/bg/partners.jpeg") no-repeat center center;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.56) 100%), url("../img/bg/partners.jpeg") no-repeat center center;
+  background-size: cover;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.your_profit_text {
+  color: #3d424b;
+  font-size: 24px;
+  font-family: 'officinaserifbookcbook';
+  text-align: center;
+  line-height: 36px; }
+  .your_profit_text span {
+    color: #ff4f2f; }
+
+.bor_bot {
+  border-bottom: 1px solid #DCDCDC;
+  margin-bottom: 45px; }
+  .bor_bot .yellow_blocks_partners {
+    max-width: 620px;
+    background: #FFF6D8;
+    margin: 40px auto 53px auto;
+    padding: 30px 50px; }
+    .bor_bot .yellow_blocks_partners .tarif_info {
+      font-family: 'officinaserifboldcbold';
+      font-size: 30px;
+      color: #3d424b;
+      text-align: center; }
+    .bor_bot .yellow_blocks_partners table {
+      width: 100%;
+      border-top: 1px solid #DED8BE;
+      margin-top: 26px;
+      margin-bottom: 35px; }
+      .bor_bot .yellow_blocks_partners table tr {
+        border-bottom: 1px solid #DED8BE; }
+        .bor_bot .yellow_blocks_partners table tr td {
+          font-family: 'officinaserifbookcbook';
+          font-size: 18px;
+          color: #3d424b;
+          padding: 15px 10px; }
+    .bor_bot .yellow_blocks_partners .sale_red_color_lol {
+      width: 100%;
+      height: 57px;
+      line-height: 57px;
+      background-color: #ff4f2f;
+      -webkit-border-radius: 29px;
+              border-radius: 29px;
+      font-size: 26px;
+      font-family: 'officinaserifboldcbold';
+      text-align: center;
+      color: #FFFFFF;
+      display: inline-block; }
+      .bor_bot .yellow_blocks_partners .sale_red_color_lol:hover {
+        background: #CD3317; }
+
+.mb_blocks {
+  margin-bottom: 70px; }
+
+.search {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important; }

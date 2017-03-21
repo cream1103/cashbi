@@ -178,7 +178,6 @@ $(document).ready(function(){
         }, 100)
     }
 
-
     (function($) {
         $('.form_styler').styler({
             selectVisibleOptions: 12,
@@ -187,8 +186,6 @@ $(document).ready(function(){
             }
         });
     })(jQuery);
-
-
     //инициализация formstyler
 
 
@@ -313,8 +310,8 @@ $(document).ready(function(){
             console.log(bohi + "<" + columnHeight);
 
             $('.nav_list_first').css({
-                'max-height':'67vh',
-                'overflow-y':'auto'
+//                'max-height':'67vh',
+//                'overflow-y':'auto'
             });
             //липкий сайдбар
             var stickySidebar = $('.sticky');
