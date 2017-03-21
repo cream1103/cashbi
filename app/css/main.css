@@ -2092,7 +2092,8 @@ a {
     background: url("../img/icon/no_photo.svg") no-repeat center center, #D8DFE7 !important;
     height: 80px;
     width: 80px;
-    display: inline-table; }
+    display: inline-table;
+    background-size: 50% !important; }
     .rewiev_wrapp_block .one_rewiew_blocks .img_blocks_icon img {
       width: 100%;
       height: 100%;
@@ -2822,6 +2823,15 @@ ul.nav_list {
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
+
+.profile_span_block {
+  display: block;
+  height: 117px;
+  width: 117px;
+  background: url(../img/icon/no_photo.svg) no-repeat center center, #D8DFE7;
+  -webkit-border-radius: 10em;
+          border-radius: 10em;
+  background-size: 50%; }
 
 .span_withs {
   display: inline-block;
@@ -4421,6 +4431,25 @@ ul.nav_list {
 
 #slide-menu-content_2 .ara_inside_menu a:active {
   background: url("../img/icon/no_photo.svg") no-repeat center center, #D8DFE7 !important; }
+
+.img_blocks_icons {
+  margin-right: 25px;
+  -webkit-border-radius: 10em;
+          border-radius: 10em;
+  background: url("../img/icon/no_photo.svg") no-repeat center center, #D8DFE7 !important;
+  height: 90px;
+  width: 90px;
+  background-size: 50% !important;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  display: inline-block; }
+  .img_blocks_icons img {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 10em;
+            border-radius: 10em;
+    display: inline-block;
+    margin: 0 !important; }
 
 .info_texts {
   color: #666666;
