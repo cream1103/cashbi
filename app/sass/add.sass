@@ -606,28 +606,35 @@ form
 		transition: opacity .4s linear .1s
 		&.show
 			opacity: 1
-	.form-popup-msg
-		padding: 10px 15px
-		box-shadow: 2px 2px 6px rgba(0,0,0,.2)
-		&.success
-			background-color: #c8f0fa
-		&.error
-			background-color: #ff96c8
-	.form-popup-processing	
-		background-color: rgba(0,0,0,.4)
-		text-align: center
-		&::before
-			content: "\f110"
-			display: block
-			position: absolute
-			height: 48px
-			width: 48px
-			background-color: transparent
-			font: 48px/1 fontawesome
-			top: calc(50% - 24px)
-			left: calc(50% - 24px)
-			animation: wait .8s steps(8) 0s infinite both
-			color: #fff
+	//.form-popup-msg
+	//	padding: 10px 15px
+	//	box-shadow: 2px 2px 6px rgba(0,0,0,.2)
+	//	&.success
+	//		background-color: #c8f0fa
+	//	&.error
+	//		background-color: #ff96c8
+	.form-popup-processing
+      background-color: rgba(255,255,255,.7)
+      text-align: center
+      position: fixed
+      width: 100vw
+      height: 100vh
+      left: 0
+      top: 0
+      z-index: 3000
+
+      &::before
+          content: "\f110"
+          display: block
+          position: absolute
+          height: 48px
+          width: 48px
+          background-color: transparent
+          font: 48px/1 fontawesome
+          top: calc(50% - 24px)
+          left: calc(50% - 24px)
+          animation: wait .8s steps(8) 0s infinite both
+          color: #666
 
 #chart
 	width: 100%

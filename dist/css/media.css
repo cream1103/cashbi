@@ -38,6 +38,17 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    #vk_groups{
+        width: 100% !important;
+    }
+    #vk_groups iframe{
+        width: 100% !important;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 140px;
+    }
+
+
 
     .padding_fore_one_cont{
         padding: 35px;
@@ -296,6 +307,9 @@
     .wrapp_max_w_block {
         width: 350px;
         padding-left: 0;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 110px;
     }
     .one_item{
         border-right: none;
@@ -692,6 +706,11 @@
     .slidedown_block{
         display: none;
     }
+    .one_item_help{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 
 }
 /*=================================================================  979px  ==========*/
@@ -1589,6 +1608,109 @@
     .icon_wrapp{
         margin-bottom: 30px;
     }
+    .text_main_cash{
+        font-size: 22px;
+        text-align: center;
+    }
+    .logo_img {
+        width: 165px;
+        margin: 0 auto;
+    }
+    .img_wrappers_about_us , .img_wrappers_partners{
+        height: 270px;
+    }
+    .text_main_cashs{
+        font-size: 22px;
+    }
+    .your_profit_text{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bor_bot .yellow_blocks_partners{
+        margin: 25px auto 0 auto;
+        padding: 20px 10px 30px 10px;
+    }
+    .bor_bot .yellow_blocks_partners .tarif_info{
+        font-size: 20px;
+    }
+    .bor_bot .yellow_blocks_partners table tr td{
+        font-size: 16px;
+        vertical-align: middle;
+    }
+    .bor_bot .yellow_blocks_partners table{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bor_bot{
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .mb_blocks{
+        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .bor_bot .yellow_blocks_partners .sale_red_color_lol{
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+    .one_item_help{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 15px;
+        border: 1px solid #DCDCDC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one_item_help .img_item_help{
+        width: 50%;
+        float: left;
+        align-items: center;
+    }
+    .one_item_help .text_item_help{
+        width: 50%;
+        float: right;
+        font-size: 18px;
+        padding-left: 0;
+    }
+    .one_item_help .img_item_help img{
+        width: 60px;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 90px;
+    }
+    .date_blog_wr{
+        display: none;
+    }
+    .main_item_text{
+        font-size: 14px !important;
+    }
+
+    .wrapp_blog_it .text_wrapper_blog{
+        height: 100px;
+        padding: 10px;
+    }
+    .wrapp_blog_it .text_wrapper_blog .main_item_text{
+        margin-top: 0;
+    }
+    .wrapp_blog_it{
+        margin-bottom: 15px;
+    }
+    .pr_odd_pl_even > div:nth-child(even){
+        padding-left: 7.5px
+    }
+    .pr_odd_pl_even > div:nth-child(odd){
+         padding-right: 7.5px
+    }
+    .bg_whites_pod{
+        bottom: -12px;
+    }
 
 }
 /*=================================================================  599px  ==========*/
@@ -1745,6 +1867,7 @@
     100% { transform:scale(1) rotate(0) }
 }
 /*анимация кнопки кэш*/
+
 
 /*==========  Mobile First Method  ==========*/
 

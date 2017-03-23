@@ -618,17 +618,15 @@ form {
     form .form-popup-msg.show,
     form .form-popup-processing.show {
       opacity: 1; }
-  form .form-popup-msg {
-    padding: 10px 15px;
-    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); }
-    form .form-popup-msg.success {
-      background-color: #c8f0fa; }
-    form .form-popup-msg.error {
-      background-color: #ff96c8; }
   form .form-popup-processing {
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center; }
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 3000; }
     form .form-popup-processing::before {
       content: "\f110";
       display: block;
@@ -643,7 +641,7 @@ form {
       left: calc(50% - 24px);
       -webkit-animation: wait 0.8s steps(8) 0s infinite both;
               animation: wait 0.8s steps(8) 0s infinite both;
-      color: #fff; }
+      color: #666; }
 
 #chart {
   width: 100%;

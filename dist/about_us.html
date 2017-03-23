@@ -217,7 +217,7 @@
                             <div class="logo_img">
                                 <img src="img/icon/logo_white.svg">
                             </div>
-                            <p class="text_main_cash">Надежный кешбек-сервис</p>
+                            <p class="text_main_cash">Надежный <br class="hidden-lg hidden-md hidden-sm visible-xs"/> кешбек-сервис</p>
                         </div>
                     </div>
 
@@ -369,10 +369,20 @@
 
 <!-- menu start -->
 <div id="slide-menu-container">
-    <form id="slide-menu-search" action="/">
-        <a href="">Помощь</a>
+    <form id="slide-menu-search" class="help_class" action="/">
+        <ul class="nav_list nav_list_first" id="mobile_menu_help">
+            <li>
+                <a href="#">Помощь</a>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">Техническая поддержка</a></li>
+                </ul>
+            </li>
+        </ul>
 
-        <p>
+        <p class="p_left_s">
             <input type="search" list="search-items" placeholder="Найти свой магазин" name="q"/>
             <button type="submit" name="s" value="Поиск"></button>
         </p>
@@ -549,8 +559,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="copyright">
-                    <p>Cashibi. &nbsp; <a href="#" class="pol-c">Политика конфиденциальности</a></p>
-
+                    <p>Cashibi. &nbsp; <a href="#" class="pol-c">Пользовательское соглашение</a></p>
                     <p class="copy"><span class="copy_class">©</span> 2016 Local Internet. All rights reserved.</p>
                 </div>
             </div>

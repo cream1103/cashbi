@@ -229,124 +229,40 @@ $(document).ready(function(){
     //аккордеон меню
 
     //липкий сайдбар
-    var stickySidebar = $('.sticky');
-
-    if (stickySidebar.length > 0) {
-        var stickyHeight = stickySidebar.height(),
-            sidebarTop = stickySidebar.offset().top;
-    }
-// on scroll move the sidebar
-    $(window).scroll(function () {
-        if (stickySidebar.length > 0) {
-            var scrollTop = $(window).scrollTop() + 147;
-
-            if (sidebarTop < scrollTop) {
-                stickySidebar.css('top', scrollTop - sidebarTop);
-
-                // stop the sticky sidebar at the footer to avoid overlapping
-                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-                if (stickyStop < sidebarBottom) {
-                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-                    stickySidebar.css('top', stopPosition);
-                }
-            }
-            else {
-                stickySidebar.css('top', '0');
-            }
-        }
-    });
-    $(window).resize(function () {
-        if (stickySidebar.length > 0) {
-            stickyHeight = stickySidebar.height();
-        }
-    });
+//    var stickySidebar = $('.sticky');
+//
+//    if (stickySidebar.length > 0) {
+//        var stickyHeight = stickySidebar.height(),
+//            sidebarTop = stickySidebar.offset().top;
+//    }
+//// on scroll move the sidebar
+//    $(window).scroll(function () {
+//        if (stickySidebar.length > 0) {
+//            var scrollTop = $(window).scrollTop() + 147;
+//
+//            if (sidebarTop < scrollTop) {
+//                stickySidebar.css('top', scrollTop - sidebarTop);
+//
+//                // stop the sticky sidebar at the footer to avoid overlapping
+//                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+//                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
+//                if (stickyStop < sidebarBottom) {
+//                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
+//                    stickySidebar.css('top', stopPosition);
+//                }
+//            }
+//            else {
+//                stickySidebar.css('top', '0');
+//            }
+//        }
+//    });
+//    $(window).resize(function () {
+//        if (stickySidebar.length > 0) {
+//            stickyHeight = stickySidebar.height();
+//        }
+//    });
     //липкий сайдбар
 
-
-//    function windowHeight(){
-//
-//        var bohi = $(window).height() - 107;
-//        var columnHeight = $('.sticky').height();
-//        if(bohi > columnHeight) {
-////            console.log(bohi + ">" + columnHeight);
-//            //липкий сайдбар
-//            var stickySidebar = $('.sticky');
-//
-//            if (stickySidebar.length > 0) {
-//                var stickyHeight = stickySidebar.height(),
-//                    sidebarTop = stickySidebar.offset().top;
-//            }
-//// on scroll move the sidebar
-//            $(window).scroll(function () {
-//                if (stickySidebar.length > 0) {
-//                    var scrollTop = $(window).scrollTop() + 147;
-//
-//                    if (sidebarTop < scrollTop) {
-//                        stickySidebar.css('top', scrollTop - sidebarTop);
-//
-//                        // stop the sticky sidebar at the footer to avoid overlapping
-//                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-//                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-//                        if (stickyStop < sidebarBottom) {
-//                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-//                            stickySidebar.css('top', stopPosition);
-//                        }
-//                    }
-//                    else {
-//                        stickySidebar.css('top', '0');
-//                    }
-//                }
-//            });
-//            $(window).resize(function () {
-//                if (stickySidebar.length > 0) {
-//                    stickyHeight = stickySidebar.height();
-//                }
-//            });
-//            //липкий сайдбар
-//
-//        } else {
-//            console.log(bohi + "<" + columnHeight);
-//
-//            $('.nav_list_first').css({
-//                'max-height':'67vh',
-//                'overflow-y':'auto'
-//            });
-//            //липкий сайдбар
-//            var stickySidebar = $('.sticky');
-//
-//            if (stickySidebar.length > 0) {
-//                var stickyHeight = stickySidebar.height(),
-//                    sidebarTop = stickySidebar.offset().top;
-//            }
-//// on scroll move the sidebar
-//            $(window).scroll(function () {
-//                if (stickySidebar.length > 0) {
-//                    var scrollTop = $(window).scrollTop() + 147;
-//
-//                    if (sidebarTop < scrollTop) {
-//                        stickySidebar.css('top', scrollTop - sidebarTop);
-//
-//                        // stop the sticky sidebar at the footer to avoid overlapping
-//                        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-//                            stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-//                        if (stickyStop < sidebarBottom) {
-//                            var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-//                            stickySidebar.css('top', stopPosition);
-//                        }
-//                    }
-//                    else {
-//                        stickySidebar.css('top', '0');
-//                    }
-//                }
-//            });
-//            $(window).resize(function () {
-//                if (stickySidebar.length > 0) {
-//                    stickyHeight = stickySidebar.height();
-//                }
-//            });
-//        }
-//    }
 
     //таймер акций
     var timer;
@@ -665,6 +581,7 @@ $(document).ready(function(){
 
     //инициализация слайдера на главной
 	var bx_text = $('.bxslider_first_text .one-slide');
+//	console.log(bx_text);
     $('.bxslider_first').bxSlider({
         auto: true,//true
         pause: 5000,
@@ -793,7 +710,6 @@ $(document).ready(function(){
                 sliderFunction();
                 sliderFunction1();
                 sliderFunction2();
-                //windowHeight();
             }, 300);
         }
     });
@@ -819,9 +735,7 @@ $(document).ready(function(){
     $('form').on('submit', function(){
         submitFormCheck(event);
     });
-
 });
-
 
 function submitFormCheck(e){
     e.preventDefault();
@@ -829,7 +743,6 @@ function submitFormCheck(e){
     var err = form.querySelectorAll('.input_red');
     if(err.length == 0){
         // здесь собственно обработчик отсылки формы, прошедшей предварительную валидацию
-
         // весь код ниже служит исключительно для демонстрации вывода вспомогательных
         // эффектов и уведомлений, сопровождающий процесс выполнения ajax-запроса
         if(this.rnd === undefined) this.rnd == 'success';
@@ -842,8 +755,8 @@ function submitFormCheck(e){
         setTimeout(function(){
             shadow.classList.remove('show');
             var txt = {
-                'success': 'Форма отправлена',
-                'error': 'Сообщение об ошибке'
+                'success': '',
+                'error': ''
             }
             var msg = document.createElement('div');
             msg.classList.add('form-popup-msg');
@@ -905,7 +818,6 @@ function validMail(e){
             $('.conversion_block_style').addClass('reHeightClass');
 
         }
-
     }
 }
 /*

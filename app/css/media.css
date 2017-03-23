@@ -38,6 +38,17 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    #vk_groups{
+        width: 100% !important;
+    }
+    #vk_groups iframe{
+        width: 100% !important;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 140px;
+    }
+
+
 
     .padding_fore_one_cont{
         padding: 35px;
@@ -296,6 +307,9 @@
     .wrapp_max_w_block {
         width: 350px;
         padding-left: 0;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 110px;
     }
     .one_item{
         border-right: none;
@@ -692,6 +706,11 @@
     .slidedown_block{
         display: none;
     }
+    .one_item_help{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 
 }
 /*=================================================================  979px  ==========*/
@@ -1639,6 +1658,58 @@
         height: 45px;
         line-height: 45px;
         font-size: 18px;
+    }
+    .one_item_help{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 15px;
+        border: 1px solid #DCDCDC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one_item_help .img_item_help{
+        width: 50%;
+        float: left;
+        align-items: center;
+    }
+    .one_item_help .text_item_help{
+        width: 50%;
+        float: right;
+        font-size: 18px;
+        padding-left: 0;
+    }
+    .one_item_help .img_item_help img{
+        width: 60px;
+    }
+    .wrapp_blog_it .img_wrapper_blog_item{
+        height: 90px;
+    }
+    .date_blog_wr{
+        display: none;
+    }
+    .main_item_text{
+        font-size: 14px !important;
+    }
+
+    .wrapp_blog_it .text_wrapper_blog{
+        height: 100px;
+        padding: 10px;
+    }
+    .wrapp_blog_it .text_wrapper_blog .main_item_text{
+        margin-top: 0;
+    }
+    .wrapp_blog_it{
+        margin-bottom: 15px;
+    }
+    .pr_odd_pl_even > div:nth-child(even){
+        padding-left: 7.5px
+    }
+    .pr_odd_pl_even > div:nth-child(odd){
+         padding-right: 7.5px
+    }
+    .bg_whites_pod{
+        bottom: -12px;
     }
 
 }
