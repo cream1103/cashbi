@@ -4911,3 +4911,8 @@ ul.nav_list {
 
 .mb_pag_blog {
   margin-bottom: 70px; }
+
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden; }

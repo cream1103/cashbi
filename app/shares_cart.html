@@ -212,14 +212,15 @@
             <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
                 <form id="slide-menu-search1" action="/">
                     <label class="wrappers">
-                        <input required="" id="search" type="search" list="search-items1" name="q"
+                        <input required="" id="search"  type="search" list="search-items1" name="q"
                                placeholder="Найти свой магазин, например SAPATO"
                                name="search" class="search">
                     </label>
+
                     <input name="search" class="search_btn" name="s" type="submit" value="Поиск">
 
-                    <datalist id="search-items1">
-                        <option value="Лучшие магазины">
+                    <datalist id="search-items1" class="main_search">
+                        <option value="Лучшиуе магазины">
                         <option value="Товары из Китая">
                         <option value="Услуги">
                         <option value="Гипермаркеты">
@@ -241,6 +242,7 @@
                         <option value="Зоомагазины">
                         <option value="Подарки & Цветы">
                     </datalist>
+
                 </form>
             </div>
         </div>
@@ -734,7 +736,6 @@
 <div id="slide-menu-container">
     <form id="slide-menu-search" action="/">
         <a href="">Помощь</a>
-
         <p>
             <input type="search" list="search-items" placeholder="Найти свой магазин" name="q"/>
             <button type="submit" name="s" value="Поиск"></button>
