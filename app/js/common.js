@@ -42,11 +42,12 @@ $(document).ready(function () {
 
         if (pass < 6) {
             $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
-            $('#errorBlockpass').html('Пароле менее 6 символов');
+            $('#errorBlockpass').html('Пароль менее 6 символов');
             console.log(pass)
         }
-        else if(pass < 0){
+        else if(pass == 0){
             $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
+            console.log(123213);
             $('#errorBlockpass').html('');
         }
     });

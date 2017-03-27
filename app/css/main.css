@@ -4916,3 +4916,14 @@ ul.nav_list {
   max-height: 100px;
   overflow-y: auto;
   overflow-x: hidden; }
+
+.wrapp_max_w_block {
+  position: relative; }
+
+#errorBlockpass, #errorBlock {
+  position: absolute;
+  bottom: 24px;
+  right: 47px;
+  font-family: 'OpenSansRegular';
+  color: #EB1D1D;
+  font-size: 12px; }
