@@ -37,22 +37,64 @@ $(window).on('resize', function () {
 
 $(document).ready(function () {
 
+    $('#pass').focusout(function(){
+        var pass = $("#pass").val().length;
+
+        if (pass < 6) {
+            $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
+            $('#errorBlockpass').html('Пароле менее 6 символов');
+            console.log(pass)
+        }
+        else if(pass < 0){
+            $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
+            $('#errorBlockpass').html('');
+        }
+    });
+    $('#pass').focusin(function() {
+        $('#pass').css('border', '1px solid #DCDCDC').removeClass('daNuNa');
+        $('#errorBlockpass').html('');
+
+        $('#repPass').css('border', '1px solid #DCDCDC').removeClass('daNuNa');
+        $('#errorBlock').html('');
+    });
+
+
+
+    var rPass = $('#repPass');
+    rPass.focusout(function(){
+        var pass = $("#pass").val();
+        var pass_rep = rPass.val();
+
+        if (pass != pass_rep) {
+            rPass.css('border', '1px solid #EB1D1D').addClass('daNuNa');
+            $('#errorBlock').html('Пароли не совпадают');
+        }
+    });
+    rPass.focusin(function() {
+        rPass.css('border', '1px solid #DCDCDC').removeClass('daNuNa');
+        $('#errorBlock').html('');
+    });
+
+
+    //поиск совпадений на поиске
     $("#search").on("change keyup input", function () {
 
         var strings = $(this).val();
+        var lowString = strings.toLowerCase();
 
         $('.main_search').find('option').each(function () {
 
             var allStrings = $(this).val();
+            var lowallStrings = allStrings.toLowerCase();
 
-            if (strings === allStrings) {
+            if (lowString === lowallStrings) {
                 $('.search_btn').click();
                 $('#search').removeClass('daNuNa');
                 console.log('search');
                 $('.search').css({'border': '1px solid #DCDCDC'});
                 return false;
             }
-            else if(strings == ''){
+            else if(lowString == ''){
                 $('.search').css({'border': '1px solid #DCDCDC'});
             }
             else
@@ -69,22 +111,35 @@ $(document).ready(function () {
             }
         });
     });
+    //поиск совпадений на поиске
 
 
     //анимация сердца
     $('.heart').click(function () {
         var check = $(this).parents('li').find('.heart_inp');
-        var plus = $('.main_p_numb').text;
+
         if (check.is(':checked')) {
-            console.log(plus);
             $('.favirites_sp').removeClass('pulse')
         }
         else {
-            console.log(plus);
             $('.favirites_sp').addClass('pulse');
             setTimeout(function () {
                 $('.favirites_sp').removeClass('pulse');
-            }, 3000);
+            }, 1000);
+        }
+    });
+
+    $('.input-helper').click(function () {
+        var check = $(this).parents('.input-row').find('#checkbox-input-2');
+
+        if (check.is(':checked')) {
+            $('.favirites_sp').removeClass('pulse')
+        }
+        else {
+            $('.favirites_sp').addClass('pulse');
+            setTimeout(function () {
+                $('.favirites_sp').removeClass('pulse');
+            }, 1000);
         }
     });
     //анимация сердца
