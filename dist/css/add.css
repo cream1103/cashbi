@@ -225,7 +225,9 @@ input, select, textarea, button {
   .img_s_block_shop:hover span {
     -webkit-transform: scale(1.25);
         -ms-transform: scale(1.25);
-            transform: scale(1.25); }
+            transform: scale(1.25);
+    top: -35px !important;
+    right: -15px !important; }
   .img_s_block_shop:hover img {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);

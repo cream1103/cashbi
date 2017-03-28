@@ -427,7 +427,7 @@
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <div class="wrapp_max_w_block">
-                                    <input id="old_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                    <input id="old_pass" class="form_styler mb10 type_text" type="password"/>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,8 @@
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <div class="wrapp_max_w_block">
-                                    <input id="new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                    <input name="pass" id="pass" id="new_pass" class="form_styler mb10 type_text" type="password"/>
+                                    <p id="errorBlockpass"></p>
                                 </div>
                             </div>
                         </div>
@@ -450,11 +451,14 @@
                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <div class="wrapp_max_w_block">
                                     <span class="validate">
-                                        <input id="more_new_pass" class="form_styler mb10 type_text" required="" type="password"/>
+                                        <input name="repPass" id="repPass" id="more_new_pass" class="form_styler mb10 type_text" type="password"/>
+                                        <p id="errorBlock"></p>
                                     </span>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
 

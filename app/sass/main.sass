@@ -4767,13 +4767,22 @@ $animation-speed: 0.3s
   overflow-x: hidden
 
 
-.wrapp_max_w_block
+.wrapp_max_w_block ,.wrapp_pass
   position: relative
 
-#errorBlockpass, #errorBlock
+#errorBlockpass, #errorBlock, .errorBlock, .errorBlockpass
   position: absolute
   bottom: 24px
   right: 47px
   font-family: 'OpenSansRegular'
   color: #EB1D1D
   font-size: 12px
+.errorBlock, .errorBlockpass
+  position: absolute
+  bottom: 14px
+  right: 47px
+  font-family: 'OpenSansRegular'
+  color: #EB1D1D
+  font-size: 12px
+.wrapp_pass
+  position: relative

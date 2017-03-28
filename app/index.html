@@ -102,8 +102,7 @@
                             <form class="form_class" action="test.php">
 
                                 <div class="wrapp_input mail_icon">
-                                    <!-- <input required class="style_input" type="email" placeholder="Войти" onkeyup="validMail(event)" onblur="emptyMail(event)" /> -->
-                                    <input class="style_input" type="email" placeholder="Войти"/>
+                                    <input class="style_input email_valid" type="text" placeholder="Войти"/>
 
                                     <div class="block_input_pass">
                                         <input class="style_input style_input_pas" type="password"
@@ -212,7 +211,7 @@
         <div class="search_form_fore_shops auth">
             <form action="/">
                 <label class="header_wrapper">
-                    <input required id="search_shop_id" type="text" placeholder="Найти свой магазин, например SAPATO"
+                    <input id="search_shop_id" type="text" placeholder="Найти свой магазин, например SAPATO"
                            name="header_search" class="header_search">
                 </label>
                 <input name="header_search" class="header_search_btn" type="submit" value="Поиск">
@@ -616,14 +615,21 @@
 
                         <form class="form_class" action="#">
                             <div class="wrapp_input mail_icon">
-                                <!-- <input required class="style_input" type="email" placeholder="Введите свой email" onkeyup="validMail(event)" onblur="emptyMail(event)" /> -->
-                                <input required class="style_input" type="email" placeholder="Введите свой email"/>
+                                <input class="style_input email_valid" type="text" placeholder="Введите свой email"/>
 
                                 <div class="block_reg_pass">
-                                    <input required class="style_input style_input_pas" type="password"
-                                           placeholder="Придумайте пароль"/>
-                                    <input required class="style_input style_input_pas retry" type="password"
-                                           placeholder="Повоторите пароль еще раз"/>
+                                    <div class="wrapp_pass">
+                                        <input class="style_input style_input_pas password same_styles" type="password"
+                                               placeholder="Придумайте пароль"/>
+                                        <p class="errorBlockpass"></p>
+                                    </div>
+
+                                    <div class="wrapp_pass">
+                                        <input class="style_input style_input_pas retry repassword same_styles" type="password"
+                                               placeholder="Повоторите пароль еще раз"/>
+                                        <p class="errorBlock"></p>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="wrapp_input">
@@ -932,11 +938,10 @@
                         <form class="form_class pl_pr15" action="test.php">
 
                             <div class="wrapp_input mail_icon">
-                                <!-- <input required class="style_input" type="email" placeholder="Войти" onkeyup="validMail(event)" onblur="emptyMail(event)" /> -->
-                                <input required class="style_input" type="email" placeholder="Введите свой email"/>
+                                <input  class="style_input email_valid" type="text" placeholder="Введите свой email"/>
 
                                 <div class="block_input_pass">
-                                    <input required class="style_input style_input_pas" type="password"
+                                    <input  class="style_input style_input_pas" type="password"
                                            placeholder="Введите пароль"/>
                                     <a class="href_forgot" href="javascript:void(0)">Забыли пароль ?</a>
                                 </div>

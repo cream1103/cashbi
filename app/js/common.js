@@ -35,8 +35,90 @@ $(window).on('resize', function () {
 });
 
 
+
 $(document).ready(function () {
 
+    //доработка валидации email
+    $('.type_subm_form_btn').click(function(){
+        var validParValue =  $(this).parents('.form_class').find('.email_valid').val().length;
+        if(validParValue == 0){
+            console.log('empty mail');
+            return false
+        }
+    });
+
+    $(".email_valid").on("change keyup input", function () {
+        $('.type_subm_form_btn').click(function(){
+            var validPar =  $(this).parents('.form_class').find('.email_valid');
+            if(validPar.hasClass("input_red")){
+                console.log('red class');
+                validPar.addClass('daNuNa2');
+
+                setTimeout(function(){
+                    validPar.removeClass('daNuNa2');
+                }, 500);
+            }
+        });
+    });
+    //доработка валидации email
+
+
+    //валидация пароля в 2px
+    $('.password').focusout(function(){
+        var pass = $(".password").val().length;
+        if (pass < 6) {
+            $('.password').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.errorBlockpass').html('Пароль менее 6 символов');
+            console.log(pass)
+        }
+        else if(pass == 0){
+            $('.password').css('border', '1px solid #DCDCDC').addClass('daNuNa2');
+            console.log(123213);
+            $('.errorBlockpass').html('');
+        }
+    });
+    $('.password').focusin(function() {
+        $('.password').css('border', '1px solid #DCDCDC').removeClass('daNuNa2');
+        $('.errorBlockpass').html('');
+
+        $('.repassword').css('border', '1px solid #DCDCDC').removeClass('daNuNa2');
+        $('.errorBlock').html('');
+    });
+
+    var rPassword = $('.repassword');
+    rPassword.focusout(function(){
+        var pass = $(".password").val();
+        var pass_rep = rPassword.val();
+
+        if (pass != pass_rep) {
+            rPassword.css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.errorBlock').html('Пароли не совпадают');
+        }
+    });
+    rPassword.focusin(function() {
+        rPassword.css('border', '1px solid #DCDCDC !important').removeClass('daNuNa2');
+        $('.errorBlock').html('');
+    });
+
+    $(".same_styles").on("change keyup input", function () {
+        $('.type_subm_form_btn').click(function(){
+            var validPass =  $(this).parents('.form_class').find('.same_styles');
+            if(validPass.hasClass("input_red")){
+                console.log('red class');
+                validPass.addClass('daNuNa2');
+
+                setTimeout(function(){
+                    validPass.removeClass('daNuNa2');
+                }, 500);
+            }
+        });
+    });
+
+
+    //валидация пароля в 2px
+
+
+    //валидация пароля в 1px
     $('#pass').focusout(function(){
         var pass = $("#pass").val().length;
 
@@ -58,7 +140,7 @@ $(document).ready(function () {
         $('#repPass').css('border', '1px solid #DCDCDC').removeClass('daNuNa');
         $('#errorBlock').html('');
     });
-
+    //валидация пароля в 1px
 
 
     var rPass = $('#repPass');
@@ -844,7 +926,7 @@ $(document).ready(function () {
         }
     });
 
-    $('input[type=email]').on('keyup blur', function () {
+    $('.email_valid').on('keyup blur', function () {
         validMail(event);
     });
     $('input[type=password].retry').on('keyup blur', function () {

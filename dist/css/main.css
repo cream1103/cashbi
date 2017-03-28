@@ -4911,3 +4911,30 @@ ul.nav_list {
 
 .mb_pag_blog {
   margin-bottom: 70px; }
+
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.wrapp_max_w_block, .wrapp_pass {
+  position: relative; }
+
+#errorBlockpass, #errorBlock, .errorBlock, .errorBlockpass {
+  position: absolute;
+  bottom: 24px;
+  right: 47px;
+  font-family: 'OpenSansRegular';
+  color: #EB1D1D;
+  font-size: 12px; }
+
+.errorBlock, .errorBlockpass {
+  position: absolute;
+  bottom: 14px;
+  right: 47px;
+  font-family: 'OpenSansRegular';
+  color: #EB1D1D;
+  font-size: 12px; }
+
+.wrapp_pass {
+  position: relative; }
