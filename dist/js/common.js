@@ -34,8 +34,6 @@ $(window).on('resize', function () {
     faqSlide();
 });
 
-
-
 $(document).ready(function () {
 
     //доработка валидации email
@@ -63,17 +61,16 @@ $(document).ready(function () {
     //доработка валидации email
 
 
+
     //валидация пароля в 2px
     $('.password').focusout(function(){
         var pass = $(".password").val().length;
         if (pass < 6) {
-            $('.password').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.password').val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlockpass').html('Пароль менее 6 символов');
-            console.log(pass)
         }
         else if(pass == 0){
             $('.password').css('border', '1px solid #DCDCDC').addClass('daNuNa2');
-            console.log(123213);
             $('.errorBlockpass').html('');
         }
     });
@@ -85,13 +82,25 @@ $(document).ready(function () {
         $('.errorBlock').html('');
     });
 
+
+
+
+    $('.errorBlockpass').click(function(){
+        $(this).siblings('.password').focus();
+    });
+    $('.errorBlock').click(function(){
+        $(this).siblings('.repassword').focus();
+    });
+
+
+
     var rPassword = $('.repassword');
     rPassword.focusout(function(){
         var pass = $(".password").val();
         var pass_rep = rPassword.val();
 
         if (pass != pass_rep) {
-            rPassword.css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            rPassword.val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlock').html('Пароли не совпадают');
         }
     });
@@ -104,7 +113,6 @@ $(document).ready(function () {
         $('.type_subm_form_btn').click(function(){
             var validPass =  $(this).parents('.form_class').find('.same_styles');
             if(validPass.hasClass("input_red")){
-                console.log('red class');
                 validPass.addClass('daNuNa2');
 
                 setTimeout(function(){
@@ -117,7 +125,6 @@ $(document).ready(function () {
 
     //валидация пароля в 2px
 
-
     //валидация пароля в 1px
     $('#pass').focusout(function(){
         var pass = $("#pass").val().length;
@@ -125,11 +132,9 @@ $(document).ready(function () {
         if (pass < 6) {
             $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlockpass').html('Пароль менее 6 символов');
-            console.log(pass)
         }
         else if(pass == 0){
             $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
-            console.log(123213);
             $('#errorBlockpass').html('');
         }
     });
@@ -141,7 +146,6 @@ $(document).ready(function () {
         $('#errorBlock').html('');
     });
     //валидация пароля в 1px
-
 
     var rPass = $('#repPass');
     rPass.focusout(function(){
@@ -196,7 +200,6 @@ $(document).ready(function () {
     });
     //поиск совпадений на поиске
 
-
     //анимация сердца
     $('.heart').click(function () {
         var check = $(this).parents('li').find('.heart_inp');
@@ -239,7 +242,6 @@ $(document).ready(function () {
     }
     //блокировка textarea в отзывах
 
-
     //гамбургер в FAQ синий блок
     $('.mobile-menuZ').click(function () {
         $(this).parents('.class_blue_menu_vi_xs').find('.slidedown_block').slideToggle(300);
@@ -247,7 +249,6 @@ $(document).ready(function () {
         $(this).parents('.blue_gam').toggleClass('bord_radius');
     });
     //гамбургер в FAQ синий блок
-
 
     //раскрытие текста FAQ
     $('.clicks_class').click(function () {
@@ -264,7 +265,6 @@ $(document).ready(function () {
         $(this).parents('.overClass').toggleClass('autoHeight');
     });
     //раскрытие текста FAQ
-
 
     // для смены градиента
     var yell = $('.yellow_gradient');
@@ -286,7 +286,6 @@ $(document).ready(function () {
         $(this).find('.span_aft').stop().animate({'opacity': '1'}, 200);
     });
     // для смены градиента
-
 
     //таб уведомлений
     $('.tabs span').click(function () {

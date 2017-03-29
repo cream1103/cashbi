@@ -1526,7 +1526,6 @@ a {
         .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper {
           width: 35px;
           height: 35px;
-          background: #ffffff;
           text-align: center;
           -webkit-border-radius: 10em;
                   border-radius: 10em; }
@@ -4930,11 +4929,18 @@ ul.nav_list {
 
 .errorBlock, .errorBlockpass {
   position: absolute;
-  bottom: 14px;
-  right: 47px;
+  bottom: 15px;
+  right: 41px;
   font-family: 'OpenSansRegular';
   color: #EB1D1D;
-  font-size: 12px; }
+  font-size: 11px; }
 
 .wrapp_pass {
   position: relative; }
+
+.whites_bg_wrapper img {
+  width: 100%;
+  height: auto; }
+
+.bx-pager {
+  z-index: 100 !important; }

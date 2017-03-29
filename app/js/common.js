@@ -34,8 +34,6 @@ $(window).on('resize', function () {
     faqSlide();
 });
 
-
-
 $(document).ready(function () {
 
     //доработка валидации email
@@ -62,17 +60,17 @@ $(document).ready(function () {
     });
     //доработка валидации email
 
+
+
     //валидация пароля в 2px
     $('.password').focusout(function(){
         var pass = $(".password").val().length;
         if (pass < 6) {
-            $('.password').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.password').val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlockpass').html('Пароль менее 6 символов');
-            console.log(pass)
         }
         else if(pass == 0){
             $('.password').css('border', '1px solid #DCDCDC').addClass('daNuNa2');
-            console.log(123213);
             $('.errorBlockpass').html('');
         }
     });
@@ -84,13 +82,25 @@ $(document).ready(function () {
         $('.errorBlock').html('');
     });
 
+
+
+
+    $('.errorBlockpass').click(function(){
+        $(this).siblings('.password').focus();
+    });
+    $('.errorBlock').click(function(){
+        $(this).siblings('.repassword').focus();
+    });
+
+
+
     var rPassword = $('.repassword');
     rPassword.focusout(function(){
         var pass = $(".password").val();
         var pass_rep = rPassword.val();
 
         if (pass != pass_rep) {
-            rPassword.css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            rPassword.val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlock').html('Пароли не совпадают');
         }
     });
@@ -103,7 +113,6 @@ $(document).ready(function () {
         $('.type_subm_form_btn').click(function(){
             var validPass =  $(this).parents('.form_class').find('.same_styles');
             if(validPass.hasClass("input_red")){
-                console.log('red class');
                 validPass.addClass('daNuNa2');
 
                 setTimeout(function(){
@@ -123,11 +132,9 @@ $(document).ready(function () {
         if (pass < 6) {
             $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlockpass').html('Пароль менее 6 символов');
-            console.log(pass)
         }
         else if(pass == 0){
             $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
-            console.log(123213);
             $('#errorBlockpass').html('');
         }
     });
