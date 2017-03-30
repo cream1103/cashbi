@@ -225,6 +225,12 @@
     .shops_block_start .img_s_block_shop .animate_blue_bg_number{
         right: -25px;
     }
+    .shops_block_start .img_s_block_shop:hover > .animate_blue_bg_number{
+        transform: scale(1.25);
+        top: -35px !important;
+        right: -35px !important;
+    }
+
     .footer .mar_top_wrapp .nav_menu ul {
         width: 33.3%;
     }
@@ -633,9 +639,15 @@
         margin-bottom: 90px;
     }
     .shops_block_start .img_s_block_shop .animate_blue_bg_number {
-        right: -10px;
+        right: -25px;
         top: -15px;
     }
+    .shops_block_start .img_s_block_shop:hover > .animate_blue_bg_number{
+        transform: scale(1.25);
+        top: -20px !important;
+        right: -35px !important;
+    }
+
     .footer{
         min-height: 315px;
     }
@@ -1893,7 +1905,7 @@
     transform-origin: 50% 50%;
 }
 @keyframes burst_222 {
-    0% { border:2px solid #ff0000 }
+    0% { border:1px solid #ff0000 }
     30% { transform:scale(1); border:2px solid #DCDCDC }
     60% { transform:scale(1); border:2px solid #ff0000 }
     90% { transform:scale(1); border:2px solid #DCDCDC }

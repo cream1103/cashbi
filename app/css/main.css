@@ -1348,12 +1348,13 @@ a {
   .top_blue_header ul {
     float: right; }
     .top_blue_header ul li {
-      display: inline-block;
-      margin-left: 25px; }
+      display: inline-block; }
       .top_blue_header ul li a {
         font-family: 'officinaserifbookcbook';
         color: #ffffff;
-        font-size: 16px; }
+        font-size: 16px;
+        padding: 0 13px;
+        display: block; }
         .top_blue_header ul li a:hover {
           color: #ff4f2e; }
 

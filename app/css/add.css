@@ -221,17 +221,17 @@ input, select, textarea, button {
   -webkit-transition: .1s linear .05s;
   transition: .1s linear .05s; }
 
-@media (min-width: 600px) {
-  .img_s_block_shop:hover span {
-    -webkit-transform: scale(1.25);
-        -ms-transform: scale(1.25);
-            transform: scale(1.25);
-    top: -35px !important;
-    right: -15px !important; }
-  .img_s_block_shop:hover img {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1); } }
+.img_s_block_shop:hover span {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+  top: -35px !important;
+  right: -15px !important; }
+
+.img_s_block_shop:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
 
 .icon_soc_join a {
   -webkit-transition: .25s ease .05s;

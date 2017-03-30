@@ -177,8 +177,10 @@ $(document).ready(function () {
             if (lowString === lowallStrings) {
                 $('.search_btn').click();
                 $('#search').removeClass('daNuNa');
-                console.log('search');
                 $('.search').css({'border': '1px solid #DCDCDC'});
+                console.log(lowallStrings); //элемент поиска
+                console.log('search'); //
+
                 return false;
             }
             else if(lowString == ''){
@@ -187,7 +189,6 @@ $(document).ready(function () {
             else
             {
                 $('.search').css({'border': '1px solid #EB1D1D'});
-
                 $('.search_btn').click(function () {
                     $('#search').addClass('daNuNa');
                     setTimeout(function(){
@@ -231,10 +232,9 @@ $(document).ready(function () {
     //анимация сердца
 
     //блокировка textarea в отзывах
-    var yoUr = $('.your_balance').text();
-    var neEd = $('.need_balance').text();
-    var chRes = yoUr <= neEd;
-    if (chRes == true) {
+    var yoUr = parseInt($(".your_balance").text());
+    var neEd = parseInt($(".need_balance").text());
+    if (yoUr <= neEd) {
         $('#review').attr("disabled", 'disabled').attr("placeholder", 'К сожалению вы пока не можете оставить отзыв, тк выплаченый вам кэшбек не привышает 400 руб.');
     }
     else {
