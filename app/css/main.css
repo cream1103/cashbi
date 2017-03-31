@@ -614,44 +614,6 @@ a {
             -webkit-align-items: center;
                 -ms-flex-align: center;
                     align-items: center; }
-            .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price {
-              min-width: 110px;
-              font-size: 30px;
-              font-family: 'officinaserifboldcbold';
-              padding-left: 10px;
-              padding-right: 10px;
-              padding-top: 10px;
-              line-height: normal;
-              height: 80px;
-              -webkit-box-align: center;
-              -webkit-align-items: center;
-                  -ms-flex-align: center;
-                      align-items: center;
-              position: relative; }
-              .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price .tc {
-                width: 100%;
-                display: block;
-                text-align: center; }
-              .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price .cashback {
-                font-size: 14px;
-                font-family: 'officinaserifbookcbook';
-                text-align: center;
-                margin-top: 5px;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                line-height: 13px;
-                height: 26px;
-                -webkit-box-pack: center;
-                -webkit-justify-content: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-box-align: center;
-                -webkit-align-items: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                overflow: hidden; }
             .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .gray_bg {
               background: #ECECEC;
               color: #3d424b; }
@@ -2635,7 +2597,7 @@ ul.nav_list {
           padding-right: 10px;
           padding-top: 10px;
           line-height: normal;
-          height: 75px;
+          height: 80px;
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
@@ -2649,8 +2611,19 @@ ul.nav_list {
             font-size: 14px;
             font-family: 'officinaserifbookcbook';
             text-align: center;
-            margin-top: 5px;
-            display: block; }
+            margin-top: 0px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
         .ul_wrapps li .inside_s .present_class .gray_bg {
           background: #ECECEC;
           color: #3d424b; }
@@ -2793,7 +2766,7 @@ ul.nav_list {
     .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class {
       height: 80px; }
       .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price {
-        height: 64px; } }
+        height: 70px; } }
 
 .padding_fore_filter {
   padding: 15px 40px 15px 25px; }
@@ -4945,3 +4918,42 @@ ul.nav_list {
 
 .bx-pager {
   z-index: 100 !important; }
+
+.inside_price {
+  min-width: 110px;
+  font-size: 30px;
+  font-family: 'officinaserifboldcbold';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  line-height: normal;
+  height: 85px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .inside_price .tc {
+    width: 100%;
+    display: block;
+    text-align: center; }
+  .inside_price .cashback {
+    font-size: 14px;
+    font-family: 'officinaserifbookcbook';
+    text-align: center;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 13px;
+    height: 26px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden; }

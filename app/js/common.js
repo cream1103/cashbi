@@ -189,6 +189,7 @@ $(document).ready(function () {
             else
             {
                 $('.search').css({'border': '1px solid #EB1D1D'});
+
                 $('.search_btn').click(function () {
                     $('#search').addClass('daNuNa');
                     setTimeout(function(){
