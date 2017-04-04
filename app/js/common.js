@@ -37,6 +37,17 @@ $(window).on('resize', function () {
 
 $(document).ready(function () {
 
+    function formatShop (shop) {
+        if (!shop.id) {
+            return shop.text;
+        }
+        var $shop = $(
+            '<span class="span_wrappers_mini_icon"><img src="img/' + shop.element.value.replace(/:/gi, '').replace(/[//]/gi, '').toLowerCase() + '.png" class="img-flag" /> ' + shop.text + '</span>'
+        );
+        return $shop;
+    };
+
+
     $('.search_btn').click(function () {
         $('.select2').addClass('daNuNa');
         setTimeout(function(){
@@ -72,6 +83,7 @@ $(document).ready(function () {
         minimumInputLength: 2,
         placeholder: "Найти свой магазин, например SAPATO",
         maximumResultsForSearch: 2,
+        templateResult: formatShop,
         language: {
             inputTooShort: function() {
                 return "Введите 2 и более символов";
@@ -103,7 +115,7 @@ $(document).ready(function () {
             var subString = str.substring(25,300);
             //console.log(subString)
             $('.link_to_search').attr('target', 'blank');
-            $('.link_to_search').attr('href', subString)
+            $('.link_to_search').attr('href', subString);
             $('.select2-search__field').attr('placeholder', '');
         }
         else{

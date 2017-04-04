@@ -5016,3 +5016,8 @@ ul.nav_list {
 
 .select2-search {
   width: 100%; }
+
+.span_wrappers_mini_icon img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px; }
