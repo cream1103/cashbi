@@ -1893,11 +1893,11 @@
     transform-origin: 50% 50%;
 }
 @keyframes burst_7329 {
-    0% { border:1px solid #EB1D1D }
-    30% { transform:scale(1); border:1px solid #DCDCDC }
-    60% { transform:scale(1); border:1px solid #EB1D1D }
-    90% { transform:scale(1); border:1px solid #DCDCDC }
-    100% { transform:scale(1); border:1px solid #EB1D1D }
+    0% { border:1px solid #EB1D1D}
+    30% { transform:scale(1); border:1px solid #DCDCDC}
+    60% { transform:scale(1); border:1px solid #EB1D1D}
+    90% { transform:scale(1); border:1px solid #DCDCDC}
+    100% { transform:scale(1); border:1px solid #EB1D1D}
 }
 
 .daNuNa2 {

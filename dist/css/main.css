@@ -614,44 +614,6 @@ a {
             -webkit-align-items: center;
                 -ms-flex-align: center;
                     align-items: center; }
-            .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price {
-              min-width: 110px;
-              font-size: 30px;
-              font-family: 'officinaserifboldcbold';
-              padding-left: 10px;
-              padding-right: 10px;
-              padding-top: 10px;
-              line-height: normal;
-              height: 80px;
-              -webkit-box-align: center;
-              -webkit-align-items: center;
-                  -ms-flex-align: center;
-                      align-items: center;
-              position: relative; }
-              .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price .tc {
-                width: 100%;
-                display: block;
-                text-align: center; }
-              .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price .cashback {
-                font-size: 14px;
-                font-family: 'officinaserifbookcbook';
-                text-align: center;
-                margin-top: 5px;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                line-height: 13px;
-                height: 26px;
-                -webkit-box-pack: center;
-                -webkit-justify-content: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-box-align: center;
-                -webkit-align-items: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                overflow: hidden; }
             .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .gray_bg {
               background: #ECECEC;
               color: #3d424b; }
@@ -1348,12 +1310,13 @@ a {
   .top_blue_header ul {
     float: right; }
     .top_blue_header ul li {
-      display: inline-block;
-      margin-left: 25px; }
+      display: inline-block; }
       .top_blue_header ul li a {
         font-family: 'officinaserifbookcbook';
         color: #ffffff;
-        font-size: 16px; }
+        font-size: 16px;
+        padding: 0 13px;
+        display: block; }
         .top_blue_header ul li a:hover {
           color: #ff4f2e; }
 
@@ -2634,7 +2597,7 @@ ul.nav_list {
           padding-right: 10px;
           padding-top: 10px;
           line-height: normal;
-          height: 75px;
+          height: 80px;
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
@@ -2648,8 +2611,19 @@ ul.nav_list {
             font-size: 14px;
             font-family: 'officinaserifbookcbook';
             text-align: center;
-            margin-top: 5px;
-            display: block; }
+            margin-top: 0px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
         .ul_wrapps li .inside_s .present_class .gray_bg {
           background: #ECECEC;
           color: #3d424b; }
@@ -2792,7 +2766,7 @@ ul.nav_list {
     .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class {
       height: 80px; }
       .show_me_all_shops .list_of_shop .ul_wrapps li .inside_s .present_class .inside_price {
-        height: 64px; } }
+        height: 70px; } }
 
 .padding_fore_filter {
   padding: 15px 40px 15px 25px; }
@@ -4944,3 +4918,79 @@ ul.nav_list {
 
 .bx-pager {
   z-index: 100 !important; }
+
+.inside_price {
+  min-width: 110px;
+  font-size: 30px;
+  font-family: 'officinaserifboldcbold';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  line-height: normal;
+  height: 85px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .inside_price .tc {
+    width: 100%;
+    display: block;
+    text-align: center; }
+  .inside_price .cashback {
+    font-size: 14px;
+    font-family: 'officinaserifbookcbook';
+    text-align: center;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 13px;
+    height: 26px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden; }
+
+#slide-menu-search1 {
+  float: right;
+  min-width: 510px;
+  height: 50px; }
+  #slide-menu-search1 .select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    height: 50px;
+    line-height: 50px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding-left: 10px; }
+
+.js-example-basic-multiple {
+  width: 100%; }
+
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0; }
+
+.select2-dropdown {
+  border: 1px solid #DCDCDC; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #fff;
+  margin-top: 0;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  height: 46px;
+  padding-left: 0; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  display: none; }
+
+.click_class {
+  color: #3d424b; }

@@ -29,12 +29,96 @@ function faqSlide() {
 
 $(window).on('load', function () {
     faqSlide();
+
 });
 $(window).on('resize', function () {
     faqSlide();
 });
 
 $(document).ready(function () {
+
+    $('.search_btn').click(function () {
+        $('.select2').addClass('daNuNa');
+        setTimeout(function(){
+            $('.select2').removeClass('daNuNa');
+        }, 1500);
+    });
+
+    function foo() {
+        $('#val_click_link').attr('href', eventSelect.val());
+        var link = $('#val_click_link')[0];
+        var linkEvent = document.createEvent('MouseEvents');
+        linkEvent.initEvent('click', true, true);
+        link.dispatchEvent(linkEvent);
+    }
+
+    var eventSelect = $(".js-example-basic-multiple");
+
+    eventSelect.on("select2:open", function () {
+        console.log("select2:open");
+    });
+    eventSelect.on("select2:close", function () {
+        console.log("select2:close");
+    });
+    eventSelect.on("select2:select", function () {
+        console.log(eventSelect.val());
+            foo();
+    });
+    eventSelect.on("select2:unselect", function () {
+        console.log("select2:unselect");
+    });
+
+    eventSelect.select2({
+        minimumInputLength: 2,
+        placeholder: "Найти свой магазин, например SAPATO",
+        maximumResultsForSearch: 2,
+        language: {
+            inputTooShort: function() {
+                return "Введите 2 и более символов";
+            },
+            inputTooLong: function() {
+                return "You typed too much";
+            },
+            errorLoading: function() {
+                return "Ошибка загрузки результатов";
+            },
+            loadingMore: function() {
+                return "Loading more results";
+            },
+            noResults: function() {
+                return "Не найдено результатов";
+            },
+            searching: function() {
+                return "Поиск...";
+            },
+            maximumSelected: function() {
+                return "Ошибка загрузки результатов";
+            }
+        }
+    });
+
+    var selInt = setInterval( function(){
+        if($("li").is(".select2-results__option--highlighted")){
+            var str = $('.select2-results__option--highlighted').attr('id');
+            var subString = str.substring(25,300);
+            //console.log(subString)
+            $('.link_to_search').attr('target', 'blank');
+            $('.link_to_search').attr('href', subString)
+            $('.select2-search__field').attr('placeholder', '');
+        }
+        else{
+            $('.select2-selection--multiple');
+            $('.link_to_search').attr('href', 'javascript:void(0)');
+            $('.link_to_search').attr('target', '');
+        }
+    }, 500);
+
+    $('.select2-search__field').focus(function(){
+        $(this).attr('placeholder', '');
+    });
+    $('.select2-search__field').focusout(function(){
+        $(this).attr('placeholder', 'Найти свой магазин, например SAPATO');
+    });
 
     //доработка валидации email
     $('.type_subm_form_btn').click(function(){
@@ -164,42 +248,42 @@ $(document).ready(function () {
 
 
     //поиск совпадений на поиске
-    $("#search").on("change keyup input", function () {
-
-        var strings = $(this).val();
-        var lowString = strings.toLowerCase();
-
-        $('.main_search').find('option').each(function () {
-
-            var allStrings = $(this).val();
-            var lowallStrings = allStrings.toLowerCase();
-
-            if (lowString === lowallStrings) {
-                $('.search_btn').click();
-                $('#search').removeClass('daNuNa');
-                $('.search').css({'border': '1px solid #DCDCDC'});
-                console.log(lowallStrings); //элемент поиска
-                console.log('search'); //
-
-                return false;
-            }
-            else if(lowString == ''){
-                $('.search').css({'border': '1px solid #DCDCDC'});
-            }
-            else
-            {
-                $('.search').css({'border': '1px solid #EB1D1D'});
-
-                $('.search_btn').click(function () {
-                    $('#search').addClass('daNuNa');
-                    setTimeout(function(){
-                        $('#search').removeClass('daNuNa');
-                    }, 2000);
-                    return false;
-                });
-            }
-        });
-    });
+//    $("#search").on("change keyup input", function () {
+//
+//        var strings = $(this).val();
+//        var lowString = strings.toLowerCase();
+//
+//        $('.main_search').find('option').each(function () {
+//
+//            var allStrings = $(this).val();
+//            var lowallStrings = allStrings.toLowerCase();
+//
+//            if (lowString === lowallStrings) {
+//                $('.search_btn').click();
+//                $('#search').removeClass('daNuNa');
+//                $('.search').css({'border': '1px solid #DCDCDC'});
+//                console.log(lowallStrings); //элемент поиска
+//                console.log('search'); //
+//
+//                return false;
+//            }
+//            else if(lowString == ''){
+//                $('.search').css({'border': '1px solid #DCDCDC'});
+//            }
+//            else
+//            {
+//                $('.search').css({'border': '1px solid #EB1D1D'});
+//
+//                $('.search_btn').click(function () {
+//                    $('#search').addClass('daNuNa');
+//                    setTimeout(function(){
+//                        $('#search').removeClass('daNuNa');
+//                    }, 2000);
+//                    return false;
+//                });
+//            }
+//        });
+//    });
     //поиск совпадений на поиске
 
     //анимация сердца

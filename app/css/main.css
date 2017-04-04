@@ -1821,11 +1821,11 @@ a {
   border: 0;
   text-indent: -9999px;
   width: 65px;
-  height: 45px;
+  height: 46px;
   cursor: pointer;
   position: absolute;
-  right: 1px;
-  top: 1px;
+  right: 2px;
+  top: 2px;
   outline: none; }
 
 .wrapper_main_contant {
@@ -2623,7 +2623,8 @@ ul.nav_list {
             -webkit-box-align: center;
             -webkit-align-items: center;
                 -ms-flex-align: center;
-                    align-items: center; }
+                    align-items: center;
+            margin-top: 5px; }
         .ul_wrapps li .inside_s .present_class .gray_bg {
           background: #ECECEC;
           color: #3d424b; }
@@ -4957,3 +4958,61 @@ ul.nav_list {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden; }
+
+#slide-menu-search1 {
+  float: right;
+  min-width: 510px;
+  height: 50px; }
+  #slide-menu-search1 .select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    height: 50px;
+    line-height: 50px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding-left: 10px; }
+
+.js-example-basic-multiple {
+  width: 100%; }
+
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0; }
+
+.select2-dropdown {
+  border: 0px solid #DCDCDC; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #fff;
+  margin-top: 0;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  height: 46px;
+  padding-left: 0; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  display: none; }
+
+.click_class {
+  color: #3d424b; }
+
+.select2-results__message {
+  position: absolute;
+  bottom: 12px;
+  right: 41px;
+  font-family: 'OpenSansRegular';
+  color: #EB1D1D;
+  font-size: 11px;
+  z-index: 1; }
+
+.search_btn {
+  z-index: 20; }
+
+.select2 {
+  border: 1px solid transparent; }
+
+.select2-container .select2-search--inline .select2-search__field {
+  width: 100% !important; }
+
+.select2-search {
+  width: 100%; }
