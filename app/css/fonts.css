@@ -28,7 +28,8 @@
 }
 @font-face {
     font-family: 'fontawesome';
-    src: url("../fonts/fontawesome-webfont.woff2") format("woff2");
+    src: url("../fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("../fonts/fontawesome-webfont.eot");
     font-weight: normal;
     font-style: normal;
 }

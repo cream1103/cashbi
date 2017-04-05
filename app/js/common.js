@@ -37,16 +37,29 @@ $(window).on('resize', function () {
 
 $(document).ready(function () {
 
-    function formatShop (shop) {
-        if (!shop.id) {
-            return shop.text;
-        }
-        var $shop = $(
-            '<span class="span_wrappers_mini_icon"><img src="img/' + shop.element.value.replace(/:/gi, '').replace(/[//]/gi, '').toLowerCase() + '.png" class="img-flag" /> ' + shop.text + '</span>'
-        );
-        return $shop;
-    };
 
+
+    function showValidationError(selector,message){
+        console.log('showValidationError');
+    }
+
+
+
+
+
+    // все что касается поиска магазинов
+
+        //добавление картинок в option
+        function formatShop (shop) {
+            if (!shop.id) {
+                return shop.text;
+            }
+            var $shop = $(
+                '<span class="span_wrappers_mini_icon"><img src="img/' + shop.element.value.replace(/:/gi, '').replace(/[//]/gi, '').toLowerCase() + '.png" class="img-flag" /> ' + shop.text + '</span>'
+            );
+            return $shop;
+        };
+        //добавление картинок в option
 
     $('.search_btn').click(function () {
         $('.select2').addClass('daNuNa');
@@ -65,18 +78,9 @@ $(document).ready(function () {
 
     var eventSelect = $(".js-example-basic-multiple");
 
-    eventSelect.on("select2:open", function () {
-        console.log("select2:open");
-    });
-    eventSelect.on("select2:close", function () {
-        console.log("select2:close");
-    });
     eventSelect.on("select2:select", function () {
         console.log(eventSelect.val());
             foo();
-    });
-    eventSelect.on("select2:unselect", function () {
-        console.log("select2:unselect");
     });
 
     eventSelect.select2({
@@ -131,6 +135,9 @@ $(document).ready(function () {
     $('.select2-search__field').focusout(function(){
         $(this).attr('placeholder', 'Найти свой магазин, например SAPATO');
     });
+    // все что касается поиска магазинов
+
+
 
     //доработка валидации email
     $('.type_subm_form_btn').click(function(){
@@ -158,12 +165,13 @@ $(document).ready(function () {
 
 
 
-    //валидация пароля в 2px
+    //валидация пароля
     $('.password').focusout(function(){
         var pass = $(".password").val().length;
         if (pass < 6) {
-            $('.password').val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.password').val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlockpass').html('Пароль менее 6 символов');
+            showValidationError();
         }
         else if(pass == 0){
             $('.password').css('border', '1px solid #DCDCDC').addClass('daNuNa2');
@@ -178,9 +186,6 @@ $(document).ready(function () {
         $('.errorBlock').html('');
     });
 
-
-
-
     $('.errorBlockpass').click(function(){
         $(this).siblings('.password').focus();
     });
@@ -190,14 +195,17 @@ $(document).ready(function () {
 
 
 
+
+
     var rPassword = $('.repassword');
     rPassword.focusout(function(){
         var pass = $(".password").val();
         var pass_rep = rPassword.val();
 
         if (pass != pass_rep) {
-            rPassword.val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            rPassword.val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlock').html('Пароли не совпадают');
+            showValidationError();
         }
     });
     rPassword.focusin(function() {
@@ -228,6 +236,7 @@ $(document).ready(function () {
         if (pass < 6) {
             $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlockpass').html('Пароль менее 6 символов');
+            showValidationError();
         }
         else if(pass == 0){
             $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
@@ -251,6 +260,7 @@ $(document).ready(function () {
         if (pass != pass_rep) {
             rPass.css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlock').html('Пароли не совпадают');
+            showValidationError();
         }
     });
     rPass.focusin(function() {
@@ -259,44 +269,6 @@ $(document).ready(function () {
     });
 
 
-    //поиск совпадений на поиске
-//    $("#search").on("change keyup input", function () {
-//
-//        var strings = $(this).val();
-//        var lowString = strings.toLowerCase();
-//
-//        $('.main_search').find('option').each(function () {
-//
-//            var allStrings = $(this).val();
-//            var lowallStrings = allStrings.toLowerCase();
-//
-//            if (lowString === lowallStrings) {
-//                $('.search_btn').click();
-//                $('#search').removeClass('daNuNa');
-//                $('.search').css({'border': '1px solid #DCDCDC'});
-//                console.log(lowallStrings); //элемент поиска
-//                console.log('search'); //
-//
-//                return false;
-//            }
-//            else if(lowString == ''){
-//                $('.search').css({'border': '1px solid #DCDCDC'});
-//            }
-//            else
-//            {
-//                $('.search').css({'border': '1px solid #EB1D1D'});
-//
-//                $('.search_btn').click(function () {
-//                    $('#search').addClass('daNuNa');
-//                    setTimeout(function(){
-//                        $('#search').removeClass('daNuNa');
-//                    }, 2000);
-//                    return false;
-//                });
-//            }
-//        });
-//    });
-    //поиск совпадений на поиске
 
     //анимация сердца
     $('.heart').click(function () {

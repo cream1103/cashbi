@@ -1906,10 +1906,10 @@
 }
 @keyframes burst_222 {
     0% { border:1px solid #ff0000 }
-    30% { transform:scale(1); border:2px solid #DCDCDC }
-    60% { transform:scale(1); border:2px solid #ff0000 }
-    90% { transform:scale(1); border:2px solid #DCDCDC }
-    100% { transform:scale(1); border:2px solid #ff0000 }
+    30% { transform:scale(1); border:1px solid #DCDCDC }
+    60% { transform:scale(1); border:1px solid #ff0000 }
+    90% { transform:scale(1); border:1px solid #DCDCDC }
+    100% { transform:scale(1); border:1px solid #ff0000 }
 }
 
 /*==========  Mobile First Method  ==========*/

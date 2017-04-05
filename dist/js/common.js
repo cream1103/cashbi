@@ -37,36 +37,105 @@ $(window).on('resize', function () {
 
 $(document).ready(function () {
 
+
+
+    function showValidationError(selector,message){
+        console.log('showValidationError');
+    }
+
+
+
+
+
+    // все что касается поиска магазинов
+
+        //добавление картинок в option
+        function formatShop (shop) {
+            if (!shop.id) {
+                return shop.text;
+            }
+            var $shop = $(
+                '<span class="span_wrappers_mini_icon"><img src="img/' + shop.element.value.replace(/:/gi, '').replace(/[//]/gi, '').toLowerCase() + '.png" class="img-flag" /> ' + shop.text + '</span>'
+            );
+            return $shop;
+        };
+        //добавление картинок в option
+
+    $('.search_btn').click(function () {
+        $('.select2').addClass('daNuNa');
+        setTimeout(function(){
+            $('.select2').removeClass('daNuNa');
+        }, 1500);
+    });
+
     function foo() {
-        $('#val_click_link').attr('href', eventSelect.val())
+        $('#val_click_link').attr('href', eventSelect.val());
         var link = $('#val_click_link')[0];
         var linkEvent = document.createEvent('MouseEvents');
         linkEvent.initEvent('click', true, true);
         link.dispatchEvent(linkEvent);
     }
+
     var eventSelect = $(".js-example-basic-multiple");
 
-
-    eventSelect.on("select2:open", function () {
-        console.log("select2:open");
-        var firstValue = $('[aria-live="assertive"]').attr('id');
-        console.log(firstValue);
-    });
-    eventSelect.on("select2:close", function () {
-        console.log("select2:close");
-    });
     eventSelect.on("select2:select", function () {
         console.log(eventSelect.val());
-            //foo();
-    });
-    eventSelect.on("select2:unselect", function () {
-        console.log("select2:unselect");
+            foo();
     });
 
     eventSelect.select2({
         minimumInputLength: 2,
-        placeholder: "Найти свой магазин, например SAPATO"
+        placeholder: "Найти свой магазин, например SAPATO",
+        maximumResultsForSearch: 2,
+        templateResult: formatShop,
+        language: {
+            inputTooShort: function() {
+                return "Введите 2 и более символов";
+            },
+            inputTooLong: function() {
+                return "You typed too much";
+            },
+            errorLoading: function() {
+                return "Ошибка загрузки результатов";
+            },
+            loadingMore: function() {
+                return "Loading more results";
+            },
+            noResults: function() {
+                return "Не найдено результатов";
+            },
+            searching: function() {
+                return "Поиск...";
+            },
+            maximumSelected: function() {
+                return "Ошибка загрузки результатов";
+            }
+        }
     });
+
+    var selInt = setInterval( function(){
+        if($("li").is(".select2-results__option--highlighted")){
+            var str = $('.select2-results__option--highlighted').attr('id');
+            var subString = str.substring(25,300);
+            //console.log(subString)
+            $('.link_to_search').attr('target', 'blank');
+            $('.link_to_search').attr('href', subString);
+            $('.select2-search__field').attr('placeholder', '');
+        }
+        else{
+            $('.select2-selection--multiple');
+            $('.link_to_search').attr('href', 'javascript:void(0)');
+            $('.link_to_search').attr('target', '');
+        }
+    }, 500);
+
+    $('.select2-search__field').focus(function(){
+        $(this).attr('placeholder', '');
+    });
+    $('.select2-search__field').focusout(function(){
+        $(this).attr('placeholder', 'Найти свой магазин, например SAPATO');
+    });
+    // все что касается поиска магазинов
 
 
 
@@ -96,12 +165,13 @@ $(document).ready(function () {
 
 
 
-    //валидация пароля в 2px
+    //валидация пароля
     $('.password').focusout(function(){
         var pass = $(".password").val().length;
         if (pass < 6) {
-            $('.password').val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            $('.password').val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlockpass').html('Пароль менее 6 символов');
+            showValidationError();
         }
         else if(pass == 0){
             $('.password').css('border', '1px solid #DCDCDC').addClass('daNuNa2');
@@ -116,9 +186,6 @@ $(document).ready(function () {
         $('.errorBlock').html('');
     });
 
-
-
-
     $('.errorBlockpass').click(function(){
         $(this).siblings('.password').focus();
     });
@@ -128,14 +195,17 @@ $(document).ready(function () {
 
 
 
+
+
     var rPassword = $('.repassword');
     rPassword.focusout(function(){
         var pass = $(".password").val();
         var pass_rep = rPassword.val();
 
         if (pass != pass_rep) {
-            rPassword.val('').css('border', '2px solid #EB1D1D').addClass('daNuNa2');
+            rPassword.val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlock').html('Пароли не совпадают');
+            showValidationError();
         }
     });
     rPassword.focusin(function() {
@@ -166,6 +236,7 @@ $(document).ready(function () {
         if (pass < 6) {
             $('#pass').css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlockpass').html('Пароль менее 6 символов');
+            showValidationError();
         }
         else if(pass == 0){
             $('#pass').css('border', '1px solid #DCDCDC').addClass('daNuNa');
@@ -189,6 +260,7 @@ $(document).ready(function () {
         if (pass != pass_rep) {
             rPass.css('border', '1px solid #EB1D1D').addClass('daNuNa');
             $('#errorBlock').html('Пароли не совпадают');
+            showValidationError();
         }
     });
     rPass.focusin(function() {
@@ -197,44 +269,6 @@ $(document).ready(function () {
     });
 
 
-    //поиск совпадений на поиске
-//    $("#search").on("change keyup input", function () {
-//
-//        var strings = $(this).val();
-//        var lowString = strings.toLowerCase();
-//
-//        $('.main_search').find('option').each(function () {
-//
-//            var allStrings = $(this).val();
-//            var lowallStrings = allStrings.toLowerCase();
-//
-//            if (lowString === lowallStrings) {
-//                $('.search_btn').click();
-//                $('#search').removeClass('daNuNa');
-//                $('.search').css({'border': '1px solid #DCDCDC'});
-//                console.log(lowallStrings); //элемент поиска
-//                console.log('search'); //
-//
-//                return false;
-//            }
-//            else if(lowString == ''){
-//                $('.search').css({'border': '1px solid #DCDCDC'});
-//            }
-//            else
-//            {
-//                $('.search').css({'border': '1px solid #EB1D1D'});
-//
-//                $('.search_btn').click(function () {
-//                    $('#search').addClass('daNuNa');
-//                    setTimeout(function(){
-//                        $('#search').removeClass('daNuNa');
-//                    }, 2000);
-//                    return false;
-//                });
-//            }
-//        });
-//    });
-    //поиск совпадений на поиске
 
     //анимация сердца
     $('.heart').click(function () {
