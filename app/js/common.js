@@ -27,9 +27,9 @@ function faqSlide() {
 }
 //определение обрезания текста в FAQ
 
+
 $(window).on('load', function () {
     faqSlide();
-
 });
 $(window).on('resize', function () {
     faqSlide();
@@ -38,13 +38,52 @@ $(window).on('resize', function () {
 $(document).ready(function () {
 
 
-
     function showValidationError(selector,message){
         console.log('showValidationError');
     }
 
+    $("a.fancy").fancybox({
+        padding: 0,
+        autoSize	: true,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+    });
+    $(".various").fancybox({
+        padding     : 0,
+        maxWidth	: 1100,
+        maxHeight	: 700,
+        width		: '90%',
+        height		: '70%',
+        autoSize	: false,
+        closeClick	: false,
+        closeEffect	: 'none'
+    });
 
 
+
+    //липкий сайдбар
+    function ifAutorized(){
+        var stick_id = $('#stycky_id');
+        if($('body').hasClass('autorised_user')){
+            stick_id.addClass('stycky_autorized');
+            stick_id.removeClass('stycky');
+        }
+        else{
+            stick_id.addClass('stycky');
+            stick_id.removeClass('stycky_autorized');
+        }
+        $('.stycky_autorized').theiaStickySidebar({
+            additionalMarginTop: 140
+        });
+        $('.stycky').theiaStickySidebar({
+            additionalMarginTop: 30
+        });
+    }
+    ifAutorized();
+//липкий сайдбар
 
 
     // все что касается поиска магазинов
@@ -372,7 +411,6 @@ $(document).ready(function () {
     $("#inline").fancybox({
         'maxHeight': 600,
         'autoSize': true
-
     });
     //инициализация fancybox
 

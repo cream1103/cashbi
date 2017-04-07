@@ -310,6 +310,9 @@
 /*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .mt20_small{
+        margin-top: 20px;
+    }
     .wrapp_max_w_block {
         width: 350px;
         padding-left: 0;
@@ -753,6 +756,17 @@
     }
     .tr_small_font{
         font-size: 12px !important;
+    }
+    .img_wrappers_blog{
+        min-height: 345px;
+        position: relative;
+    }
+    .img_wrappers_blog img{
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        left: -21%;
+        top: 0;
     }
 }
 
@@ -1722,6 +1736,41 @@
     }
     .bg_whites_pod{
         bottom: -12px;
+    }
+    .bg_y{
+        margin-bottom: 50px !important;
+        border-bottom: 1px solid #DCDCDC !important;
+    }
+    .op_text{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .autorise_fore_connect{
+        font-size: 16px;
+    }
+    .mb10_small{
+        margin-bottom: 10px !important;
+    }
+    .ad_files_p{
+        margin-top: 10px;
+    }
+    .sm_xs{
+        width: 170px;
+        height: 4px;
+        overflow: hidden;
+        margin: 10px auto 20px auto;
+    }
+    .img_wrappers_blog{
+        min-height: 270px;
+        position: relative;
+
+    }
+    .img_wrappers_blog img{
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        left: -21%;
+        top: 0;
     }
 
 }

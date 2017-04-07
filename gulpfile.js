@@ -37,7 +37,9 @@ gulp.task('scripts', function() {
 		'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
 		'app/libs/jquery.form-styler/jquery.formstyler.min.js',
 		'app/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
-		'app/libs/select2/dist/js/select2.full.min.js'
+		'app/libs/select2/dist/js/select2.full.min.js',
+		'app/libs/theia-sticky-sidebar/dist/ResizeSensor.min.js',
+		'app/libs/theia-sticky-sidebar/dist/theia-sticky-sidebar.min.js'
             //JS БИБЛИОТЕКИ СЮДА
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

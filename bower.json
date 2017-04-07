@@ -23,6 +23,7 @@
     "bxslider-4": "bx-slider.js#^4.2.12",
     "fancybox": "2.1.5",
     "jquery.form-styler": "jquery-form-styler#^1.7.8",
-    "select2": "^4.0.3"
+    "select2": "^4.0.3",
+    "theia-sticky-sidebar": "^1.6.0"
   }
 }
