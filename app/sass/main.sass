@@ -3646,15 +3646,17 @@ ul.nav_list
 
 .wenother
   width: 365px
-.fancybox-close
-  width: 25px
-  height: 25px
-  background-image: url(../img/icon/222.svg) !important
-  background-size: cover
+.fancybox-reg_popup
+  .fancybox-close
+    width: 25px
+    height: 25px
+    background-image: url(../img/icon/222.svg) !important
+    background-size: cover
 
-.fancybox-close
-  top: -36px !important
-  right: -39px !important
+.fancybox-reg_popup
+  .fancybox-close
+    top: -36px !important
+    right: -39px !important
 
 .text_with_epty_item
   color: #22315e
@@ -4570,6 +4572,7 @@ $animation-speed: 0.3s
           margin-top: 0 !important
           display: inline-block !important
           margin-bottom: 0 !important
+
         ul
           width: 100% !important
           li
@@ -4579,6 +4582,7 @@ $animation-speed: 0.3s
               padding-left: 20px !important
               padding-top: 3px !important
               padding-bottom: 4px !important
+              border-bottom: 1px solid #e8e8e8 !important
               &:hover
                 color: #ff4f2f !important
 //партнерская программа
@@ -4662,6 +4666,8 @@ $animation-speed: 0.3s
   &:hover
     box-shadow: 0 3px 29px rgba(0, 0, 0, 0.14)
     border: 1px solid transparent
+    background: #FCFCFC
+
   .img_item_help
     height: 95px
     width: 100%
@@ -4723,7 +4729,7 @@ $animation-speed: 0.3s
       position: relative
 .wrapp_blog_it:hover .main_item_text
   color: #ff4f2f
-  text-decoration: underline
+  text-decoration: none
 .bg_whites_pod
   width: 50px
   height: 27px
@@ -5057,22 +5063,41 @@ $animation-speed: 0.3s
       top: 50%
       transform: translate(-50%,-50%)
       background: url("../img/icon/video1.svg") no-repeat center center
-  &:hover
-    :before
-      width: 50px
-      height: 50px
-      content: ''
-      display: inline-block
-      position: absolute
-      left: 50%
-      top: 50%
-      transform: translate(-50%,-50%)
-      background: url("../img/icon/video2.svg") no-repeat center center
+    &:hover
+      &:before
+        width: 50px
+        height: 50px
+        content: ''
+        display: inline-block
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        background: url("../img/icon/video2.svg") no-repeat center center
+        z-index: 10
+      &:after
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        content: ''
+        display: inline-block
+        background: rgba(0, 0, 255, 0.3)
 
 .image_li
   position: relative
   a
     &:hover
+      &:after
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        content: ''
+        display: inline-block
+        background: rgba(0, 0, 255, 0.3)
       &:before
         width: 55px
         height: 55px
@@ -5083,14 +5108,73 @@ $animation-speed: 0.3s
         top: 50%
         transform: translate(-50%,-50%)
         background: url("../img/icon/lupa.svg") no-repeat center center
-      &:after
-        width: 100%
-        height: 100%
-        position: absolute
-        left: 0
-        top: 0
+        z-index: 10
 
-    
+.fancybox-blog_popup
+  .fancybox-close
+    width: 25px
+    height: 25px
+    background-image: url(../img/icon/222.svg) !important
+    background-size: cover
+    top: -33px !important
+    right: 0px !important
+  .fancybox-nav
+    background: none
+    &:hover
+      background: none
+  .fancybox-prev
+    span
+      width: 50px
+      height: 50px
+      left: 20px
+      top: 50%
+      transform: translate(0 ,-25%)
+      background: url(../img/slider_sprite.png) no-repeat 0 0
+      z-index: 20
+      visibility: visible
+    &:hover
+      span
+        background: url(../img/slider_sprite.png) no-repeat -100px 0
+  .fancybox-next
+    span
+      width: 50px
+      height: 50px
+      right: 20px
+      top: 50%
+      transform: translate(0 ,-25%)
+      background: url(../img/slider_sprite.png) no-repeat -50px 0
+      z-index: 20
+      visibility: visible
+    &:hover
+      span
+        background: url(../img/slider_sprite.png) no-repeat -150px 0
 
-  
+.same_styles_p
+  height: 40px
+  font-size: 16px !important
+  line-height: 40px
+  margin-bottom: 10px
+  margin-top: 40px !important
 //блог подробно
+.search_form_fore_shops
+  #slide-menu-search1
+    width: 100%
+    min-width: 100%
+    height: 57px
+    float: none
+    .select2-container--default
+      .select2-selection--multiple
+        height: 57px
+        line-height: 57px
+        border-radius: 3px
+  .search_btn
+    background: url(../img/icon/search.svg) no-repeat center center, #fff
+    width: 92px
+    height: 55px
+.fore_big_search
+  overflow-x: hidden
+  .select2-results__message
+    right: 70px
+    bottom: 16px
+  .select2-container
+    width: 100% !important

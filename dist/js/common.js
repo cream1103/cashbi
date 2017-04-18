@@ -49,17 +49,18 @@ $(document).ready(function () {
             overlay: {
                 locked: false
             }
-        }
+        },
+        wrapCSS    : 'fancybox-blog_popup'
     });
     $(".various").fancybox({
         padding     : 0,
         maxWidth	: 1100,
         maxHeight	: 700,
         width		: '90%',
-        height		: '70%',
         autoSize	: false,
         closeClick	: false,
-        closeEffect	: 'none'
+        closeEffect	: 'none',
+        wrapCSS    : 'fancybox-blog_popup'
     });
 
 
@@ -113,6 +114,7 @@ $(document).ready(function () {
         var linkEvent = document.createEvent('MouseEvents');
         linkEvent.initEvent('click', true, true);
         link.dispatchEvent(linkEvent);
+        setTimeout(function() {window.location.reload();}, 500);
     }
 
     var eventSelect = $(".js-example-basic-multiple");
@@ -160,6 +162,7 @@ $(document).ready(function () {
             $('.link_to_search').attr('target', 'blank');
             $('.link_to_search').attr('href', subString);
             $('.select2-search__field').attr('placeholder', '');
+
         }
         else{
             $('.select2-selection--multiple');
@@ -410,7 +413,8 @@ $(document).ready(function () {
     //инициализация fancybox
     $("#inline").fancybox({
         'maxHeight': 600,
-        'autoSize': true
+        'autoSize': true,
+        wrapCSS    : 'fancybox-reg_popup'
     });
     //инициализация fancybox
 
@@ -520,42 +524,6 @@ $(document).ready(function () {
         });
     });
     //аккордеон меню
-
-    //липкий сайдбар
-//    var stickySidebar = $('.sticky');
-//
-//    if (stickySidebar.length > 0) {
-//        var stickyHeight = stickySidebar.height(),
-//            sidebarTop = stickySidebar.offset().top;
-//    }
-//// on scroll move the sidebar
-//    $(window).scroll(function () {
-//        if (stickySidebar.length > 0) {
-//            var scrollTop = $(window).scrollTop() + 147;
-//
-//            if (sidebarTop < scrollTop) {
-//                stickySidebar.css('top', scrollTop - sidebarTop);
-//
-//                // stop the sticky sidebar at the footer to avoid overlapping
-//                var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-//                    stickyStop = $('.main-content').offset().top + $('.main-content').height() - 23;
-//                if (stickyStop < sidebarBottom) {
-//                    var stopPosition = $('.main-content').height() - stickyHeight  - 23;
-//                    stickySidebar.css('top', stopPosition);
-//                }
-//            }
-//            else {
-//                stickySidebar.css('top', '0');
-//            }
-//        }
-//    });
-//    $(window).resize(function () {
-//        if (stickySidebar.length > 0) {
-//            stickyHeight = stickySidebar.height();
-//        }
-//    });
-    //липкий сайдбар
-
 
     //таймер акций
     var timer;
@@ -922,9 +890,9 @@ $(document).ready(function () {
     //скрипт для смены placeholder для мобильных
     function windowSize() {
         if ($(window).width() < 600) {
-            $('#search_shop_id').attr('placeholder', 'Найти свой магазин');
+            $('.select2-search__field').attr('placeholder', 'Найти свой магазин');
         } else {
-            $('#search_shop_id').attr('placeholder', 'Найти свой магазин, например SAPATO');
+            $('.select2-search__field').attr('placeholder', 'Найти свой магазин, например SAPATO');
         }
     }
 
