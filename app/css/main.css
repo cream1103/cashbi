@@ -1606,14 +1606,14 @@ a {
         display: inline-block;
         width: 52px;
         height: 52px; }
+      .wrapp_menus .named_block .named_right:hover {
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
       .wrapp_menus .named_block .named_right a img {
         width: 52px;
         height: 52px;
         -webkit-border-radius: 10em;
                 border-radius: 10em; }
-      .wrapp_menus .named_block .named_right:hover img {
-        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-                box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
       .wrapp_menus .named_block .named_right span {
         border: 3px solid #fff;
         -webkit-border-radius: 10em;
@@ -5370,3 +5370,47 @@ ul.nav_list {
     bottom: 16px; }
   .fore_big_search .select2-container {
     width: 100% !important; }
+
+#slide-menu-container #slide-menu-search a:hover, #slide-menu-container_2 #slide-menu-search a:hover {
+  text-decoration: none;
+  background-color: #fff !important; }
+
+.simple_restyle_wrapper_small .wrapper_search_small {
+  padding: 0 10px;
+  position: relative;
+  margin-top: 12px; }
+  .simple_restyle_wrapper_small .wrapper_search_small .select2-container--default .select2-selection--multiple {
+    height: 32px;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .simple_restyle_wrapper_small .wrapper_search_small .search_btn {
+    height: 29px;
+    right: 24px;
+    width: 35px;
+    top: 4px;
+    background-position: 7px center;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .simple_restyle_wrapper_small .wrapper_search_small:hover {
+    background-color: #fff; }
+
+#slide-menu-search ul.nav_list li > a {
+  padding-left: 25px !important; }
+
+#slide-menu-search ul.nav_list li.active > a {
+  padding-left: 25px !important;
+  position: relative; }
+  #slide-menu-search ul.nav_list li.active > a:before {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    content: '';
+    display: inline-block;
+    background: url("../img/icon/arr.svg") no-repeat center center;
+    background-size: contain; }
+
+.shadow_none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }

@@ -42,6 +42,15 @@ $(document).ready(function () {
         console.log('showValidationError');
     }
 
+
+
+    $('.named_right').mouseover(function(){
+        $('.named_block').addClass('shadow_none');
+    });
+    $('.named_right').mouseout(function(){
+        $('.named_block').removeClass('shadow_none');
+    });
+
     $("a.fancy").fancybox({
         padding: 0,
         autoSize	: true,
@@ -125,6 +134,7 @@ $(document).ready(function () {
     });
 
     eventSelect.select2({
+        containerCssClass: "wrap_all_to_small",
         minimumInputLength: 2,
         placeholder: "Найти свой магазин, например SAPATO",
         maximumResultsForSearch: 2,
