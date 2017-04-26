@@ -1989,6 +1989,180 @@
     100% { transform:scale(1); border:1px solid #ff0000 }
 }
 
+/*все что касается анимаций в слайдере*/
+/*1 анимация*/
+.show .animate_block1 {
+    animation: animasuons1 0.5s linear 1;
+    animation-delay: 0.1s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons1 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*1 анимация*/
+
+
+/*2 анимация*/
+.show .animate_block2 {
+    animation: animasuons2 0.5s linear 1;
+    animation-delay: 0.2s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons2 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*2 анимация*/
+
+/*3 анимация*/
+.show .animate_block3 {
+    animation: animasuons3 0.5s linear 1;
+    animation-delay: 0.3s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons3 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*3 анимация*/
+
+/*4 анимация*/
+.show .animate_block4 {
+    animation: animasuons4 0.5s linear 1;
+    animation-delay: 0.4s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons4 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*4 анимация*/
+
+/*5 анимация*/
+.show .animate_block5 {
+    animation: animasuons5 0.5s linear 1;
+    animation-delay: 0.5s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons5 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*5 анимация*/
+
+/*6 анимация*/
+.show .animate_block6 {
+    animation: animasuons6 0.5s linear 1;
+    animation-delay: 0.6s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons6 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*6 анимация*/
+
+/*7 анимация*/
+.show .animate_block7 {
+    animation: animasuons7 0.5s linear 1;
+    animation-delay: 0.7s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons7 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*7 анимация*/
+
+/*8 анимация*/
+.show .animate_block8 {
+    animation: animasuons8 0.5s linear 1;
+    animation-delay: 0.8s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons8 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*8 анимация*/
+
+/*9 анимация*/
+.show .animate_block9 {
+    animation: animasuons9 0.5s linear 1;
+    animation-delay: 0.9s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons9 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*9 анимация*/
+
+/*10 анимация*/
+.show .animate_block10 {
+    animation: animasuons10 0.5s linear 1;
+    animation-delay: 1s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons10 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*10 анимация*/
+
+/*11 анимация*/
+.show .animate_block11 {
+    animation: animasuons11 0.5s linear 1;
+    animation-delay: 1.1s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons11 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*11 анимация*/
+
+/*12 анимация*/
+.show .animate_block12 {
+    animation: animasuons12 0.5s linear 1;
+    animation-delay: 1.2s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes animasuons12 {
+    0% { transform: scale(0);opacity: 1 }
+    100% { transform: scale(1);opacity: 1 }
+}
+/*12 анимация*/
+@media only screen and (max-width : 1399px){
+    .white_tic4{
+        width: 70px;
+        height: 70px;
+        left: 134px;
+        top: 8px;
+    }
+    .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first_text .container .one-slide .cont .white_tic4 img{
+        width: 80% !important;
+        height: auto;
+    }
+
+}
+/*все что касается анимаций в слайдере*/
+
+
+
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */

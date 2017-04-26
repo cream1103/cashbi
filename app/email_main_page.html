@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+<head>
+    <!-- If you delete this meta tag, Half Life 3 will never be released.-->
+    <!-- Template by marcosilva.co.uk, base on Zurb responsive templates and boiler plate, images and copy from http://www.hardgraft.com/ -->
+
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Focus Responsive Shopping Template, Version 1.0 </title>
+</head>
+<body bgcolor="#ccc" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<style>
+
+/* Template by marcosilva.co.uk, base on Zurb
+responsive templates and boiler plate,
+images and copy from http://www.hardgraft.com/ */
+
+/* ------------------------------------- 		GLOBAL ------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.collapse {
+    padding-right: 15px;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    width: 100% !important;
+    height: 100vh;
+    background: url("img/bg/2222.jpg");
+    padding-top: 5vh;
+}
+
+/* ------------------------------------- 		ELEMENTS ------------------------------------- */
+a {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.bt {
+    padding-top: 10px;
+}
+
+p.callout {
+    padding: 9px;
+    font-size: 12px;
+}
+
+p.text {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+p.left {
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.prod {
+    margin: 0;
+    padding: 0;
+    color: #aaaaaa;
+}
+
+.callout a {
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+/* ------------------------------------- 		HEADER ------------------------------------- */
+table.head-wrap {
+    width: 100%;
+}
+
+.header.container table td.logo {
+    padding: 15px;
+}
+
+.header.container table td.label {
+    padding: 15px;
+    padding-left: 0;
+}
+
+/* ------------------------------------- 		BODY ------------------------------------- */
+table.body-wrap {
+    width: 100%;
+}
+
+.s-now_mail_p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    padding: 0 20px;
+}
+
+/* ------------------------------------- FOOTER------------------------------------- */
+table.footer-wrap {
+    width: 100%;
+    height: 50px;
+}
+
+table.footer-wrap2 {
+    width: 100%;
+}
+
+.coryright {
+    color: #777778;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------- 		TYPOGRAPHY ------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0;
+    text-transform: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    color: #333333;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 37px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 27px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.collapse {
+    margin: 0 !important;
+}
+
+p, ul {
+    margin-bottom: 2px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+p.lead {
+    font-size: 13px;
+}
+
+p.last {
+    margin-bottom: 0;
+}
+
+ul li {
+    margin-left: 5px;
+    list-style-position: inside;
+}
+
+/* --------------------------------------------------- 		RESPONSIVENESS		Nuke it from orbit. ------------------------------------------------------ */
+/* Set a max-width,and make it display as block so it will automatically stretch to that width,but will also shrink down on a phone or something */
+.container {
+    display: block !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    /* makes it centered */
+    clear: both !important;
+}
+
+/* This should also be a block element,so that it will fill 100% of the .container */
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+    width: 100%;
+}
+
+/* Odds and ends */
+.column {
+    width: 300px;
+    float: left;
+}
+
+.column tr td {
+    padding: 5px;
+}
+
+.column-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column table {
+    width: 100%;
+}
+
+.social .column {
+    width: 280px;
+    min-width: 279px;
+    float: left;
+}
+
+.column3 {
+    width: 300px;
+    float: left;
+}
+
+.column3 tr td {
+    padding: 1px;
+}
+
+.column3-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column3 table {
+    width: 100%;
+}
+
+.column2 {
+    width: 240px;
+    float: left;
+}
+
+.column2 tr td {
+    padding: 5px;
+}
+
+.column2-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column2 table {
+    width: 100%;
+}
+
+.social .column {
+    width: 280px;
+    min-width: 279px;
+    float: left;
+}
+
+/* Odds and ends */
+.prod {
+    width: 200px;
+    float: left;
+}
+
+.prod tr td {
+    padding: 5px;
+}
+
+.prod-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.prod table {
+    width: 100%;
+}
+
+.prod .column {
+    width: 200px;
+    min-width: 200px;
+    float: left;
+}
+
+/* Be sure to place a .clear element after each set of columns,just to be safe */
+.clear {
+    display: block;
+    clear: both;
+}
+
+/* ------------------------------------------- 		PHONE		For clients that support media queries.		Nothing fancy. -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    a[class="btn"] {
+        display: block !important;
+        background-image: none !important;
+        margin-right: 0 !important;
+    }
+
+    div[class="column"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    div[class="column2"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    div[class="column3"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    table[class="top"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    .prod {
+        width: 150px;
+        float: left;
+    }
+
+    table.social div[class="column"] {
+        width: auto !important;
+    }
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.text_s_loop {
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.w100perc {
+    width: 100%;
+}
+.l_inline{
+    width: 100%;
+}
+.l_inline li{
+    display: inline-block;
+    list-style-type: none;
+}
+.table_td_zabor{
+    width: 100%;
+    padding: 5px 0;
+    background: url(img/icon/bg_blue_act.png);
+}
+</style>
+
+<table class="body-wrap">
+    <tbody>
+    <tr>
+        <td>
+        </td>
+        <td class="container" bgcolor="#FFFFFF">
+            <!------------------------------------ ---- HEADER -------------------------- ------------------------------------->
+            <table bgcolor="#fff" class="w100perc">
+                <tbody>
+                    <tr>
+                        <td style="padding: 30px 0;">
+                            <a href="#">
+                                <img src="img/icon/logo.svg" width="165" height="35"
+                                     style="margin:0 auto; padding:0; border:none; display:block;" border="0" class="img"
+                                     alt="">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!------------------------------------ ---- BODY -------------------------- ------------------------------------->
+            <img src="img/mail_main_page.jpg" style="width: 100%; height: auto" alt=""/>
+            <!-- content -->
+            <div class="content">
+                <table bgcolor="" class="social" width="100%">
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <h1>Мы рады, что теперь вы с нами!</h1>
+
+                            <p class="s-now_mail_p">
+                                Теперь Вы сможете получать кэшбэк за каждую покупку,
+                                сделанную в любом из наших магазинов-партнеров.
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <table bgcolor="#E6F6FF" class="social" width="100%">
+                <tbody>
+                <tr>
+                    <td align="center">
+                        <p class="text_s_loop">
+                            Подтвердите почту, чтобы мы продолжили вас
+                            знакомить со всеми преимуществами сервиса
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <table width="280" height="47" cellpadding="0" cellspacing="0" border="0" bgcolor="#FF4F2F"
+                               style="border-radius:10em;">
+                            <tr>
+                                <td align="center" valign="middle" height="47"
+                                    style="font-family: Arial, sans-serif; font-size:16px; font-weight:bold;">
+                                    <a class="btn" href="#" target="_blank"
+                                       style="font-family: Arial, sans-serif; font-size: 16px; color:#ffffff; display: inline-block; text-decoration: none; line-height:47px; width:280px; font-weight:bold;">Подтвердить
+                                        Email</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="social" width="100%" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td width="100%">
+                            <p class="table_td_zabor"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table bgcolor="#fff" class="social" width="100%">
+                <tbody>
+                <tr>
+                    <td align="center">
+                        <p class="text_s_loop">
+                            Не забудьте присоединиться к нам!
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <ul class="l_inline">
+                            <li>
+                                <a class="fb_soc" href="#"><img src="img/icon/r_fb.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a class="vk_soc" href="#"><img src="img/icon/r_vk.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a class="ok_soc" href="#"><img src="img/icon/r_ok.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a class="tw_soc" href="#"><img src="img/icon/r_tw.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a class="go_soc" href="#"><img src="img/icon/google2.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a class="go_soc" href="#"><img src="img/icon/instag.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="social" width="100%" style="border: none; border-collapse: collapse">
+                <tbody>
+                    <tr>
+                        <td bgcolor="#89C9EC" style="width: 30%; padding: 3px 0; border: none"></td>
+                        <td bgcolor="#202E5C"></td>
+                        <td bgcolor="#E8242E"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- FOOTER -->
+<table class="footer-wrap">
+    <tbody>
+    <tr>
+        <td>
+        </td>
+        <td class="container">
+            <!-- content -->
+            <div class="content">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <p class="coryright">
+                                © 2017 Cashibe — Надежный кэшбэк сервис
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /content -->
+        </td>
+        <td>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- /FOOTER -->
+
+<div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings"></a><span
+        class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span
+        class="tooltipHeight" id="winHeight">1080</span><br><span class="tooltipTitle">Viewport size: </span><span
+        class="tooltipWidth" id="vpWidth">424</span> x <span class="tooltipHeight" id="vpHeight">1014</span></div>
+</body>
+</html>
