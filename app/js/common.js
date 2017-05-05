@@ -857,21 +857,29 @@ $(document).ready(function () {
     });
     //инициализация каресели отзывов на лэндинге
 
+
     //инициализация слайдера на главной
+
     var bx_text = $('.bxslider_first_text .one-slide');
-//	console.log(bx_text);
-    $('.bxslider_first').bxSlider({
-        auto: true,//true
-        pause: 5000,
-        autoHover: true,
-        speed: 1000,
-        onSlideBefore: function ($el, $old, $new) {
-            bx_text[$old].classList.remove('show');
-        },
-        onSlideAfter: function ($el, $old, $new) {
-            bx_text[$new].classList.add('show');
-        }
+    $('.bxslider_first').each(function() {
+        var _this = $(this).bxSlider({
+            auto: true,
+            speed: 1000,
+            pause: 5000,
+            onSlideBefore: function ($el, $old, $new) {
+                bx_text[$old].classList.remove('show');
+            },
+            onSlideAfter: function ($el, $old, $new) {
+                bx_text[$new].classList.add('show');
+            }
+        });
+        $('.sls').mouseenter(function() {
+            _this.stopAuto();
+        }).mouseleave(function() {
+            _this.startAuto();
+        });
     });
+
     //инициализация слайдера на главной
 
 

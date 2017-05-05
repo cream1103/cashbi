@@ -2157,8 +2157,19 @@
         width: 80% !important;
         height: auto;
     }
-
 }
+
+/*правки слайдера*/
+.show .sps a{
+    background: #fff;
+    border-radius: 10em;
+    transition: all .2s ease-in-out;
+}
+.show .sps:hover a{
+    transform: scale(1.2);
+}
+/*правки слайдера*/
+
 /*все что касается анимаций в слайдере*/
 
 
