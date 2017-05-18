@@ -1,0 +1,845 @@
+<!doctype html>
+<html>
+<head>
+    <!-- If you delete this meta tag, Half Life 3 will never be released.-->
+    <!-- Template by marcosilva.co.uk, base on Zurb responsive templates and boiler plate, images and copy from http://www.hardgraft.com/ -->
+
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Focus Responsive Shopping Template, Version 1.0 </title>
+</head>
+<body bgcolor="#ccc" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<style>
+
+/* Template by marcosilva.co.uk, base on Zurb
+responsive templates and boiler plate,
+images and copy from http://www.hardgraft.com/ */
+
+/* ------------------------------------- 		GLOBAL ------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.collapse {
+    padding-right: 15px;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    width: 100% !important;
+    height: 100%;
+    background: url("img/bg/2222.jpg");
+    padding-top: 50px;
+}
+
+/* ------------------------------------- 		ELEMENTS ------------------------------------- */
+a {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.bt {
+    padding-top: 10px;
+}
+
+p.callout {
+    padding: 9px;
+    font-size: 12px;
+}
+
+p.text {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+p.left {
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.prod {
+    margin: 0;
+    padding: 0;
+    color: #aaaaaa;
+}
+
+.callout a {
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+/* ------------------------------------- 		HEADER ------------------------------------- */
+table.head-wrap {
+    width: 100%;
+}
+
+.header.container table td.logo {
+    padding: 15px;
+}
+
+.header.container table td.label {
+    padding: 15px;
+    padding-left: 0;
+}
+
+/* ------------------------------------- 		BODY ------------------------------------- */
+table.body-wrap {
+    width: 100%;
+}
+
+.s-now_mail_p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    padding: 0 20px;
+}
+
+/* ------------------------------------- FOOTER------------------------------------- */
+table.footer-wrap {
+    width: 100%;
+    height: 50px;
+}
+
+table.footer-wrap2 {
+    width: 100%;
+}
+
+.coryright {
+    color: #777778;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------- 		TYPOGRAPHY ------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0;
+    text-transform: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    color: #333333;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 37px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 27px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.collapse {
+    margin: 0 !important;
+}
+
+p, ul {
+    margin-bottom: 2px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+p.lead {
+    font-size: 13px;
+}
+
+p.last {
+    margin-bottom: 0;
+}
+
+ul li {
+    margin-left: 5px;
+    list-style-position: inside;
+}
+
+/* --------------------------------------------------- 		RESPONSIVENESS		Nuke it from orbit. ------------------------------------------------------ */
+/* Set a max-width,and make it display as block so it will automatically stretch to that width,but will also shrink down on a phone or something */
+.container {
+    display: block !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    /* makes it centered */
+    clear: both !important;
+}
+
+/* This should also be a block element,so that it will fill 100% of the .container */
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+    width: 100%;
+}
+
+/* Odds and ends */
+.column {
+    width: 300px;
+    float: left;
+}
+
+.column tr td {
+    padding: 5px;
+}
+
+.column-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column table {
+    width: 100%;
+}
+
+.social .column {
+    width: 280px;
+    min-width: 279px;
+    float: left;
+}
+
+.column3 {
+    width: 300px;
+    float: left;
+}
+
+.column3 tr td {
+    padding: 1px;
+}
+
+.column3-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column3 table {
+    width: 100%;
+}
+
+.column2 {
+    width: 240px;
+    float: left;
+}
+
+.column2 tr td {
+    padding: 5px;
+}
+
+.column2-wrap {
+    padding: 0 !important;
+    margin: 0 auto;
+    max-width: 600px !important;
+}
+
+.column2 table {
+    width: 100%;
+}
+
+.social .column {
+    width: 280px;
+    min-width: 279px;
+    float: left;
+}
+
+.prod tr td {
+    padding: 5px;
+}
+
+.prod table {
+    width: 100%;
+}
+
+.prod .column {
+    width: 200px;
+    min-width: 200px;
+    float: left;
+}
+
+/* Be sure to place a .clear element after each set of columns,just to be safe */
+
+/* ------------------------------------------- 		PHONE		For clients that support media queries.		Nothing fancy. -------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    a[class="btn"] {
+        display: block !important;
+        background-image: none !important;
+        margin-right: 0 !important;
+    }
+
+    div[class="column"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    div[class="column2"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    div[class="column3"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    table[class="top"] {
+        width: auto !important;
+        float: none !important;
+    }
+
+    .prod {
+        width: 150px;
+        float: left;
+    }
+
+    table.social div[class="column"] {
+        width: auto !important;
+    }
+}
+
+.text_s_loop {
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+    border-top: 1px solid #DCDCDC;
+    margin-top: 25px;
+}
+
+.w100perc {
+    width: 100%;
+}
+
+.l_inline {
+    width: 100%;
+}
+
+.l_inline li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.ins_table tbody {
+    vertical-align: top;
+}
+
+.ins_table tr {
+    position: relative;
+}
+
+.p_l-and_r {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.img_td {
+    width: 25%;
+    text-align: left;
+}
+
+.img_td img {
+    width: 100%;
+    height: auto;
+}
+
+.timers_td {
+    width: 75%;
+    text-align: right;
+}
+
+.timers {
+    color: #ff4f2f;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.left_t {
+    color: #3d424b;
+    font-size: 14px;
+}
+
+.main_text {
+    color: #3d424b;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    height: 55px;
+    overflow: hidden;
+    display: block;
+}
+
+.p20 {
+    padding: 20px;
+    border-bottom: none;
+    height: 208px;
+}
+
+.yellow {
+    border: 1px solid #EBE4D6;
+    background: url("img/table_yellow.png") repeat-x;
+    border-bottom: none;
+}
+
+.blue {
+    border: 1px solid #D6E4EB;
+    background: url("img/table_blue.png") repeat-x;
+    border-bottom: none;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.see_all_akc {
+    color: #3d424b;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+
+.color_link_cl {
+    color: #3d424b;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.bgs_icon {
+    background: url("img/icon/web_icon_link.png") no-repeat;
+    content: '';
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+}
+
+.texttd {
+    width: 69%;
+}
+
+.prise_td {
+    width: 31%;
+    text-align: right;
+}
+
+.red_prise {
+    background: #FF4F2F;
+}
+
+.bant {
+    width: 34px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    margin-left: -15px;
+}
+
+.red_prise .bant {
+    background: url("img/red_bant.png") no-repeat;
+}
+
+.blue_prise {
+    background: #89C9EC;
+}
+
+.blue_prise .bant {
+    background: url("img/bl_bg.png") no-repeat;
+}
+
+.prise {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 95px;
+    height: 75px;
+    text-align: center;
+}
+
+.cash_perc {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.cashb_plus {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+</style>
+
+<table class="body-wrap">
+<tbody>
+<tr>
+<td>
+</td>
+<td class="container" bgcolor="#FFFFFF">
+<!------------------------------------ ---- HEADER -------------------------- ------------------------------------->
+<table bgcolor="#fff" class="w100perc">
+    <tbody>
+    <tr>
+        <td style="padding: 30px 0;">
+            <a href="#">
+                <img src="img/icon/logo_mail.png" width="165" height="35"
+                     style="margin:0 auto; padding:0; border:none; display:block;" border="0" class="img"
+                     alt="">
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!------------------------------------ ---- BODY -------------------------- ------------------------------------->
+<img src="img/mail_sh_page.jpg" style="width: 100%; height: auto" alt=""/>
+<!-- content -->
+<div class="content">
+    <table bgcolor="" class="social" width="100%">
+        <tbody>
+        <tr>
+            <td align="center">
+                <h1>Новые купоны для вас!</h1>
+
+                <p class="s-now_mail_p" style="text-align: left; font-size: 14px;">
+                    Вы сможете вывести заработанные средства любым удобным способом: на
+                    банковскую карту, электронный кошелек или просто на телефон. Чтобы вывести
+                    средства, необходимо накопить более 400 руб. на своем счету.
+                </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="content p_l-and_r table_class_yellow">
+    <div class="p20 yellow">
+        <table bgcolor="" class="" width="100%" style="">
+            <thead class="theads">
+            <tr>
+                <td class="img_td">
+                    <a href="#">
+                        <img src="img/ali_small_size.png"
+                             style="padding:0; border:none;" border="0" class="img"
+                             alt="">
+                    </a>
+                </td>
+                <td class="timers_td">
+                    <p class="left_t">Истекает через</p>
+
+                    <p class="timers" id="demo"></p>
+                </td>
+            </tr>
+            </thead>
+        </table>
+
+        <table bgcolor="" class="" width="100%" style="border-bottom: 1px solid #EBE4D6; padding-top: 10px"></table>
+
+        <table bgcolor="" class="" width="100%" style="padding-top: 10px">
+            <thead class="">
+            <tr>
+                <td class="texttd">
+                    <p>
+                        <a class="main_text" href="#">
+                            Дополнительная скидка 5%
+                            к Вашей Дисконтной Карте!
+                        </a>
+                    </p>
+
+                    <p class="see_all_akc">
+                        Посмотреть все акции AliExpress
+                    </p>
+
+                    <p>
+                        <a class="color_link_cl" href="#"><span class="bgs_icon"></span>aliexpress.com</a>
+                    </p>
+                </td>
+                <td class="prise_td">
+                    <span class="red_prise prise">
+                        <span class="bant"></span>
+                        <p class="cashb_plus">+ кэшбэк</p>
+                        <p class="cash_perc">5-9%</p>
+                    </span>
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="p20 blue mt20">
+        <table bgcolor="" class="" width="100%" style="">
+            <thead class="theads">
+            <tr>
+                <td class="img_td">
+                    <a href="#">
+                        <img src="img/icon_shop2.png"
+                             style="padding:0; border:none;" border="0" class="img"
+                             alt="">
+                    </a>
+                </td>
+                <td class="timers_td">
+                    <p class="left_t">Истекает через</p>
+
+                    <p class="timers" id="demo1"></p>
+                </td>
+            </tr>
+            </thead>
+        </table>
+
+        <table bgcolor="" class="" width="100%" style="border-bottom: 1px solid #D6E4EB; padding-top: 10px"></table>
+
+        <table bgcolor="" class="" width="100%" style="padding-top: 10px">
+            <thead class="">
+            <tr>
+                <td class="texttd">
+                    <p>
+                        <a class="main_text" href="#">
+                            Дополнительная скидка 5%
+                            к Вашей Дисконтной Карте!
+                        </a>
+                    </p>
+
+                    <p class="see_all_akc">
+                        Посмотреть все акции reebok.ru
+                    </p>
+
+                    <p>
+                        <a class="color_link_cl" href="#"><span class="bgs_icon"></span>reebok.ru</a>
+                    </p>
+                </td>
+                <td class="prise_td">
+                    <span class="blue_prise prise">
+                        <span class="bant"></span>
+                        <p class="cashb_plus">+ кэшбэк</p>
+                        <p class="cash_perc">3%</p>
+                    </span>
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="p20 blue mt20">
+        <table bgcolor="" class="" width="100%" style="">
+            <thead class="theads">
+            <tr>
+                <td class="img_td">
+                    <a href="#">
+                        <img src="img/httpgoogle.com.png"
+                             style="padding:0; border:none;" border="0" class="img"
+                             alt="">
+                    </a>
+                </td>
+                <td class="timers_td">
+                    <p class="left_t">Истекает через</p>
+
+                    <p class="timers" id="demo2"></p>
+                </td>
+            </tr>
+            </thead>
+        </table>
+
+        <table bgcolor="" class="" width="100%" style="border-bottom: 1px solid #D6E4EB; padding-top: 10px"></table>
+
+        <table bgcolor="" class="" width="100%" style="padding-top: 10px">
+            <thead class="">
+            <tr>
+                <td class="texttd">
+                    <p>
+                        <a class="main_text" href="#">
+                            Скидка 30% на любой заказ
+                            нового клиента!
+                        </a>
+                    </p>
+
+                    <p class="see_all_akc">
+                        Посмотреть все акции Связной
+                    </p>
+
+                    <p>
+                        <a class="color_link_cl" href="#"><span class="bgs_icon"></span>svyaznoy.ru</a>
+                    </p>
+                </td>
+                <td class="prise_td">
+                    <span class="blue_prise prise">
+                        <span class="bant"></span>
+                        <p class="cashb_plus">+ кэшбэк</p>
+                        <p class="cash_perc">5%</p>
+                    </span>
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<table bgcolor="#fff" class="social" width="100%">
+    <tbody>
+    <tr>
+        <td align="center">
+            <p class="text_s_loop">
+                Не забудьте присоединиться к нам!
+            </p>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <ul class="l_inline">
+                <li>
+                    <a class="fb_soc" href="#"><img src="img/icon/fb.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="vk_soc" href="#"><img src="img/icon/vk.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="ok_soc" href="#"><img src="img/icon/ok.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="tw_soc" href="#"><img src="img/icon/tw.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="go_soc" href="#"><img src="img/icon/go.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="go_soc" href="#"><img src="img/icon/instag.png" alt=""></a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="social" width="100%" style="border: none; border-collapse: collapse">
+    <tbody>
+    <tr>
+        <td bgcolor="#89C9EC" style="width: 30%; padding: 3px 0; border: none"></td>
+        <td bgcolor="#202E5C"></td>
+        <td bgcolor="#E8242E"></td>
+    </tr>
+    </tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- FOOTER -->
+<table class="footer-wrap">
+    <tbody>
+    <tr>
+        <td>
+        </td>
+        <td class="container">
+            <!-- content -->
+            <div class="content">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td align="center">
+                            <p class="coryright">
+                                © 2017 Cashibe — Надежный кэшбэк сервис
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /content -->
+        </td>
+        <td>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- /FOOTER -->
+
+<!-- Display the countdown timer in an element -->
+
+<script>
+    var countDownDate = new Date("May 28, 2017 15:00:00").getTime();
+    var countDownDate1 = new Date("May 25, 2017 12:00:00").getTime();
+    var countDownDate2 = new Date("May 30, 2017 11:00:00").getTime();
+
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+        var distance1 = countDownDate1 - now;
+        var distance2 = countDownDate2 - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+        var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+
+        var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+        var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+
+        // id="demo"
+        document.getElementById("demo").innerHTML = days + "д. " + hours + "ч. "
+                + minutes + "м.";
+        // id="demo1"
+        document.getElementById("demo1").innerHTML = days1 + "д. " + hours1 + "ч. "
+                + minutes1 + "м.";
+        // id="demo2"
+        document.getElementById("demo2").innerHTML = days2 + "д. " + hours2 + "ч. "
+                + minutes2 + "м.";
+    }, 500);
+</script>
+
+<div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings"></a><span
+        class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span
+        class="tooltipHeight" id="winHeight">1080</span><br><span class="tooltipTitle">Viewport size: </span><span
+        class="tooltipWidth" id="vpWidth">424</span> x <span class="tooltipHeight" id="vpHeight">1014</span></div>
+</body>
+</html>

@@ -94,7 +94,20 @@ table.head-wrap {
     padding: 15px;
     padding-left: 0;
 }
+.bg_styles_avatar{
+    width: 50px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 100px;
+    overflow: hidden;
+    background: url(img/icon/none_photos.png) no-repeat center center;
+    background-size: cover;
 
+}
+.bg_styles_avatar img{
+    width: 100%;
+    height: auto;
+}
 /* ------------------------------------- 		BODY ------------------------------------- */
 table.body-wrap {
     width: 100%;
@@ -105,6 +118,25 @@ table.body-wrap {
     font-size: 16px;
     color: #333333;
     padding: 0 20px;
+    margin-bottom: 31px;
+}
+.s-now_mail_p_li{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    padding-left: 40px;
+    text-align: left;
+    margin-bottom: 7px;
+}
+.s-now_mail_p_li span{
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    left: 28px;
+    top: 11px;
+    background: #000;
 }
 
 /* ------------------------------------- FOOTER------------------------------------- */
@@ -120,7 +152,8 @@ table.footer-wrap2 {
 .coryright {
     color: #777778;
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
 }
 
 /* ------------------------------------- 		TYPOGRAPHY ------------------------------------- */
@@ -355,6 +388,8 @@ ul li {
     font-size: 16px;
     text-align: center;
     padding: 30px 20px 20px 20px;
+    border-top: 1px solid #DCDCDC;
+    margin-top: 25px;
 }
 
 .w100perc {
@@ -372,6 +407,27 @@ ul li {
     padding: 5px 0;
     background: url(img/icon/bg_blue_act.png);
 }
+@media only screen and (max-width: 480px) {
+    .tr_head{
+        display: block;
+        text-align: center;
+    }
+    .td_head{
+        padding: 30px 0 30px 25px;
+        text-align: left;
+        display: block;
+        /* width: 100%; */
+        padding-left: 0;
+    }
+    .td_head img{
+        margin:  0 auto;
+    }
+    .td_bott{
+        display: block;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+}
 </style>
 
 <table class="body-wrap">
@@ -383,32 +439,56 @@ ul li {
             <!------------------------------------ ---- HEADER -------------------------- ------------------------------------->
             <table bgcolor="#fff" class="w100perc">
                 <tbody>
-                    <tr>
-                        <td style="padding: 30px 0;">
+                    <tr class="tr_head">
+                        <td class="td_head" style="padding: 30px 0 30px 25px; text-align: left">
                             <a href="#">
                                 <img src="img/icon/logo_mail.png" width="165" height="35"
-                                     style="margin:0 auto; padding:0; border:none; display:block;" border="0" class="img"
+                                     style="padding:0; border:none; display:block;" border="0" class="img"
                                      alt="">
                             </a>
+                        </td>
+
+                        <td class="td_bott">
+                            <table>
+                                <tr>
+                                    <td style="text-align: right; padding-right: 12px;">
+                                        <p style="color: #3d424b; font-size: 14px;">
+                                            Константин Константиновский
+                                        </p>
+                                        <a style="color: #fff; font-size: 12px; background-color:#FF4F2F; text-decoration: none; padding: 3px 10px;text-align: center; display: inline-block; border-radius: 100px;" href="#">Войти в личный кабинет</a>
+                                    </td>
+                                    <td style="text-align: right; width: 15%">
+                                        <a href="#">
+                                            <span class="bg_styles_avatar">
+                                                <img src="img/ava_users.png" alt=""/>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </tbody>
             </table>
 
             <!------------------------------------ ---- BODY -------------------------- ------------------------------------->
-            <img src="img/mail_main_page.jpg" style="width: 100%; height: auto" alt=""/>
+            <a href="#"><img src="img/mail_pers_page.jpg" style="width: 100%; height: auto" alt=""/></a>
             <!-- content -->
             <div class="content">
                 <table bgcolor="" class="social" width="100%">
                     <tbody>
                     <tr>
                         <td align="center">
-                            <h1>Мы рады, что теперь вы с нами!</h1>
+                            <h1>Новинка от Samsung в Связном!</h1>
 
                             <p class="s-now_mail_p">
-                                Теперь Вы сможете получать кэшбэк за каждую покупку,
-                                сделанную в любом из наших магазинов-партнеров.
+                                При покупке Samsung Galaxy A5 портативная зарядка в подарок и
+                                двойной кэшбэк до 10% на все. До 30 апреля.
                             </p>
+
+                            <a class="btn" href="#" target="_blank"
+                               style="font-family: Arial, sans-serif; font-size: 16px; color:#ffffff; display: inline-block; text-decoration: none; line-height:47px; width:230px; background-color: #FF4F2F;border-radius: 100px;margin-bottom: 20px;">Подтвердить
+                                Email</a>
 
                         </td>
                     </tr>
@@ -419,46 +499,30 @@ ul li {
                 </table>
             </div>
 
-            <table bgcolor="#E6F6FF" class="social" width="100%">
-                <tbody>
-                <tr>
-                    <td align="center">
-                        <p class="text_s_loop">
-                            Подтвердите почту, чтобы мы продолжили вас
-                            знакомить со всеми преимуществами сервиса
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <table width="280" height="47" cellpadding="0" cellspacing="0" border="0" bgcolor="#FF4F2F"
-                               style="border-radius:10em;">
-                            <tr>
-                                <td align="center" valign="middle" height="47"
-                                    style="font-family: Arial, sans-serif; font-size:16px; font-weight:bold;">
-                                    <a class="btn" href="#" target="_blank"
-                                       style="font-family: Arial, sans-serif; font-size: 16px; color:#ffffff; display: inline-block; text-decoration: none; line-height:47px; width:280px; font-weight:bold;">Подтвердить
-                                        Email</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
 
-            <table class="social" width="100%" style="border-collapse: collapse;">
-                <tbody>
+
+            <a href="#"><img src="img/mail_pers_page2.jpg" style="width: 100%; height: auto" alt=""/></a>
+            <!-- content -->
+            <div class="content">
+                <table bgcolor="" class="social" width="100%" style="">
+                    <tbody>
                     <tr>
-                        <td width="100%">
-                            <p class="table_td_zabor"></p>
+                        <td align="center">
+                            <h1>Выгодный шопинг в М.Видео</h1>
+
+                            <p class="s-now_mail_p_li"> <span></span> скидки до 25% по 24 апреля</p>
+                            <p class="s-now_mail_p_li"> <span></span> 10% от покупки на бонусную карту до 27 апреля</p>
+                            <p class="s-now_mail_p_li"> <span></span> кэшбэк 2%</p>
+
+                            <a class="btn" href="#" target="_blank"
+                               style="font-family: Arial, sans-serif; margin-top: 10px; font-size: 16px; color:#ffffff; display: inline-block; text-decoration: none; line-height:47px; width:230px; background-color: #FF4F2F;border-radius: 100px;margin-bottom: 20px;">Перейти в М.Видео</a>
+
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
 
             <table bgcolor="#fff" class="social" width="100%">
                 <tbody>
@@ -526,6 +590,8 @@ ul li {
                     <tbody>
                     <tr>
                         <td align="center">
+                            <p class="you_t" style="color: #777778; font-size: 13px;margin-top: 10px;">Вы получили это письмо, потому что подписаны на рассылку кэшбэк-сервиса cashbe.ru </p>
+                            <p class="p_otp" style="margin-top: 5px;"><a href="#" style="color: #777778; font-size: 13px;">Отписаться от Рассылки</a></p>
                             <p class="coryright">
                                 © 2017 Cashibe — Надежный кэшбэк сервис
                             </p>
