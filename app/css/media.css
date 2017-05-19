@@ -26,7 +26,7 @@
         padding-left: 13%;
     }
     .show_me_all_shops .list_of_shop {
-        max-height: 640px;
+        max-height: 645px;
     }
     .catalog_block .list_of_shop {
         max-height: none;
@@ -251,7 +251,7 @@
         margin-bottom: 30px;
     }
     .catalog_block .list_of_shop {
-        padding: 0;
+        padding: 0 0 3px 0;
         width: 102%;
         margin-left: -1%;
     }

@@ -538,7 +538,7 @@ a {
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
-    padding: 0 20px; }
+    padding: 0 20px 3px 0; }
     .show_me_all_shops .list_of_shop .bxslider_shops {
       width: 100%; }
       .show_me_all_shops .list_of_shop .bxslider_shops li {
@@ -2510,7 +2510,7 @@ ul.nav_list {
 .catalog_block {
   padding-top: 0; }
   .catalog_block .list_of_shop {
-    padding: 0;
+    padding: 0 0 3px 0;
     width: 101.5%;
     margin-left: -0.8%; }
 
@@ -5529,3 +5529,23 @@ ul.nav_list {
 .bg_block_top_autor .slider_wrapper_first_screen .bxslider_first_text .container .one-slide .cont .subm_btns {
   position: relative;
   z-index: 1; }
+
+.show_on_hover a {
+  color: #ff4f2f;
+  font-size: 16px;
+  font-family: 'officinaserifbookcbook';
+  display: none; }
+
+.list_of_shop .ul_wrapps li:hover .hidden_on_hover {
+  display: none; }
+
+.list_of_shop .ul_wrapps li:hover .show_on_hover a {
+  display: block; }
+
+.span_link {
+  width: 12px;
+  height: 12px;
+  background: url(../img/icon/link.svg) no-repeat center center;
+  display: inline-block;
+  content: '';
+  margin-right: 5px; }

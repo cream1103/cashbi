@@ -540,7 +540,7 @@ $wmax_menu: 320px
     width: 100%
     overflow: hidden
     margin-bottom: 30px
-    padding: 0 20px
+    padding: 0 20px 3px 0
     .bxslider_shops
       width: 100%
       li
@@ -2489,7 +2489,7 @@ ul.nav_list
 .catalog_block
   padding-top: 0
   .list_of_shop
-    padding: 0
+    padding: 0 0 3px 0
     width: 101.5%
     margin-left: -0.8%
 .ul_wrapps
@@ -5328,3 +5328,27 @@ $animation-speed: 0.3s
               position: relative
               z-index: 1
 //правки слайдера
+
+
+//доп по каталогу
+.show_on_hover
+  a
+    color: #ff4f2f
+    font-size: 16px
+    font-family: 'officinaserifbookcbook'
+    display: none
+
+.list_of_shop .ul_wrapps li:hover
+  .hidden_on_hover
+    display: none
+  .show_on_hover
+    a
+      display: block
+.span_link
+  width: 12px
+  height: 12px
+  background: url(../img/icon/link.svg) no-repeat center center
+  display: inline-block
+  content: ''
+  margin-right: 5px
+//доп по каталогу
