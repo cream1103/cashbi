@@ -38,6 +38,23 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
+    .one_of_garanty{
+        display: flex;
+        line-height: 20px;
+    }
+    .one_of_garanty span{
+        margin-right: 9px;
+    }
+    .flex_wrapper .one_of_infoblock{
+        width: 195px;
+        margin-bottom: 0;
+    }
+    .flex_wrapper{
+        flex-direction: row;
+    }
+    .pb_71{
+        padding-bottom: 0;
+    }
     #vk_groups{
         width: 100% !important;
     }
@@ -82,6 +99,9 @@
         padding: 17px 32px;
     }
     .akc_wrapper .h2_z{
+        font-size: 30px;
+    }
+    .p2_z{
         font-size: 30px;
     }
     .padding_fore_all_cont_block{
@@ -315,6 +335,23 @@
 /*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .flex_block_fore_btns{
+      display: block;
+    }
+    .time_to_end{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .flex_block_fore_btns .wrapp_btns{
+        margin-right: 0;
+    }
+    .p_textcenter{
+        text-align: center;
+    }
+    .flex_child{
+        width: 50%;
+    }
     .mt20_small{
         margin-top: 20px;
     }
@@ -387,6 +424,9 @@
         margin-top: 20px;
     }
     .akc_wrapper .h2_z{
+        font-size: 30px;
+    }
+    .p2_z{
         font-size: 30px;
     }
     .padding_fore_all_cont_block{
@@ -778,6 +818,21 @@
 /*=================================================================  599px  ==========*/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 599px) {
+    .show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide{
+        transform: translateX(0px)
+    }
+    .show_me_all_shops .slider_B .bx-controls-direction{
+        display: none;
+    }
+    .show_me_all_shops .slider_B{
+        padding: 0;
+    }
+    .show_me_all_shops .slider_B .list_of_shop .bx-pager{
+        display: block;
+    }
+    .show_me_all_shops .slider_B .list_of_shop .bx-wrapper{
+        margin-bottom: 60px;
+    }
     .fancybox-overlay .href_forgot{
         color: #ff4f2f !important;
     }
@@ -911,6 +966,11 @@
     .akc_wrapper .h2_z{
         font-size: 24px;
     }
+    .p2_z{
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
     .rewiev_wrapp_block .one_rewiew_blocks .img_blocks_icon{
         margin-right: 15px;
     }
@@ -1043,6 +1103,9 @@
     }
     .catalog_block .list_of_shop .ul_wrapps > :nth-child(odd){
         margin-right: 5%;
+    }
+    .catalog_block .list_of_shop .slider1 > :nth-child(odd){
+        margin-right: 0%;
     }
     .pagination ul li {
         float: left;
@@ -1800,7 +1863,29 @@
         width: 64px;
         height: 40px;
     }
-
+    .flex_ul li a{
+        width: 43px;
+        height: 43px;
+    }
+    .yellow_warning_block{
+        display: block;
+    }
+    .warning_texts{
+        margin-left: 0;
+    }
+    .yellow_warning_block .warning_texts{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .warning_image{
+        text-align: center;
+    }
+    .time_to_end{
+        display: block;
+    }
+    .flex_child{
+        width: 100%;
+    }
 }
 /*=================================================================  599px  ==========*/
 /* Extra Small Devices, Phones */
@@ -1900,6 +1985,8 @@
     }
 }
 @media all and (max-width: 979px) and (min-width: 600px) {
+
+
     .img_and_links img {
         margin-top: 20px;
         margin-bottom: 23px;

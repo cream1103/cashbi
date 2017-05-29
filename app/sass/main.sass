@@ -631,9 +631,6 @@ $wmax_menu: 320px
             text-align: center
             margin-top: 10px
             display: block
-
-          &:hover
-            border: 1px solid transparent
         &:hover
           padding: 0
   .bx-wrapper .bx-pager.bx-default-pager a
@@ -2600,8 +2597,7 @@ ul.nav_list
         text-align: center
         margin-top: 10px
         display: block
-      &:hover
-        border: 1px solid transparent
+
     &:hover
       padding: 0
 .show_me_all_shops .list_of_shop .ul_wrapps li
@@ -5332,18 +5328,42 @@ $animation-speed: 0.3s
 
 //доп по каталогу
 .show_on_hover
+  position: relative
+  &:after
+    position: absolute
+    right: 0
+    top: 0
+    width: 34px
+    height: 18px
+    background: url(../img/bg_user_name.png) no-repeat
+    content: ''
+    background-position: 7% 0%
+.clacification
+  overflow: hidden
+  width: 85%
+  margin: 0 auto
+.show_on_hover
   a
     color: #ff4f2f
     font-size: 16px
     font-family: 'officinaserifbookcbook'
-    display: none
+    white-space: nowrap
+    position: relative
+  &:hover
+    text-decoration: underline
 
-.list_of_shop .ul_wrapps li:hover
+
+.show_me_all_shops .list_of_shop .ul_wrapps li:hover
+  box-shadow: 0 0 6px rgba(0,0,0,.2)
+  .top_abs_hide
+    transform: translateX(0)
+  .heart_inp + .heart
+    opacity: 1
   .hidden_on_hover
-    display: none
+    display: none !important
   .show_on_hover
-    a
-      display: block
+    display: block !important
+
 .span_link
   width: 12px
   height: 12px
@@ -5351,4 +5371,266 @@ $animation-speed: 0.3s
   display: inline-block
   content: ''
   margin-right: 5px
+
+.show_me_all_shops .list_of_shop .ul_wrapps li
+  .block_show
+    display: block !important
+  .block_hide
+    display: none !important
 //доп по каталогу
+
+
+
+
+
+//доп по карта магазина
+.activate_cashb
+  margin-bottom: 10px
+.orange_un_aut
+  padding: 17px 87px
+  text-align: center
+.flex_wrapper
+  display: flex
+  flex-direction: column
+  align-content: center
+  justify-content: space-between
+  .one_of_infoblock
+    text-align: center
+    margin-bottom: 33px
+    .img_relative_wrapper
+      position: relative
+      .span_border_block
+        position: absolute
+        right: 22px
+        top: -3px
+        color: #ffffff
+        font-size: 20px
+        font-family: 'officinaserifboldcbold'
+        background: #92CBE9
+        border: 6px solid #fff
+        width: 44px
+        height: 44px
+        display: inline-block
+        border-radius: 10em
+        line-height: 34px
+      img
+        border-radius: 10em
+    .reg_text
+      color: #27282f
+      font-size: 18px
+      font-family: 'officinaserifboldcbold'
+      text-align: center
+      margin-top: 9px
+
+.flex_block_fore_btns
+  display: flex
+  .wrapp_btns
+    margin-right: 25px
+    .time_to_end
+      padding: 13px 20px 12px 20px
+      background: #EAEFF5
+      border-radius: 4px
+      .double_cash
+        color: #ff502f
+        font-size: 18px
+        font-family: 'officinaserifbookcbook'
+        position: relative
+        padding-left: 24px
+        .icon_g
+          position: absolute
+          left: 0
+          top: 5px
+          width: 13px
+          height: 25px
+          display: inline-block
+          background: url("../img/icon/icon_gr.png") no-repeat center center
+        span
+          color: #ff502f
+          font-size: 24px
+          font-family: 'officinaserifboldcbold'
+          display: inline-block
+          margin-left: 7px
+      .end_cash_p
+        color: #333333
+        font-size: 13px
+        font-family: 'OpenSansRegular'
+        padding-left: 24px
+      .timer_date
+        font-family: 'OpenSansRegular'
+        color: #ff5030
+        font-size: 13px
+        font-weight: bold
+        padding-left: 24px
+        margin-top: 4px
+
+.yellow_warning_block
+  background: #FFF6D8
+  padding: 20px 40px
+  display: flex
+  .warning_image
+    img
+      margin-left: 4px
+    p
+      color: #ff4f2f
+      font-size: 14px
+      text-transform: uppercase
+      font-family: 'officinaserifboldcbold'
+  .warning_texts
+    font-family: 'OpenSansRegular'
+    color: #333333
+    font-size: 14px
+    margin-left: 34px
+    align-items: center
+.pb_71
+  padding-bottom: 71px
+.share_text
+  color: #3d424b
+  font-size: 18px
+  font-family: 'officinaserifbookcbook'
+  margin-bottom: 21px
+.social_fix_style
+  display: inline-block
+  margin-right: 5px
+  a
+    padding: 6px 12px 5px 35px
+    border: 1px solid #DCDCDC
+    border-radius: 10em
+    display: inline-block
+    height: 31px
+    color: #3d424b
+    position: relative
+    font-family: 'OpenSansRegular'
+    font-size: 13px
+    &:hover
+      color: #fff
+      border: 1px solid transparent
+    span
+      display: inline-block
+      width: 29px
+      height: 29px
+      position: absolute
+      left: 0
+      top: 0
+      border-radius: 10em
+.face_book_soc
+  a
+    &:hover
+      background: #375794
+    span
+      background: url("../img/icon/r_fb.svg") no-repeat center center
+      background-size: cover
+.vkontakte_soc
+  a
+    &:hover
+      background: #507299
+    span
+      background: url("../img/icon/r_vk.svg") no-repeat center center
+      background-size: cover
+.odnoklasniki_soc
+  a
+    &:hover
+      background: #E67817
+    span
+      background: url("../img/icon/r_ok.svg") no-repeat center center
+      background-size: cover
+.twitter_soc
+  a
+    &:hover
+      background: #00C0FF
+    span
+      background: url("../img/icon/r_tw.svg") no-repeat center center
+      background-size: cover
+.flex_ul
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  li
+    margin-right: 6px
+    margin-left: 6px
+    margin-bottom: 8px
+    a
+      width: 49px
+      height: 49px
+      display: inline-block
+.vk_mob
+  background: url("../img/icon/vk2.svg") no-repeat
+  background-size: cover
+.ok_mob
+  background: url("../img/icon/ok2.svg") no-repeat
+  background-size: cover
+.tw_mob
+  background: url("../img/icon/twit2.svg") no-repeat
+  background-size: cover
+.fb_mob
+  background: url("../img/icon/fbm.svg") no-repeat
+  background-size: cover
+.wa_mob
+  background: url("../img/icon/watsapp.svg") no-repeat
+  background-size: cover
+.vi_mob
+  background: url("../img/icon/viber.svg") no-repeat
+  background-size: cover
+.te_mob
+  background: url("../img/icon/tele.svg") no-repeat
+  background-size: cover
+.io_mob
+  background: url("../img/icon/iosm.svg") no-repeat
+  background-size: cover
+
+.p2_z
+  font-size: 36px
+  font-family: 'officinaserifboldcbold',sans-serif
+  margin-top: 50px
+  margin-bottom: 25px
+
+.show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide
+  transform: translateX(10px)
+
+.show_me_all_shops
+  .slider_B
+    padding: 0 5px
+    .list_of_shop
+      overflow: visible
+      margin-bottom: 10px
+      .bx-wrapper
+        margin-bottom: 0
+      .bx-pager
+        display: none
+    .bx-controls-direction
+      display: block
+    .bx-prev
+      top: -45px
+      left: auto
+      right: 65px
+      width: 36px
+      height: 36px
+      background: url("../img/icon/arr_acon_sprite.png") -72px 0
+      &:hover
+        background: url("../img/icon/arr_acon_sprite.png") 0 0
+    .bx-next
+      top: -45px
+      right: 20px
+      width: 36px
+      height: 36px
+      background: url("../img/icon/arr_acon_sprite.png") -108px 0
+      &:hover
+        background: url("../img/icon/arr_acon_sprite.png") -36px 0
+
+.we_garanty
+  color: #27282f
+  font-size: 18px
+  font-family: 'officinaserifboldcbold',sans-serif
+  margin-bottom: 20px
+.one_of_garanty
+  color: #333333
+  font-size: 12px
+  font-family: 'OpenSansRegular'
+  margin-bottom: 15px
+  span
+    color: #ff4f2f
+    font-size: 18px
+    font-family: 'officinaserifboldcbold',sans-serif
+    display: inline-block
+//доп по карта магазина
+
+

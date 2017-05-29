@@ -27,12 +27,34 @@ function faqSlide() {
 }
 //определение обрезания текста в FAQ
 
+function blockHeight() {
+    if($(window).width() <= 1399){
+        $(".column").css({'height':'auto'})
+    }
+    else{
+        setTimeout(function() {
+            var mainDivs = $(".column");
+            var maxHeight = 0;
+            for (var i = 0; i < mainDivs.length; ++i) {
+                if (maxHeight < $(mainDivs[i]).height()) {
+                    maxHeight = $(mainDivs[i]).height();
+                }
+            }
+            for (var i = 0; i < mainDivs.length; ++i) {
+                $(mainDivs[i]).height(maxHeight);
+            }
+        }, 100);
+    }
+}
+
 
 $(window).on('load', function () {
     faqSlide();
+    blockHeight();
 });
 $(window).on('resize', function () {
     faqSlide();
+    blockHeight();
 });
 
 $(document).ready(function () {
@@ -41,8 +63,6 @@ $(document).ready(function () {
     function showValidationError(selector,message){
         console.log('showValidationError');
     }
-
-
 
     $('.named_right').mouseover(function(){
         $('.named_block').addClass('shadow_none');
@@ -327,10 +347,15 @@ $(document).ready(function () {
         var check = $(this).parents('li').find('.heart_inp');
 
         if (check.is(':checked')) {
-            $('.favirites_sp').removeClass('pulse')
+            $('.favirites_sp').removeClass('pulse');
+            $(this).parents('li').find('.show_on_hover').removeClass('block_show').addClass('block_hide');
+            $(this).parents('li').find('.hidden_on_hover').removeClass('block_hide').addClass('block_show');
+
         }
         else {
             $('.favirites_sp').addClass('pulse');
+            $(this).parents('li').find('.show_on_hover').removeClass('block_hide').addClass('block_show');
+            $(this).parents('li').find('.hidden_on_hover').removeClass('block_show').addClass('block_hide');
             setTimeout(function () {
                 $('.favirites_sp').removeClass('pulse');
             }, 1000);
@@ -993,6 +1018,44 @@ $(document).ready(function () {
 
     //вызов слайдера дисконта
 
+    //вызов слайдера похожие магазины
+
+    var slider = $('.slider1').bxSlider({});
+    function sliderFunction3() {
+        if ($('*').is('.same_shops')) {
+            if ($(window).width() > 1399) {
+                    slider.reloadSlider({
+                        slideWidth: 5000,
+                        maxSlides: 5,
+                        minSlides: 5
+                    });
+                }
+                else if ($(window).width() < 1399 && $(window).width() >= 1200) {
+                    slider.reloadSlider({
+                        slideWidth: 5000,
+                        maxSlides: 4,
+                        minSlides: 4
+                    });
+                }
+                else if ($(window).width() < 1199 && $(window).width() >= 600) {
+                    slider.reloadSlider({
+                        slideWidth: 5000,
+                        maxSlides: 3,
+                        minSlides: 3
+                    });
+                }
+                else if ($(window).width() < 599) {
+                    slider.reloadSlider({
+                        slideWidth: 5000,
+                        maxSlides: 2,
+                        minSlides: 2,
+                        slideMargin: 10
+                    });
+                }
+        }
+    }
+    //вызов слайдера похожие магазины
+
     var loadTimeout = null;
     $(window).on('load', function () {
         if (!loadTimeout) {
@@ -1002,6 +1065,7 @@ $(document).ready(function () {
                 sliderFunction();
                 sliderFunction1();
                 sliderFunction2();
+                sliderFunction3();
             }, 300);
         }
     });
@@ -1014,6 +1078,7 @@ $(document).ready(function () {
                 sliderFunction();
                 sliderFunction1();
                 sliderFunction2();
+                sliderFunction3();
             }, 300);
         }
     });
