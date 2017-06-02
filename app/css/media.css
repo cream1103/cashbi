@@ -38,22 +38,8 @@
 /*=================================================================  1399px  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1399px){
-    .one_of_garanty{
-        display: flex;
-        line-height: 20px;
-    }
-    .one_of_garanty span{
-        margin-right: 9px;
-    }
-    .flex_wrapper .one_of_infoblock{
-        width: 195px;
-        margin-bottom: 0;
-    }
-    .flex_wrapper{
-        flex-direction: row;
-    }
     .pb_71{
-        padding-bottom: 0;
+        padding-bottom: 80px;
     }
     #vk_groups{
         width: 100% !important;
@@ -303,7 +289,19 @@
 }
 /*=================================================================  1399px  ==========*/
 
+/*=================================================================  1250px  ==========*/
+@media only screen and (max-width : 1250px) {
+    .w100OnLess1200{
+        width: 100% !important;
+    }
+    .heddenOnLess1200{
+        display: none !important;
+    }
+}
+/*=================================================================  1250px  ==========*/
 
+
+/*=================================================================  1200px  ==========*/
 @media only screen and (max-width : 1200px) {
     .gold_wrapp_block {
         margin-right: -6px;
@@ -311,7 +309,15 @@
     .cooper_wrapp_block {
         margin-left: -6px;
     }
+    .w100OnLess1200{
+        width: 100% !important;
+    }
+    .heddenOnLess1200{
+        display: none !important;
+    }
 }
+/*=================================================================  1200px  ==========*/
+
 
 /*=================================================================  1100px  ==========*/
 @media only screen and (max-width : 1100px) {
@@ -335,6 +341,23 @@
 /*=================================================================  979px  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 979px) {
+    .one_of_garanty{
+        display: flex;
+        line-height: 20px;
+    }
+    .one_of_garanty span{
+        margin-right: 9px;
+    }
+    .flex_wrapper .one_of_infoblock{
+        width: 195px;
+        margin-bottom: 0;
+    }
+    .flex_wrapper{
+        flex-direction: row;
+    }
+    .pb_71{
+        padding-bottom: 0;
+    }
     .flex_block_fore_btns{
       display: block;
     }

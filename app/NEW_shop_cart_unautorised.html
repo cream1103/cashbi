@@ -47,7 +47,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="shares_cart same_shops ">
+<body class="shares_cart reviews_block same_shops "> <!-- от этих классов зависит работа слайдеров. их можно пернести на любой тег. но они должны быть на странице -->
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2FTK7X" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -187,7 +187,7 @@
                     <!-- активировать кэшбек -->
 
                     <div class="row">
-                       <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                       <div class="col-lg-9 col-md-8 w100OnLess1200 col-sm-12 col-xs-12">
                            <div class="column border_blocks pb_71">
 
                                <div class="flex_block_fore_btns padding_fore_all_cont_block">
@@ -196,30 +196,6 @@
                                            Авторизируйтесь <br class="hidden-md ">для
                                            <br class="hidden-lg hidden-sm hidden-xs">активации кэшбэка
                                        </a>
-                                   </div>
-                                   <div class="wrapp_btns">
-                                        <div class="time_to_end">
-                                            <div class="flex_child">
-                                                <p class="double_cash"><span class="icon_g"></span>Двойной кэшбэк<span>10%</span></p>
-                                            </div>
-                                            <div class="flex_child">
-                                                <p class="end_cash_p">Заканчивается через:</p>
-                                                <p class="timer_date" id="demo"></p>
-                                            </div>
-                                        </div>
-                                       <!-- СЧЕТЧИК -->
-                                       <script>
-                                           var countDownDate = new Date("June 21, 2017 04:00:00").getTime(); //ДАТА
-                                           var x = setInterval(function () {
-                                               var now = new Date().getTime();
-                                               var distance = countDownDate - now;
-                                               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                                               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                                               document.getElementById("demo").innerHTML = days + "дней. " + hours + "часов. " + minutes + "мин.";
-                                           }, 500);
-                                       </script>
-                                       <!-- СЧЕТЧИК -->
                                    </div>
                                </div>
 
@@ -305,12 +281,12 @@
                            </div>
                        </div>
 
-                       <div class="col-lg-3 col-md-12 col-sm-12 hidden-xs">
-                           <div class="column flex_wrapper border_blocks padding_fore_all_cont_block">
+                       <div class="col-lg-3 col-md-4 heddenOnLess1200 hidden-sm hidden-xs">
+                           <div class="column flex_wrapper border_blocks padding_fore_all_cont_block repadding">
                                 <div class="one_of_infoblock">
                                     <div class="img_relative_wrapper">
                                         <span class="span_border_block">1</span>
-                                        <a href="#"><img src="img/shop_image_r1.png" alt=""/></a>
+                                        <img src="img/shop_image_r1.png" alt=""/>
                                     </div>
                                     <p class="reg_text">Регистрируйтесь на нашем сервисе</p>
                                 </div>
@@ -318,7 +294,7 @@
                                <div class="one_of_infoblock">
                                    <div class="img_relative_wrapper">
                                        <span class="span_border_block">2</span>
-                                       <a href="#"><img src="img/shop_image_r2.png" alt=""/></a>
+                                       <img src="img/shop_image_r2.png" alt=""/>
                                    </div>
                                    <p class="reg_text">Переходите в магазин и совершаете покупку</p>
                                </div>
@@ -326,7 +302,7 @@
                                <div class="one_of_infoblock mb0">
                                    <div class="img_relative_wrapper">
                                        <span class="span_border_block">3</span>
-                                       <a href="#"><img src="img/shop_image_r3.png" alt=""/></a>
+                                       <img src="img/shop_image_r3.png" alt=""/>
                                    </div>
                                    <p class="reg_text">Получаете часть денег обратно</p>
                                </div>
@@ -335,6 +311,243 @@
 
                     </div>
                     <!-- активировать кэшбек -->
+
+                    <!-- похожие магазины -->
+                    <p class="p2_z">Похожие магазины</p>
+
+                    <div class="show_me_all_shops catalog_block">
+                    <div class="slider_B">
+                    <div class="list_of_shop">
+                    <ul class="ul_wrapps slider1">
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_1">
+                        <label class="heart" for="heart_1" title="подсказка"></label>
+                        <a href="#">
+                                            <span class="inside_s">
+                                                <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
+                                                    <img src="img/icon_shop2.png" alt=""/>
+                                                    <span class="text_with_epty_item">Медиа Маркет</span>
+                                                </span>
+
+                                                <span class="present_class">
+                                                    <span class="inside_price _sky">
+                                                        <span class="tc">300 руб.</span>
+                                                        <span class="cashback">кэшбэк</span>
+                                                    </span>
+                                                </span>
+                                                <span class="clacification">
+                                                    Спортивные товары
+                                                </span>
+                                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide"></span>
+                        <input type="checkbox" class="heart_inp" id="heart_2">
+                        <label class="heart" for="heart_2" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop3.png" alt=""/>
+                                        </span>
+                                        <span class="present_class">
+                                            <span class="inside_price _orange">
+                                                <span class="tc down _orange"><i>5.5%</i>8%</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            <object class="show_on_hover block_hide"><a href="####"><span
+                                                    class="span_link"></span>Booking.com</a></object>
+                                            <span class="hidden_on_hover block_show">Бронирование</span>
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_3">
+                        <label class="heart" for="heart_3" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                        </span>
+
+                                        <span class="present_class">
+                                            <span class="inside_price _red">
+                                                <span class="tc">300 руб.</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            <object class="show_on_hover block_hide"><a href="####"><span
+                                                    class="span_link"></span>reeboksdotcomrerulinkveerylong_linnksss.com</a>
+                                            </object>
+                                            <span class="hidden_on_hover block_show">Спортивные товары</span>
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide blue">new</span>
+                        <input type="checkbox" class="heart_inp" id="heart_4">
+                        <label class="heart" for="heart_4" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                            <span class="text_with_epty_item">Медиа Маркет</span>
+                                        </span>
+                                        <span class="present_class">
+                                            <span class="inside_price _sky">
+                                                <span class="tc">6%</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_5">
+                        <label class="heart" for="heart_5" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                        </span>
+
+                                        <span class="present_class">
+                                            <span class="inside_price _red">
+                                                <span class="tc">300 руб.</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide blue">new</span>
+                        <input type="checkbox" class="heart_inp" id="heart_6">
+                        <label class="heart" for="heart_6" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop.png" alt=""/>
+                                        </span>
+                                        <span class="present_class">
+                                            <span class="inside_price _orange">
+                                                <span class="tc">6%</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide"></span>
+                        <input type="checkbox" class="heart_inp" id="heart_7">
+                        <label class="heart" for="heart_7" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                            <span class="text_with_epty_item">Медиа Маркет</span>
+                                        </span>
+                                        <span class="present_class">
+                                            <span class="inside_price _sky">
+                                                <span class="tc down _sky"><i>5.5%</i>8%</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Бронирование
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_8">
+                        <label class="heart" for="heart_8" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                        </span>
+
+                                        <span class="present_class">
+                                            <span class="inside_price _sky">
+                                                <span class="tc">300 руб.</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_9">
+                        <label class="heart" for="heart_8" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                        </span>
+
+                                        <span class="present_class">
+                                            <span class="inside_price _sky">
+                                                <span class="tc">300 руб.</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="top_abs_hide oranges">top</span>
+                        <input type="checkbox" class="heart_inp" id="heart_10">
+                        <label class="heart" for="heart_8" title="подсказка"></label>
+                        <a href="#">
+                                    <span class="inside_s">
+                                        <span class="images_shop">
+                                            <img src="img/icon_shop2.png" alt=""/>
+                                        </span>
+
+                                        <span class="present_class">
+                                            <span class="inside_price _sky">
+                                                <span class="tc">300 руб.</span>
+                                                <span class="cashback">кэшбэк</span>
+                                            </span>
+                                        </span>
+                                        <span class="clacification">
+                                            Спортивные товары
+                                        </span>
+                                    </span>
+                        </a>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- похожие магазины -->
 
                     <!-- действующие акции -->
                     <div class="border_blocks padding_fore_all_cont_block pb_0_600">
@@ -682,256 +895,127 @@
                     </div>
                     <!-- действующие акции -->
 
-
-                    <!-- похожие магазины -->
-                    <p class="p2_z">Похожие магазины</p>
-
-                    <div class="show_me_all_shops catalog_block">
-                        <div class="slider_B">
-                            <div class="list_of_shop">
-                                <ul class="ul_wrapps slider1">
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_1">
-                                        <label class="heart" for="heart_1" title="подсказка"></label>
-                                        <a href="#">
-                                            <span class="inside_s">
-                                                <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
-                                                    <img src="img/icon_shop2.png" alt=""/>
-                                                    <span class="text_with_epty_item">Медиа Маркет</span>
-                                                </span>
-
-                                                <span class="present_class">
-                                                    <span class="inside_price _sky">
-                                                        <span class="tc">300 руб.</span>
-                                                        <span class="cashback">кэшбэк</span>
-                                                    </span>
-                                                </span>
-                                                <span class="clacification">
-                                                    Спортивные товары
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide"></span>
-                                        <input type="checkbox" class="heart_inp" id="heart_2">
-                                        <label class="heart" for="heart_2" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop3.png" alt=""/>
-                                        </span>
-                                        <span class="present_class">
-                                            <span class="inside_price _orange">
-                                                <span class="tc down _orange"><i>5.5%</i>8%</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            <object class="show_on_hover block_hide"><a href="####"><span
-                                                    class="span_link"></span>Booking.com</a></object>
-                                            <span class="hidden_on_hover block_show">Бронирование</span>
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_3">
-                                        <label class="heart" for="heart_3" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                        </span>
-
-                                        <span class="present_class">
-                                            <span class="inside_price _red">
-                                                <span class="tc">300 руб.</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            <object class="show_on_hover block_hide"><a href="####"><span
-                                                    class="span_link"></span>reeboksdotcomrerulinkveerylong_linnksss.com</a>
-                                            </object>
-                                            <span class="hidden_on_hover block_show">Спортивные товары</span>
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide blue">new</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_4">
-                                        <label class="heart" for="heart_4" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                            <span class="text_with_epty_item">Медиа Маркет</span>
-                                        </span>
-                                        <span class="present_class">
-                                            <span class="inside_price _sky">
-                                                <span class="tc">6%</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_5">
-                                        <label class="heart" for="heart_5" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                        </span>
-
-                                        <span class="present_class">
-                                            <span class="inside_price _red">
-                                                <span class="tc">300 руб.</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide blue">new</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_6">
-                                        <label class="heart" for="heart_6" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop.png" alt=""/>
-                                        </span>
-                                        <span class="present_class">
-                                            <span class="inside_price _orange">
-                                                <span class="tc">6%</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide"></span>
-                                        <input type="checkbox" class="heart_inp" id="heart_7">
-                                        <label class="heart" for="heart_7" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop empty_shops"> <!-- класс если нет логотипа empty_shops -->
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                            <span class="text_with_epty_item">Медиа Маркет</span>
-                                        </span>
-                                        <span class="present_class">
-                                            <span class="inside_price _sky">
-                                                <span class="tc down _sky"><i>5.5%</i>8%</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Бронирование
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_8">
-                                        <label class="heart" for="heart_8" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                        </span>
-
-                                        <span class="present_class">
-                                            <span class="inside_price _sky">
-                                                <span class="tc">300 руб.</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_9">
-                                        <label class="heart" for="heart_8" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                        </span>
-
-                                        <span class="present_class">
-                                            <span class="inside_price _sky">
-                                                <span class="tc">300 руб.</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="top_abs_hide oranges">top</span>
-                                        <input type="checkbox" class="heart_inp" id="heart_10">
-                                        <label class="heart" for="heart_8" title="подсказка"></label>
-                                        <a href="#">
-                                    <span class="inside_s">
-                                        <span class="images_shop">
-                                            <img src="img/icon_shop2.png" alt=""/>
-                                        </span>
-
-                                        <span class="present_class">
-                                            <span class="inside_price _sky">
-                                                <span class="tc">300 руб.</span>
-                                                <span class="cashback">кэшбэк</span>
-                                            </span>
-                                        </span>
-                                        <span class="clacification">
-                                            Спортивные товары
-                                        </span>
-                                    </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- похожие магазины -->
-
-
-
                     <!-- отзывы -->
                     <div class="border_blocks non_margin padding_fore_all_cont_block pb_0_600_1">
                         <div class="akc_wrapper">
+                            <!--<div class="rewiev_wrapp_block bxslider_rev">-->
+                                <!--<p id="review-list-empty-sign" class="text-muted">-->
+                                    <!--Пока никто не оставил отзыв, вы можете стать первым!-->
+                                <!--</p>-->
+                                <!--<p id="review-add-success-sign" class="text-muted" style="display:none">-->
+                                    <!--Спасибо за ваш отзыв! Он появится на этой странице после проверки.-->
+                                <!--</p>-->
+                            <!--</div>-->
+
+
+                            <h2 class="h2_z">Отзывы о Aliexpress <span>56</span></h2>
+
+                            <div class="small_line_wrapper">
+                                <div class="color_line">
+                                    <div class="sky_blue_line"></div>
+                                    <div class="dark_blue_line"></div>
+                                    <div class="red_line"></div>
+                                </div>
+                            </div>
+                            <a class="subm_btns in_block p_abs m_w_215" href="#services">Оставить отзыв</a>
+
                             <div class="rewiev_wrapp_block bxslider_rev">
-                                <p id="review-list-empty-sign" class="text-muted">
-                                    Пока никто не оставил отзыв, вы можете стать первым!
-                                </p>
-                                <p id="review-add-success-sign" class="text-muted" style="display:none">
-                                    Спасибо за ваш отзыв! Он появится на этой странице после проверки.
-                                </p>
+                                <div class="one_rewiew_blocks">
+                                    <div class="img_blocks_icon">
+                                        <img src="img/user_face.png" alt=""/>
+                                    </div>
+                                    <div class="right_rev_blocks">
+                                        <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                                            <span>22 марта 2016</span></p>
+
+                                        <div class="rate pos_abs_r">
+                                            <ul>
+                                                <li class="active"></li>
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p class="rew_text">
+                                            Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                                            сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                                            Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                                            таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                                            ниже про все это)))
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="one_rewiew_blocks">
+                                    <div class="img_blocks_icon">
+                                        <img src="img/user_face.png" alt=""/>
+                                    </div>
+                                    <div class="right_rev_blocks">
+                                        <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                                            <span>22 марта 2016</span></p>
+
+                                        <div class="rate pos_abs_r">
+                                            <ul>
+                                                <li class="active"></li>
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p class="rew_text">
+                                            Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                                            сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                                            Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                                            таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                                            ниже про все это)))
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="one_rewiew_blocks">
+                                    <div class="img_blocks_icon">
+                                        <img src="img/user_face.png" alt=""/>
+                                    </div>
+                                    <div class="right_rev_blocks">
+                                        <p class="name_us">Виталий Остыченко <br class="hidden-lg hidden-md hidden-sm"/>
+                                            <span>22 марта 2016</span></p>
+
+                                        <div class="rate pos_abs_r">
+                                            <ul>
+                                                <li class="active"></li>
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p class="rew_text">
+                                            Али - площадка, где с кэшбэком пока ни разу проблем не имела, подтверждают его очень быстро (в
+                                            сравнении с несколькими нашими магазинами, на территории России). Почему-то с ним без проблем!
+                                            Али - выгодно реально. Ознакомьтесь с тем, как тщательно выбирать продавца и следить за
+                                            таймерами, - это для новичков, - на YouTube полно видео на эти темы. Просто почитала комменты
+                                            ниже про все это)))
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pagination hidden-xs">
+                                <ul>
+                                    <li class="left_arr"><a href="#"></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="#">15</a></li>
+                                    <li class="right_arr"><a href="#"></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </div>

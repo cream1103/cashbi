@@ -5553,18 +5553,18 @@ ul.nav_list {
 .show_on_hover:hover {
   text-decoration: underline; }
 
-.show_me_all_shops .list_of_shop .ul_wrapps li:hover {
+.show_me_all_shops .list_of_shop .ul_wrapps, .bxslider_shops li:hover {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
-  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide {
+  .show_me_all_shops .list_of_shop .ul_wrapps .top_abs_hide, .bxslider_shops li:hover .top_abs_hide {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0); }
-  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .heart_inp + .heart {
+  .show_me_all_shops .list_of_shop .ul_wrapps .heart_inp + .heart, .bxslider_shops li:hover .heart_inp + .heart {
     opacity: 1; }
-  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .hidden_on_hover {
+  .show_me_all_shops .list_of_shop .ul_wrapps .hidden_on_hover, .bxslider_shops li:hover .hidden_on_hover {
     display: none !important; }
-  .show_me_all_shops .list_of_shop .ul_wrapps li:hover .show_on_hover {
+  .show_me_all_shops .list_of_shop .ul_wrapps .show_on_hover, .bxslider_shops li:hover .show_on_hover {
     display: block !important; }
 
 .span_link {
@@ -5575,10 +5575,10 @@ ul.nav_list {
   content: '';
   margin-right: 5px; }
 
-.show_me_all_shops .list_of_shop .ul_wrapps li .block_show {
+.show_me_all_shops .list_of_shop .ul_wrapps li .block_show, .bxslider_shops .block_show {
   display: block !important; }
 
-.show_me_all_shops .list_of_shop .ul_wrapps li .block_hide {
+.show_me_all_shops .list_of_shop .ul_wrapps li .block_hide, .bxslider_shops .block_hide {
   display: none !important; }
 
 .activate_cashb {
@@ -5612,7 +5612,7 @@ ul.nav_list {
       position: relative; }
       .flex_wrapper .one_of_infoblock .img_relative_wrapper .span_border_block {
         position: absolute;
-        right: 22px;
+        right: 28px;
         top: -3px;
         color: #ffffff;
         font-size: 20px;
@@ -5824,7 +5824,7 @@ ul.nav_list {
 .p2_z {
   font-size: 36px;
   font-family: 'officinaserifboldcbold',sans-serif;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 25px; }
 
 .show_me_all_shops .list_of_shop .ul_wrapps li:hover .top_abs_hide {
@@ -5871,9 +5871,13 @@ ul.nav_list {
   color: #333333;
   font-size: 12px;
   font-family: 'OpenSansRegular';
-  margin-bottom: 15px; }
+  margin-bottom: 14px;
+  line-height: 19px; }
   .one_of_garanty span {
     color: #ff4f2f;
     font-size: 18px;
     font-family: 'officinaserifboldcbold',sans-serif;
     display: inline-block; }
+
+.repadding {
+  padding: 36px 20px 35px 20px; }

@@ -28,7 +28,7 @@ function faqSlide() {
 //определение обрезания текста в FAQ
 
 function blockHeight() {
-    if($(window).width() <= 1399){
+    if($(window).width() <= 979){
         $(".column").css({'height':'auto'})
     }
     else{
@@ -46,7 +46,6 @@ function blockHeight() {
         }, 100);
     }
 }
-
 
 $(window).on('load', function () {
     faqSlide();
