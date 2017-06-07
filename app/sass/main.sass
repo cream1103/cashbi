@@ -2545,7 +2545,7 @@ ul.nav_list
         height: 105px
         align-items: center
         .inside_price
-          min-width: 110px
+          min-width: 120px
           font-size: 30px
           font-family: 'officinaserifboldcbold'
           padding-left: 10px
@@ -2567,7 +2567,6 @@ ul.nav_list
             display: flex
             justify-content: center
             align-items: center
-            margin-top: 5px
         .gray_bg
           background: #ECECEC
           color: #3d424b
@@ -2595,7 +2594,7 @@ ul.nav_list
         font-family: 'officinasansbook'
         color: #a4a5ab
         text-align: center
-        margin-top: 10px
+        margin-top: 5px
         display: block
 
     &:hover
@@ -2622,7 +2621,7 @@ ul.nav_list
         background-color: #ddd
         transition: .4s ease .1s
         width: 80%
-        max-width: 130px
+        max-width: 150px
         .cashback
           color: #444
           text-shadow: none
@@ -2648,7 +2647,7 @@ ul.nav_list
           left: 0
           display: block
           position: absolute
-          background: #ddd url(../img/bow.png) no-repeat center bottom
+          background: #ddd url(../img/bow.png) center bottom
           top: -20px
 
 @media(min-width: 600px)
@@ -2970,25 +2969,18 @@ ul.nav_list
     color: $orange_static !important
 
 .toggle_hidden_class
-  display: none
+  opacity: 0
 .name_block_users2
   margin-top: 23px
+  position: absolute
+  right: 24px
   a
     color: $static
     position: relative
     display: inline-block
     &:active
       background: none !important
-    span
-      display: inline-block
-      width: 18px
-      height: 18px
-      background: url("../img/icon/exit.svg") no-repeat center center
-      content: ''
-      position: absolute
-      right: -15px
-      top: 2px
-      background-size: cover
+
 //страница ЛК профиль
 
 
@@ -4774,7 +4766,7 @@ $animation-speed: 0.3s
   z-index: 100 !important
 
 .inside_price
-  min-width: 110px
+  min-width: 120px
   font-size: 30px
   font-family: 'officinaserifboldcbold'
   padding-left: 10px
@@ -4792,7 +4784,7 @@ $animation-speed: 0.3s
     font-size: 14px
     font-family: 'officinaserifbookcbook'
     text-align: center
-    margin-top: 5px
+    margin-top: 0px
     display: flex
     line-height: 13px
     height: 26px
@@ -5633,6 +5625,84 @@ $animation-speed: 0.3s
 
 .repadding
   padding: 36px 20px 35px 20px
+
+.icon_spans
+  display: inline-block
+  width: 18px
+  height: 18px
+  background: url("../img/icon/exit.svg") no-repeat center center
+  content: ''
+  position: absolute
+  right: 10px
+  top: 24px
+  background-size: cover
+  cursor: pointer
+
+
+.class_text
+  transition: all 0.5s ease-out
+  transform: translate(0px, 0px)
+.class_text.add_text_animate
+  transform: translate(-88px, 0px)
+
+.class_icon
+  transition: all 0.5s ease-out
+  transform: translate(-3px, 0px)
+.class_icon.add_icon_animate
+  transform: translate(-90px, 0px)
+
 //доп по карта магазина
+
+//селект каталога
+.slct 
+  display: block
+  border: 1px solid #cecece
+  background-color: #F6F7FB
+  width: 100%
+  padding: 10px 15px 10px 20px
+  color: #222C4C
+  overflow: hidden
+  text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+  &:before
+    position: absolute
+    right: 27px
+    top: 13px
+    width: 20px
+    height: 20px
+    content: "\f107"
+    font: 26px/20px fontawesome
+    transition: 0.4s ease .05s
+    color: #222C4C
+  a
+    color: #222C4C
+.slct.active
+  border-bottom: none
+  &:before
+    transform: rotate(180deg)
+.drop 
+  margin: 0
+  padding: 0
+  width: 100%
+  border: 1px solid #cecece
+  border-top: none
+  display: none
+  background: #fff
+  li
+    list-style: none
+    border-top: 1px dotted #e8e8e8
+    cursor: pointer
+    display: block
+    color: #222C4C
+    padding: 10px 15px 10px 20px
+    background-position: 10px -119px
+    &:hover
+      background-color: #e8e8e8
+      color: #222C4C
+    a
+      color: #222C4C
+
+
+//селект каталога
 
 

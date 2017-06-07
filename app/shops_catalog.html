@@ -423,7 +423,20 @@
 
 <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 main-content">
 
-    <div class="border_blocks padding_fore_filter">
+    <div class="selects_filter_wrapp hidden-lg hidden-md hidden-sm">
+        <div class="select mb20">
+            <a href="javascript:void(0);" class="slct">По популярности</a>
+            <ul class="drop">
+                <li rel="1"><a href="javascript:void(0)">По популярности</a></li>
+                <li rel="2"><a href="javascript:void(0)">По названию</a></li>
+                <li rel="3"><a href="javascript:void(0)">По размеру кэшбека</a></li>
+            </ul>
+            <input type="hidden" id="select" value=""/> <!-- сюда записывается value выбранного пункта (value = rel) -->
+        </div>
+    </div>
+
+
+    <div class="border_blocks padding_fore_filter hidden-xs">
         <div class="filter_links">
             <ul>
                 <li class="up_arrows"><a class="active" href="#">По популярности</a></li>

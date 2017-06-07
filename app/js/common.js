@@ -58,6 +58,26 @@ $(window).on('resize', function () {
 
 $(document).ready(function () {
 
+    $('.slct').click(function(){
+        var dropBlock = $(this).parent().find('.drop');
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function(){
+                var selectResult = $(this).html();
+                var selectResult2 = $(this).attr('rel');
+                $(this).parent().parent().find('input').val(selectResult);
+                $(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+                $(this).parent().parent().find('#select').attr('value', selectResult2);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+
 
     function showValidationError(selector,message){
         console.log('showValidationError');
@@ -617,7 +637,9 @@ $(document).ready(function () {
     // Управление скользящим боковым меню start ***
     // --- закрытие
 
-    $('.ara_inside_menu').click(function () {
+    $('.icon_spans').click(function () {
+        $('.class_text').toggleClass('add_text_animate');
+        $('.class_icon').toggleClass('add_icon_animate');
         $('#it_1').toggleClass('toggle_hidden_class');
         $('#it_2').toggleClass('toggle_hidden_class');
     });

@@ -327,7 +327,7 @@ input, select, textarea, button {
       -webkit-transition: .4s ease .1s;
       transition: .4s ease .1s;
       width: 80%;
-      max-width: 130px; }
+      max-width: 150px; }
       .show_me_all_shops .list_of_shop .bxslider_shops li .inside_s .present_class .inside_price .cashback {
         color: #444;
         text-shadow: none; }
@@ -353,7 +353,7 @@ input, select, textarea, button {
         left: 0;
         display: block;
         position: absolute;
-        background: #ddd url(../img/bow.png) no-repeat center bottom;
+        background: #ddd url(../img/bow.png) center bottom;
         top: -20px; }
 
 @media (min-width: 600px) {
