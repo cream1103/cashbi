@@ -1459,7 +1459,7 @@ a {
     display: none;
     margin: 0;
     position: absolute;
-    width: 280px;
+    width: 702px;
     right: 1px;
     top: 85px;
     z-index: 2;
@@ -1484,12 +1484,67 @@ a {
         width: 35px;
         height: 35px;
         margin-right: 8px; }
-        .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper {
+        .wrapp_menus #aut_position .one_alerts .presents_left_block .red_bg_wrapper {
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          -webkit-border-radius: 10em;
+                  border-radius: 10em;
+          background: #FF4F2F;
+          border: 1px solid #E2E2E2;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .wrapp_menus #aut_position .one_alerts .presents_left_block .red_bg_wrapper img {
+            width: 17%;
+            height: auto; }
+        .wrapp_menus #aut_position .one_alerts .presents_left_block .crown_bg_wrapper {
           width: 35px;
           height: 35px;
           text-align: center;
           -webkit-border-radius: 10em;
                   border-radius: 10em; }
+          .wrapp_menus #aut_position .one_alerts .presents_left_block .crown_bg_wrapper img {
+            width: 100%;
+            height: auto; }
+        .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper {
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          -webkit-border-radius: 10em;
+                  border-radius: 10em;
+          background: #fff;
+          border: 1px solid #E2E2E2;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper img {
+            width: 45%;
+            height: auto; }
+          .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper img.green_svg {
+            width: 70%;
+            height: auto; }
+          .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper img.lights_svg {
+            width: 36%;
+            height: auto; }
           .wrapp_menus #aut_position .one_alerts .presents_left_block .whites_bg_wrapper .prasents_bgs {
             width: 14px;
             height: 14px;
@@ -3827,14 +3882,40 @@ ul.nav_list {
   font-size: 14px;
   display: inline-block; }
 
+.white_color_bg_icons {
+  background: #FFFFFF;
+  border: 1px solid #E3E4E6; }
+  .white_color_bg_icons img {
+    width: 40%;
+    height: auto; }
+  .white_color_bg_icons img.img_lights_svg {
+    width: 36%;
+    height: auto; }
+
+.red_color_bg_icons {
+  background: #FF4F2F;
+  border: 1px solid transparent; }
+  .red_color_bg_icons img {
+    width: 17%;
+    height: auto; }
+
 .img_table_mess {
   width: 45px;
   height: 45px;
   -webkit-border-radius: 10em;
-          border-radius: 10em; }
-  .img_table_mess img {
-    width: 100%;
-    height: auto; }
+          border-radius: 10em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .gray_bg {
   background: #EEF2F7; }
