@@ -28,7 +28,7 @@ function faqSlide() {
 //определение обрезания текста в FAQ
 
 function blockHeight() {
-    if($(window).width() <= 979){
+    if($('.heddenOnLess1200').is(':hidden')){
         $(".column").css({'height':'auto'})
     }
     else{
@@ -47,6 +47,11 @@ function blockHeight() {
     }
 }
 
+function StickyWidth(){
+    var w_col = $('#stycky_id').width();
+    $('.theiaStickySidebar').css({'width': w_col});
+}
+
 $(window).on('load', function () {
     faqSlide();
     blockHeight();
@@ -54,6 +59,7 @@ $(window).on('load', function () {
 $(window).on('resize', function () {
     faqSlide();
     blockHeight();
+    StickyWidth();
 });
 
 $(document).ready(function () {

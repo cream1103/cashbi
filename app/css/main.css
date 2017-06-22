@@ -1391,7 +1391,7 @@ a {
         font-size: 10px;
         font-family: 'OpenSansRegular'; }
     .wrapp_menus .flex_blocks .named_user {
-      max-width: 190px;
+      width: 184px;
       position: relative;
       overflow: hidden; }
       .wrapp_menus .flex_blocks .named_user span {
@@ -1456,6 +1456,7 @@ a {
         overflow: hidden;
         width: 50%; }
   .wrapp_menus #aut_position {
+    border-top: 1px solid #E7E4E4;
     display: none;
     margin: 0;
     position: absolute;
@@ -1617,8 +1618,7 @@ a {
   .wrapp_menus .named_block {
     border-right: 1px solid #E7E4E4; }
     .wrapp_menus .named_block .named_left {
-      max-width: 190px;
-      min-width: 110px;
+      width: 184px;
       float: left; }
       .wrapp_menus .named_block .named_left > a {
         width: 90%;
@@ -1627,10 +1627,9 @@ a {
         text-decoration: none;
         vertical-align: baseline; }
       .wrapp_menus .named_block .named_left .named_user {
-        max-width: 190px;
+        width: 184px;
         position: relative;
-        overflow: hidden;
-        min-width: 110px; }
+        overflow: hidden; }
         .wrapp_menus .named_block .named_left .named_user span {
           width: 64px;
           height: 25px;
@@ -6042,3 +6041,31 @@ ul.nav_list {
       color: #222C4C; }
     .drop li a {
       color: #222C4C; }
+
+.border_bottom_style {
+  border-bottom: 1px solid #fff;
+  height: 86px !important;
+  z-index: 2; }
+  .border_bottom_style:hover {
+    -webkit-box-shadow: 0 -4px 7px rgba(0, 0, 0, 0.33) !important;
+            box-shadow: 0 -4px 7px rgba(0, 0, 0, 0.33) !important; }
+
+.repadding_grid_to_10px {
+  margin-top: 19px; }
+  .repadding_grid_to_10px .row {
+    margin-left: -10px;
+    margin-right: -10px; }
+  .repadding_grid_to_10px .col-xs-1, .repadding_grid_to_10px .col-sm-1, .repadding_grid_to_10px .col-md-1, .repadding_grid_to_10px .col-lg-1,
+  .repadding_grid_to_10px .col-xs-2, .repadding_grid_to_10px .col-sm-2, .repadding_grid_to_10px .col-md-2, .repadding_grid_to_10px .col-lg-2,
+  .repadding_grid_to_10px .col-xs-3, .repadding_grid_to_10px .col-sm-3, .repadding_grid_to_10px .col-md-3, .repadding_grid_to_10px .col-lg-3,
+  .repadding_grid_to_10px .col-xs-4, .repadding_grid_to_10px .col-sm-4, .repadding_grid_to_10px .col-md-4, .repadding_grid_to_10px .col-lg-4,
+  .repadding_grid_to_10px .col-xs-5, .repadding_grid_to_10px .col-sm-5, .repadding_grid_to_10px .col-md-5, .repadding_grid_to_10px .col-lg-5,
+  .repadding_grid_to_10px .col-xs-6, .repadding_grid_to_10px .col-sm-6, .repadding_grid_to_10px .col-md-6, .repadding_grid_to_10px .col-lg-6,
+  .repadding_grid_to_10px .col-xs-7, .repadding_grid_to_10px .col-sm-7, .repadding_grid_to_10px .col-md-7, .repadding_grid_to_10px .col-lg-7,
+  .repadding_grid_to_10px .col-xs-8, .repadding_grid_to_10px .col-sm-8, .repadding_grid_to_10px .col-md-8, .repadding_grid_to_10px .col-lg-8,
+  .repadding_grid_to_10px .col-xs-9, .repadding_grid_to_10px .col-sm-9, .repadding_grid_to_10px .col-md-9, .repadding_grid_to_10px .col-lg-9,
+  .repadding_grid_to_10px .col-xs-10, .repadding_grid_to_10px .col-sm-10, .repadding_grid_to_10px .col-md-10, .repadding_grid_to_10px .col-lg-10,
+  .repadding_grid_to_10px .col-xs-11, .repadding_grid_to_10px .col-sm-11, .repadding_grid_to_10px .col-md-11, .repadding_grid_to_10px .col-lg-11,
+  .repadding_grid_to_10px .col-xs-12, .repadding_grid_to_10px .col-sm-12, .repadding_grid_to_10px .col-md-12, .repadding_grid_to_10px .col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px; }
