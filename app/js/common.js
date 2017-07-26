@@ -160,6 +160,7 @@ $(document).ready(function () {
         setTimeout(function(){
             $('.select2').removeClass('daNuNa');
         }, 1500);
+        $('.select2-search > input').val('');
     });
 
     function foo() {
@@ -174,7 +175,6 @@ $(document).ready(function () {
     var eventSelect = $(".js-example-basic-multiple");
 
     eventSelect.on("select2:select", function () {
-        console.log(eventSelect.val());
             foo();
     });
 
@@ -207,22 +207,29 @@ $(document).ready(function () {
                 return "Ошибка загрузки результатов";
             }
         }
+
     });
 
     var selInt = setInterval( function(){
+        var linkToSearch = $('.link_to_search');
         if($("li").is(".select2-results__option--highlighted")){
             var str = $('.select2-results__option--highlighted').attr('id');
             var subString = str.substring(25,300);
-            //console.log(subString)
-            $('.link_to_search').attr('target', 'blank');
-            $('.link_to_search').attr('href', subString);
+            linkToSearch.attr('target', 'blank');
+            linkToSearch.attr('href', subString);
             $('.select2-search__field').attr('placeholder', '');
-
         }
         else{
             $('.select2-selection--multiple');
-            $('.link_to_search').attr('href', 'javascript:void(0)');
-            $('.link_to_search').attr('target', '');
+            linkToSearch.attr('href', 'javascript:void(0)');
+            linkToSearch.attr('target', '');
+        }
+
+        if($("li").is(".select2-results__message")){
+            var selectErrorText = $('.select2-results__message').text();
+            if(selectErrorText == "Не найдено результатов"){
+
+            }
         }
     }, 500);
 
@@ -232,6 +239,20 @@ $(document).ready(function () {
     $('.select2-search__field').focusout(function(){
         $(this).attr('placeholder', 'Найти свой магазин, например SAPATO');
     });
+
+    $('.select2-search__field').keyup(function(event){
+        if(event.keyCode == 13){
+            event.preventDefault();
+            $('.select2').addClass('daNuNa');
+            setTimeout(function(){
+                $('.select2').removeClass('daNuNa');
+            }, 1500);
+            $(this).attr('placeholder', 'Найти свой магазин, например SAPATO');
+            $('.select2-search > input').val('');
+            $('.select2-search__field').blur();
+            $('.select2-results__message').hide(0);
+        }
+    });
     // все что касается поиска магазинов
 
 
@@ -240,7 +261,6 @@ $(document).ready(function () {
     $('.type_subm_form_btn').click(function(){
         var validParValue =  $(this).parents('.form_class').find('.email_valid').val().length;
         if(validParValue == 0){
-            console.log('empty mail');
             return false
         }
     });
@@ -249,7 +269,6 @@ $(document).ready(function () {
         $('.type_subm_form_btn').click(function(){
             var validPar =  $(this).parents('.form_class').find('.email_valid');
             if(validPar.hasClass("input_red")){
-                console.log('red class');
                 validPar.addClass('daNuNa2');
 
                 setTimeout(function(){
@@ -263,11 +282,13 @@ $(document).ready(function () {
 
 
     //валидация пароля
-    $('.password').focusout(function(){
+    var Password = $('.password');
+    Password.focusout(function(){
         var pass = $(".password").val().length;
         if (pass < 6) {
-            $('.password').val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
+            Password.val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
             $('.errorBlockpass').html('Пароль менее 6 символов');
+            Password.attr('placeholder', '');
             showValidationError();
         }
         else if(pass == 0){
@@ -275,7 +296,7 @@ $(document).ready(function () {
             $('.errorBlockpass').html('');
         }
     });
-    $('.password').focusin(function() {
+    Password.focusin(function() {
         $('.password').css('border', '1px solid #DCDCDC').removeClass('daNuNa2');
         $('.errorBlockpass').html('');
 
@@ -301,6 +322,7 @@ $(document).ready(function () {
 
         if (pass != pass_rep) {
             rPassword.val('').css('border', '1px solid #EB1D1D').addClass('daNuNa2');
+            $('.repassword').attr('placeholder', '');
             $('.errorBlock').html('Пароли не совпадают');
             showValidationError();
         }
@@ -634,7 +656,6 @@ $(document).ready(function () {
     //звёзды рейтинга
     $('.star').on('change', function () {
         var stars = $(this).val();
-        console.log(stars);
     });
     //звёзды рейтинга
 

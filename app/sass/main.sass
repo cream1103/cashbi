@@ -5515,7 +5515,14 @@ $animation-speed: 0.3s
       font-size: 14px
       text-transform: uppercase
       font-family: 'officinaserifboldcbold'
+      margin-left: 0 !important
   .warning_texts
+    font-family: 'OpenSansRegular'
+    color: #333333
+    font-size: 14px
+    margin-left: 34px
+    align-items: center
+  p
     font-family: 'OpenSansRegular'
     color: #333333
     font-size: 14px
@@ -5786,4 +5793,72 @@ $animation-speed: 0.3s
     padding-right: 10px
 //repadding grid
 
+//crown icon
+
+.small_crown
+  width: 13px
+  height: 10px
+  display: inline-block
+  margin-right: 5px
+.small_light
+  width: 13px
+  height: 13px
+  display: inline-block
+  margin-right: 5px
+.cooper_crown
+  background: url("../img/icon/01m.svg") no-repeat center center
+.silver_crown
+  background: url("../img/icon/02m.svg") no-repeat center center
+.gold_crown
+  background: url("../img/icon/03m.svg") no-repeat center center
+.red_light
+  background: url("../img/icon/04m.svg") no-repeat center center
+.red_text_crown
+  color: #ff4f2f !important
+
+//catalog
+.small_crown_catalog
+  width: 13px
+  height: 10px
+  display: inline-block
+  margin-right: 5px
+.small_light_catalog
+  width: 13px
+  height: 13px
+  display: inline-block
+  margin-right: 5px
+.cooper_crown_catalog
+  //transition: all .4s ease .1s
+  background: url("../img/icon/01m.svg") no-repeat center center
+.silver_crown_catalog
+  background: url("../img/icon/02m.svg") no-repeat center center
+.gold_crown_catalog
+  background: url("../img/icon/03m.svg") no-repeat center center
+.red_light_catalog
+  background: url("../img/icon/04m.svg") no-repeat center center
+
+.show_me_all_shops .list_of_shop .ul_wrapps li
+  &:hover
+    .small_crown_catalog
+      background: url("../img/icon/crownwhite.svg") no-repeat center center
+.show_me_all_shops .list_of_shop .bxslider_shops li
+  &:hover
+    .small_crown_catalog
+      background: url("../img/icon/crownwhite.svg") no-repeat center center
+
+.show_me_all_shops .list_of_shop .ul_wrapps li
+  &:hover
+    .small_light_catalog
+      background: url("../img/icon/lightwhite.svg") no-repeat center center
+      background-size: 75% !important
+    .red_text_crown
+      color: #fff !important
+.show_me_all_shops .list_of_shop .bxslider_shops li
+  &:hover
+    .small_light_catalog
+      background: url("../img/icon/lightwhite.svg") no-repeat center center
+      background-size: 75% !important
+    .red_text_crown
+      color: #fff !important
+//crown icon
 
